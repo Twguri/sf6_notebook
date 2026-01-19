@@ -1,0 +1,68 @@
+#SF6APP_META
+#characterId=lily
+#displayNameCN=
+#displayNameEN=Lily
+#(You can edit CSV freely. Lines starting with # are ignored on import.)
+id,category,nameEN,nameCN,input,inputDisplay,hitType,startup,active,recovery,onBlock,onHit,damage,superArt,driveOnHit,driveOnBlock,driveOnPunishCounter,cancel
+st_lp,normals,Standing Light Punch,站轻拳,5lp,,High,5,3,8,-1,6,350,300,250,-500,-2000,"Special, Drive, Super"
+st_mp,normals,Standing Medium Punch,站中拳,5mp,,High,9,4,17,-4,1,800,500,2000,-4000,-6000,-
+st_hp,normals,Standing Heavy Punch,站重拳,5hp,,High,11,3,22,-5,0,900,1000,2000,-5000,-8000,"Special, Drive, Super"
+st_lk,normals,Standing Light Kick,站轻脚,5lk,,Low,4,3,8,-1,5,300,300,250,-500,-2000,"Special, Drive, Super"
+st_mk,normals,Standing Medium Kick,站中脚,5mk,,Low,7,3,15,-1,2,600,700,1500,-3000,-4000,"Special, Drive, Super"
+st_hk,normals,Standing Heavy Kick,站重脚,5hk,,Low,14,4,21,-5,1,1000,1000,3000,-6000,-10000,-
+cr_lp,normals,Crouching Light Punch,下轻拳,2lp,,High,6,3,8,-1,5,300,300,250,-500,-2000,"Special, Drive, Super"
+cr_mp,normals,Crouching Medium Punch,下中拳,2mp,,High,8,3,18,-3,1,700,500,2000,-4000,-6000,Super
+cr_hp,normals,Crouching Heavy Punch,下重拳,2hp,,High,10,"2, 4",22,-2,0,1000,1000,2000,-5000,-8000,"Special, Drive, Super"
+cr_lk,normals,Crouching Light Kick,下轻脚,2lk,,Low,5,2,12,-2,2,200,300,250,-500,-2000,-
+cr_mk,normals,Crouching Medium Kick,下中脚,2mk,,Low,9,3,18,-5,1,500,600,1000,-2000,-4000,"Special, Drive, Super"
+cr_hk,normals,Crouching Heavy Kick,下重脚,2hk,,Low,11,"2, 2",24,-12,-,900,1000,3000,-4000,-10000,-
+j_lp,normals,Jumping Light Punch,跳轻拳,j>lp,,High,5,9,-,-,-,300,300,500,-1500,-2000,-
+j_mp,normals,Jumping Medium Punch,跳中拳,j>mp,,High,9,4,-,-,-,700,500,1000,-2500,-4000,-
+j_hp,normals,Jumping Heavy Punch,跳重拳,j>hp,,Overhead,10,6,-,-,-,800,1000,2000,-4000,-5000,-
+j_lk,normals,Jumping Light Kick,跳轻脚,j>lk,,Overhead,6,6,-,-,-,300,300,500,-1500,-2000,-
+j_mk,normals,Jumping Medium Kick,跳中脚,j>mk,,Overhead,8,5,-,-,-,500,500,1000,-2500,-4000,-
+j_hk,normals,Jumping Heavy Kick,跳重脚,j>hk,,Overhead,11,6,-,-,-,800,1000,2000,-4000,-5000,-
+condor_wind_light,specials,Condor Wind (Light),コンドルウィンド（弱）,214lp,,-,-,-,-,-,-,-,-,-,-,-,-
+condor_wind_medium,specials,Condor Wind (Medium),コンドルウィンド（中）,214mp,,High,23,4,25,-8,-,900,1000,2000,-4000,-8000,Super
+condor_wind_heavy,specials,Condor Wind (Heavy),コンドルウィンド（強）,214hp,,High,25,4,25,-8,-,1100,1000,2000,-4000,-8000,Super
+condor_wind_od,specials,Condor Wind (OD),コンドルウィンド (OD),214(pp),,High,19,4,23,-5,-,1200,1000,-,-4000,-8000,Super
+condor_spire_light,specials,Condor Spire (Light),コンドルスパイア (弱),236lk,,High,17,13,16,-8,-,800,1000,2000,-5000,-7000,-
+condor_spire_medium,specials,Condor Spire (Medium),コンドルスパイア (中),236mk,,High,21,13,16,-8,-,900,1000,2000,-5000,-7000,-
+condor_spire_heavy,specials,Condor Spire (Heavy),コンドルスパイア (強),236hk,,High,25,13,16,-8,-,1000,1000,2000,-5000,-7000,-
+condor_spire_od,specials,Condor Spire (OD),コンドルスパイア (OD),236(kk),,High,15,13,16,-8,-,1000,1000,-,-5000,-7000,Super
+windclad_condor_spire_light,specials,[Windclad] Condor Spire (Light),[風纏い] コンドルスパイア (弱),236lk,,High,9,"5, 11, 7",14,1,-,1000,1100,2000,-5000,-7000,-
+windclad_condor_spire_medium,specials,[Windclad] Condor Spire (Medium),[風纏い] コンドルスパイア (中),236mk,,High,13,"5, 11, 7",14,1,-,1100,1100,2000,-5000,-7000,-
+windclad_condor_spire_heavy,specials,[Windclad] Condor Spire (Heavy),[風纏い] コンドルスパイア (強),236hk,,High,17,"5, 11, 7",14,1,-,1200,1100,2000,-5000,-7000,-
+windclad_condor_spire_od,specials,[Windclad] Condor Spire (OD),[風纏い] コンドルスパイア (OD),236(kk),,High,9,"14, 3, 7",14,2,-,1200,1100,-,-5000,-7000,Super
+tomahawk_buster_light,specials,Tomahawk Buster (Light),トマホークバスター (弱),623lp,,High,6,11,20,-27,-,900,1000,2000,-4000,-5000,-
+tomahawk_buster_medium,specials,Tomahawk Buster (Medium),トマホークバスター (中),623mp,,High,8,12,24,-32,-,1000,1000,2000,-4000,-5000,-
+tomahawk_buster_heavy,specials,Tomahawk Buster (Heavy),トマホークバスター (強),623hp,,High,10,14,25,-35,-,1200,1000,2000,-4000,-5000,-
+tomahawk_buster_od,specials,Tomahawk Buster (OD),トマホークバスター (OD),623(pp),,High,6,12,27,-35,-,1400,1000,-,-4000,-5000,Other (condor-dive-od)
+windclad_tomahawk_buster_light,specials,[Windclad] Tomahawk Buster (Light),[風纏い] トマホークバスター (弱),623lp,,High,4,"4, 9",20,-25,-,1000,1100,2000,-4000,-5000,-
+windclad_tomahawk_buster_medium,specials,[Windclad] Tomahawk Buster (Medium),[風纏い] トマホークバスター (中),623mp,,High,6,4,24,-30,-,1200,1100,2000,-4000,-5000,-
+windclad_tomahawk_buster_heavy,specials,[Windclad] Tomahawk Buster (Heavy),[風纏い] トマホークバスター (強),623hp,,High,8,"4, 12",25,-33,-,1400,1100,3000,-4000,-5000,-
+windclad_tomahawk_buster_od,specials,[Windclad] Tomahawk Buster (OD),[風纏い] トマホークバスター (OD),623(pp),,High,4,"2, 2, 10",27,-35,-,1600,1100,-,-4000,-5000,Other (condor-dive-od)
+condor_dive,specials,Condor Dive,コンドルダイブ,{8|9}+(pp),,High,12,1,-,-24,-,800,1000,2000,-4000,-5000,-
+condor_dive_od,specials,Condor Dive (OD),コンドルダイブ (OD),{8|9}+(ppp),,High,12,1,-,-24,-,1400,1000,-,-4000,-5000,-
+windclad_condor_dive,specials,[Windclad] Condor Dive,[風纏い] コンドルダイブ,{8|9}+(pp),,High,12,1,-,-23,-,1000,1100,3000,-5000,-5000,-
+windclad_condor_dive_od,specials,[Windclad] Condor Dive (OD),[風纏い] コンドルダイブ (OD),{8|9}+(ppp),,High,12,1,-,-23,-,1600,1100,-,-5000,-5000,-
+mexican_typhoon_light,specials,Mexican Typhoon (Light),メキシカンタイフーン (弱),{360}+lp,,Throw,5,3,53,-,-,2000,3000,5000,-,-10000,-
+mexican_typhoon_medium,specials,Mexican Typhoon (Medium),メキシカンタイフーン (中),{360}+mp,,Throw,5,3,53,-,-,2400,3000,5000,-,-10000,-
+mexican_typhoon_heavy,specials,Mexican Typhoon (Heavy),メキシカンタイフーン (強),{360}+hp,,Throw,5,3,53,-,-,2800,3000,5000,-,-10000,-
+mexican_typhoon_od,specials,Mexican Typhoon (OD),メキシカンタイフーン (OD),{360}+(pp),,Throw,5,3,53,-,-,2900,3000,5000,-,-10000,-
+breezing_hawk,supers,Breezing Hawk,ブリージングホーク,236236*p,,High,10,"2, 2, 2, 2, 2",54,-36,-,2200,-,-,-2500,-5000,-
+thunderbird,supers,Thunderbird,サンダーバード,236236*k,,High,9,"2, 3, 3, 3, 3, 3, 3, 2",39,-48,-,2600,-,-,-7000,-10000,-
+windclad_thunderbird,supers,[Windclad] Thunderbird,[風纏い] サンダーバード,236236*k,,High,9,"2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2",39,-48,-,2900,-,-,-8250,-10000,-
+soaring_thunderbird,supers,Soaring Thunderbird,スカイサンダーバード,j>236236*k,,High,9,"2, 3, 3, 3, 3, 3, 3, 2",-,-54,-,2600,-,-,-5000,-10000,-
+windclad_soaring_thunderbird,supers,[Windclad] Soaring Thunderbird,[風纏い] スカイサンダーバード,j>236236*k,,High,9,"2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2",-,-51,-,2900,-,-,-6000,-10000,-
+raging_typhoon,supers,Raging Typhoon,レイジングタイフーン,214214*p,,High,7,2,106,-,-,4500,-,-,-,-15000,-
+raging_typhoon_ca,supers,Raging Typhoon (Critical Art),レイジングタイフーン (CA),214214*p,,High,7,2,106,-,-,5000,-,-,-,-20000,-
+n3_hp,normals,Ridge Thrust,スラストリッジ,3hp,,Overhead,25,3,18,-3,2,900,1000,2000,-5000,-5000,-
+b_hp,normals,Horn Breaker,ホーンブレイク,4hp,,High,14,4,18,-2,5,1000,1000,2000,-5000,-8000,"Special, Drive, Super"
+great_spin,normals,Great Spin,グレートスピン,j>2hp,,Overhead,9,11,-,-,-,800,1000,2000,-4000,-5000,-
+double_arrow,targetCombos,Double Arrow,ダブルアロー,j>5mp>5mp,,Overhead,10,3,-,-,-,700,500,1000,-2500,-4000,Super
+f_hp,targetCombos,Desert Storm (1),デザートストーム (1),6hp,,High,18,2,24,-5,1,900,1000,2000,-5000,-8000,"Special, Drive, Super"
+desert_storm_2,targetCombos,Desert Storm (2),デザートストーム (2),6hp>5hp,,High,20,2,27,-9,0,500,1000,2000,-2000,-5000,-
+desert_storm_3,targetCombos,Desert Storm (3),デザートストーム (3),6hp>5hp>5hp,,High,20,5,42,-26,-,500,1000,2000,-2000,-5000,-
+canyon_throw,normals,Canyon Throw,キャニオンスロー,(lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-
+falling_cliff,normals,Falling Cliff,フォーリングクリフ,(4lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-

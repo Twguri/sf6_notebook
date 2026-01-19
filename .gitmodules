@@ -1,0 +1,3 @@
+[submodule "vendor/sf6-move-data"]
+	path = vendor/sf6-move-data
+	url = https://github.com/4rays/sf6-move-data

@@ -1,0 +1,75 @@
+#SF6APP_META
+#characterId=chunli
+#displayNameCN=
+#displayNameEN=Chunli
+#(You can edit CSV freely. Lines starting with # are ignored on import.)
+id,category,nameEN,nameCN,input,inputDisplay,hitType,startup,active,recovery,onBlock,onHit,damage,superArt,driveOnHit,driveOnBlock,driveOnPunishCounter,cancel
+st_lp,normals,Standing Light Punch,站轻拳,5lp,,High,4,3,7,-3,5,300,300,250,-500,-2000,"Special, Drive, Super"
+st_mp,normals,Standing Medium Punch,站中拳,5mp,,High,5,4,10,1,6,600,600,1500,-3000,-4000,"Special, Drive, Super"
+st_hp,normals,Standing Heavy Punch,站重拳,5hp,,High,13,3,20,-3,2,800,800,3000,-6000,-8000,Other (serenity-stream)
+st_lk,normals,Standing Light Kick,站轻脚,5lk,,Low,5,3,10,-2,2,300,300,250,-500,-2000,"Special, Drive, Super"
+st_mk,normals,Standing Medium Kick,站中脚,5mk,,Low,7,4,16,-2,4,500,700,1500,-3000,-4000,"Special, Drive, Super"
+st_hk,normals,Standing Heavy Kick,站重脚,5hk,,Low,14,3,18,0,4,900,1000,3000,-6000,-10000,Other (serenity-stream)
+cr_lp,normals,Crouching Light Punch,下轻拳,2lp,,High,4,3,7,-2,4,300,300,250,-500,-2000,"Special, Drive, Super"
+cr_mp,normals,Crouching Medium Punch,下中拳,2mp,,High,6,4,13,-2,4,600,600,1500,-3000,-4000,"Special, Drive, Super"
+cr_hp,normals,Crouching Heavy Punch,下重拳,2hp,,High,11,"3, 5",18,-3,1,900,1000,2000,-5000,-8000,"Special, Drive, Super"
+cr_lk,normals,Crouching Light Kick,下轻脚,2lk,,Low,4,2,10,-2,0,200,300,250,-500,-2000,"Special, Drive, Super"
+cr_mk,normals,Crouching Medium Kick,下中脚,2mk,,Low,7,3,19,-6,-2,500,500,1000,-2000,-4000,"Special, Drive, Super"
+cr_hk,normals,Crouching Heavy Kick,下重脚,2hk,,Low,9,6,19,-7,-,900,1000,3000,-4000,-10000,Other (serenity-stream)
+j_lp,normals,Jumping Light Punch,跳轻拳,j>lp,,High,4,10,-,-,-,300,300,500,-1500,-2000,-
+j_mp,normals,Jumping Medium Punch,跳中拳,j>mp,,High,7,"4, 5",-,-,-,600,500,1000,-1250,-4000,"Special, Drive, Super"
+j_hp,normals,Jumping Heavy Punch,跳重拳,j>hp,,Overhead,9,6,-,-,-,800,1000,2000,-4000,-5000,-
+j_lk,normals,Jumping Light Kick,跳轻脚,j>lk,,Overhead,4,8,-,-,-,300,300,500,-1500,-2000,-
+j_mk,normals,Jumping Medium Kick,跳中脚,j>mk,,Overhead,6,5,-,-,-,500,500,1000,-2500,-4000,-
+chunli_jump_heavy_kick,normals,Jumping Heavy Kick,ジャンプ強K,{7|9}>hk,,Overhead,8,7,-,-,-,800,1000,2000,-4000,-5000,-
+n8_hk,normals,Neutral Jumping Heavy Kick,垂直ジャンプ強K,8>hk,,Overhead,8,5,-,-,-,800,1000,2000,-4000,-5000,-
+swift_thrust,normals,Swift Thrust,追突拳,{6mp|4mp},,High,7,3,15,-3,2,600,500,1500,-3000,-4000,"Special, Drive, Super"
+b_hp,normals,Hakkei,発勁,4hp,,High,8,6,14,-1,5,800,1000,2000,-5000,-10000,"Special, Drive, Super"
+n3_hp,normals,Water Lotus Fist,水蓮掌,3hp,,Overhead,21,4,14,-2,1,800,1000,2000,-5000,-5000,Other (serenity-stream)
+f_hk,normals,Yokusen Kick,翼旋脚,6hk,,High,16,2,23,-4,-1,800,1000,2000,-5000,-10000,Other (serenity-stream)
+n3_hk,normals,Falling Crane,鶴脚落,3hk,,High,37,2,1,3,7,800,1000,2000,-5000,-10000,-
+yoso_kick_1,normals,Yoso Kick (1),鷹爪脚（1段目）,j>2mk,,High,3,11,-,-,-,300,500,1000,-1500,-4000,"Special, Drive, Super"
+yoso_kick_2,targetCombos,Yoso Kick (2),鷹爪脚（2段目）,j>2mk>2mk,,High,6,11,-,-,-,300,500,1000,-1500,-4000,"Special, Drive, Super"
+yoso_kick_3,targetCombos,Yoso Kick (3),鷹爪脚（3段目）,j>2mk>2mk>2mk,,High,6,11,-,-,-,500,500,1000,-1500,-5000,"Special, Drive, Super"
+wall_jump,normals,Wall Jump,三角飛び,9,,High,-,-,-,-,-,-,-,-,-,-,-
+soaring_eagle_punches,targetCombos,Soaring Eagle Punches,鷹嘴連拳,j>hp>hp,,High,6,4,-,-,-,500,1000,2000,-5000,-5000,-
+kikoken_light,specials,Kikoken (Light),気功拳 (弱),[4]>6lp,,-,15,90,-,-7,-3,600,300,1000,-2500,-3000,Super
+kikoken_medium,specials,Kikoken (Medium),気功拳 (中),[4]>6mp,,-,12,55,-,-3,-7,600,300,1000,-2500,-3000,Super
+kikoken_heavy,specials,Kikoken (Heavy),気功拳 (強),[4]>6hp,,-,11,25,-,-6,-2,600,300,1000,-2500,-3000,Super
+kikoken_od,specials,Kikoken (OD),気功拳 (OD),[4]>6pp,,-,11,-,-,5,0,800,400,-,-2500,-5000,Super
+serenity_stream,specials,Serenity Stream,行雲流水,214*p,,-,-,-,-,-,-,-,-,-,-,-,-
+orchid_palm,specials,Orchid Palm,蘭華,lp,214*p>lp,-,5,5,17,-4,-3,500,300,500,-1500,-2000,"Special, Drive, Super"
+snake_strike,specials,Snake Strike,這蛇突,mp,214*p>mp,-,11,7,20,-11,-,750,300,500,-3000,-4000,-
+lotus_fist,specials,Lotus Fist,蓮掌,hp,214*p>hp,Overhead,23,"2, 2",19,-3,2,900,600,2000,-5000,-6000,"Special, Drive, Super"
+forward_strike,specials,Forward Strike,前突,lk,214*p>lk,-,8,5,13,-5,-1,500,300,500,-1500,-2000,"Special, Drive, Super"
+senpu_kick,specials,Senpu Kick,仙風,mk,214*p>mk,-,10,5,28,-10,-6,800,1000,2000,-3000,-4000,"Special, Drive, Super"
+tenku_kick,specials,Tenku Kick,天空脚,hk,214*p>hk,-,8,5,24,-9,-,700,300,2000,-5000,-10000,Jump
+hundred_lightning_kicks_light,specials,Hundred Lightning Kicks (Light),百裂脚 (弱),236lk,,-,8,"2, 2, 2",20,-8,3,800,800,2000,-3000,-5000,Super
+hundred_lightning_kicks_medium,specials,Hundred Lightning Kicks (Medium),百裂脚 (中),236mk,,-,14,"2, 2, 2, 2",22,-8,3,900,800,2000,-4000,-5000,Super
+hundred_lightning_kicks_heavy,specials,Hundred Lightning Kicks (Heavy),百裂脚 (強),236hk,,-,23,"2, 2, 2, 2, 2",15,-3,-,1000,800,2000,-4000,-5000,Super
+hundred_lightning_kicks_od,specials,Hundred Lightning Kicks (OD),百裂脚 (OD),236(kk),,-,8,"2, 2, 2, 2, 2",21,-3,3,800,800,-,-4000,-5000,Super
+lightning_kicks_barrage,specials,Lightning Kicks Barrage,百裂連脚,(kk),236(kk)>(kk),-,11,"2, 2, 2, 2, 1",25,-13,-,700,500,-,-5000,-5000,-
+aerial_hundred_lightning_kicks_light,specials,Aerial Hundred Lightning Kicks (Light),空中百裂脚 (弱),{8|9}>236lk,,-,8,"2, 2, 2",-,-,-,900,800,2000,-2000,-5000,-
+aerial_hundred_lightning_kicks_medium,specials,Aerial Hundred Lightning Kicks (Medium),空中百裂脚 (中),{8|9}>236mk,,-,10,"2, 2, 2, 2",-,-,-,1000,800,2000,-2000,-5000,-
+aerial_hundred_lightning_kicks_heavy,specials,Aerial Hundred Lightning Kicks (Heavy),空中百裂脚 (強),{8|9}>236hk,,-,12,"2, 2, 2, 2, 2",-,-,-,1100,800,2000,-1000,-5000,-
+aerial_hundred_lightning_kicks_od,specials,Aerial Hundred Lightning Kicks (OD),空中百裂脚 (OD),{8|9}>236(kk),,-,6,"2, 2, 2, 2, 2, 2",-,-,-,1600,800,-,-2668,-5000,-
+spinning_bird_kick_light,specials,Spinning Bird Kick (Light),スピニングバードキック (弱),[2]>8lk,,-,9,"2, 2, 2",6,-18,-,1000,1200,2000,-3000,-5000,-
+spinning_bird_kick_medium,specials,Spinning Bird Kick (Medium),スピニングバードキック (中),[2]>8mk,,-,16,"2, 2, 2, 2, 2",8,-17,-,1200,1200,2000,-4000,-5000,-
+spinning_bird_kick_heavy,specials,Spinning Bird Kick (Heavy),スピニングバードキック (強),[2]>8hk,,-,21,"2, 2, 2, 2, 2, 2, 2",8,-18,-,1400,1200,2000,-4200,-5000,-
+spinning_bird_kick_od,specials,Spinning Bird Kick (OD),スピニングバードキック (OD),[2]>8(kk),,-,16,"2, 2, 2, 2, 2, 2, 2",8,-12,-,800,1200,-,-4200,-5000,-
+hazanshu_light,specials,Hazanshu (Light),覇山蹴 (弱),214lk,,-,23,2,21,-9,0,1000,1200,2000,-4000,-4000,Super
+hazanshu_medium,specials,Hazanshu (Medium),覇山蹴 (中),214mk,,-,27,3,16,-3,2,1000,1200,2000,-4000,-5000,Super
+hazanshu_heavy,specials,Hazanshu (Heavy),覇山蹴 (強),214hk,,-,32,3,18,-3,4,1200,1200,2000,-4000,-7000,Super
+hazanshu_od,specials,Hazanshu (OD),覇山蹴 (OD),214(kk),,-,26,3,16,-5,-,1200,1200,-,-4000,-5000,Super
+tensho_kicks_light,specials,Tensho Kicks (Light),天翔脚 (弱),22lk,,-,5,"2, 2",27,-37,-,900,1000,2000,-3000,-5000,-
+tensho_kicks_medium,specials,Tensho Kicks (Medium),天翔脚 (中),22mk,,-,7,"2, 2",31,-41,-,1000,1000,2000,-3000,-5000,-
+tensho_kicks_heavy,specials,Tensho Kicks (Heavy),天翔脚 (強),22hk,,-,9,"2, 2, 2, 2",26,-57,-,1200,1000,2000,-3000,-5000,-
+tensho_kicks_od,specials,Tensho Kicks (OD),天翔脚 (OD),22(kk),,-,6,"3, 3, 2, 2, 2, 2",14,-40,-,1400,1200,-,-3000,-,-
+kikosho,supers,Kikosho,気功掌,236236*p,,-,7,70,-,-22,-,1700,-,-,-2500,-5000,-
+aerial_kikosho,supers,Aerial Kikosho,空中気功掌,j>236236*p,,-,7,50,-,-,-,1800,-,-,-2500,-5000,-
+hoyokusen,supers,Hoyoku-sen,鳳翼扇,236236*k,,-,11,"2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3",48,-35,-,2000,-,-,-5000,-10000,Jump
+soten_ranka,supers,Soten Ranka,蒼天乱華,214214*k,,-,8,"2, 1, 1, 1",40,-24,-,4000,-,-,-7500,-15000,-
+soten_ranka_ca,supers,Soten Ranka (Critical Art),蒼天乱華 (CA),214214*k,,-,8,"2, 9",40,-24,-,4500,-,-,-10000,-20000,-
+koshuto,normals,Koshuto,虎襲倒,(lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-
+taiji_fan,normals,Taiji Fan,太極扇,(4lp+hk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-
+ryuseiraku,normals,Ryuseiraku,龍星落,j>(lplk),,Throw,5,3,-,-,-,1200,2000,2000,-,-10000,-

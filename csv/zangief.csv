@@ -1,0 +1,68 @@
+#SF6APP_META
+#characterId=zangief
+#displayNameCN=
+#displayNameEN=Zangief
+#(You can edit CSV freely. Lines starting with # are ignored on import.)
+id,category,nameEN,nameCN,input,inputDisplay,hitType,startup,active,recovery,onBlock,onHit,damage,superArt,driveOnHit,driveOnBlock,driveOnPunishCounter,cancel
+st_lp,normals,Standing Light Punch,站轻拳,5lp,,High,7,3,9,2,4,400,300,250,-500,-2000,"Special, Drive, Super"
+st_lp,normals,Standing Light Punch (Rapid Cancel),站轻拳,5lp,,High,4,3,9,2,4,400,300,250,-500,-2000,"Special, Drive, Super"
+st_mp,normals,Standing Medium Punch,站中拳,5mp,,High,9,4,17,-2,2,700,700,2500,-5000,-6000,-
+st_hp,normals,Standing Heavy Punch,站重拳,5hp,,High,16,3,22,-3,3,1000,1000,3500,-6000,-8000,-
+zangief_stand_heavy_punch_charged,normals,Standing Heavy Punch (Charged),立ち強P (ホールド),5[hp],,High,32,3,22,3,-,1400,1400,6000,-10000,-13000,-
+st_lk,normals,Standing Light Kick,站轻脚,5lk,,Low,7,2,17,-4,-2,400,300,250,-500,-2000,"Special, Drive, Super"
+st_mk,normals,Standing Medium Kick,站中脚,5mk,,Low,10,4,19,-4,1,900,900,3000,-6000,-8000,-
+st_hk,normals,Standing Heavy Kick,站重脚,5hk,,Low,13,4,21,1,3,1000,1000,4000,-7000,-11000,-
+cr_lp,normals,Crouching Light Punch,下轻拳,2lp,,High,6,2,8,1,6,300,300,250,-500,-2000,"Special, Drive, Super"
+cr_lp,normals,Crouching Light Punch (Rapid Cancel),下轻拳,2lp,,High,3,2,8,1,6,300,300,250,-500,-2000,"Special, Drive, Super"
+cr_mp,normals,Crouching Medium Punch,下中拳,2mp,,High,8,3,16,-1,3,700,800,3000,-6000,-8000,"Special, Drive, Super"
+cr_hp,normals,Crouching Heavy Punch,下重拳,2hp,,High,11,9,35,-20,-,1000,1000,4000,-7000,-11000,-
+cr_lk,normals,Crouching Light Kick,下轻脚,2lk,,Low,4,3,12,-3,0,250,300,250,-500,-2000,-
+cr_lk,normals,Crouching Light Kick (Rapid Cancel),下轻脚,2lk,,Low,3,3,12,-3,0,250,300,250,-500,-2000,-
+cr_mk,normals,Crouching Medium Kick,下中脚,2mk,,Low,9,3,18,-2,3,700,700,2500,-5000,-8000,-
+cr_hk,normals,Crouching Heavy Kick,下重脚,2hk,,Low,12,3,27,-13,-,1000,1000,3500,-4000,-10000,-
+j_lp,normals,Jumping Light Punch,跳轻拳,j>lp,,High,5,7,-,-,-,300,300,500,-1500,-2000,-
+j_mp,normals,Jumping Medium Punch,跳中拳,j>mp,,Overhead,8,5,-,-,-,700,500,1000,-3000,-4000,-
+j_hp,normals,Jumping Heavy Punch,跳重拳,j>hp,,Overhead,9,6,-,-,-,800,1000,2000,-4000,-5000,-
+j_lk,normals,Jumping Light Kick,跳轻脚,j>lk,,Overhead,5,10,-,-,-,300,300,500,-1500,-2000,-
+j_mk,normals,Jumping Medium Kick,跳中脚,j>mk,,Overhead,8,8,-,-,-,500,500,1000,-2500,-4000,-
+j_hk,normals,Jumping Heavy Kick,跳重脚,j>hk,,Overhead,10,7,-,-,-,800,1000,2000,-4000,-5000,-
+zangief_jump_heavy_punch_charged,normals,Jumping Heacy Punch (Charged),ジャンプ強P (ホールド),j>[hp],,Overhead,32,6,-,-,-,1500,1000,2000,-4000,-10000,-
+double_lariat,specials,Double Lariat,ダブルラリアット,(pp),,High,15,"2, 2, 2, 2",27,-12,-,1400,1600,4000,-4000,-5000,Super
+double_lariat_od,specials,Double Lariat (OD),ダブルラリアット (OD),(ppp),,High,12,"2, 2, 2, 2, 2",26,-11,-,1700,1600,-,-4000,-5000,Super
+screw_piledriver_light,specials,Screw Piledriver (Light),スクリューパイルドライバー (弱),{360}+lp,,Throw,5,3,54,-,-,2500,4000,7000,-,-10000,-
+screw_piledriver_medium,specials,Screw Piledriver (Medium),スクリューパイルドライバー (中),{360}+mp,,Throw,5,3,54,-,-,2900,4000,7000,-,-10000,-
+screw_piledriver_heavy,specials,Screw Piledriver (Heavy),スクリューパイルドライバー (強),{360}+hp,,Throw,5,3,54,-,-,3300,4000,7000,-,-10000,-
+screw_piledriver_od,specials,Screw Piledriver (OD),スクリューパイルドライバー (OD),{360}+pp,,Throw,5,3,54,-,-,3400,4000,-,-,-10000,-
+borscht_dynamite,specials,Borscht Dynamite,ボルシチダイナマイト,j>{360}+*k,,-,4,3,-,-,-,2900,4000,5000,-,-10000,-
+borscht_dynamite_od,specials,Borscht Dynamite (OD),ボルシチダイナマイト (OD),j>{360}+kk,,-,4,3,-,-,-,3000,4000,-,-,-10000,-
+russian_suplex,specials,Russian Suplex,ロシアンスープレックス,63214*k,,-,10,2,50,-,-,2900,4000,7000,-,-10000,-
+russian_suplex_od,specials,Russian Suplex (OD),ロシアンスープレックス (OD),63214(kk),,-,10,2,50,-,-,3200,6500,-,-,-10000,-
+siberian_express,specials,Siberian Express (Close Range),シベリアンエクスプレス (近距離版),63214*k,,-,28,2,41,-,-,2700,4000,5000,-,-10000,-
+siberian_express_od,specials,Siberian Express (Close Range OD),シベリアンエクスプレス (近距離版 OD),63214(kk),,Throw,23,2,44,-,-,3000,4000,-,-,-10000,-
+siberian_express_far_range,specials,Siberian Express (Far Range),シベリアンエクスプレス (遠距離版),63214*k,,Throw,55,2,40,-,-,2700,4000,5000,-,-10000,-
+siberian_express_far_range_od,specials,Siberian Express (Far Range OD),シベリアンエクスプレス (遠距離版 OD),63214(kk),,Throw,54,2,40,-,-,3000,4000,-,-,-10000,-
+tundra_storm,specials,Tundra Storm,ツンドラストーム,22hk,,High,5,51,24,-,-,2400,2000,15000,-,-10000,-
+aerial_russian_slam,supers,Aerial Russian Slam,エリアルロシアンスラム,236236*k,,High,11,7,60,-,-,3500,-,-,-,-5000,-
+cyclone_lariat_charged,supers,Cyclone Lariat (Charged),サイクロンラリアット (ホールド),236236[*p],,High,18,"94, 3, 2, 2, 2, 2, 2, 2, 2, 2, 3",52,-35,-,1100,-,-,5000,-10000,-
+cyclone_lariat_immediate,supers,Cyclone Lariat (Immediate),サイクロンラリアット (その場),236236*p,,High,-,-,-,-,-,3100,-,-,-,-10000,-
+cyclone_lariat_movement,supers,Cyclone Lariat (Movement),サイクロンラリアット (移動),236236*p,,High,-,-,-,-,-,3000,-,-,-,-10000,-
+bolshoi_storm_buster,supers,Bolshoi Storm Buster,ボリショイストームバスター,{720}+*p,,High,6,2,116,-,-,4800,-,-,-,-15000,-
+bolshoi_storm_buster_ca,supers,Bolshoi Storm Buster (Critical Art),ボリショイストームバスター (CA),{720}+*p,,High,6,2,116,-,-,5300,-,-,-,-20000,-
+n3_mp,normals,Hellstab,ヘルスタブ,3mp,,High,7,3,21,-3,-1,800,700,3000,-5000,-6000,"Special, Drive, Super"
+f_mk,normals,Knee Hammer,ニーハンマー,6mk,,High,14,7,13,-4,1,700,800,3000,-6000,-6000,-
+f_hp,normals,Headbutt,ヘッドバット,6hp,,High,14,5,15,4,7,1000,1000,4500,-8000,-11000,"Special, Drive, Super"
+f_hk,normals,Cyclone Wheel Kick,サイクロンウィールキック,6hk,,High,22,7,25,-9,-,1300,1200,4500,-6000,-11000,-
+n3_hk,normals,Smetana Dropkick,スメタナドロップキック,3hk,,High,16,4,40,-18,-,1000,1200,4000,-8000,-11000,-
+flying_body_press,normals,Flying Body Press,フライングボディプレス,j>2hp,,High,9,9,-,-,-,800,1000,2000,-4000,-5000,-
+flying_headbutt,normals,Flying Headbutt,フライングヘッドバット,8>8hp,,Overhead,8,4,-,-,-,900,1200,4000,-4000,-8000,"Special, Drive, Super"
+machine_gun_chops_2,targetCombos,Machine Gun Chops (2),マシンガンチョップ (2),5mp>5mp,,High,9,4,20,-6,2,600,500,1000,-2500,-4000,-
+machine_gun_chops_3,targetCombos,Machine Gun Chops (3),マシンガンチョップ (3),5mp>5mp>5mp,,High,15,3,32,-17,-,900,500,1000,-2500,-4000,-
+power_stomp_1,targetCombos,Power Stomps (1),ストンピング (1),22mk,,High,9,3,17,-3,4,500,700,1000,-2500,-4000,-
+power_stomp_2,targetCombos,Power Stomps (2),ストンピング (2),22mk>5mk,,High,9,3,19,-4,-3,500,700,1000,-2500,-4000,"Special, Drive, Super"
+power_stomp_3,targetCombos,Power Stomps (3),ストンピング (3),22mk>5mk>5mk,,High,10,3,24,-10,-2,700,700,1000,-2500,-4000,"Special, Drive, Super"
+body_slam,normals,Bodyslam,ボディスラム,(lplk),,Throw,5,3,23,-,-,1200,1800,1500,-,-10000,-
+capture,normals,Capture Suplex,キャプチュード,(4lplk),,Throw,5,3,23,-,-,1400,2000,2000,-,-10000,-
+german_suplex,normals,German Suplex,ジャーマンスープレックス,(6lplk),,Throw,5,3,23,-,-,1500,2000,2000,-,-10000,-
+spinebuster,normals,Spinebuster,スパインバスター,(3lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-
+russian_drop,normals,Russian Drop,ロシアンドロップ,(1lplk),,Throw,5,3,23,-,-,1500,2000,2000,-,-10000,-
+brainbuster,normals,Brainbuster,ブレーンバスター,(2lplk),,Throw,5,3,23,-,-,1500,2000,2000,-,-10000,-

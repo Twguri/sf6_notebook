@@ -1,0 +1,86 @@
+#SF6APP_META
+#characterId=marisa
+#displayNameCN=
+#displayNameEN=Marisa
+#(You can edit CSV freely. Lines starting with # are ignored on import.)
+id,category,nameEN,nameCN,input,inputDisplay,hitType,startup,active,recovery,onBlock,onHit,damage,superArt,driveOnHit,driveOnBlock,driveOnPunishCounter,cancel
+st_lp,normals,Standing Light Punch,站轻拳,5lp,,High,6,3,11,-2,0,400,300,250,-500,-2000,-
+st_mp,normals,Standing Medium Punch,站中拳,5mp,,High,7,4,15,-1,2,700,500,1500,-3000,-4000,-
+st_hp,normals,Standing Heavy Punch,站重拳,5hp,,High,12,2,23,-3,3,1000,1000,2000,-5000,-8000,-
+marisa_stand_heavy_punch_charged,normals,Standing Heavy Punch (Charged),立ち強P (ホールド),5(hp),,High,26,2,22,4,7,1200,1000,3000,-8000,-12000,-
+st_lk,normals,Standing Light Kick,站轻脚,5lk,,Low,6,2,14,-2,0,400,300,250,-500,-2000,"Special, Drive, Super"
+st_mk,normals,Standing Medium Kick,站中脚,5mk,,Low,11,4,16,-2,4,800,700,2000,-4000,-6000,-
+st_hk,normals,Standing Heavy Kick,站重脚,5hk,,Low,15,2,25,-3,1,1000,1000,3000,-5000,-8000,-
+marisa_stand_heavy_kick_charged,normals,Standing Heavy Kick (Charged),立ち強K (ホールド),5(hk),,Low,27,2,25,1,-,1200,1000,3000,-8000,-12000,-
+cr_lp,normals,Crouching Light Punch,下轻拳,2lp,,High,4,2,10,-3,3,300,300,250,-500,-2000,"Special, Drive, Super"
+cr_mp,normals,Crouching Medium Punch,下中拳,2mp,,High,8,3,16,-2,3,700,500,1500,-3000,-4000,"Special, Drive, Super"
+cr_hp,normals,Crouching Heavy Punch,下重拳,2hp,,High,9,5,23,-6,-,900,1000,2500,5000,-8000,-
+marisa_crouch_heavy_punch_charged,normals,Crouching Heavy Punch (Charged),しゃがみ強P (ホールド),2+[hp],,High,21,6,21,-3,-,1000,1000,3000,-8000,-12000,-
+cr_lk,normals,Crouching Light Kick,下轻脚,2lk,,Low,5,3,12,-3,0,300,300,250,-500,-2000,-
+cr_mk,normals,Crouching Medium Kick,下中脚,2mk,,Low,9,3,18,-2,2,600,600,2000,-4000,-6000,-
+cr_hk,normals,Crouching Heavy Kick,下重脚,2hk,,Low,11,3,26,-11,-,1000,1000,2500,3000,-10000,-
+marisa_crouch_heavy_kick_charged,normals,Crouching Heavy Kick (Charged),しゃがみ強K (ホールド),2+[hk],,Low,23,3,23,-3,-,1200,1000,3000,-8000,-12000,-
+j_lp,normals,Jumping Light Punch,跳轻拳,j>lp,,Overhead,4,7,-,-,-,300,300,500,-1500,-2000,-
+j_mp,normals,Jumping Medium Punch,跳中拳,j>mp,,Overhead,7,4,-,-,-,700,500,1000,-3000,-4000,-
+j_hp,normals,Jumping Heavy Punch,跳重拳,j>hp,,Overhead,10,7,-,-,-,800,1000,2000,4000,-5000,-
+marisa_jump_heavy_punch_charged,normals,Jumping Heavy Punch (Charged),ジャンプ強P (ホールド),j>[hp],,Overhead,28,6,-,-,-,1500,1000,2000,-6000,-15000,-
+j_lk,normals,Jumping Light Kick,跳轻脚,j>lk,,Overhead,5,10,-,-,-,300,300,500,-1500,-2000,-
+j_mk,normals,Jumping Medium Kick,跳中脚,j>mk,,Overhead,8,8,-,-,-,500,500,1000,-2500,-4000,-
+j_hk,normals,Jumping Heavy Kick,跳重脚,j>hk,,Overhead,10,7,-,-,-,800,1000,2000,-4000,-5000,-
+marisa_jump_heavy_kick_charged,normals,Jumping Heavy Kick (Charged),ジャンプ強K (ホールド),j>[hk],,Overhead,29,6,-,-,-,1500,1000,2000,-6000,-15000,-
+light_two_hitter,targetCombos,Light Two Hitter,ライトワンツー,lp>lp,,High,14,3,22,-6,-3,600,1000,1000,-1000,-5000,"Special, Drive, Super"
+medium_two_hitter,targetCombos,Medium Two Hitter,ミドルワンツー,mp>mp,,High,14,2,23,-8,-3,600,1000,1500,-3000,-5000,"Special, Drive, Super"
+heavy_two_hitter,targetCombos,Heavy Two Hitter,ヘビィーワンツー,hp>hp,,High,24,3,19,2,-,1000,1000,2000,-5000,-5000,-
+volare_combo,targetCombos,Volare Combo,ヴォラーレコンボ,j>mp>mp,,Overhead,10,3,-,-,-,800,500,1000,-2000,-5000,-
+caelum_arc,normals,Caelum Arc,カエルムアーク,j>2hp,,Overhead,9,9,-,-,-,800,1000,2000,-4000,-5000,-
+caelum_arc_charged,normals,Caelum Arc (Charged),カエルムアーク (ホールド),j>2[hp],,Overhead,28,9,-,-,-,1500,1000,2000,-6000,-15000,-
+b_hp,normals,Magna Bunker,マグナバンカー,4hp,,High,8,2,21,-1,3,900,500,2000,-5000,-8000,"Special, Drive, Super"
+magna_bunker_charged,normals,Magna Bunker (Charged),マグナバンカー (ホールド),4[hp],,High,20,2,24,4,13,1000,500,2500,-6000,-10000,"Special, Drive, Super"
+novacula_swipe,targetCombos,Novacula Swipe,ノバキュラスワイプ,6mp>5hp,,Low,11,2,26,-12,-,800,1000,2000,-5000,-10000,-
+novacula_thrust,targetCombos,Novacula Thrust,ノバキュラシュート,6mp>5hk,,High,11,4,23,-10,-,800,1000,2500,-5000,-10000,Super
+n3_hp,normals,Malleus Breaker (1),マレウスビート（1段目）,3hp,,Overhead,21,2,21,-3,0,900,500,1000,-5000,-5000,-
+malleus_breake_1_charged,normals,Malleus Breaker (1 Charged),マレウスビート（1段目 ホールド）,3[hp],,Overhead,31,2,19,2,5,1000,500,1500,-5000,-12000,-
+malleus_breake_2,normals,Malleus Breaker (2),マレウスビート（2段目）,3hp>3hp,,Overhead,18,2,24,-12,-3,900,500,1000,-5000,-5000,-
+f_hk,normals,Falx Crusher (1),ファルクスクラッシュ（1段目）,6hk,,High,14,4,21,-3,0,900,1000,2500,-5000,-8000,"Special, Drive, Super"
+falx_crusher_1_charged,normals,Falx Crusher (1 Charged),ファルクスクラッシュ（1段目 ホールド）,6[hk],,High,27,4,19,3,10,1000,1000,3000,-8000,-12000,"Special, Drive, Super"
+falx_crusher_2,normals,Falx Crusher (2),ファルクスクラッシュ（2段目）,6hk>6hk,,High,16,5,25,-12,-,1000,1000,2500,-3000,-5000,-
+gladius_light,specials,Gladius (Light),グラディウス（弱）,236lp,,High,17,4,21,-5,-,1200,1150,2000,-5000,-12000,Super
+gladius_light_charged,specials,Gladius (Light Charged),グラディウス（弱 ホールド）,236[lp],,High,30,4,20,4,-,2400,2650,4000,-8000,-12000,Super
+gladius_medium,specials,Gladius (Medium),グラディウス（中）,236mp,,High,19,4,21,-5,-,1400,1150,2000,-5000,-12000,Super
+gladius_medium_charged,specials,Gladius (Medium Charged),グラディウス（中 ホールド）,236[mp],,High,35,4,20,4,-,2600,2650,4000,-8000,-12000,Super
+gladius_heavy,specials,Gladius (Heavy),グラディウス（大）,236hp,,High,22,4,21,-5,-,1600,1150,2000,-5000,-12000,Super
+gladius_heavy_charged,specials,Gladius (Heavy Charged),グラディウス（大 ホールド）,236[hp],,High,41,4,20,4,-,2800,2650,4000,-8000,-12000,Super
+gladius_od,specials,Gladius (OD),グラディウス（OD）,236(pp),,High,19,4,21,-2,-,1700,1150,-,-5000,-12000,Super
+gladius_od_charged,specials,Gladius (OD Charged),グラディウス（OD ホールド）,236[pp],,High,35,4,20,4,-,2900,2650,-,-8000,-12000,Super
+dimachaerus_light_1,specials,Dimachaerus (Light 1),ディマカイルス（弱 1段目）,214lp,,High,12,4,30,-16,-3,600,575,1250,-5000,-5000,Super
+dimachaerus_light_2,specials,Dimachaerus (Light 2),ディマカイルス（弱 2段目）,214lp>6*p,,High,13,5,23,-13,-,600,575,1250,-5000,-5000,-
+dimachaerus_medium_1,specials,Dimachaerus (Medium 1),ディマカイルス（中 1段目）,214mp,,High,16,5,30,-16,0,700,575,1250,-5000,-5000,Super
+dimachaerus_medium_2,specials,Dimachaerus (Medium 2),ディマカイルス（中 2段目）,214mp>6*p,,High,13,5,24,-14,-,600,575,1250,-5000,-5000,-
+dimachaerus_heavy_1,specials,Dimachaerus (Heavy 1),ディマカイルス（大 1段目）,214hp,,High,22,4,30,-16,-,800,575,1250,-5000,-5000,Super
+dimachaerus_heavy_2,specials,Dimachaerus (Heavy 2),ディマカイルス（大 2段目）,214hp>6*p,,High,18,5,23,-13,-,600,575,1250,-5000,-5000,-
+dimachaerus_od_1,specials,Dimachaerus (OD 1),ディマカイルス（OD 1段目）,214(pp),,High,16,4,26,-12,-,600,575,-,-5000,-5000,Super
+dimachaerus_od_2,specials,Dimachaerus (OD 2),ディマカイルス（OD 2段目）,214(pp)>6*p,,High,13,5,23,-13,-,600,575,-,-5000,-5000,-
+phalanx_light,specials,Phalanx (Light),ファランクス（弱）,623lp,,High,25,3,18,2,-,1500,1150,2000,-5000,-12000,-
+phalanx_medium,specials,Phalanx (Medium),ファランクス（中）,623mp,,High,28,3,18,2,-,1600,1150,2000,-5000,-12000,-
+phalanx_heavy,specials,Phalanx (Heavy),ファランクス（大）,623hp,,High,32,3,18,2,-,1700,1150,2000,-5000,-12000,-
+phalanx_od,specials,Phalanx (OD),ファランクス（OD）,623(pp),,High,28,3,18,4,-,1400,1150,-,-5000,-12000,-
+quadriga_light,specials,Quadriga (Light),クアドリガ（弱）,236lk,,High,20,4,24,-6,-,1400,1150,2000,-5000,-12000,Super
+quadriga_medium,specials,Quadriga (Medium),クアドリガ（中）,236mk,,High,24,4,22,-4,-,1500,1150,2000,-5000,-12000,Super
+quadriga_heavy,specials,Quadriga (Heavy),クアドリガ（大）,236hk,,High,29,4,21,-3,-,1600,1150,2000,-5000,-12000,Super
+quadriga_od,specials,Quadriga (OD),クアドリガ（OD）,236(kk),,High,24,4,24,-6,-,1500,1150,-,-5000,-12000,Super
+scutum,specials,Scutum,スクトゥム,214*k,,-,-,-,-,-,-,-,-,-,-,-,-
+scutum_physical_counter,specials,Scutum (Physical Counter),スクトゥム（当身派生版）,214*k,,-,7,4,20,-3,-1,700,500,1000,-2500,-,-
+scutum_od,specials,Scutum (OD),スクトゥム（OD）,214(kk),,-,-,-,-,-,-,-,-,-,-,-,-
+scutum_od_physical_counter,specials,Scutum (OD Physical Counter),スクトゥム（OD 当身派生版）,214(kk),,-,7,4,20,-3,-1,700,500,-,-2500,-,-
+tonitrus_1,specials,Tonitrus (1),トニトルス (1段目),*p,214*k>*p,Overhead,15,3,23,-3,1,900,500,1000,-5000,-5000,-
+tonitrus_2,specials,Tonitrus (2),トニトルス (2段目),*p>*p,214*k>*p>*p,Overhead,20,3,36,-21,-,1000,1150,2500,-5000,-5000,-
+procella,specials,Procella,プロケッラ,*k,214*k>*k,Low,16,3,37,-24,-,1200,1000,2000,-3000,-10000,-
+enfold,specials,Enfold,エンフォルド,(lplk),214*k>(lplk),-,5,3,54,-,-,2500,3000,2000,-,-10000,-
+javelin_of_marisa,supers,Javelin of Marisa,マリーザジャベリン,236236*p,,High,19,5,60,-43,-,2200,-,-,-2500,-5000,-
+javelin_of_marisa_charged,supers,Javelin of Marisa (Charged),マリーザジャベリン（ホールド）,236236[*p],,High,42,6,60,-42,-,2900,-,-,-2500,-5000,-
+javelin_of_marisa_physical_counter,supers,Javelin of Marisa (Physical Counter),マリーザジャベリン（当身派生版）,236236*p,,High,7,3,54,-37,-,2640,-,-,-2500,-5000,-
+meteorite,supers,Meteorite,メテオリティス,214214*p,,High,9,"7, 3",59,-44,-,3000,-,-,-5000,-10000,-
+goddess_of_the_hunt,supers,Goddess of the Hunt,アポロウーサ,236236*k,,High,13,7,60,-39,-,4000,-,-,-7500,-15000,-
+goddess_of_the_hunt_ca,supers,Goddess of the Hunt (Critical Art),アポロウーサ (CA),236236*k,,High,13,7,60,-39,-,4500,-,-,-10000,-20000,-
+mounted_grace,normals,Mounted Grace,マウンテッドグレイス,(lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-
+ponte_milvio,normals,Ponte Milvio,ミルヴィオブリッジ,4(lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-

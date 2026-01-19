@@ -12,6 +12,7 @@ import { exportLogbook, importLogbook } from "./utils/logbook";
 import ComboGroupsPage from "./pages/character/ComboGroupsPage";
 import ComboGroupPage from "./pages/character/ComboGroupPage";
 import { Navigate } from "react-router-dom";
+import FrameDataCharacterPage from "./pages/FrameDataCharacterPage";
 
 const I18N = {
   zh: {
@@ -72,7 +73,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<CharacterSelect lang={lang} t={t} toggleLang={toggleLang} />} />
       <Route path="/c/:id" element={<CharacterHub lang={lang} t={t} toggleLang={toggleLang} />} />
-      <Route path="/c/:id/frames" element={<Placeholder t={t} titleKey="framesTitle" />} />
+      <Route path="/c/:id/frames" element={<FrameDataCharacterPage lang={lang} t={t} toggleLang={toggleLang}/>}/>
       <Route path="/c/:id/combo" element={<Navigate to="../combos" replace />} />
       <Route path="/c/:id/matchup" element={<Matchup lang={lang} t={t} toggleLang={toggleLang} />} />
       <Route path="/c/:id/tips" element={<CharacterTips lang={lang} t={t} toggleLang={toggleLang} />}/>

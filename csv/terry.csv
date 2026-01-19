@@ -1,0 +1,61 @@
+#SF6APP_META
+#characterId=terry
+#displayNameCN=
+#displayNameEN=Terry
+#(You can edit CSV freely. Lines starting with # are ignored on import.)
+id,category,nameEN,nameCN,input,inputDisplay,hitType,startup,active,recovery,onBlock,onHit,damage,superArt,driveOnHit,driveOnBlock,driveOnPunishCounter,cancel
+st_lp,normals,Standing Light Punch,站轻拳,5lp,,High,4,3,7,-1,4,300,300,250,-500,-2000,"Special, Drive, Super"
+st_mp,normals,Standing Medium Punch,站中拳,5mp,,High,7,3,16,-3,1,700,500,1500,-3000,-4000,"Special, Drive, Super"
+st_hp,normals,Standing Heavy Punch,站重拳,5hp,,High,9,4,18,-1,2,800,1000,2000,-5000,-8000,"Special, Drive, Super"
+st_lk,normals,Standing Light Kick,站轻脚,5lk,,Low,5,2,12,-2,2,300,300,250,-500,-2000,"Special, Drive, Super"
+st_mk,normals,Standing Medium Kick,站中脚,5mk,,Low,9,3,18,-2,5,700,700,2000,-4000,-6000,-
+st_hk,normals,Standing Heavy Kick,站重脚,5hk,,Low,12,4,21,-4,1,900,1000,3000,-6000,-8000,-
+cr_lp,normals,Crouching Light Punch,下轻拳,2lp,,High,4,3,8,-1,4,300,300,250,-500,-2000,"Special, Drive, Super"
+cr_mp,normals,Crouching Medium Punch,下中拳,2mp,,High,6,4,14,-1,5,600,600,1500,-3000,-4000,"Special, Drive, Super"
+cr_hp,normals,Crouching Heavy Punch,下重拳,2hp,,High,8,6,22,-4,1,800,1000,2000,-5000,-8000,"Special, Drive, Super"
+cr_lk,normals,Crouching Light Kick,下轻脚,2lk,,Low,5,2,11,-3,3,200,300,250,-500,-2000,-
+cr_mk,normals,Crouching Medium Kick,下中脚,2mk,,Low,8,3,19,-6,-2,500,500,1000,-2000,-4000,"Special, Drive, Super"
+cr_hk,normals,Crouching Heavy Kick,下重脚,2hk,,Low,11,3,23,-11,-,900,1000,3000,-4000,-10000,-
+j_lp,normals,Jumping Light Punch,跳轻拳,j>lp,,Overhead,4,7,-,-,-,300,300,500,-1500,-2000,-
+j_mp,normals,Jumping Medium Punch,跳中拳,j>mp,,Overhead,7,6,-,-,-,500,500,1000,-2500,-4000,-
+j_hp,normals,Jumping Heavy Punch,跳重拳,j>hp,,Overhead,9,6,-,-,-,800,1000,2000,-4000,-5000,-
+j_lk,normals,Jumping Light Kick,跳轻脚,j>lk,,Overhead,5,7,-,-,-,300,300,500,-1500,-2000,-
+j_mk,normals,Jumping Medium Kick,跳中脚,j>mk,,Overhead,7,4,-,-,-,700,500,1000,-2500,-4000,-
+j_hk,normals,Jumping Heavy Kick,跳重脚,j>hk,,Overhead,10,7,-,-,-,800,1000,2000,-4000,-5000,-
+f_hp,normals,Hammer Punch,ハンマーパンチ,6hp,,Overhead,22,3,19,-2,2,800,1000,2000,-5000,-4000,-
+power_drive,targetCombos,Power Drive,パワードライブ,5mp>5hp,,High,16,3,22,-5,-,700,600,600,-2000,-4000,-
+power_shoot,targetCombos,Power Shoot,パワーシュート,5mp>5hk,,High,18,3,31,-14,-,600,500,500,-1000,-4000,-
+power_dunk,targetCombos,Power Dunk,パワーダンク,5mp>5hk>5hk,,High,18,"3, 6",33,-,-,1300,1750,2500,-,-5000,-
+passing_sway,targetCombos,Passing Sway,パッシングスウェー,5mp>5mk,,High,13,2,27,-12,-3,400,400,1000,-2500,-4000,-
+st_mp,specials,Jumping Lariat,站中拳,5mp,5mp>5mk>5mp,High,24,2,18,3,4,1000,1000,1000,-2500,-4000,-
+st_mk,specials,Jumping Knee,站中脚,5mk,5mp>5mk>5mk,High,24,2,20,-2,3,1000,1000,1000,-2500,-4000,-
+fire_kick,targetCombos,Fire Kick,ファイヤーキック,2mk>2hk,,High,13,2,28,-16,-,500,300,500,-3000,-4000,"Special, Drive, Super"
+power_wave_light,specials,Power Wave (Light),パワーウェーブ（弱）,236lp,,High,14,-,-,-9,-3,600,600,1000,-2500,-2000,Super
+power_wave_medium,specials,Power Wave (Medium),パワーウェーブ（中）,236mp,,High,16,-,-,-6,0,700,700,1000,-2500,-2000,Super
+round_wave,specials,Round Wave,ラウンドウェーブ,236hp,,High,29,-,-,5,8,900,1000,1500,-5000,-2000,Super
+power_wave_od,specials,Power Wave (OD),ラウンドウェーブ（OD）,236(pp),,High,15,-,-,-2,2,1200,600,-,-1250,-5000,Super
+quick_burn,specials,Quick Burn,クイックバーン,214lp,,High,10,"2, 2",23,-5,2,900,700,2000,-4000,-10000,Super
+quick_burn_od,specials,Quick Burn (OD),クイックバーン（OD）,214(lpmp),,High,10,"2, 2",23,-5,-,1400,1300,-,-3000,-5000,Super
+burning_knuckle_medium,specials,Burning Knuckle (Medium),バーンナックル（中）,214mp,,High,14,9,20,-6,-,1000,1000,2000,-5000,-6000,Super
+burning_knuckle_heavy,specials,Burning Knuckle (Heavy),バーンナックル（強）,214hp,,High,23,14,17,-8,-,1200,1200,3000,-6000,-10000,Super
+burning_knuckle_od,specials,Burning Knuckle (OD),バーンナックル（OD）,214(pp),,High,19,14,17,-8,-,1400,1200,-,-6000,-10000,Super
+power_charge_light,specials,Power Charge (Light),パワーチャージ（弱）,236lk,,High,14,5,24,-9,3,700,500,1500,-3000,-5000,Super
+power_charge_medium,specials,Power Charge (Medium),パワーチャージ（中）,236mk,,High,20,6,23,-11,-,800,800,2000,-3000,-5000,Super
+power_charge_heavy,specials,Power Charge (Heavy),パワーチャージ（強）,236hk,,High,25,9,27,-16,-,800,500,2000,-3000,-5000,Super
+power_charge_od,specials,Power Charge (OD),パワーチャージ（OD）,236(kk),,High,19,8,24,-14,-,800,1000,-,-3000,-5000,Super
+crack_shoot_light,specials,Crack Shoot (Light),クラックシュート（弱）,214lk,,High,16,4,18,-3,1,700,800,1000,-2000,-8000,-
+crack_shoot_medium,specials,Crack Shoot (Medium),クラックシュート（中）,214mk,,High,17,7,18,-3,1,700,500,1000,-2500,-8000,-
+crack_shoot_heavy,specials,Crack Shoot (Heavy),クラックシュート（強）,214hk,,High,23,11,19,-1,-,1100,900,3000,-4000,-6000,-
+crack_shoot_od,specials,Crack Shoot (OD),クラックシュート（OD）,214(kk),,High,20,4,19,-2,-,1200,1000,-,-3000,-10000,-
+rising_tackle_light,specials,Rising Tackle (Light),ライジングタックル（弱）,623lp,,High,5,10,21,-25,-,1000,800,2000,-4000,-5000,Super
+rising_tackle_medium,specials,Rising Tackle (Medium),ライジングタックル（中）,623mp,,High,6,10,28,-26,-,1200,1200,4000,-4000,-5000,Super
+rising_tackle_heavy,specials,Rising Tackle (Heavy),ライジングタックル（強）,623hp,,High,7,20,27,-36,-,1300,1000,2000,-4200,-5000,Super
+rising_tackle_od,specials,Rising Tackle (OD),ライジングタックル（OD）,623(pp),,High,6,15,34,-42,-,1600,1600,-,-1000,-,-
+buster_wolf,supers,Buster Wolf,バスターウルフ,236236*k,,High,7,12,60,-26,-,2000,-,-,-5000,-5000,-
+power_geyser,supers,Power Geyser,パワーゲイザー,214214*p,,High,13,13,54,-27,-,2600,-,-,-,-10000,-
+twin_geyser,specials,Twin Geyser,ツインゲイザー,pp,214214*p>pp,High,22,6,43,-,-,1100,-,-,-,-,-
+triple_geyser,specials,Triple Geyser,トリプルゲイザー,pp,pp>pp,High,14,1,125,-,-,2500,-,-,-,-2000,-
+rising_fang,supers,Rising Fang,ライジングファング,236236*p,,High,8,27,57,-50,-,4000,-,-,-1750,-15000,-
+rising_fang_ca,supers,Rising Fang (Critical Art),ライジングファング（CA）,236236*p,,High,8,27,57,-50,-,4500,-,-,-3000,-20000,-
+grasping_upper,normals,Grasping Upper,グラスピングアッパー,(lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-
+buster_throw,normals,Buster Throw,バスタースルー,(2lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-

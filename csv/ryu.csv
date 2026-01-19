@@ -1,0 +1,71 @@
+#SF6APP_META
+#characterId=ryu
+#displayNameCN=隆
+#displayNameEN=Ryu
+#(You can edit CSV freely. Lines starting with # are ignored on import.)
+id,category,nameEN,nameCN,input,inputDisplay,hitType,startup,active,recovery,onBlock,onHit,damage,superArt,driveOnHit,driveOnBlock,driveOnPunishCounter,cancel
+st_lp,normals,Standing Light Punch,站轻拳,5lp,,High,4,3,7,-1,4,300,300,250,-500,-2000,"Special, Drive, Super"
+st_mp,normals,Standing Medium Punch,站中拳,5mp,,High,6,4,11,-1,7,600,500,1500,-3000,-4000,"Special, Drive, Super"
+st_hp,normals,Standing Heavy Punch,站重拳,5hp,,High,10,5,18,-2,4,800,1000,2000,-5000,-8000,"Special, Drive, Super"
+st_lk,normals,Standing Light Kick,站轻脚,5lk,,High,5,3,11,-4,2,300,300,250,-500,-2000,"Special, Drive, Super"
+st_mk,normals,Standing Medium Kick,站中脚,5mk,,High,9,3,18,-4,4,700,700,2000,-4000,-6000,-
+st_hk,normals,Standing Heavy Kick,站重脚,5hk,,High,12,4,20,1,9,900,1000,3000,-6000,-10000,-
+cr_lp,normals,Crouching Light Punch,下轻拳,2lp,,High,4,2,9,-1,4,300,300,250,-500,-2000,"Special, Drive, Super"
+cr_mp,normals,Crouching Medium Punch,下中拳,2mp,,High,6,4,13,0,5,600,500,1500,-3000,-4000,"Special, Drive, Super"
+cr_hp,normals,Crouching Heavy Punch,下重拳,2hp,,High,9,6,22,-7,1,800,1200,3000,-7500,-10000,"Special, Drive, Super"
+cr_lk,normals,Crouching Light Kick,下轻脚,2lk,,Low,5,2,10,-3,3,200,300,250,-500,-2000,-
+cr_mk,normals,Crouching Medium Kick,下中脚,2mk,,Low,8,3,19,-6,1,500,500,1000,-2000,-4000,"Special, Drive, Super"
+cr_hk,normals,Crouching Heavy Kick,下重脚,2hk,,Low,9,3,23,-12,-,900,1000,3000,-4000,-10000,-
+j_lp,normals,Jumping Light Punch,跳轻拳,j>lp,,Overhead,4,10,-,-,-,300,300,500,-1500,-2000,-
+j_mp,normals,Jumping Medium Punch,跳中拳,j>mp,,Overhead,8,5,-,-,-,700,500,1000,-3000,-5000,"Special, Drive, Super"
+j_hp,normals,Jumping Heavy Punch,跳重拳,j>hp,,Overhead,9,6,-,-,-,800,1000,2000,-4000,-5000,-
+j_lk,normals,Jumping Light Kick,跳轻脚,j>lk,,Overhead,6,10,-,-,-,300,300,500,-1500,-2000,-
+j_mk,normals,Jumping Medium Kick,跳中脚,j>mk,,Overhead,7,6,-,-,-,500,500,1000,-2500,-4000,-
+j_hk,normals,Jumping Heavy Kick,跳重脚,j>hk,,Overhead,12,8,-,-,-,800,1000,2000,-4000,-5000,-
+f_mp,normals,Collarbone Breaker,鎖骨割り,6mp,,Overhead,20,22,19,-1,3,600,500,1500,-2500,-5000,-
+f_hp,normals,Solar Plexus Strike,鳩尾砕き,6hp,,High,20,5,16,3,6,800,1000,2500,-5000,-8000,-
+b_hp,normals,Short Uppercut,上げ突き,4hp,,High,7,4,26,-13,1,800,1000,2000,-5000,-8000,"Special, Drive, Super"
+f_hk,normals,Whirlwind Kick,旋風脚,6hk,,High,16,4,20,-4,2,800,1000,2500,-5000,-8000,Other (aerial-ryu-tatsumaki-senpukyaku-od)
+b_hk,normals,Axe Kick,かかと落とし,4hk,,High,10,"5, 4",21,-4,0,800,1000,1500,-3000,-6000,"Special, Drive, Super"
+high_double_strike,targetCombos,High Double Strike,上段二連撃,5hp>5hk,,High,9,4,20,-8,-,1000,1000,2500,-7000,-10000,Other (denjin-charge)
+fuwa_triple_strike_2,targetCombos,Fuwa Triple Strike (2),不破三連撃（2段目）,5mp>5lk,,High,5,3,16,-4,1,300,500,1000,-1000,2000,-
+fuwa_triple_strike_3,targetCombos,Fuwa Triple Strike (3),不破三連撃（3段目）,5mp>5lk>5hk,,High,17,4,20,-8,-,900,1000,2500,-3000,-10000,Other (denjin-charge)
+ryu_hadoken_light,specials,Hadoken (Light),波動拳 (弱),236lp,,High,16,-,-,-5,1,600,600,1000,-2500,-3000,Super
+ryu_hadoken_medium,specials,Hadoken (Medium),波動拳 (中),236mp,,High,14,-,-,-7,-1,600,600,1000,-2500,-3000,Super
+ryu_hadoken_heavy,specials,Hadoken (Heavy),波動拳 (強),236hp,,High,12,-,-,-9,-3,600,600,1000,-2500,-3000,Super
+ryu_hadoken_od,specials,Hadoken (OD),波動拳 (OD),236(pp),,High,12,-,-,-1,-,800,600,-,-2500,-5000,Super
+denjin_charge_hadoken,specials,[Denjin Charge] Hadoken,[電刃錬気]波動拳,236*p,,High,12,-,-,-3,-,800,600,1000,-2500,-3000,Super
+denjin_charge_hadoken_od,specials,[Denjin Charge] Hadoken (OD),[電刃錬気]波動拳 (OD),236(pp),,High,12,-,-,2,-,1000,900,-,3750,-7000,Super
+ryu_shoryuken_light,specials,Shoryuken (Light),昇龍拳（弱),623lp,,High,5,10,21,-23,-,1100,1000,2000,-4000,-5000,Super
+ryu_shoryuken_medium,specials,Shoryuken (Medium),昇龍拳（中),623mp,,High,6,10,30,-32,-,1200,1000,2000,-4000,-5000,Super
+ryu_shoryuken_hp,specials,Shoryuken (Heavy),昇龍拳（強),623hp,,High,7,10,34,-39,-,1400,1000,2000,-4000,-5000,Super
+ryu_shoryuken_od,specials,Shoryuken (OD),昇龍拳 (OD),623(pp),,High,6,"2, 8",37,-40,-,1600,1000,-,-2000,-,-
+ryu_tatsumaki_senpukyaku_light,specials,Tatsumaki Senpu-kyaku (Light),竜巻旋風脚 (弱),214lk,,High,12,3,14,-15,-,900,1200,3000,-4000,-5000,-
+ryu_tatsumaki_senpukyaku_medium,specials,Tatsumaki Senpu-kyaku (Medium),竜巻旋風脚 (中),214mk,,High,14,"2, 2",11,-13,-,1000,1300,3500,-2500,-5000,-
+ryu_tatsumaki_senpukyaku_heavy,specials,Tatsumaki Senpu-kyaku (Heavy),竜巻旋風脚 (強),214hk,,High,16,"2, 2, 2",14,-13,-,1200,1400,4000,-2000,-5000,-
+ryu_tatsumaki_senpukyaku_od,specials,Tatsumaki Senpu-kyaku (OD),竜巻旋風脚 (OD),214(kk),,High,13,"2, 2, 2, 2, 2",10,-14,-,1000,1000,-,-4000,-5000,-
+aerial_ryu_tatsumaki_senpukyaku,specials,Aerial Tatsumaki Senpu-kyaku,空中竜巻旋風脚,9>214*k,,High,11,"2, 2, 2",-,-,-,900,600,2000,-4000,-5000,-
+aerial_ryu_tatsumaki_senpukyaku_od,specials,Aerial Tatsumaki Senpu-kyaku (OD),空中竜巻旋風脚 (OD),9>214(kk),,High,11,"2, 3, 3, 3, 2",-,-,-,1500,600,-,-4000,-5000,-
+high_blade_kick_light,specials,High Blade Kick (Light),上段足刀蹴り (弱),236lk,,High,14,6,22,-11,-,1100,1400,3000,-6000,-5000,Super
+high_blade_kick_medium,specials,High Blade Kick (Medium),上段足刀蹴り (中),236mk,,High,18,9,19,-8,-,1200,1400,3500,-6000,-7000,Super
+high_blade_kick_heavy,specials,High Blade Kick (Heavy),上段足刀蹴り (強),236hk,,High,29,9,16,-5,-,1300,1400,5000,-8000,-10000,Super
+high_blade_kick_od,specials,High Blade Kick (OD),上段足刀蹴り (OD),236(kk),,High,17,5,33,-18,-,800,1200,-,-4000,-5000,Super
+hashogeki_light,specials,Hashogeki (Light),波掌撃（弱),214lp,,High,12,6,18,-3,2,700,800,2000,-4000,-5000,Super
+hashogeki_medium,specials,Hashogeki (Medium),波掌撃（中),214mp,,High,19,6,17,-6,2,800,800,2000,-6000,-5000,Super
+hashogeki_heavy,specials,Hashogeki (Heavy),波掌撃（強),214hp,,High,18,6,19,4,-,600,1100,-,-6000,-5000,Super
+hashogeki_od,specials,Hashogeki (OD),波掌撃 (OD),214(pp),,High,18,5,20,3,3,900,900,-,-6000,-5000,Super
+denjin_charge_hashogeki,specials,[Denjin Charge] Hashogeki,[電刃錬気]波掌撃,214*p,,High,20,5,19,3,-,800,1100,2000,-6000,-5000,Super
+denjin_charge_hashogeki_od,specials,[Denjin Charge] Hashogeki (OD),[電刃錬気]波掌撃 (OD),214(pp),,High,18,6,19,4,-,800,1100,-,-6000,-5000,Super
+shinku_hadoken,supers,Shinku Hadoken,真空波動拳,236236*p,,High,7,-,-,-24,-,2000,-,-,2500,5000,-
+denjin_charge_shinku_hadoken,supers,[Denjin Charge] Shinku Hadoken,[電刃錬気]真空波動拳,236236*p,,High,7,-,-,-24,-,2400,-,-,2500,5000,-
+shin_hashogeki_level_1,supers,Shin Hashogeki (Level 1),真波掌撃 （Lv1）,214214*p,,High,12,6,39,-20,-,2800,-,-,4000,-10000,-
+shin_hashogeki_level_2,supers,Shin Hashogeki (Level 2),真波掌撃 （Lv2）,214214*p,,High,20,6,39,-20,-,2900,-,-,6000,-10000,-
+shin_hashogeki_level_3,supers,Shin Hashogeki (Level 3),真波掌撃（Lv3）,214214*p,,High,70,6,39,-20,-,3200,-,-,10000,-10000,-
+denjin_charge_shin_hashogeki_level_1,supers,[Denjin Charge] Shin Hashogeki (Level 1),[電刃錬気]真波掌撃 （Lv1）,214214*p,,High,12,6,39,-20,-,3000,-,-,4000,-10000,-
+denjin_charge_shin_hashogeki_level_2,supers,[Denjin Charge] Shin Hashogeki (Level 2),[電刃錬気]真波掌撃 （Lv2）,214214*p,,High,20,6,39,-20,-,3300,-,-,6000,-10000,-
+denjin_charge_shin_hashogeki_level_3,supers,[Denjin Charge] Hashogeki (Level 3),[電刃錬気]真波掌撃（Lv3）,214214*p,,High,70,6,39,-20,-,3400,-,-,10000,-10000,-
+shin_shoryuken,supers,Shin Shoryuken,真昇竜拳,236236*k,,High,5,"2, 2, 2, 2, 2, 2",71,-52,-,4000,-,-,-7500,-15000,-
+shin_shoryuken_ca,supers,Shin Shoryuken (Critical Art),真昇竜拳 (CA),236236*k,,High,5,"2, 2, 2, 2, 2, 2",71,-52,-,4500,-,-,-10000,-20000,-
+shoulder_throw,normals,Shoulder Throw,背負い投げ,(lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-
+somersault_throw,normals,Somersault Throw,巴投げ,(4lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-
+denjin_charge,specials,Denjin Charge,電刃錬気,22*p,,-,-,-,-,-,-,-,-,-,-,-,-

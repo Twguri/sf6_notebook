@@ -1,0 +1,75 @@
+#SF6APP_META
+#characterId=guile
+#displayNameCN=
+#displayNameEN=Guile
+#(You can edit CSV freely. Lines starting with # are ignored on import.)
+id,category,nameEN,nameCN,input,inputDisplay,hitType,startup,active,recovery,onBlock,onHit,damage,superArt,driveOnHit,driveOnBlock,driveOnPunishCounter,cancel
+st_lp,normals,Standing Light Punch,站轻拳,5lp,,High,5,3,7,-2,4,300,300,250,-500,-2000,"Special, Drive, Super"
+st_mp,normals,Standing Medium Punch,站中拳,5mp,,High,7,3,15,0,6,600,500,1500,-3000,-4000,"Special, Drive, Super"
+st_hp,normals,Standing Heavy Punch,站重拳,5hp,,High,7,3,23,-6,-1,900,1000,2000,-5000,-8000,"Special, Drive, Super"
+st_lk,normals,Standing Light Kick,站轻脚,5lk,,Low,5,2,12,-1,3,300,300,250,-500,-2000,"Special, Drive, Super"
+st_mk,normals,Standing Medium Kick,站中脚,5mk,,Low,7,5,18,-4,1,700,700,2000,-4000,-6000,-
+st_hk,normals,Standing Heavy Kick,站重脚,5hk,,Low,13,3,21,-4,3,800,1000,3000,-6000,-10000,Super
+cr_lp,normals,Crouching Light Punch,下轻拳,2lp,,High,4,3,8,-2,5,300,300,250,-500,-2000,"Special, Drive, Super"
+cr_mp,normals,Crouching Medium Punch,下中拳,2mp,,High,6,3,13,-2,4,600,500,1500,-3000,-4000,"Special, Drive, Super"
+cr_hp,normals,Crouching Heavy Punch,下重拳,2hp,,High,9,5,20,-9,0,900,1000,3000,-6000,-10000,-
+cr_lk,normals,Crouching Light Kick,下轻脚,2lk,,Low,5,2,13,-5,1,200,300,250,-500,-2000,-
+cr_mk,normals,Crouching Medium Kick,下中脚,2mk,,Low,8,3,18,-5,4,500,600,2000,-4000,-6000,-
+cr_hk,normals,Crouching Heavy Kick,下重脚,2hk,,Low,9,"2, 3",21,-12,-,900,1000,3000,-2000,-10000,-
+j_lp,normals,Jumping Light Punch,跳轻拳,j>lp,,Overhead,4,10,-,-,-,300,300,500,-1500,-2000,-
+j_mp,normals,Jumping Medium Punch,跳中拳,j>mp,,Overhead,7,3,-,-,-,700,500,1000,-2500,-4000,-
+j_hp,normals,Jumping Heavy Punch,跳重拳,j>hp,,Overhead,9,4,-,-,-,800,1000,2000,-4000,-5000,-
+j_lk,normals,Jumping Light Kick,跳轻脚,j>lk,,Overhead,6,10,-,-,-,300,300,500,-1500,-2000,-
+j_mk,normals,Jumping Medium Kick,跳中脚,j>mk,,Overhead,7,7,-,-,-,600,500,1000,-2500,-4000,-
+j_hk,normals,Jumping Heavy Kick,跳重脚,j>hk,,Overhead,10,5,-,-,-,800,1000,2000,-4000,-5000,-
+f_mp,normals,Full Bullet Magnum,フルブレットマグナム,6mp,,High,20,3,19,-3,2,800,500,1000,-2500,-4000,-
+b_hp,normals,Burning Straight,バーンストレート,4hp,,High,9,3,21,-4,1,800,1000,2000,-5000,-8000,"Special, Drive, Super"
+f_hp,normals,Spinning Back Knuckle,スピニングバックナックル,6hp,,High,16,3,20,3,5,800,500,3000,-6000,-12000,-
+b_lk,normals,Knee Bazooka,ニーバズーカ,4lk,,Low,8,4,15,-4,0,500,1000,2000,-2500,-3000,-
+b_mk,normals,Rolling Sobat (Backward),ローリングソバット (後ろ),4mk,,Low,11,3,18,-6,3,700,700,1500,-3000,-6000,-
+f_mk,normals,Rolling Sobat (Forward),ローリングソバット (前方),6mk,,Low,11,3,18,-6,3,700,700,1500,-3000,-6000,-
+f_hk,normals,Reverse Spin Kick,リバーススピンキック,6hk,,High,17,3,26,-8,-1,1000,1000,3000,-6000,-10000,-
+n3_hk,normals,Guile High Kick,ガイルハイキック,3hk,,High,10,3,23,-9,0,1000,1000,3000,-6000,-10000,"Special, Drive, Super"
+recoil_cannon,targetCombos,Recoil Cannon,リコイルキャノン,5mp>4hp,,High,16,3,26,-9,-,600,800,1000,-3000,-7000,"Special, Drive, Super"
+double_shot,targetCombos,Double Shot,ダブルバレット,2mp>2mp,,High,12,3,16,-6,-,400,250,500,-1500,-4000,"Special, Drive, Super"
+drake_fang,targetCombos,Drake Fang,ドレイクファング,2mk>6mp,,High,20,3,21,-5,1,800,500,1000,-2500,-4000,-
+phantom_cutter,targetCombos,Phantom Cutter,ファントムカッター,2hk>3hk,,High,10,3,25,-12,-,600,500,1000,-7000,-7000,"Special, Drive, Super"
+dragon_suplex,normals,Dragon Suplex,ドラゴンスープレックス,(lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-
+judo_throw,normals,Judo Throw,ジュードースルー,(4lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-
+flying_mare,normals,Flying Mare,フライングメイヤー,j>(lplk),,Throw,5,3,-,-,-,1200,2000,2000,-,-10000,-
+flying_buster_drop,normals,Flying Buster Drop,フレイングバスタードロップ,j>(4lplk),,Throw,5,3,-,-,-,1200,2000,2000,-,-10000,-
+sonic_boom_light,specials,Sonic Boom (Light),ソニックブーム (弱),[4]>6lp,,High,10,-,-,-3,3,550,300,500,-2500,-3000,Super
+perfect_timing_sonic_boom_light,specials,[Perfect timing] Sonic Boom (Light),【ジャスト】ソニックブーム (弱),[4]>6lp,,High,10,-,-,-3,4,600,300,500,-2500,-3000,Super
+sonic_boom_medium,specials,Sonic Boom (Medium),ソニックブーム (中),[4]>6mp,,High,10,-,-,-3,3,550,450,500,-4000,-3000,Super
+perfect_timing_sonic_boom_medium,specials,[Perfect timing] Sonic Boom (Medium),【ジャスト】ソニックブーム (中),[4]>6mp,,High,10,-,-,-3,4,600,450,500,-4000,-3000,Super
+sonic_boom_heavy,specials,Sonic Boom (Heavy),ソニックブーム (強),[4]>6hp,,High,10,-,-,-3,3,550,300,500,-3000,-3000,Super
+perfect_timing_sonic_boom_heavy,specials,[Perfect timing] Sonic Boom (Heavy),【ジャスト】ソニックブーム (強),[4]>6hp,,High,10,-,-,-3,4,600,300,500,-3000,-3000,Super
+sonic_boom_od,specials,Sonic Boom (OD),ソニックブーム (OD),[4]>6(pp),,High,10,-,-,3,-,1000,600,-,-2000,-5000,Super
+somersault_kick_light,specials,Somersault Kick (Light),サマーソルトキック (弱),[2]>8lk,,High,5,6,26,-30,-,1000,1000,2000,-4000,-5000,Super
+perfect_timing_somersault_kick_light,specials,[Perfect timing] Somersault Kick (Light),【ジャスト】サマーソルトキック (弱),[2]>8lk,,High,5,6,26,-30,-,1200,1000,2000,-4000,-5000,Super
+somersault_kick_medium,specials,Somersault Kick (Medium),サマーソルトキック (中),[2]>8mk,,High,6,6,27,-31,-,1100,1000,2000,-4000,-5000,Super
+perfect_timing_somersault_kick_medium,specials,[Perfect timing] Somersault Kick (Medium),【ジャスト】サマーソルトキック (中),[2]>8mk,,High,6,6,27,-31,-,1300,1000,2000,-4000,-5000,Super
+somersault_kick_heavy,specials,Somersault Kick (Heavy),サマーソルトキック (強),[2]>8hk,,High,7,6,28,-32,-,1200,1000,2000,-4000,-5000,Super
+perfect_timing_somersault_kick_heavy,specials,[Perfect timing] Somersault Kick (Heavy),【ジャスト】サマーソルトキック (強),[2]>8hk,,High,7,6,28,-32,-,1400,1000,2000,-4000,-5000,Super
+somersault_kick_od,specials,Somersault Kick (OD),サマーソルトキック (OD),[2]>8(kk),,High,6,6,26,-33,-,1600,1000,-,-2000,-,-
+sonic_blade_light,specials,Sonic Blade (Light),ソニックブレイド (弱),214lp,,High,16,45,-,-4,-3,400,600,1000,-2500,-3000,Super
+sonic_blade_medium,specials,Sonic Blade (Medium),ソニックブレイド (中),214mp,,High,21,85,-,-7,-6,400,600,1000,-2500,-3000,Super
+sonic_blade_heavy,specials,Sonic Blade (Heavy),ソニックブレイド (強),214hp,,High,31,100,-,-1,1,500,600,2000,-2000,-3000,Super
+sonic_blade_od,specials,Sonic Blade (OD),ソニックブレイド (OD),214pp,,High,15,100,-,-4,-,600,600,-,-2000,-3000,Super
+f_lp,specials,Sonic Cross (Light),ソニッククロス (弱),6lp,,High,10,-,-,-1,-,1000,600,1000,-3500,-3000,-
+f_lp,specials,[Perfect timing] Sonic Cross (Light),【ジャスト】ソニッククロス (弱),6lp,,High,10,-,-,-1,-,1200,600,1000,-3500,-3000,-
+f_mp,specials,Sonic Cross (Medium),ソニッククロス (中),6mp,,High,10,-,-,-1,-,1000,600,1000,-5000,-3000,-
+f_mp,specials,[Perfect timing] Sonic Cross (Medium),【ジャスト】ソニッククロス (中),6mp,,High,10,-,-,-1,-,1200,600,1000,-5000,-3000,-
+f_hp,specials,Sonic Cross (Heavy),ソニッククロス (強),6hp,,High,10,-,-,-1,-,1000,600,1000,-4000,-3000,-
+f_hp,specials,[Perfect timing] Sonic Cross (Heavy),【ジャスト】ソニッククロス (強),6hp,,High,10,-,-,-1,-,1200,600,1000,-4000,-3000,-
+sonic_cross_od_1,specials,Sonic Cross (OD 1),ソニッククロス (OD 1),pp,,High,10,-,-,6,-,1300,600,-,-6000,-5000,-
+sonic_cross_od_1_sonic_blade,specials,Sonic Cross (OD 1 — Sonic Blade OD),ソニッククロス (OD 1・ソニックブレードOD),*p,214pp>*p,High,10,-,-,6,-,1300,600,-,-6000,-5000,-
+sonic_cross_od_2,specials,Sonic Cross (OD 2),ソニッククロス (OD 2),pp,214pp>pp,High,10,-,-,6,-,1700,800,-,-8500,-6000,-
+sonic_hurricane_up,supers,Sonic Hurricane (Up),ソニックハリケーン (上),[4]>646hp,,High,7,52,-,-2,-,1800,-,-,-2520,-5000,-
+sonic_hurricane_side,supers,Sonic Hurricane (Side),ソニックハリケーン (横),[4]>646+{lp|mp},,High,8,51,-,-26,-,2000,-,-,-2520,-5000,-
+solid_puncher,supers,Solid Puncher,ソリッドパンチャー,214214*p,,-,-,-,-,-,-,-,-,-,-,-,-
+sonic_break_single_shot,specials,Sonic Break (Single Shot),ソニックブレイク（単発）,pp,214214*p>pp,High,11,-,-,-2,2,600,-,1000,-2000,-3000,-
+sonic_break_variation,specials,Sonic Break (Variation),ソニックブレイク（派生）,*p,214214*p>*p,High,11,-,-,-2,2,600,-,1000,-2000,-3000,-
+sonic_break_od,specials,Sonic Break (OD),ソニックブレイク (OD),*p,214214*p>*p,High,11,-,-,3,-,1000,-,-,-5000,-5000,-
+crossfire_somersault,supers,Crossfire Somersault,クロスファイアサマーソルト,[4]>646*k,,High,9,6,30,-59,-,4000,-,-,-7500,-15000,-
+crossfire_somersault_ca,supers,Crossfire Somersault (Critical Art),クロスファイアサマーソルト (CA),[4]>646*k,,High,9,6,30,-59,-,4500,-,-,-10000,-20000,-

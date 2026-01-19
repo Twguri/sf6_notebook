@@ -1,0 +1,85 @@
+#SF6APP_META
+#characterId=blanka
+#displayNameCN=
+#displayNameEN=Blanka
+#(You can edit CSV freely. Lines starting with # are ignored on import.)
+id,category,nameEN,nameCN,input,inputDisplay,hitType,startup,active,recovery,onBlock,onHit,damage,superArt,driveOnHit,driveOnBlock,driveOnPunishCounter,cancel
+st_lp,normals,Standing Light Punch,站轻拳,5lp,,High,5,3,10,-3,3,300,300,250,-500,-2000,"Special, Drive, Super"
+st_mp,normals,Standing Medium Punch,站中拳,5mp,,High,10,3,15,-4,3,700,500,2000,-4000,-6000,Super
+st_hp,normals,Standing Heavy Punch,站重拳,5hp,,High,10,7,22,-3,3,800,1000,2000,-5000,-8000,"Special, Drive, Super"
+st_lk,normals,Standing Light Kick,站轻脚,5lk,,Low,4,4,7,-2,5,300,300,250,-500,-2000,"Special, Drive, Super"
+st_mk,normals,Standing Medium Kick,站中脚,5mk,,High,8,3,17,-2,4,600,700,2000,-3000,-6000,"Special, Drive, Super"
+st_hk,normals,Standing Heavy Kick,站重脚,5hk,,High,7,9,18,-4,6,800,1000,3000,-4000,-10000,-
+cr_lp,normals,Crouching Light Punch,下轻拳,2lp,,High,6,3,8,-2,4,300,300,250,-500,-2000,"Special, Drive, Super"
+cr_mp,normals,Crouching Medium Punch,下中拳,2mp,,High,9,5,16,-5,-1,600,500,1500,-3000,-4000,"Special, Drive, Super"
+cr_hp,normals,Crouching Heavy Punch,下重拳,2hp,,High,15,5,20,-5,0,800,1000,3000,-6000,-10000,-
+cr_lk,normals,Crouching Light Kick,下轻脚,2lk,,Low,5,2,10,-3,3,200,300,250,-500,-2000,-
+cr_mk,normals,Crouching Medium Kick,下中脚,2mk,,Low,8,3,16,-5,5,500,600,1000,-2000,-4000,"Special, Drive, Super"
+cr_hk,normals,Crouching Heavy Kick,下重脚,2hk,,Low,11,4,23,-12,-,900,1000,2000,-5000,-10000,-
+j_lp,normals,Jumping Light Punch,跳轻拳,j>lp,,Overhead,4,5,-,-,-,300,300,500,-1500,-2000,-
+j_mp,normals,Jumping Medium Punch,跳中拳,j>mp,,Overhead,7,7,-,-,-,700,500,1000,-2500,-4000,"Special, Drive, Super"
+blanka_jump_heavy_punch,normals,Jumping Heavy Punch,ジャンプ強P,{7|9}>hp,,Overhead,9,1,-,-,-,800,1000,2000,-4000,-5000,-
+n8_hp,normals,Neutral Jumping Heavy Punch,垂直ジャンプ強P,8>hp,,Overhead,7,3,-,-,-,800,1000,2000,-4000,-5000,-
+j_lk,normals,Jumping Light Kick,跳轻脚,j>lk,,Overhead,5,6,-,-,-,300,300,500,-1500,-2000,-
+j_mk,normals,Jumping Medium Kick,跳中脚,j>mk,,Overhead,7,6,-,-,-,500,500,1000,-2500,-4000,-
+j_hk,normals,Jumping Heavy Kick,跳重脚,j>hk,,Overhead,11,6,-,-,-,800,1000,2000,-4000,-5000,-
+electric_thunder,specials,Electric Thunder,エレクトリックサンダー,214*p,,High,10,"2, 2, 2",17,-3,-,800,1000,2000,-2000,-5000,Super
+lightning_beast_electric_thunder,specials,[Lightning Beast] Electric Thunder,【ライトニングビースト】 エレクトリックサンダー,214*p,,High,10,"2, 2, 2",17,-3,-,900,-,2000,-2000,-5000,Super
+electric_thunder_od,specials,Electric Thunder (OD),エレクトリックサンダー（OD）,214(pp),,High,10,"2, 2, 2",17,4,-,1000,1000,-,-4000,-5000,Super
+lightning_beast_electric_thunder_od,specials,[Lightning Beast] Electric Thunder (OD),【ライトニングビースト】 エレクトリックサンダー（OD）,214(pp),,High,10,"2, 2, 2",17,4,-,1100,-,-,-4000,-5000,Super
+rolling_attack_light,specials,Rolling Attack (Light),ローリングアタック(弱),[4]>6lp,,High,10,11,11,-23,-,1000,1000,2000,-7500,-5000,Super
+lightning_beast_rolling_attack_light,specials,[Lightning Beast] Rolling Attack (Light),【ライトニングビースト】 ローリングアタック(弱),[4]>6lp,,High,10,11,11,-21,-,1100,-,2000,-7500,-5000,Super
+rolling_attack_medium,specials,Rolling Attack (Medium),ローリングアタック(中),[4]>6mp,,High,12,19,11,-23,-,1200,1000,2000,-7500,-5000,Super
+lightning_beast_rolling_attack_medium,specials,[Lightning Beast] Rolling Attack (Medium),【ライトニングビースト】 ローリングアタック(中),[4]>6mp,,High,12,19,11,-21,-,1300,-,2000,-7500,-5000,Super
+rolling_attack_heavy,specials,Rolling Attack (Heavy),ローリングアタック（強）,[4]>6hp,,High,22,20,26,-15,-,1300,1000,2000,-10000,-5000,Super
+lightning_beast_rolling_attack_heavy,specials,[Lightning Beast] Rolling Attack (Heavy),【ライトニングビースト】 ローリングアタック(強),[4]>6hp,,High,22,20,26,-21,-,1400,-,2000,-10000,-5000,Super
+rolling_attack_od,specials,Rolling Attack (OD),ローリングアタック（OD）,[4]>6(pp),,High,18,22,17,-7,-,800,1000,-,-10000,-5000,Super
+lightning_beast_rolling_attack_od,specials,[Lightning Beast] Rolling Attack (OD),【ライトニングビースト】 ローリングアタック（OD）,[4]>6(pp),,High,18,22,17,-7,-,900,-,-,-10000,-5000,-
+vertical_rolling_attack_light,specials,Vertical Rolling Attack (Light),バーチカルローリング（弱）,[2]>8lk,,High,8,20,31,-27,-,1200,1000,2000,-4000,-5000,-
+lightning_beast_vertical_rolling_attack_light,specials,[Lightning Beast] Vertical Rolling Attack (Light),【ライトニングビースト】 バーチカルローリング（弱）,[2]>8lk,,High,8,20,31,-27,-,1300,-,2000,-4000,-5000,-
+vertical_rolling_attack_medium,specials,Vertical Rolling Attack (Medium),バーチカルローリング（中）,[2]>8mk,,High,8,20,31,-27,-,1300,1000,2000,-4000,-5000,-
+lightning_beast_vertical_rolling_attack_medium,specials,[Lightning Beast] Vertical Rolling Attack (Medium),【ライトニングビースト】 バーチカルローリング（中）,[2]>8mk,,High,8,20,31,-27,-,1400,-,2000,-4000,-5000,-
+vertical_rolling_attack_heavy,specials,Vertical Rolling Attack (Heavy),バーチカルローリング（強）,[2]>8hk,,High,8,20,31,-27,-,1400,1000,2000,-4000,-5000,-
+lightning_beast_vertical_rolling_attack_heavy,specials,[Lightning Beast] Vertical Rolling Attack (Heavy),【ライトニングビースト】 バーチカルローリング（強）,[2]>8hk,,High,8,20,31,-27,-,1500,-,2000,-4000,-5000,-
+vertical_rolling_attack_od,specials,Vertical Rolling Attack (OD),バーチカルローリング（OD）,[2]>8(kk),,High,7,"8, 6",31,-40,-,1600,1000,-,-4000,-,-
+lightning_beast_vertical_rolling_attack_od,specials,[Lightning Beast] Vertical Rolling Attack (OD),【ライトニングビースト】 バーチカルローリング（OD）,[2]>8(kk),,High,7,"8, 6",31,-40,-,1750,1000,-,-4000,-,-
+backstep_rolling_attack_light,specials,Backstep Rolling Attack (Light),バックステップローリング（弱）,63214lk,,High,41,1,-,3,9,1000,1000,2000,-8000,-5000,-
+lightning_beast_backstep_rolling_attack_light,specials,[Lightning Beast] Backstep Rolling Attack (Light),【ライトニングビースト】 バックステップローリング（弱）,63214lk,,High,41,1,-,3,9,1100,-,2000,-8000,-5000,-
+backstep_rolling_attack_medium,specials,Backstep Rolling Attack (Medium),バックステップローリング（中）,63214mk,,High,41,1,-,2,8,1000,1000,2000,-8000,-5000,-
+lightning_beast_backstep_rolling_attack_medium,specials,[Lightning Beast] Backstep Rolling Attack (Medium),【ライトニングビースト】 バックステップローリング（中）,63214mk,,High,41,1,-,2,8,1100,-,2000,-8000,-5000,-
+backstep_rolling_attack_heavy,specials,Backstep Rolling Attack (Heavy),バックステップローリング（強）,63214hk,,High,41,1,-,4,8,1000,1000,2000,-8000,-5000,-
+lightning_beast_backstep_rolling_attack_heavy,specials,[Lightning Beast] Backstep Rolling Attack (Heavy),【ライトニングビースト】 バックステップローリング（強）,63214hk,,High,41,1,-,4,8,1100,-,2000,-8000,-5000,-
+backstep_rolling_attack_od,specials,Backstep Rolling Attack (OD),バックステップローリング（OD）,63214(kk),,High,8,"5, 21, 4",-,6,10,1000,1000,-,-10000,-5000,Super
+lightning_beast_backstep_rolling_attack_od,specials,[Lightning Beast] Backstep Rolling Attack (OD),【ライトニングビースト】 バックステップローリング（OD）,63214(kk),,High,8,"5, 21, 4",-,6,10,1200,-,-,-10000,-5000,Super
+aerial_rolling_attack_light,specials,Aerial Rolling Attack (Light),エリアルローリング（弱）,j>[4]>6lp,,High,13,1,-,-,-,1000,1000,2000,-4000,-5000,-
+lightning_beast_aerial_rolling_attack_light,specials,[Lightning Beast] Aerial Rolling Attack (Light),【ライトニングビースト】 エリアルローリング（弱）,j>[4]>6lp,,High,13,1,-,-,-,1100,-,2000,-4000,-5000,-
+aerial_rolling_attack_medium,specials,Aerial Rolling Attack (Medium),エリアルローリング（中）,j>[4]>6mp,,High,13,1,-,-,-,1000,1000,2000,-4000,-5000,-
+lightning_beast_aerial_rolling_attack_medium,specials,[Lightning Beast] Aerial Rolling Attack (Medium),【ライトニングビースト】 エリアルローリング（中）,j>[4]>6mp,,High,13,1,-,-,-,1100,-,2000,-4000,-5000,-
+aerial_rolling_attack_heavy,specials,Aerial Rolling Attack (Heavy),エリアルローリング（強）,j>[4]>6hp,,High,13,1,-,-,-,1000,1000,2000,-4000,-5000,-
+lightning_beast_aerial_rolling_attack_heavy,specials,[Lightning Beast] Aerial Rolling Attack (Heavy),【ライトニングビースト】 エリアルローリング（強）,j>[4]>6hp,,High,13,1,-,-,-,1100,-,2000,-4000,-5000,-
+aerial_rolling_attack_od,specials,Aerial Rolling Attack (OD),エリアルローリング（OD）,j>[4]>6(pp),,High,13,1,-,-,-,1200,1300,-,-4000,-5000,-
+lightning_beast_aerial_rolling_attack_od,specials,[Lightning Beast] Aerial Rolling Attack (OD),【ライトニングビースト】 エリアルローリング（OD）,j>[4]>6(pp),,High,13,1,-,-,-,1400,-,-,-4000,-5000,-
+wild_hunt_light,specials,Wild Hunt (Light),ワイルドハント（弱）,236lk,,Throw,34,3,57,-,-,1600,3000,5000,-,-10000,-
+wild_hunt_medium,specials,Wild Hunt (Medium),ワイルドハント（中）,236mk,,Throw,39,3,57,-,-,1700,3000,5000,-,-10000,-
+wild_hunt_heavy,specials,Wild Hunt (Heavy),ワイルドハント（強）,236hk,,Throw,43,3,57,-,-,1800,3000,5000,-,-10000,-
+wild_hunt_od,specials,Wild Hunt (OD),ワイルドハント（OD）,236(pp),,Throw,32,3,57,-,-,2000,3000,-,-,-10000,-
+blanka_chan_bomb,specials,Blanka-chan Bomb,ブランカちゃん爆弾,22*p,,-,-,-,-,-,-,-,-,0,0,0,-
+shout_of_earth,supers,Shout of Earth,シャウトオブアース,236236*p,,High,8,9,-,-29,-,2000,-,-,-2500,-5000,-
+lightning_beast_shout_of_earth,supers,[Lightning Beast] Shout of Earth,【ライトニングビースト】シャウトオブアース,236236*p,,High,8,9,-,-29,-,2200,-,-,-2500,-5000,-
+lightning_beast,supers,Lightning Beast,ライトニングビースト,214214*p,,-,-,-,-,-,-,-,-,-,-,-,-
+ground_shave_cannonball,supers,Ground Shave Cannonball,グランドシェイブキャノンボール,236236*k,,High,10,3,61,-46,-,4000,-,-,-7500,-15000,-
+ground_shave_cannonball_ca,supers,Ground Shave Cannonball (Critical Art),グランドシェイブキャノンボール（CA）,236236*k,,High,10,3,61,-46,-,4500,-,-,-10000,-20000,-
+rolling_cannon,specials,Rolling Cannon,ローリングキャノン,d+*p,,High,3,25,9,-,-,400,-,1000,-1000,-2000,-
+f_mp,normals,Rock Crusher,ロッククラッシュ,6mp,,High,20,3,20,-3,3,600,500,1500,-1250,-2500,-
+f_mk,normals,Double Knee Bombs,ダブルニーボンバー,6mk,,High,9,"3, 2",18,-2,6,600,500,2000,-2000,-3000,-
+b_mk,normals,Wild Edge,ワイルドエッジ,4mk,,High,9,6,12,2,8,600,500,1500,-3000,-4000,"Special, Drive, Super"
+f_hp,normals,Wild Nail,ワイルドネイル,6hp,,High,18,4,31,-15,-,1100,1000,3000,-6000,-10000,Other (coward-crouch)
+n3_hp,normals,Amazon River Run,アマゾンリバーラン,3hp,,High,14,10,22,-18,-,1000,1000,2000,-4000,-7000,-
+coward_crouch,normals,Coward Crouch,フィアーダウン,c(pp),,-,-,-,-,-,-,-,-,-,-,-,-
+wild_lift,specials,Wild Lift,ワイルドリフト,*p,c(pp)>*p,-,8,7,31,-21,-,600,500,1000,-3000,-4000,-
+raid_jump,specials,Raid Jump,レイドジャンプ,*k,c(pp)>*k,-,-,-,43,-,-,-,-,-,-,-,-
+surprise_forward_hop,normals,Surprise Forward Hop,サプライズフォワード,6(kkk),,-,-,-,-,-,-,-,-,-,-,-,-
+surprise_back_hop,normals,Surprise Back Hop,サプライズバック,4(kkk),,-,-,-,-,-,-,-,-,-,-,-,-
+wild_fang,normals,Wild Fang,ワイルドファング,(lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-
+jungle_flip,normals,Jungle Flip,ジャングルフリップ,(4lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-
+wild_bites,normals,Wild Bites,ワイルドバイツ,j>(lplk),,Throw,5,3,-,-,-,1200,2000,2000,-,-10000,-

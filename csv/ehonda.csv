@@ -1,0 +1,66 @@
+#SF6APP_META
+#characterId=ehonda
+#displayNameCN=
+#displayNameEN=Ehonda
+#(You can edit CSV freely. Lines starting with # are ignored on import.)
+id,category,nameEN,nameCN,input,inputDisplay,hitType,startup,active,recovery,onBlock,onHit,damage,superArt,driveOnHit,driveOnBlock,driveOnPunishCounter,cancel
+st_lp,normals,Standing Light Punch,站轻拳,5lp,,High,5,3,10,-1,4,300,300,250,-500,-2000,"Special, Drive, Super"
+st_mp,normals,Standing Medium Punch,站中拳,5mp,,High,10,4,13,1,6,700,500,2000,-4000,-6000,"Special, Drive, Super"
+st_hp,normals,Standing Heavy Punch,站重拳,5hp,,High,8,7,20,-6,-1,900,1000,2000,-5000,-8000,"Special, Drive, Super"
+st_lk,normals,Standing Light Kick,站轻脚,5lk,,Low,4,2,9,-1,5,300,300,250,-500,-2000,"Special, Drive, Super"
+st_mk,normals,Standing Medium Kick,站中脚,5mk,,Low,10,4,16,-3,4,700,700,1000,-2500,-4000,Other
+st_hk,normals,Standing Heavy Kick,站重脚,5hk,,Low,8,"2, 4",22,-5,-1,800,800,3000,-4000,-10000,"Special, Drive, Super"
+cr_lp,normals,Crouching Light Punch,下轻拳,2lp,,High,4,3,10,-1,4,300,300,250,-500,-2000,"Special, Drive, Super"
+cr_mp,normals,Crouching Medium Punch,下中拳,2mp,,High,8,4,16,-3,3,600,500,1500,-3000,-4000,"Special, Drive, Super"
+cr_hp,normals,Crouching Heavy Punch,下重拳,2hp,,High,11,4,17,-3,3,800,1000,3000,-6000,-10000,Other
+cr_lk,normals,Crouching Light Kick,下轻脚,2lk,,Low,5,2,9,-3,3,200,300,250,-500,-2000,Other
+cr_mk,normals,Crouching Medium Kick,下中脚,2mk,,Low,9,3,17,-2,6,500,600,2000,-4000,-6000,Other
+cr_hk,normals,Crouching Heavy Kick,下重脚,2hk,,Low,11,"3, 5",14,-10,-,900,1000,3000,-4000,-10000,-
+j_lp,normals,Jumping Light Punch,跳轻拳,j>lp,,Overhead,5,6,-,-,-,300,300,500,-1500,-2000,-
+j_mp,normals,Jumping Medium Punch,跳中拳,j>mp,,Overhead,6,8,-,-,-,700,500,1000,-2500,-4000,-
+ehonda_jump_heavy_punch,normals,Jumping Heavy Punch,ジャンプ強P,{7|9}>hp,,Overhead,9,4,-,-,-,800,1000,2000,-4000,-5000,-
+n8_hp,normals,Neutral Jumping Heavy Punch,垂直ジャンプ強P,8>hp,,Overhead,10,8,-,-,-,800,1000,2000,-4000,-5000,-
+j_lk,normals,Jumping Light Kick,跳轻脚,j>lk,,Overhead,6,6,-,-,-,300,300,500,-1500,-2000,-
+j_mk,normals,Jumping Medium Kick,跳中脚,j>mk,,Overhead,9,6,-,-,-,700,500,1000,-2500,-4000,-
+j_hk,normals,Jumping Heavy Kick,跳重脚,j>hk,,Overhead,10,8,-,-,-,800,1000,2000,-4000,-5000,-
+hundred_hand_slap_light,specials,Hundred Hand Slap (Light),百裂張り手 (弱),214lp,,High,12,"2, 2, 1, 1, 2, 1, 2",14,-4,2,800,1000,2000,-3000,-5000,Super
+sumo_spirit_hundred_hand_slap_light,specials,Sumo Spirit Hundred Hand Slap (Light),[肩屋入り]百裂張り手 (弱),214lp,,High,12,"2, 2, 1, 1, 2, 1, 2",14,-4,4,850,1000,2000,-3000,-5000,Super
+hundred_hand_slap_medium,specials,Hundred Hand Slap (Medium),百裂張り手 (中),214mp,,High,18,"2, 2, 1, 1, 1, 1, 2, 1, 2",17,-8,2,1000,1000,2000,-4000,-5000,Super
+sumo_spirit_hundred_hand_slap_medium,specials,Sumo Spirit Hundred Hand Slap (Medium),[肩屋入り]百裂張り手 (中),214mp,,High,18,"2, 2, 1, 1, 1, 1, 2, 1, 2",17,-8,4,1050,1000,2000,-4000,-5000,Super
+hundred_hand_slap_heavy,specials,Hundred Hand Slap (Heavy),百裂張り手 (強),214hp,,High,21,"2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2",17,-8,2,1200,1000,2000,-5000,-5000,Super
+sumo_spirit_hundred_hand_slap_heavy,specials,Sumo Spirit Hundred Hand Slap (Heavy),[肩屋入り]百裂張り手 (強),214hp,,High,21,"2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2",17,-8,4,1250,1000,2000,-5000,-5000,Super
+hundred_hand_slap_od,specials,Hundred Hand Slap (OD),百裂張り手 (OD),214(pp),,High,19,"4, 2, 2, 2, 2, 2, 2, 2, 2",12,-3,4,800,1000,-,-5000,-5000,Super
+sumo_spirit_hundred_hand_slap_od,specials,Sumo Spirit Hundred Hand Slap (OD),[肩屋入り]百裂張り手 (OD),214(pp),,High,19,"4, 2, 2, 2, 2, 2, 2, 2, 2",12,-3,6,850,1000,-,-5000,-5000,Super
+sumo_headbutt_light,specials,Sumo Headbutt (Light),スーパー頭突き (弱),[4]>6lp,,High,10,22,20,-3,-,1400,1000,2000,-7500,-12500,Super
+sumo_headbutt_medium,specials,Sumo Headbutt (Medium),スーパー頭突き (中),[4]>6mp,,High,10,24,20,-3,-,1400,1000,2000,-7500,-12500,Super
+sumo_headbutt_heavy,specials,Sumo Headbutt (Heavy),スーパー頭突き (強),[4]>6hp,,High,14,23,20,-3,-,1500,1000,2000,-10000,-12500,Super
+sumo_headbutt_od,specials,Sumo Headbutt (OD),スーパー頭突き (OD),[4]>6(pp),,High,9,"5, 43",20,-20,-,1600,1000,-,-8000,-3000,-
+sumo_smash_light,specials,Sumo Smash (Light),スーパー百貫落とし (弱),[2]>8lk,,High,11,"4, 8",-,1,-,1400,1200,2000,-14000,-10000,-
+sumo_smash_medium,specials,Sumo Smash (Medium),スーパー百貫落とし (中),[2]>8mk,,High,11,"4, 7",-,1,-,1400,1200,2000,-14000,-10000,-
+sumo_smash_heavy,specials,Sumo Smash (Heavy),スーパー百貫落とし (強),[2]>8hk,,High,11,"4, 6",-,1,-,1400,1200,2000,-14000,-10000,-
+sumo_smash_od,specials,Sumo Smash (OD),スーパー百貫落とし (OD),[2]>8(kk),,High,6,"12, 9",-,2,-,1400,1200,-,-12000,-10000,-
+oicho_throw_light,specials,Oicho Throw (Light),大銀杏投げ (弱),63214lp,,Throw,7,3,52,-,-,2000,3000,2000,-,-10000,-
+oicho_throw_medium,specials,Oicho Throw (Medium),大銀杏投げ (中),63214mp,,Throw,7,3,52,-,-,2200,3000,2000,-,-10000,-
+oicho_throw_heavy,specials,Oicho Throw (Heavy),大銀杏投げ (強),63214hp,,Throw,7,3,52,-,-,2400,3000,2000,-,-10000,-
+oicho_throw_od,specials,Oicho Throw (OD),大銀杏投げ (OD),63214(pp),,Throw,7,3,52,-,-,2800,3000,-,-,-10000,-
+sumo_dash,specials,Sumo Dash,相撲ステップ,236*k,,-,-,-,-,-,-,-,-,-,-,-,-
+sumo_dash_od,specials,Sumo Dash (OD),相撲ステップ (OD),236(kk),,-,-,-,-,-,-,-,-,-,-,-,-
+teppo_triple_slap_1,specials,Teppo Triple Slap (1),鉄砲 (１段目),*p,236*k>*p,High,9,"3, 3",22,-3,-,800,1000,2000,-5000,-5000,Super
+teppo_triple_slap_2,specials,Teppo Triple Slap (2),鉄砲 (２段目),*p>*p,236*k>*p>*p,High,14,3,38,-24,-,600,1000,2000,-5000,-5000,-
+teppo_triple_slap_od_1,specials,Teppo Triple Slap (OD 1),鉄砲 (OD 1段目),*p,236(kk)>*p,High,9,"3, 3",17,2,3,800,1000,-,-5000,-5000,Super
+teppo_triple_slap_od_2,specials,Teppo Triple Slap (OD 2),鉄砲 (OD 2段目),*p>*p,236(kk)>*p>*p,High,14,3,38,-24,-,800,1000,-,-5000,-5000,-
+taiho_cannon_lift,specials,Taiho Cannon Lift,大砲,2*p,236*k>2*p,High,12,"2, 3",32,-22,-,800,1000,2000,-5000,-5000,Super
+taiho_cannon_lift_od,specials,Taiho Cannon Lift (OD),大砲 (OD),2*p,236(kk)>2*p,High,12,"2, 3",32,-22,-,1000,1000,-,-2500,-2500,Super
+neko_damashi,specials,Neko Damashi,猫だまし,22*p,,High,11,5,14,-3,3,600,1000,2000,-5000,-5000,Super
+sumo_spirit,normals,Sumo Spirit,肩屋入り,22*k,,-,-,-,-,-,-,-,-,-,-,-,-
+show_of_force,supers,Show of Force,発揮爆砕,236236*p,,High,7,5,48,-33,-,2000,-,-,-2500,-5000,-
+ultimate_killer_head_ram,supers,Ultimate Killer Head Ram,スーパー鬼無双,[4]>646*k,,High,12,"2, 21",45,-27,-,2850,-,-,-5000,-10000,-
+the_final_bout,supers,The Final Bout,千秋楽,214214*p,,High,9,"3, 3",51,-34,-,4000,-,-,-7500,-15000,-
+the_final_bout_ca,supers,The Final Bout (Critical Art),千秋楽 (CA),214214*p,,High,9,"3, 3",51,-34,-,4500,-,-,-10000,-20000,-
+f_hk,normals,Harai Kick,払い蹴り,6hk,,Low,14,3,21,-5,1,900,1000,3000,-6000,-10000,-
+n3_hk,normals,Power Stomp,力足,3hk,,Overhead,22,6,18,-3,3,800,1000,2000,-5000,-7000,Other
+flying_sumo_press,normals,Flying Sumo Press,フライングスモウプレス,9>2mk,,Overhead,11,9,-,-,-,500,500,1000,-2500,-4000,-
+double_slaps,targetCombos,Double Slaps,連ね張り手,5lp>5mp,,High,4,4,20,-10,-,600,500,1000,-3000,-4000,"Special, Drive, Super"
+toko_shizume,targetCombos,Toko Shizume,地鎮,5mp>3hk,,Overhead,22,6,18,-3,3,800,1000,2000,-5000,-7000,Other
+saba_ori,normals,Saba Ori,さば折り,(lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-
+tawara_throw,normals,Tawara Throw,俵投げ,(4lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-

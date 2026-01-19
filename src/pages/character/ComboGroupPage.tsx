@@ -5,6 +5,8 @@ import { FighterTextarea, FighterTextareaFixed } from "../../components/MemoEdit
 
 import type { ComboGroup, ComboItem } from "./combos/types";
 import { loadGroups, saveGroups } from "./combos/storage";
+import MovePickerModal from "./combos/MovePickerModal";
+import { useCharacterMoves } from "./combos/useCharacterMoves";
 
 type Props = {
   lang: "zh" | "en";
@@ -25,6 +27,21 @@ function sanitizeCommand(s: string) {
     ""
   );
 }
+function digitsToArrows(s: string) {
+  const map: Record<string, string> = {
+    "1": "↙",
+    "2": "↓",
+    "3": "↘",
+    "4": "←",
+    "5": "·",
+    "6": "→",
+    "7": "↖",
+    "8": "↑",
+    "9": "↗",
+  };
+  return s.replace(/[1-9]+/g, (m) => m.split("").map((d) => map[d] ?? d).join(" "));
+}
+
 
 const MENU_W = 160;
 const MENU_H = 96;
@@ -51,6 +68,10 @@ export default function ComboGroupPage({ lang, toggleLang }: Props) {
   const characterKey = id ?? "unknown";
   const gid = groupId ?? "";
   const nav = useNavigate();
+
+  // moves for picker
+  const { moves: characterMoves } = useCharacterMoves(characterKey);
+  const [pickOpen, setPickOpen] = useState(false);
 
   // storage
   const [groups, setGroups] = useState<ComboGroup[]>([]);
@@ -89,6 +110,7 @@ export default function ComboGroupPage({ lang, toggleLang }: Props) {
         lang === "zh"
           ? "提示：Ctrl+Alt+F 切换输入模式（Fighter/Normal），Fighter 模式数字自动变箭头"
           : "Tip: Ctrl+Alt+F toggles Fighter/Normal. In Fighter, digits become arrows.",
+      pick: lang === "zh" ? "选招式" : "Pick",
     };
   }, [lang]);
 
@@ -199,6 +221,22 @@ export default function ComboGroupPage({ lang, toggleLang }: Props) {
       marginTop: 6,
       fontWeight: 700,
     },
+    pickBtn: {
+      height: 30,
+      padding: "0 10px",
+      borderRadius: 10,
+      border: "1px solid rgba(255,255,255,0.10)",
+      background: "rgba(255,255,255,0.06)",
+      color: "#fff",
+      fontWeight: 900,
+      cursor: "pointer",
+      fontSize: 12,
+    } as React.CSSProperties,
+    labelRow: {
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "space-between",
+    } as React.CSSProperties,
   };
 
   // menu
@@ -401,6 +439,28 @@ export default function ComboGroupPage({ lang, toggleLang }: Props) {
     return () => window.clearTimeout(timer);
   }, [pendingNameFocusId, expandedId]);
 
+  // ✅ 统一处理：从 Modal 选择招式后，把指令追加到“当前正在编辑的 command”
+  function appendPickedInput(insRaw: string) {
+    const ins = (insRaw ?? "").trim();
+    if (!ins) return;
+
+    // 优先：新增连段正在编辑
+    if (isAdding) {
+      setDraft((d) => {
+        const sep = d.command.trim().length ? " " : "";
+        return { ...d, command: `${d.command}${sep}${ins}` };
+      });
+      return;
+    }
+
+    // 其次：展开编辑某条连段
+    setEditDraft((d) => {
+      if (!d) return d;
+      const sep = d.command.trim().length ? " " : "";
+      return { ...d, command: `${d.command}${sep}${ins}` };
+    });
+  }
+
   if (!currentGroup) {
     return (
       <AppShell
@@ -449,7 +509,14 @@ export default function ComboGroupPage({ lang, toggleLang }: Props) {
               />
 
               <div>
-                <div style={S.fieldLabel}>{t.command}</div>
+                <div style={S.labelRow}>
+                  <div style={S.fieldLabel}>{t.command}</div>
+
+                  <button style={S.pickBtn} onClick={() => setPickOpen(true)}>
+                    {t.pick}
+                  </button>
+                </div>
+
                 <FighterTextareaFixed
                   value={draft.command}
                   onChange={(next) => setDraft((d) => ({ ...d, command: next }))}
@@ -574,7 +641,13 @@ export default function ComboGroupPage({ lang, toggleLang }: Props) {
                         />
 
                         <div>
-                          <div style={S.fieldLabel}>{t.command}</div>
+                          <div style={S.labelRow}>
+                            <div style={S.fieldLabel}>{t.command}</div>
+                            <button style={S.pickBtn} onClick={() => setPickOpen(true)}>
+                              {t.pick}
+                            </button>
+                          </div>
+
                           <FighterTextareaFixed
                             value={editDraft.command}
                             onChange={(next) =>
@@ -628,6 +701,22 @@ export default function ComboGroupPage({ lang, toggleLang }: Props) {
           </div>
         )}
       </div>
+
+      {/* ✅ 关键：Modal 必须渲染在 return 里，否则点按钮不会有任何反应 */}
+      {pickOpen ? (
+        <MovePickerModal
+          lang={lang}
+          toggleLang={toggleLang}
+          moves={characterMoves}
+          onClose={() => setPickOpen(false)}
+          onPick={(m: any) => {
+            const ins = (m?.inputDisplay ?? m?.input ?? "").trim();
+            if (!ins) return;
+            appendPickedInput(digitsToArrows(ins));;
+            setPickOpen(false);
+          }}
+        />
+      ) : null}
     </AppShell>
   );
 }

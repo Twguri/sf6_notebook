@@ -1,0 +1,82 @@
+#SF6APP_META
+#characterId=juri
+#displayNameCN=
+#displayNameEN=Juri
+#(You can edit CSV freely. Lines starting with # are ignored on import.)
+id,category,nameEN,nameCN,input,inputDisplay,hitType,startup,active,recovery,onBlock,onHit,damage,superArt,driveOnHit,driveOnBlock,driveOnPunishCounter,cancel
+st_lp,normals,Standing Light Punch,站轻拳,5lp,,High,4,4,7,-2,5,300,300,250,-500,-2000,"Special, Drive, Super"
+st_lp,normals,[Chain combo] Standing Light Punch,站轻拳,5lp,,High,4,4,7,-2,5,100,-,62,-125,-500,"Special, Drive, Super"
+st_mp,normals,Standing Medium Punch,站中拳,5mp,,High,6,4,12,2,7,600,500,1500,-3000,-4000,"Special, Drive, Super"
+st_mp,normals,[Chain combo] Standing Medium Punch,站中拳,5mp,,High,6,4,12,2,7,400,-,375,-750,-1000,"Special, Drive, Super"
+st_hp,normals,Standing Heavy Punch,站重拳,5hp,,High,10,3,24,-5,-1,800,1000,2000,-5000,-8000,"Special, Drive, Super"
+st_hp,normals,[Chain combo] Standing Heavy Punch,站重拳,5hp,,High,10,3,24,-5,-,600,-,500,-1250,-2000,"Special, Drive, Super"
+st_lk,normals,Standing Light Kick,站轻脚,5lk,,Low,5,3,9,-3,2,300,300,250,-500,-2000,"Special, Drive, Super"
+st_lk,normals,[Chain combo] Standing Light Kick,站轻脚,5lk,,Low,5,3,9,-3,2,100,-,62,-125,-500,"Special, Drive, Super"
+st_mk,normals,Standing Medium Kick,站中脚,5mk,,Low,5,"2, 3",17,-4,3,700,1050,2000,-4000,-6000,"Special, Drive, Super"
+st_mk,normals,[Chain combo] Standing Medium Kick,站中脚,5mk,,Low,5,"2, 3",17,-4,3,500,-,500,-1000,-1500,"Special, Drive, Super"
+st_hk,normals,Standing Heavy Kick,站重脚,5hk,,Low,17,4,19,-3,2,900,1000,3000,-6000,-10000,-
+st_hk,normals,[Chain combo] Standing Heavy Kick,站重脚,5hk,,Low,17,4,19,-3,-,700,-,750,-1500,-2500,"Special, Drive, Super"
+cr_lp,normals,Crouching Light Punch,下轻拳,2lp,,High,4,3,8,-1,4,300,300,250,-500,-2000,"Special, Drive, Super"
+cr_lp,normals,[Chain combo] Crouching Light Punch,下轻拳,2lp,,High,4,3,8,-1,4,100,-,62,-125,-500,"Special, Drive, Super"
+cr_mp,normals,Crouching Medium Punch,下中拳,2mp,,High,6,4,14,-2,5,600,500,1500,-3000,-4000,"Special, Drive, Super"
+cr_mp,normals,[Chain combo] Crouching Medium Punch,下中拳,2mp,,High,6,4,14,-2,5,400,-,375,-750,-1000,"Special, Drive, Super"
+cr_hp,normals,Crouching Heavy Punch,下重拳,2hp,,High,8,4,23,-11,3,900,1000,2000,-5000,-8000,"Special, Drive, Super"
+cr_hp,normals,[Chain combo] Crouching Heavy Punch,下重拳,2hp,,High,8,4,23,-11,-,700,-,500,-1250,-2000,"Special, Drive, Super"
+cr_lk,normals,Crouching Light Kick,下轻脚,2lk,,Low,5,3,8,-1,3,200,300,250,-500,-2000,-
+cr_lk,normals,[Chain combo] Crouching Light Kick,下轻脚,2lk,,Low,5,3,8,-1,3,100,-,62,-125,-500,"Special, Drive, Super"
+cr_mk,normals,Crouching Medium Kick,下中脚,2mk,,Low,8,3,19,-6,1,500,600,1000,-2000,-4000,"Special, Drive, Super"
+cr_mk,normals,[Chain combo] Crouching Medium Kick,下中脚,2mk,,Low,8,3,19,-6,1,300,-,250,-500,-1000,"Special, Drive, Super"
+cr_hk,normals,Crouching Heavy Kick,下重脚,2hk,,Low,10,3,23,-11,-,900,1000,3000,-4000,-10000,-
+cr_hk,normals,[Chain combo] Crouching Heavy Kick,下重脚,2hk,,Low,10,3,23,-11,-,700,-,750,-1000,-2500,"Special, Drive, Super"
+j_lp,normals,Jumping Light Punch,跳轻拳,j>lp,,High,5,6,-,-,-,300,300,500,-1500,-2000,-
+j_lp,normals,[Chain combo] Jumping Light Punch,跳轻拳,j>lp,,High,5,6,-,-,-,100,-,125,-375,-500,"Special, Drive, Super"
+j_mp,normals,Jumping Medium Punch,跳中拳,j>mp,,High,7,5,-,-,-,500,500,1000,-2500,-4000,"Special, Drive, Super"
+j_mp,normals,[Chain combo] Jumping Medium Punch,跳中拳,j>mp,,High,7,5,-,-,-,300,-,250,-625,-1000,"Special, Drive, Super"
+j_hp,normals,Jumping Heavy Punch,跳重拳,j>hp,,Overhead,12,6,-,-,-,900,1000,2000,-4000,-5000,-
+j_lk,normals,Jumping Light Kick,跳轻脚,j>lk,,Overhead,4,6,-,-,-,300,300,500,-1500,-2000,-
+j_lk,normals,[Chain combo] Jumping Light Kick,跳轻脚,j>lk,,Overhead,4,6,-,-,-,100,-,125,-375,-500,"Special, Drive, Super"
+j_mk,normals,Jumping Medium Kick,跳中脚,j>mk,,Overhead,6,6,-,-,-,500,500,1000,-2500,-4000,-
+j_mk,normals,[Chain combo] Jumping Medium Kick,跳中脚,j>mk,,Overhead,6,6,-,-,-,300,-,250,-625,-1000,"Special, Drive, Super"
+juri_jump_heavy_kick,normals,Jumping Heavy Kick,ジャンプ強K,{7|9}>hk,,Overhead,10,6,-,-,-,800,1000,2000,-4000,-5000,-
+juri_chain_jump_heavy_kick,normals,[Chain combo] Jumping Heavy Kick,[チェーンコンボ] ジャンプ強K,{7|9}>hk,,Overhead,10,6,-,-,-,600,-,500,-1000,-1250,"Special, Drive, Super"
+n8_hk,normals,Neutral Jumping Heavy Kick,垂直ジャンプ強K,8>hk,,Overhead,10,4,-,-,-,800,1000,2000,-4000,-5000,-
+n8_hk,normals,[Chain combo] Neutral Jumping Heavy Kick,[チェーンコンボ] 垂直ジャンプ強K,8>hk,,Overhead,10,4,-,-,-,600,-,500,-1000,-1250,"Special, Drive, Super"
+f_mp,normals,Kyosesho,狂背掌,6mp,,High,8,3,17,-3,4,600,500,1500,-3000,-4000,"Special, Drive, Super"
+f_mp,normals,[Chain combo] Kyosesho,[チェーンコンボ] 狂背掌,6mp,,High,8,3,17,-3,4,400,-,375,-750,-1000,"Special, Drive, Super"
+f_mk,normals,Senkai Kick,殲廻脚,6mk,,Overhead,21,2,23,-3,2,600,700,1500,-2500,-5000,-
+f_mk,normals,[Chain combo] Senkai Kick,[チェーンコンボ] 殲廻脚,6mk,,Overhead,21,2,23,-3,-,400,-,375,-625,-1250,"Special, Drive, Super"
+f_hp,normals,Renko Kicks,連剋脚,6hp,,High,15,"3, 3",20,-4,2,1000,1000,2500,-5000,-10000,"Special, Drive, Super"
+f_hp,normals,[Chain combo] Renko Kicks,[チェーンコンボ] 連剋脚,6hp,,High,15,"3, 3",20,-4,-,800,-,625,-1250,-2500,"Special, Drive, Super"
+b_hk,normals,Korenzan,鉤鎌斬,4hk,,High,10,"3, 3",19,-6,-2,800,1000,1500,-3000,-8000,"Special, Drive, Super"
+b_hk,normals,[Chain combo] Korenzan,[チェーンコンボ] 鉤鎌斬,4hk,,High,10,"3, 3",19,-6,-,600,-,375,-750,-2000,"Special, Drive, Super"
+death_crest_2,targetCombos,Death Crest (2),死紋蹴（2段目）,5mp>4hp,,High,12,3,19,-3,-,500,1000,1000,-2000,-7000,-
+death_crest_3,targetCombos,Death Crest (3),死紋蹴（3段目）,5mp>4hp>5hp,,High,17,3,27,-16,-,600,500,1000,-1000,-7000,Super
+fuhajin_light,specials,Fuhajin (Light),風破刃（弱）,214lk,,High,10,4,21,-4,-,600,600,2000,-2500,-5000,Super
+fuhajin_medium,specials,Fuhajin (Medium),風破刃（中）,214mk,,High,13,4,21,-6,-,600,600,2000,-2500,-5000,Super
+fuhajin_heavy,specials,Fuhajin (Heavy),風破刃（強）,214hk,,High,25,4,20,-8,-,500,600,2000,-2500,-5000,Super
+fuhajin_od,specials,Fuhajin (OD),風破刃（OD）,214(kk),,High,12,6,21,-12,-,600,600,-,-2500,-5000,Super
+saihasho,specials,Saihasho,歳破衝,236lk,,High,16,-,-,-8,-2,400,600,1000,-2500,-3000,Super
+boosted_saihasho,specials,[Boosted] Saihasho,[強化版]歳破衝,236lk,,High,16,-,-,-3,1,600,600,1000,-2500,-3000,Super
+saihasho_od,specials,Saihasho (OD),歳破衝（OD）,236(lk+mk),,High,11,-,-,-2,-,800,600,-,-3000,-5000,Super
+ankensatsu,specials,Ankensatsu,暗剣殺,236mk,,High,24,4,19,-10,5,600,800,2000,-3000,-5000,Super
+boosted_ankensatsu,specials,[Boosted] Ankensatsu,[強化版]暗剣殺,236mk,,High,24,4,19,-10,8,600,800,2000,-3000,-5000,Super
+ankensatsu_od,specials,Ankensatsu (OD),暗剣殺（OD）,236(lk+hk),,High,24,4,19,-10,9,800,800,-,-3000,-5000,Super
+go_ohsatsu,specials,Go Ohsatsu,五黄殺,236hk,,High,18,4,27,-11,-,1000,700,1000,-4000,-5000,Super
+go_ohsatsu_fuha_stock,specials,[Boosted] Go Ohsatsu,[強化版]五黄殺,236hk,,High,18,"4, 3",27,-10,-,1200,700,2000,-5000,-5000,Super
+go_ohsatsu_od,specials,Go Ohsatsu (OD),五黄殺（OD）,236(mk+hk),,High,18,"4, 3, 5",28,-16,-,1200,800,-,-6000,-5000,Super
+tensenrin_light,specials,Tensenrin (Light),天穿輪（弱）,623lp,,High,11,"3, 2",22,-8,-,800,1000,2000,-4000,-5000,Super
+tensenrin_medium,specials,Tensenrin (Medium),天穿輪（中）,623mp,,High,5,"8, 2, 2",-,-37,-,1200,1000,2000,-4000,-5000,-
+tensenrin_heavy,specials,Tensenrin (Heavy),天穿輪（強）,623hp,,High,5,"8, 2, 2",-,-37,-,1200,1000,2000,-4000,-5000,-
+tensenrin_od,specials,Tensenrin (OD),天穿輪（OD）,623(pp),,High,6,"4, 2, 2, 2",-,-48,-,1600,900,-,-4000,-,-
+shiku_sen,specials,Shiku-sen,疾空閃,9>214*k,,High,18,1,-,-,-,400,600,2000,-3000,-5000,-
+shiku_sen_od,specials,Shiku-sen (OD),疾空閃（OD）,9>214(kk),,High,16,1,-,-,-,300,600,-,-3000,-5000,-
+shiren_sen,specials,Shiren-sen,死連閃,*k,9>214*k>*k,High,6,"4, 4, 4",-,-,-,1200,600,1800,-,-,-
+shiren_sen_od,specials,Shiren-sen (OD),死連閃（OD）,(kk),9>214(kk)>(kk),High,6,"4, 4, 4",-,-,-,900,600,-,-,-,-
+sakkai_fuhazan,supers,Sakkai Fuhazan,殺界風破斬,236236*k,,High,7,-,-,-32,-,1800,-,-,-2500,-5000,-
+feng_shui_engine,supers,Feng Shui Engine,風水エンジン,214214*p,,High,-,-,-,-,-,-,-,-,-,-,-
+feng_shui_engine_rush,supers,Feng Shui Engine (Rush),風水エンジン（突進）,214214[*p],,High,9,11,26,-17,-4,300,-,-,-5000,-10000,Other
+kaisen_dankai_raku,supers,Kaisen Dankai Raku,回旋断界落,214214*k,,High,10,4,52,-31,-,4000,-,-,-7500,-15000,-
+kaisen_dankai_raku_ca,supers,Kaisen Dankai Raku (Critical Art),回旋断界落（CA）,214214*k,,High,10,4,52,-31,-,4500,-,-,-10000,-20000,-
+spider_fang_throw,normals,Spider Fang Throw,蜘穿脚,(lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-
+shadow_kick_throw,normals,Shadow Kick Throw,苛影脚,(4lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-
+zanka_sen,normals,Zanka-sen,斬架閃,j>(lplk),,Throw,5,3,-,-,-,1200,2000,2000,-,-10000,-

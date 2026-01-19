@@ -1,0 +1,71 @@
+#SF6APP_META
+#characterId=cammy
+#displayNameCN=
+#displayNameEN=Cammy
+#(You can edit CSV freely. Lines starting with # are ignored on import.)
+id,category,nameEN,nameCN,input,inputDisplay,hitType,startup,active,recovery,onBlock,onHit,damage,superArt,driveOnHit,driveOnBlock,driveOnPunishCounter,cancel
+st_lp,normals,Standing Light Punch,站轻拳,5lp,,High,4,3,7,-2,5,300,300,250,-500,-2000,"Special, Drive, Super"
+st_mp,normals,Standing Medium Punch,站中拳,5mp,,High,6,4,13,-1,6,600,500,1500,-3000,-4000,-
+st_hp,normals,Standing Heavy Punch,站重拳,5hp,,High,8,3,20,-3,2,800,1000,2000,-4000,-8000,"Special, Drive, Super"
+st_lk,normals,Standing Light Kick,站轻脚,5lk,,High,5,3,10,-3,2,300,300,250,-500,-2000,"Special, Drive, Super"
+st_mk,normals,Standing Medium Kick,站中脚,5mk,,High,8,3,18,-4,3,700,700,2000,-4000,-6000,-
+st_hk,normals,Standing Heavy Kick,站重脚,5hk,,High,11,3,21,-3,2,900,1200,3000,-6000,-10000,-
+cr_lp,normals,Crouching Light Punch,下轻拳,2lp,,High,4,2,8,-2,5,300,300,250,-500,-2000,"Special, Drive, Super"
+cr_mp,normals,Crouching Medium Punch,下中拳,2mp,,High,7,3,14,-2,5,600,500,1500,-3000,-4000,"Special, Drive, Super"
+cr_hp,normals,Crouching Heavy Punch,下重拳,2hp,,High,10,4,15,1,7,700,1000,2500,-5000,-8000,-
+cr_lk,normals,Crouching Light Kick,下轻脚,2lk,,Low,5,3,7,-2,3,200,300,250,-500,-2000,-
+cr_mk,normals,Crouching Medium Kick,下中脚,2mk,,Low,8,3,18,-5,1,500,500,1000,-2000,-4000,"Special, Drive, Super"
+cr_hk,normals,Crouching Heavy Kick,下重脚,2hk,,Low,9,3,24,-10,-,900,1000,3000,-4000,-10000,-
+j_lp,normals,Jumping Light Punch,跳轻拳,j>lp,,Overhead,4,10,-,-,-,300,300,500,-1500,-2000,-
+j_mp,normals,Jumping Medium Punch,跳中拳,j>mp,,Overhead,6,8,-,-,-,600,500,1200,-2500,-4000,"Special, Drive, Super"
+j_hp,normals,Jumping Heavy Punch,跳重拳,j>hp,,Overhead,8,5,-,-,-,800,1000,2500,-4000,-7000,-
+j_lk,normals,Jumping Light Kick,跳轻脚,j>lk,,Overhead,4,10,-,-,-,300,300,500,-1500,-2000,-
+j_mk,normals,Jumping Medium Kick,跳中脚,j>mk,,Overhead,7,6,-,-,-,600,700,1200,-2500,-4000,-
+j_hk,normals,Jumping Heavy Kick,跳重脚,j>hk,,Overhead,10,6,-,-,-,800,1000,2500,-4000,-7000,-
+b_mp,normals,Lift Uppercut,リフトアッパー,4mp,,High,5,5,12,-1,4,500,500,1500,-3000,-4000,"Special, Drive, Super"
+f_hk,normals,Delayed Ripper,ディレイリーパー,6hk,,High,18,3,25,-12,-,800,1000,3000,-4000,-10000,"Special, Drive, Super"
+b_hk,normals,Assault Blade,アサルトブレード,4hk,,High,9,3,18,-7,-,800,1000,2500,-5000,-10000,"Special, Drive, Super"
+lift_combination,targetCombos,Lift Combination,リフトコンビネーション,4mp>hk,,High,9,3,23,-12,-,600,700,2000,-3000,-7000,"Special, Drive, Super"
+swing_combination,targetCombos,Swing Combination,スイングコンビネーション,5hp>5hk,,High,13,"3, 3",29,-12,-,800,1500,4000,-7000,-8000,"Special, Drive, Super"
+spiral_arrow_light,specials,Spiral Arrow (Light),スパイラルアロー（弱）,236lk,,High,9,13,21,-12,-,800,1000,2000,-4000,-5000,-
+spiral_arrow_medium,specials,Spiral Arrow (Medium),スパイラルアロー（中）,236mk,,High,9,15,21,-14,-,900,800,2000,-4000,-5000,-
+spiral_arrow_heavy,specials,Spiral Arrow (Heavy),スパイラルアロー（強）,236hk,,High,15,"3, 12",21,-12,-,1000,800,2600,-5000,-5000,Super
+spiral_arrow_charged,specials,Spiral Arrow (Charged),スパイラルアロー（ホールド）,236+[hk],,High,27,"3, 3, 3, 3, 3",20,-14,-,800,1000,2500,-4000,-5000,Super
+spiral_arrow_od,specials,Spiral Arrow (OD),スパイラルアロー（OD）,236(kk),,High,13,"3, 3, 3, 3, 3",20,-14,-,800,1000,-,-4000,-5000,Super
+cannon_spike_light,specials,Cannon Spike (Light),キャノンスパイク（弱）,623lk,,High,5,12,24,-36,-,900,1000,2000,-4000,-5000,Super
+cannon_spike_medium,specials,Cannon Spike (Medium),キャノンスパイク（中）,623mk,,High,6,12,25,-36,-,1000,1000,2000,-4000,-5000,Super
+cannon_spike_heavy,specials,Cannon Spike (Heavy),キャノンスパイク（強）,623hk,,High,7,12,28,-36,-,1200,1000,2000,-4000,-5000,Super
+cannon_spike_charged,specials,Cannon Spike (Charged),キャノンスパイク（ホールド）,623+[hk],,High,24,12,29,-40,-,1500,1000,2000,-4000,-5000,Super
+cannon_spike_od,specials,Cannon Spike (OD),キャノンスパイク（OD）,623(kk),,High,6,12,30,-40,-,1500,1000,-,-2000,-,-
+quick_spin_knuckle_light,specials,Quick Spin Knuckle (Light),アクセルスピンナックル（弱）,214lp,,High,21,4,16,-3,2,800,800,2000,-4000,-5000,Super
+quick_spin_knuckle_medium,specials,Quick Spin Knuckle (Medium),アクセルスピンナックル（中）,214mp,,High,24,4,16,-2,3,800,800,2000,-4500,-7000,Super
+quick_spin_knuckle_heavy,specials,Quick Spin Knuckle (Heavy),アクセルスピンナックル（強）,214hp,,High,28,4,17,3,5,800,800,2000,-6000,-9000,Super
+quick_spin_knuckle_od,specials,Quick Spin Knuckle (OD),アクセルスピンナックル（OD）,214(pp),,High,25,4,17,-2,7,800,800,-,-4000,-7000,Super
+cannon_strike,specials,Cannon Strike,キャノンストライク,9>214*k,,High,13,11,-,-5,1,600,800,1000,-2000,-4000,-
+cannon_strike_od,specials,Cannon Strike (OD),キャノンストライク（OD）,9>214(kk),,High,13,10,-,-2,2,800,800,-,-2000,-4000,Super
+hooligan_combination,specials,Hooligan Combination,フーリガンコンビネーション,236*p,,-,-,-,-,-,-,-,-,-,-,-,-
+razors_edge_slicer,specials,Razor's Edge Slicer,レイザーエッジスライサー,5,236*p>5,Low,10,9,13,2,-,1000,1000,2500,-3000,-7000,Super
+hooligan_cannon_strike,specials,Hooligan Cannon Strike,フーリガンキャノンストライク,*k,236*p>*k,High,13,11,-,-,-,600,800,1000,-2000,-4000,-
+reverse_edge,specials,Reverse Edge,リバースエッジ,2*k,236*p>2*k,Overhead,18,4,-,-,-,800,800,2500,-4000,-7000,-
+fatal_leg_twister,specials,Fatal Leg Twister,フェイタルレッグツイスター,(lplk),236*p>(lplk),-,10,3,-,-,-,1800,3000,3000,-,-10000,-
+silent_step,specials,Silent Step,サイレントステップ,*p,236*p>*p,-,-,-,-,-,-,-,-,-,-,-,-
+hooligan_combination_charged,specials,Hooligan Combination (Charged),フーリガンコンビネーション（ホールド）,236+[hp],,-,-,-,-,-,-,-,-,-,-,-,-
+razors_edge_slicer_charged,specials,Razor's Edge Slicer (Charged),レイザーエッジスライサー（ホールド）,5,236+[hp]>5,Low,10,"9, 5",17,2,-,1200,1000,4000,-5000,-7000,Super
+hooligan_cannon_strike_charged,specials,Hooligan Cannon Strike (Charged),フーリガンキャノンストライク（ホールド）,*k,236+[hp]>*k,High,13,10,-,-,-,800,800,1000,-2000,-4000,-
+reverse_edge_charged,specials,Reverse Edge (Charged),リバースエッジ（ホールド）,2*k,236+[hp]>2*k,Overhead,18,"4, 4",-,-2,8,1200,800,4000,-6000,-5000,-
+fatal_leg_twister_charged,specials,Fatal Leg Twister (Charged),フェイタルレッグツイスター（ホールド）,(lplk),236+[hp]>(lplk),-,10,3,-,-,-,1000,1000,3000,-,-10000,-
+silent_step_charged,specials,Silent Step (Charged),サイレントステップ（ホールド）,*p,236+[hp]>*p,-,-,-,-,-,-,-,-,-,-,-,-
+hooligan_combination_od,specials,Hooligan Combination (OD),フーリガンコンビネーション（OD）,236(pp),,-,-,-,-,-,-,-,-,-,-,-,-
+razors_edge_slicer_od,specials,Razor's Edge Slicer (OD),レイザーエッジスライサー（OD）,5,236(pp)>5,Low,10,"9, 5",17,2,-,1200,1000,-,-5000,-7000,Super
+hooligan_cannon_strike_od,specials,Hooligan Cannon Strike (OD),フーリガンキャノンストライク（OD）,*k,236(pp)>*k,High,13,10,-,-,-,800,800,-,-2000,-4000,Super
+reverse_edge_od,specials,Reverse Edge (OD),リバースエッジ（OD）,236(pp)>2*k,236(pp)>236(pp)>2*k,Overhead,18,"4, 4",-,-2,8,1200,800,-,-8000,-7000,Super
+fatal_leg_twister_od,specials,Fatal Leg Twister (OD),フェイタルレッグツイスター（OD）,(lplk),236(pp)>(lplk),-,10,3,-,-,-,1000,1000,-,-,-10000,-
+silent_step_od,specials,Silent Step (OD),サイレントステップ（OD）,*p,236(pp)>*p,-,-,-,-,-,-,-,-,-,-,-,-
+spin_drive_smasher,supers,Spin Drive Smasher,スピンドライブスマッシャー,236236*k,,High,9,11,38,-24,-,2000,-,-,-2500,-5000,-
+killer_bee_spin,supers,Killer Bee Spin,キラービースピン,214214*k,,High,13,9,37,-24,-,2800,-,-,-5000,-10000,-
+aerial_killer_bee_spin,supers,Aerial Killer Bee Spin,エアキラービースピン,9>214214*k,,High,13,1,37,-23,-,3000,-,-,-5000,-10000,-
+delta_red_assault,supers,Delta Red Assault,デルタレッドアサルト,236236*p,,High,9,15,4,-33,-,4000,-,-,-7500,-15000,-
+delta_red_assault_ca,supers,Delta Red Assault (Critical Art),デルタレッドアサルト (CA),236236*p,,High,9,15,4,-33,-,4500,-,-,-10000,-20000,-
+rough_landing,normals,Rough Landing,ラフランディング,(lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-
+delta_throw,normals,Delta Throw,デルタスルー,(2lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-
+leg_scissors_choke,normals,Leg Scissors Choke,レッグシザースチョーク,j>(lplk),,Throw,5,3,-,-,-,1200,2000,2000,-,-10000,-

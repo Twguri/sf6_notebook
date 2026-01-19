@@ -1,0 +1,72 @@
+#SF6APP_META
+#characterId=ken
+#displayNameCN=肯
+#displayNameEN=Ken
+#(You can edit CSV freely. Lines starting with # are ignored on import.)
+id,category,nameEN,nameCN,input,inputDisplay,hitType,startup,active,recovery,onBlock,onHit,damage,superArt,driveOnHit,driveOnBlock,driveOnPunishCounter,cancel
+st_lp,normals,Standing Light Punch,站轻拳,5lp,,High,4,3,7,-1,4,300,300,250,-500,-2000,"Special, Drive, Super"
+st_mp,normals,Standing Medium Punch,站中拳,5mp,,High,5,4,14,-2,4,600,500,1500,-3000,-4000,"Special, Drive, Super"
+st_hp,normals,Standing Heavy Punch,站重拳,5hp,,High,10,5,17,-2,3,800,1000,2000,-5000,-8000,"Special, Drive, Super"
+st_lk,normals,Standing Light Kick,站轻脚,5lk,,Low,5,2,12,-2,0,300,300,250,-500,-2000,"Special, Drive, Super"
+st_mk,normals,Standing Medium Kick,站中脚,5mk,,Low,8,3,20,-5,3,600,700,2000,-4000,-6000,-
+st_hk,normals,Standing Heavy Kick,站重脚,5hk,,Low,12,2,23,-5,1,800,1000,3000,-6000,-8000,-
+cr_lp,normals,Crouching Light Punch,下轻拳,2lp,,High,4,2,9,-1,5,300,300,250,-500,-2000,"Special, Drive, Super"
+cr_mp,normals,Crouching Medium Punch,下中拳,2mp,,High,6,3,14,0,3,700,600,1500,-3000,-4000,"Special, Drive, Super"
+cr_hp,normals,Crouching Heavy Punch,下重拳,2hp,,High,8,4,24,-10,3,800,1000,2000,-5000,-8000,"Special, Drive, Super"
+cr_lk,normals,Crouching Light Kick,下轻脚,2lk,,Low,5,3,10,-3,1,200,300,250,-500,-2000,-
+cr_mk,normals,Crouching Medium Kick,下中脚,2mk,,Low,7,3,19,-6,-2,500,600,1000,-2000,-4000,"Special, Drive, Super"
+cr_hk,normals,Crouching Heavy Kick,下重脚,2hk,,Low,8,3,24,-10,-,900,1000,3000,-4000,-10000,-
+j_lp,normals,Jumping Light Punch,跳轻拳,j>lp,,Overhead,5,7,-,-,-,300,300,500,-1500,-2000,-
+j_mp,normals,Jumping Medium Punch,跳中拳,j>mp,,Overhead,6,4,-,-,-,700,500,1000,-2500,-4000,"Special, Drive, Super"
+j_hp,normals,Jumping Heavy Punch,跳重拳,j>hp,,Overhead,9,6,-,-,-,800,1000,2000,-4000,-5000,-
+j_lk,normals,Jumping Light Kick,跳轻脚,j>lk,,Overhead,6,6,-,-,-,300,300,500,-1500,-2000,-
+j_mk,normals,Jumping Medium Kick,跳中脚,j>mk,,Overhead,7,6,-,-,-,500,500,1000,-2500,-4000,-
+n8_hk,normals,Jumping Neutral Heavy Kick,垂直ジャンプ強K,8hk,,Overhead,6,6,-,-,-,900,1000,2000,-4000,-5000,-
+ken_jump_heavy_kick,normals,Jumping Heavy Kick,ジャンプ強K,{7|9}+hk,,Overhead,10,7,-,-,-,800,1000,2000,-4000,-5000,-
+quick_dash,specials,Quick Dash,奮迅脚,(kk),,-,-,-,-,-,-,-,-,-,-,-,-
+ken_emergency_stop,specials,Emergency Stop,急停止,lk,(kk)>lk,-,-,-,-,-,-,-,-,-,-,-,-
+thunder_kick,specials,Thunder Kick,紫電カカト落とし,mk,(kk)>mk,High,18,3,20,-3,3,1000,500,1000,-2500,-4000,Super
+forward_step_kick,specials,Forward Step Kick,込み前蹴り,hk,(kk)>hk,High,10,4,20,-4,3,800,1000,2000,-5000,-7000,Super
+chin_buster_2nd,targetCombos,Chin Buster,チンバスター,mp>hp,,High,11,3,27,-14,-,400,300,400,-1000,-4000,"Special, Drive, Super"
+triple_flash_kick_2,targetCombos,Triple Flash Kicks (2),閃光連脚 (2段目),mk>mk,,High,11,2,27,-12,-,400,400,1000,-2500,-4000,-
+triple_flash_kick_3,targetCombos,Triple Flash Kicks (3),閃光連脚 (3段目),mk>mk>hk,,High,13,3,28,-11,-,700,500,1500,-3000,-4000,-
+ken_hadoken_light,specials,Hadoken (Light),波動拳 (弱),236lp,,High,16,-,-,-7,-1,600,600,1000,-2500,-2000,Super
+ken_hadoken_medium,specials,Hadoken (Medium),波動拳 (中),236mp,,High,14,-,-,-9,-3,600,600,1000,-2500,-2000,Super
+ken_hadoken_heavy,specials,Hadoken (Heavy),波動拳 (強),236hp,,High,12,-,-,-11,-5,600,600,1000,-2500,-2000,Super
+ken_hadoken_od,specials,Hadoken (OD),波動拳 (OD),236(pp),,High,12,-,-,2,-2,800,600,-,-2500,-5000,Super
+ken_shoryuken_light,specials,Shoryuken (Light),昇龍拳 (弱),623lp,,High,5,10,21,-23,-,1100,800,2000,-4000,-5000,Super
+ken_shoryuken_medium,specials,Shoryuken (Medium),昇龍拳 (中),623mp,,High,6,"3, 7",28,-28,-,1300,1000,4000,-4000,-5000,Super
+ken_shoryuken_heavy,specials,Shoryuken (Heavy),昇龍拳 (強),623hp,,High,7,"2, 2, 6",35,-36,-,1400,1200,4000,-4200,-5000,Super
+ken_shoryuken_od,specials,Shoryuken (OD),昇龍拳 (OD),623(pp),,High,6,"2, 8, 2, 1, 2, 5",35,-40,-,1600,1500,-,-5000,-,-
+quick_dash_shoryuken,specials,[Quick Dash] Shoryuken,【奮迅脚】昇龍拳,623*p,,High,8,"1, 1, 1, 1, 6",33,-35,-,1700,1400,3500,-4000,-5000,Super
+ken_tatsumaki_senpukyaku_light,specials,Tatsumaki Senpu-kyaku (Light),竜巻旋風脚 (弱),214lk,,High,4,"2, 3",32,-14,-,700,800,2000,-4000,-5000,-
+ken_tatsumaki_senpukyaku_medium,specials,Tatsumaki Senpu-kyaku (Medium),竜巻旋風脚 (中),214mk,,High,14,"2, 2",31,-12,-,900,1000,3000,-5000,-5000,-
+ken_tatsumaki_senpukyaku_heavy,specials,Tatsumaki Senpu-kyaku (Heavy),竜巻旋風脚 (強),214hk,,High,16,"2, 2, 2",31,-12,-,1000,1200,4000,-6000,-5000,-
+ken_tatsumaki_senpukyaku_od,specials,Tatsumaki Senpu-kyaku (OD),竜巻旋風脚 (OD),214(kk),,High,9,"4, 3, 3, 3, 3",22,-61,-,1500,2000,-,-4000,-5000,-
+quick_dash_tatsumaki_senpukyaku,specials,[Quick Dash] Tatsumaki Senpu-kyaku,【奮迅脚】竜巻旋風脚,214*k,,-,13,"2, 3, 2, 3, 2, 3, 2, 3, 2, 3",20,-9,3,1200,1300,3600,-6000,-5000,-
+ken_aerial_tatsumaki_senpukyaku,specials,Aerial Tatsumaki Senpu-kyaku,空中竜巻旋風脚,9>214*k,,-,11,"2, 2, 2",-,-,-,900,600,2000,-3000,-5000,-
+ken_aerial_tatsumaki_senpukyaku_od,specials,Aerial Tatsumaki Senpu-kyaku (OD),空中竜巻旋風脚 (OD),9>214(kk),,-,11,"2, 2, 2, 2, 2",-,-,-,900,1000,-,-3000,-5000,-
+dragonlash_kick_light,specials,Dragonlash Kick (Light),龍尾脚 (弱),623lk,,High,18,6,21,-4,2,1000,1200,3000,-3000,-5000,-
+dragonlash_kick_medium,specials,Dragonlash Kick (Medium),龍尾脚 (中),623mk,,High,23,5,25,-8,3,1100,1200,3000,-3000,-5000,-
+dragonlash_kick_heavy,specials,Dragonlash Kick (Heavy),龍尾脚 (強),623hk,,High,28,5,21,1,3,1200,800,2000,-3000,-5000,-
+dragonlash_kick_od,specials,Dragonlash Kick (OD),龍尾脚 (OD),623(kk),,High,9,"2, 7",24,-9,1,1200,1200,-,-3000,-5000,-
+quick_dash_dragonlash_kick,specials,[Quick Dash] Dragonlash Kick,【奮迅脚】龍尾脚,623*k,,High,9,"4, 6",24,-8,2,1200,1200,4000,-3000,-5000,-
+jinrai_kick_light,specials,Jinrai Kick (Light),迅雷脚 (弱),236lk,,High,12,3,28,-11,1,500,550,2000,-3000,-5000,Super
+jinrai_kick_medium,specials,Jinrai Kick (Medium),迅雷脚 (中),236mk,,High,16,3,24,-7,2,600,550,2000,-3000,-5000,Super
+jinrai_kick_heavy,specials,Jinrai Kick (Heavy),迅雷脚 (強),236hk,,High,25,3,19,-2,-,700,550,2000,-4000,-5000,Super
+f_lk,specials,Kazekama Shin Kick,風鎌蹴り,6lk,,Low,6,4,19,-5,3,500,400,2000,-3000,-5000,Super
+f_mk,specials,Gorai Axe Kick,轟雷落とし,6mk,,Overhead,18,3,20,-3,3,1000,500,1000,-2500,-4000,Super
+f_hk,specials,Senka Snap Kick,閃華脚,6hk,,High,10,3,25,-3,-,800,600,2000,-7000,-7000,Super
+jinrai_kick_od,specials,Jinrai Kick (OD),迅雷脚 (OD),236(kk),,High,13,3,25,-7,-4,600,400,-,-3000,-5000,Super
+f_lk,specials,Kazekama Shin Kick (OD),風鎌蹴り (OD),6lk,236(kk)>6lk,Low,6,3,20,-5,3,500,400,-,-3000,-5000,Super
+kasai_thrust_kick_1,specials,Kasai Thrust Kick (1),火砕蹴 (1),6*k,6lk>6*k,-,15,3,29,-12,-,500,600,-,-5000,-5000,Super
+f_mk,specials,Gorai Axe Kick (OD),轟雷落とし (OD),6mk,236(kk)>6mk,Overhead,17,3,24,-7,-3,1000,500,-,-2500,-4000,Super
+kasai_thrust_kick_2,specials,Kasai Thrust Kick (2),火砕蹴 (2),6*k,6mk>6*k,-,11,3,29,-12,-,500,600,-,-5000,-5000,Super
+f_hk,specials,Senka Snap Kick (OD),閃華脚 (OD),6hk,236(kk)>6hk,-,10,4,20,-4,-,800,600,-,-7000,-7000,Super
+kasai_thrust_kick,specials,Kasai Thrust Kick (3),火砕蹴 (3),6*k,6hk>6*k,High,15,3,37,-20,-,500,600,-,-5000,-5000,Super
+dragonlash_flame,supers,Dragonlash Flame,龍尾烈脚,214214*k,,High,7,3,41,-24,-,2000,-,-,-2500,-5000,-
+shippu_jinrai_kyaku,supers,Shippu Jinrai-kyaku,疾風迅雷脚,236236*k,,High,6,"2, 3, 3, 3, 2",32,-19,-,2800,-,-,-5000,-10000,-
+shinryu_reppa,supers,Shinryu Reppa,神龍烈破,236236*p,,High,7,"3, 3, 3, 3, 2, 2, 2, 2, 2",45,-30,-,4000,-,-,-11000,-15000,-
+shinryu_reppa_ca,supers,Shinryu Reppa (Critical Art),神龍烈破 (CA),236236*p,,High,7,"3, 3, 3, 3, 2, 2, 2, 2, 2",45,-30,-,4500,-,-,-16000,-20000,-
+knee_strikes,normals,Knee Strikes,掴み膝蹴り,(lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-
+hell_wheel,normals,Hell Wheel,地獄車,(2lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-

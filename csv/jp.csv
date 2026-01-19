@@ -1,0 +1,65 @@
+#SF6APP_META
+#characterId=jp
+#displayNameCN=
+#displayNameEN=Jp
+#(You can edit CSV freely. Lines starting with # are ignored on import.)
+id,category,nameEN,nameCN,input,inputDisplay,hitType,startup,active,recovery,onBlock,onHit,damage,superArt,driveOnHit,driveOnBlock,driveOnPunishCounter,cancel
+st_lp,normals,Standing Light Punch,站轻拳,5lp,,High,6,3,10,-2,4,300,300,250,-500,-2000,"Special, Drive, Super"
+st_mp,normals,Standing Medium Punch,站中拳,5mp,,High,12,3,21,-6,1,700,500,2000,-4000,-6000,-
+st_hp,normals,Standing Heavy Punch,站重拳,5hp,,High,12,2,22,-3,3,800,1000,2000,-5000,-8000,"Special, Drive, Super"
+st_lk,normals,Standing Light Kick,站轻脚,5lk,,Low,5,3,11,-2,3,300,300,250,-500,-2000,"Special, Drive, Super"
+st_mk,normals,Standing Medium Kick,站中脚,5mk,,Low,8,3,19,-3,3,600,500,1500,-3000,-4000,"Special, Drive, Super"
+st_hk,normals,Standing Heavy Kick,站重脚,5hk,,Low,12,4,17,2,7,800,1000,3000,-6000,-10000,-
+cr_lp,normals,Crouching Light Punch,下轻拳,2lp,,High,4,2,11,-1,4,300,300,250,-500,-2000,"Special, Drive, Super"
+cr_mp,normals,Crouching Medium Punch,下中拳,2mp,,High,7,4,14,-2,6,600,500,1500,-3000,-4000,"Special, Drive, Super"
+cr_hp,normals,Crouching Heavy Punch,下重拳,2hp,,High,9,6,20,-6,1,800,1000,2000,-5000,-8000,"Special, Drive, Super"
+cr_lk,normals,Crouching Light Kick,下轻脚,2lk,,Low,6,2,10,-2,2,200,300,250,-500,-2000,-
+cr_mk,normals,Crouching Medium Kick,下中脚,2mk,,Low,9,3,17,-3,3,700,500,2000,-4000,-6000,-
+cr_hk,normals,Crouching Heavy Kick,下重脚,2hk,,Low,10,3,21,-6,-,900,1000,2000,-5000,-10000,-
+j_lp,normals,Jumping Light Punch,跳轻拳,j>lp,,High,5,10,-,-,-,300,300,500,-1500,-2000,-
+j_mp,normals,Jumping Medium Punch,跳中拳,j>mp,,High,12,3,-,-,-,700,500,1000,-2500,-4000,-
+j_hp,normals,Jumping Heavy Punch,跳重拳,j>hp,,Overhead,9,5,-,-,-,800,1000,2000,-4000,-5000,-
+j_lk,normals,Jumping Light Kick,跳轻脚,j>lk,,Overhead,6,8,-,-,-,300,300,500,-1500,-2000,-
+j_mk,normals,Jumping Medium Kick,跳中脚,j>mk,,Overhead,7,6,-,-,-,600,500,1000,-2500,-4000,-
+j_hk,normals,Jumping Heavy Kick,跳重脚,j>hk,,Overhead,11,6,-,-,-,800,1000,2000,-4000,-5000,-
+triglav_light,specials,Triglav (Light),トリグラフ (弱),22lp,,High,22,10,-,-2,-,800,800,1000,-2500,-3000,Super
+triglav_medium,specials,Triglav (Medium),トリグラフ (中),22mp,,High,22,10,-,-2,-,800,800,1000,-2500,-3000,Super
+triglav_heavy,specials,Triglav (Heavy),トリグラフ (強),22hp,,High,22,10,-,-2,-,800,800,1000,-2500,-3000,Super
+triglav_od_light,specials,Triglav (OD Light),トリグラフ (OD 弱),22(lp+mp),,High,20,20,-,3,-,1000,1000,-,-3000,-5000,Super
+triglav_od_medium,specials,Triglav (OD Medium),トリグラフ (OD 中),22(lp+hp),,High,20,20,-,3,-,1000,1000,-,-3000,-5000,Super
+triglav_od_heavy,specials,Triglav (OD Heavy),トリグラフ (OD 強),22(mp+hp),,High,20,20,-,3,-,1000,1000,-,-3000,-5000,Super
+stribog_light,specials,Stribog (Light),ストリボーグ (弱),236lp,,High,16,6,-,-10,-,1000,800,2000,-3500,-5000,Super
+stribog_medium,specials,Stribog (Medium),ストリボーグ (中),236mp,,High,20,"3, 3",-,-8,-,1200,800,2000,-3500,-5000,Super
+stribog_heavy,specials,Stribog (Heavy),ストリボーグ (強),236hp,,High,28,"3, 3",-,4,-,800,800,2000,-3500,-5000,Super
+stribog_od,specials,Stribog (OD),ストリボーグ (OD),236(pp),,High,19,"3, 3",-,2,-,1000,800,-,-3500,-5000,Super
+departure_light,specials,Departure (Light),ヴィーハト (弱),214lp,,High,150,10,-,-,-,800,1000,1000,-2500,-3000,-
+departure_medium,specials,Departure (Medium),ヴィーハト (中),214mp,,High,150,10,-,-,-,800,1000,1000,-2500,-3000,-
+departure_heavy,specials,Departure (Heavy),ヴィーハト (強),214hp,,High,150,10,-,-,-,800,1000,1000,-2500,-3000,-
+departure_od_light,specials,Departure (OD Light),ヴィーハト (OD 弱),214(lp+mp),,High,110,"10, 10",-,-,-,1000,800,-,-3000,-5000,-
+departure_od_medium,specials,Departure (OD Medium),ヴィーハト (OD 中),214(lp+hp),,High,110,"10, 10",-,-,-,1000,800,-,-3000,-5000,-
+departure_od_heavy,specials,Departure (OD Heavy),ヴィーハト (OD 強),214(mp+hp),,High,110,"10, 10",-,-,-,1000,800,-,-3000,-5000,-
+departure_window,specials,Departure: Window,ヴィーハト・アクノ,214+{lp|mp},,High,-,-,-,-,-,-,-,-,-,-,-
+departure_shadow,specials,Departure: Shadow,ヴィーハト・チェーニ,214hp,,High,-,-,-,-,-,-,-,-,-,-,-
+amnesia,specials,Amnesia,アムネジア,22*k,,High,3,18,35,-,-,800,1000,1000,-2500,-3000,-
+amnesia_od,specials,Amnesia (OD),アムネジア (OD),22(kk),,High,1,20,35,-,-,1200,1200,-,-3000,-5000,-
+torbalan_light,specials,Torbalan (Light),トルバラン (弱),236lk,,High,22,-,-,-6,-,800,600,1000,-2500,-3000,Super
+torbalan_medium,specials,Torbalan (Medium),トルバラン (中),236mk,,Overhead,26,-,-,-8,6,1000,600,1000,-2500,-3000,Super
+torbalan_heavy,specials,Torbalan (Heavy),トルバラン (強),236hk,,Low,26,-,-,-8,6,1000,600,1000,-2500,-3000,Super
+torbalan_od,specials,Torbalan (OD),トルバラン (OD),236(kk),,High,22,-,-,25,-,800,800,-,-5000,-5000,Super
+embrace,specials,Embrace,アブニマーチ,214*k,,Throw,26,-,-,-,-,1800,3000,2500,-,-10000,-
+embrace_od,specials,Embrace (OD),アブニマーチ (OD),214(kk),,Throw,26,-,-,-,-,2600,3000,-,-,-10000,-
+f_mk,normals,Guillotinna,ギリオチーナ,6mk,,High,22,2,19,-3,3,700,500,1500,-2500,-5000,-
+n3_hp,normals,Malice,シャーロスチ,3hp,,High,16,3,31,-14,-,900,1000,3000,-4000,-10000,-
+f_hk,normals,Bylina,ヴィリーナ,6hk,,High,11,"2, 4",24,-5,-,900,1000,2500,-5000,-10000,"Special, Drive, Super"
+b_mp,targetCombos,Grom Strelka (1),グロームストレルカ (1),4mp,,High,8,3,16,-1,5,500,400,1500,-3000,-4000,"Special, Drive, Super"
+grom_strelka_2,targetCombos,Grom Strelka (2),グロームストレルカ (2),4mp>5mp,,High,10,3,20,-6,3,500,400,800,-2000,-3000,"Special, Drive, Super"
+zilant,targetCombos,Zilant,ジラント,hk>hp,,High,20,3,20,-3,3,500,500,1000,-2500,-4000,"Special, Drive, Super"
+zilant_mid,targetCombos,Zilant Mid,ジラントルカー,hk>hp>hp,,Overhead,21,3,22,-4,3,1000,1000,2000,-5000,-10000,-
+zilant_low,targetCombos,Zilant Low,ジラントナガー,hk>hp>hk,,Low,21,3,22,-4,3,1000,1000,2000,-5000,-10000,-
+ravina,normals,Ravina,ラヴィーナ,(lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-
+uragan,normals,Uragan,ウラガーン,(4lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-
+tornado,normals,Tornado,タルナード,j>(lplk),,Throw,5,3,-,-,-,1200,2000,2000,-,-10000,-
+chornobog,supers,Chornobog,チョルノボーグ,236236*p,,High,8,-,-,-33,-,2000,-,-,-2500,-5000,-
+lovushka,supers,Lovushka,ラヴーシュカ,214214*p,,High,29,-,-,-,-,2000,-,-,-4000,-10000,-
+interdiction,supers,Interdiction,ザプリェット,236236*k,,High,18,6,62,-50,-,4000,-,-,-7500,-15000,-
+interdiction_ca,supers,Interdiction (Critical Art),ザプリェット (CA),236236*k,,High,18,6,62,-50,-,4500,-,-,-10000,-20000,-

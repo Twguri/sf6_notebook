@@ -37,51 +37,68 @@ function HelpModal({
   const title = lang === "zh" ? "帮助 / FAQ" : "Help / FAQ";
 
   const sections: Array<{ h: string; p: string }> =
-    lang === "zh"
-      ? [
-          {
-            h: "这是什么",
-            p: "这是一个为街霸6玩家开发的备忘录，你可以在这里记录你的对局思路，角色心得，小套路，连段使用等等在你的对局中可能有帮助的信息。也可以在这里查看不同角色的帧数表。",
-          },
-          {
-            h: "快捷键",
-            p: "Ctrl+Alt+F（macOS：Cmd+Option+F）切换 正常 / 格斗键盘。格斗键盘时：数字 1–9 按照numpad的方向自动输入对应箭头；lp/mp/hp、lk/mk/hk、pp/kk/ppp/kkk 会在连段上下文中自动大写。连段记录中的指令输入默认为格斗键盘,绝大多数文本框支持切换正常/格斗键盘",
-          },
-          {
-            h: "数据保存在哪里？",
-            p: "内容保存在浏览器本地（localStorage）。不同角色、不同对手、不同连段组会分别保存。数据在没有操作的情况下会自动保存，你也可以导出你的logbook方便你在异地的时候也能够查看自己的备忘录",
-          },
-          {
-            h: "Matchup 怎么换对手？",
-            p: "进入 Matchup 页面后，点击顶部 VS 横幅即可打开对手选择弹窗。",
-          },
-          {
-            h: "Combo（连段）怎么用？",
-            p: "你可以创建/编辑/删除你的连段/连段组。进入 Combo 后先新建连段组，再在组内添加连段。指令栏固定格斗键盘输入；后续压制/注意事项可用 Ctrl+Alt+F 切换输入模式。你可以创建/编辑/删除你的连段/连段组。",
-          },
-        ]
-      : [
-          {
-            h: "What is This?",
-            p: "This is a notebook site for street figher 6 players, you can record anything helpful for you fights here, including combos, insights, matchup stretagies. And also the frame data for all characters.",
-          },
-          {
-            h: "Fighters Input",
-            p: "Ctrl+Alt+F (macOS: Cmd+Option+F) toggles Normal/Fighter input. In Fighter: digits 1–9 become direction arrows according to the numpad direction; lp/mp/hp, lk/mk/hk, pp/kk/ppp/kkk auto-capitalize in combo context. Most of the text area can switch the input mode",
-          },
-          {
-            h: "Where is data saved?",
-            p: "Data is stored locally in your browser (localStorage). Different characters/opponents/combo groups are saved separately. You can also export the logbook file to save your notebook to local manually",
-          },
-          {
-            h: "How to change opponent in Matchup?",
-            p: "On the Matchup page, click the VS banner at the top to open the opponent picker.",
-          },
-          {
-            h: "How to use Combos?",
-            p: "You can create/edit/delete you combos/combo groups here. Go to Combo → create a combo group → add combos inside. Command field is fixed Fighter input; Oki/Notes fields can toggle input mode via Ctrl+Alt+F.",
-          },
-        ];
+  lang === "zh"
+    ? [
+        {
+          h: "这是什么？",
+          p: "这是一个为《街霸6》玩家开发的备忘录。你可以在这里记录对局思路、角色心得、小套路、连段使用等任何可能对实战有帮助的信息；也可以在这里查看不同角色的帧数表。",
+        },
+        {
+          h: "快捷键 / 格斗键盘是什么？",
+          p: "Ctrl+Alt+F（macOS：Cmd+Option+F）切换 正常 / 格斗键盘。有些文本输入区右上角也有 Normal/Fighter 切换按钮。格斗键盘模式下：数字 1–9 会按小键盘方向自动输入对应箭头；lp/mp/hp、lk/mk/hk、pp/kk/ppp/kkk 会在连段上下文中自动大写。连段记录中的“指令”输入默认为格斗键盘，绝大多数文本框支持切换。",
+        },
+        {
+          h: "数据保存在哪里？",
+          p: "内容保存在浏览器本地（localStorage）。不同角色、不同对手、不同连段组会分别保存。数据在没有操作的情况下会自动保存；你也可以手动导出 logbook 文件，方便异地使用以及防止误删。",
+        },
+        {
+          h: "帧数表数据来源",
+          p: "游戏内自测 + 官方信息 + ComboMasher 数据整合。部分数据可能会随版本更新出现滞后，目前仍在持续录入与校对中。",
+        },
+        {
+          h: "角色对策中怎么换对手？",
+          p: "进入 Matchup 页面后，点击顶部 VS 横幅即可打开对手选择弹窗。",
+        },
+        {
+          h: "连段功能怎么用？",
+          p: "你可以创建/编辑/删除你的连段与连段组。进入 Combo 后先新建连段组（例如：确反连、板边连、绿冲连……），再在组内添加连段。连段默认包含：名称、指令、后续压制、注意事项。指令栏固定为格斗键盘输入；后续压制/注意事项可用 Ctrl+Alt+F 切换输入模式。指令输入支持键盘输入，也可以通过右上角“招式选择器”搜索并插入招式。",
+        },
+        {
+          h: "关于更新",
+          p: "当前版本 1.1.0：更新了帧数表（部分）以及连段输入（招式选择器）。帧数表仍在持续完善中。",
+        },
+      ]
+    : [
+        {
+          h: "What is this?",
+          p: "This is a notebook for Street Fighter 6 players. You can write down anything that helps your matches: matchup notes, character insights, small setups, combos, and more. It also includes frame data for each character.",
+        },
+        {
+          h: "Hotkeys / Fighter Input",
+          p: "Ctrl+Alt+F (macOS: Cmd+Option+F) toggles Normal vs Fighter Input. Some text fields also have a Normal/Fighter toggle button on the top-right. In Fighter Input: digits 1–9 map to directional arrows based on numpad directions; lp/mp/hp, lk/mk/hk, pp/kk/ppp/kkk auto-capitalize in combo context. The Combo “Command” field uses Fighter Input by default, and most text fields can switch modes.",
+        },
+        {
+          h: "Where is my data saved?",
+          p: "Everything is saved locally in your browser (localStorage). Notes are stored separately by character, opponent, and combo group. Your data auto-saves when you stop interacting, and you can also export a logbook file for backup or using it on another device.",
+        },
+        {
+          h: "Frame Data sources",
+          p: "Compiled from in-game testing, official information, and ComboMasher data. Some values may lag behind after game updates; the database is still being actively filled and verified.",
+        },
+        {
+          h: "How do I change the opponent in Matchup?",
+          p: "On the Matchup page, click the VS banner at the top to open the opponent picker.",
+        },
+        {
+          h: "How do I use Combos?",
+          p: "You can create/edit/delete combos and combo groups. Go to Combo → create a combo group (e.g., punishes, corner, Drive Rush, etc.) → add combos inside. Each combo includes: name, command, oki/follow-ups, and notes. The Command field is fixed to Fighter Input; the follow-up/notes fields can toggle input mode via Ctrl+Alt+F. You can type commands directly or insert moves via the move picker (search and select).",
+        },
+        {
+          h: "Updates",
+          p: "Current version: 1.1.0. Added partial frame data and improved combo input with a move picker. The frame data section is still being expanded and verified.",
+        },
+      ];
+
 
   return (
     <div

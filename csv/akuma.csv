@@ -1,0 +1,83 @@
+#SF6APP_META
+#characterId=akuma
+#displayNameCN=
+#displayNameEN=Akuma
+#(You can edit CSV freely. Lines starting with # are ignored on import.)
+id,category,nameEN,nameCN,input,inputDisplay,hitType,startup,active,recovery,onBlock,onHit,damage,superArt,driveOnHit,driveOnBlock,driveOnPunishCounter,cancel
+st_lp,normals,Standing Light Punch,站轻拳,5lp,,High,4,3,7,-1,4,300,300,250,-500,-2000,"Special, Drive, Super"
+st_mp,normals,Standing Medium Punch,站中拳,5mp,,High,6,4,11,1,4,600,500,1500,-3000,-4000,"Special, Drive, Super"
+st_hp,normals,Standing Heavy Punch,站重拳,5hp,,High,9,5,18,-3,3,800,1000,2000,-5000,-8000,"Special, Drive, Super"
+st_lk,normals,Standing Light Kick,站轻脚,5lk,,High,5,3,11,-4,2,300,300,250,-500,-2000,"Special, Drive, Super"
+st_mk,normals,Standing Medium Kick,站中脚,5mk,,High,7,5,15,-3,3,700,500,2000,-4000,-6000,"Special, Drive, Super"
+st_hk,normals,Standing Heavy Kick,站重脚,5hk,,High,13,"3, 4",15,3,7,800,1000,3000,-6000,-10000,-
+cr_lp,normals,Crouching Light Punch,下轻拳,2lp,,High,4,2,9,-1,5,300,300,250,-500,-2000,"Special, Drive, Super"
+cr_mp,normals,Crouching Medium Punch,下中拳,2mp,,High,6,3,14,-1,6,600,500,1500,-3000,-4000,"Special, Drive, Super"
+cr_hp,normals,Crouching Heavy Punch,下重拳,2hp,,High,8,8,19,-8,0,900,1000,3000,-6000,-8000,"Special, Drive, Super"
+cr_lk,normals,Crouching Light Kick,下轻脚,2lk,,Low,5,2,10,-3,3,200,300,250,-500,-2000,-
+cr_mk,normals,Crouching Medium Kick,下中脚,2mk,,Low,8,3,19,-6,1,500,500,1000,-2000,-4000,"Special, Drive, Super"
+cr_hk,normals,Crouching Heavy Kick,下重脚,2hk,,Low,9,3,23,-12,-,900,1000,3000,-4000,-10000,-
+j_lp,normals,Jumping Light Punch,跳轻拳,j>lp,,Overhead,4,10,-,-,-,300,300,500,-1500,-2000,-
+j_mp,normals,Jumping Medium Punch,跳中拳,j>mp,,Overhead,8,4,-,-,-,700,500,1000,-2500,-4000,"Special, Drive, Super"
+j_hp,normals,Jumping Heavy Punch,跳重拳,j>hp,,Overhead,9,6,-,-,-,800,1000,2000,-4000,-5000,-
+j_lk,normals,Jumping Light Kick,跳轻脚,j>lk,,Overhead,6,10,-,-,-,300,300,500,-1500,-2000,-
+j_mk,normals,Jumping Medium Kick,跳中脚,j>mk,,Overhead,7,6,-,-,-,500,500,1000,-2500,-4000,-
+j_hk,normals,Jumping Heavy Kick,跳重脚,j>hk,,Overhead,12,6,-,-,-,800,1000,2000,-4000,-5000,-
+f_mp,normals,Skull Splitter,頭蓋破殺,6mp,,Overhead,20,"1, 3",18,-1,3,600,500,1500,-2500,-5000,-
+f_mk,normals,Resso Snap Kick,裂槍脚,6mk,,High,10,3,18,-4,5,700,500,2000,-4000,-6000,-
+b_hk,normals,Rago High Kick,羅豪脚,4hk,,High,12,5,27,-15,-,800,1000,2000,-5000,-5000,"Special, Drive, Super"
+viscera_piercer,targetCombos,Viscera Piercer,六腑穿ち,5mp>5mp,,High,7,3,21,-6,-1,700,500,1500,-2000,-4000,"Special, Drive, Super"
+bone_crusher_axe_kick,targetCombos,Bone Crusher Axe Kick,骸新り,5mk>5hk,,Overhead,20,3,20,-3,1,600,1000,2000,-4000,-5000,-
+f_hp,targetCombos,Kikoku Combination (1),鬼哭連撃（１）,6hp,,High,13,4,20,-3,4,800,1000,2000,-5000,-8000,-
+kikoku_combination_2,targetCombos,Kikoku Combination (2),鬼哭連撃（２）,6hp>6hp,,High,10,3,21,-10,-,600,1000,2000,-5000,-8000,-
+kikoku_combination_3,targetCombos,Kikoku Combination (3),鬼哭連撃（３）,6hp>6hp>5hk,,High,9,3,24,-13,-,875,1000,2500,-2000,-,-
+tenmaku_blade_kick,targetCombos,Tenmaku Blade Kick,天魔空刃脚,9>2mk,,High,16,1,-,-,-,800,1000,2000,-4000,-5000,-
+gou_hadoken_light,specials,Gou Hadoken (Light),豪波動拳（弱）,236lp,,High,16,-,-,-4,0,700,600,1000,-2500,-3000,Super
+gou_hadoken_light_charge_level_2,specials,Gou Hadoken (Light) (Charge Level 2),豪波動拳 (溜め Lv2）,236[lp],,High,31,-,-,2,-,1000,600,1000,-2500,-5000,Super
+gou_hadoken_light_charge_level_3,specials,Gou Hadoken (Light) (Charge Level 3),豪波動拳（溜め Lv3）,236[lp],,High,56,-,-,5,-,1200,600,1000,-3000,-7000,Super
+gou_hadoken_medium,specials,Gou Hadoken (Medium),豪波動拳 (中),236[mp],,High,14,-,-,-6,-2,700,600,1000,-2500,-3000,Super
+gou_hadoken_medium_charge_level_2,specials,Gou Hadoken (Medium) (Charge Level 2),豪波動拳 (中)（溜め Lv2）,236[mp],,High,31,-,-,2,-,1000,600,1000,-2500,-5000,Super
+gou_hadoken_medium_charge_level_3,specials,Gou Hadoken (Medium) (Charge Level 3),豪波動拳 (中)（溜め Lv3）,236[mp],,High,56,-,-,5,-,1200,600,1000,-3000,-7000,Super
+gou_hadoken_heavy,specials,Gou Hadoken (Heavy),豪波動拳 (強),236[hp],,High,12,-,-,-8,-4,700,600,1000,-2500,-3000,Super
+gou_hadoken_heavy_charge_level_2,specials,Gou Hadoken (Heavy) (Charge Level 2),豪波動拳 (強)（溜め Lv2）,236[hp],,High,31,-,-,2,-,1000,600,1000,-2500,-5000,Super
+gou_hadoken_heavy_charge_level_3,specials,Gou Hadoken (Heavy) (Charge Level 3),豪波動拳 (強)（溜め Lv3）,236[hp],,High,56,-,-,5,-,1200,600,1000,-3000,-7000,Super
+gou_hadoken_od,specials,Gou Hadoken (OD),豪波動拳（OD）,236pp,,High,12,-,-,2,-,1000,600,-,-2500,-5000,Super
+gou_hadoken_charged,specials,Gou Hadoken (Charged) (OD),豪波動拳（ホールド）（OD）,236[pp],,High,-,-,-,5,-,1200,600,-,-3000,-7000,Super
+zanku_hadoken,specials,Zanku Hadoken,斬空波動拳,9>236*p,,High,13,-,-,-,-,600,1000,2000,-2500,-3000,-
+zanku_hadoken_od,specials,Zanku Hadoken (OD),斬空波動拳（OD）,{8|9}>236pp,,High,6,-,-,-,-,900,1000,-,-5000,-1000,-
+gou_shoryuken_light,specials,Gou Shoryuken (Light),豪昇龍拳 (弱),623lp,,High,5,10,21,-23,-,1100,1000,2000,-4000,-5000,Super
+gou_shoryuken_medium,specials,Gou Shoryuken (Medium),豪昇龍拳 (中),623mp,,High,6,10,30,-30,-,1300,1000,2000,-4000,-5000,Super
+gou_shoryuken_heavy,specials,Gou Shoryuken (Heavy),豪昇龍拳 (強),623hp,,High,7,11,35,-36,-,1500,1200,2100,-6000,-5000,Super
+gou_shoryuken_od,specials,Gou Shoryuken (OD),豪昇龍拳（OD）,623pp,,High,6,11,37,-39,-,1900,1000,-,-5000,-,-
+tatsumaki_zankukyaku_light,specials,Tatsumaki Zankukyaku (Light),竜巻斬空脚 (弱),214lk,,High,12,2,21,-13,-,600,1000,2000,-4000,-5000,-
+tatsumaki_zankukyaku_medium,specials,Tatsumaki Zankukyaku (Medium),竜巻斬空脚 (中),214mk,,High,11,"2, 2",31,-13,-,1000,1000,2000,-5000,-5000,-
+tatsumaki_zankukyaku_heavy,specials,Tatsumaki Zankukyaku (Heavy),竜巻斬空脚 (強),214hk,,High,7,"3, 3, 3, 3",23,-59,-,1600,1000,2000,-5000,-5000,-
+tatsumaki_zankukyaku_od,specials,Tatsumaki Zankukyaku (OD),竜巻斬空脚（OD）,214kk,,High,13,"2, 2, 2, 2, 2",26,-17,-,1000,1000,-,-4000,-10000,-
+aerial_tatsumaki_zankukyaku,specials,Aerial Tatsumaki Zankukyaku,空中竜巻斬空脚,9>214*k,,High,11,"2, 2, 2",-,-,-,900,600,2000,-4000,-5000,-
+aerial_tatsumaki_zankukyaku_od,specials,Aerial Tatsumaki Zankukyaku (OD),空中竜巻斬空脚（OD）,{8|9}>214kk,,High,11,"2, 3, 3, 3, 2",-,-,-,1300,1000,-,-4000,-10000,-
+adamant_flame_light_1,specials,Adamant Flame (Light 1),金剛灼火（弱 1段目）,214lp,,High,15,3,23,-8,1,700,500,500,-6000,-6000,Super
+adamant_flame_light_2,specials,Adamant Flame (Light 2),金剛灼火（弱 2段目）,214lp>6*p,,High,7,4,18,-10,3,500,500,500,-4000,-7000,Super
+adamant_flame_medium_1,specials,Adamant Flame (Medium 1),金剛灼火（中 1段目）,214mp,,High,19,3,20,-4,2,800,500,500,-6000,-10000,Super
+adamant_flame_medium_2,specials,Adamant Flame (Medium 2),金剛灼火（中 2段目）,214mp>6*p,,High,7,4,32,-18,-,600,500,500,-4000,-7000,Super
+adamant_flame_heavy_1,specials,Adamant Flame (Heavy 1),金剛灼火（強 1段目）,214hp,,High,23,3,19,-2,3,900,500,500,-6000,-10000,Super
+adamant_flame_heavy_2,specials,Adamant Flame (Heavy 2),金剛灼火（強 2段目）,214hp>6*p,,High,11,4,28,-14,-,600,500,500,-4000,-7000,Super
+adamant_flame_od_1,specials,Adamant Flame (OD 1),金剛灼火（OD 1段目）,214pp,,High,18,3,23,-3,1,700,500,-,-6000,-10000,Super
+adamant_flame_od_2,specials,Adamant Flame (OD 2),金剛灼火（OD 2段目）,214pp>6*p,,High,7,"4, 3",25,-18,-,700,750,-,-4000,-7000,Super
+demon_raid,specials,Demon Raid,百鬼襲,236*k,,-,-,-,-,-,-,-,-,-,-,-,-
+demon_raid_od,specials,Demon Raid (OD),百鬼襲（OD）,236kk,,-,-,-,-,-,-,-,-,-,-,-,-
+demon_low_slash,specials,Demon Low Slash,百鬼豪斬,5,236*k>5,Low,8,4,19,2,-,1000,1000,1000,-4000,-10000,-
+demon_guillotine,specials,Demon Guillotine,百鬼豪衝,*p,236*k>*p,Overhead,16,1,-,-,-,1300,1000,1000,-6000,-5000,-
+demon_blade_kick,specials,Demon Blade Kick,百鬼豪刃,*k,236*k>*k,High,13,1,-,-,-,700,1000,1000,-4000,-5000,-
+demon_swoop,specials,Demon Swoop,百鬼潜影,2,236*k>2,-,-,-,-,-,-,-,-,-,-,-,-
+demon_gou_zanku,specials,Demon Gou Zanku,百鬼豪斬空,236*p,236kk>236*p,High,6,-,-,-,-,900,1000,-,-5000,-1000,-
+demon_gou_rasen,specials,Demon Gou Rasen,百鬼豪螺旋,214*k,236kk>214*k,High,5,"2, 3, 3, 3, 2",-,-,-,1300,1000,-,-4000,-1000,-
+ashura_senku_forward,normals,Ashura Senku (Forward),阿修羅閃空（前方）,6kkk,,-,-,-,-,-,-,-,-,-,-,-,-
+ashura_senku_backward,normals,Ashura Senku (Backward),阿修羅閃空（後方）,4kkk,,-,-,-,-,-,-,-,-,-,-,-,-
+oboro_throw,specials,Oboro Throw,朧,lp+lk,6kkk>lp+lk,-,8,3,50,-,-,2200,-,-,-,-,-
+messatsu_gohado,supers,Messatsu Gohado,滅殺豪波動,236236*p,,High,10,-,-,-41,-,2200,-,-,-2500,-,-
+tenma_gozanku,supers,Tenma Gozanku,天魔豪斬空,{8|9}>236236*k,,High,14,-,-,-,-,2000,-,-,-2500,-1000,-
+empyreans_end,supers,Empyrean’s End,崩天劫火,214214*p,,High,9,3,52,-35,-,2800,-,-,-5000,-,-
+sip_of_calamity,supers,Sip of Calamity,禍坏,236236*k,,High,8,4,58,-41,-,4000,-,-,-7500,-,-
+sip_of_calamity_critical_art,supers,Sip of Calamity (Critical Art),禍坏（CA）,236236*k,,High,8,4,58,-41,-,4500,-,-,-10000,-3500,-
+shun_goku_satsu,supers,Shun Goku Satsu,瞬獄殺,lp>lp>6>lk>hp,,-,7,21,57,-,-,4700,-,-,-,-,-
+goshoha,normals,Goshoha,豪衝破,lp+lk,,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-
+shurettou,normals,Shurettou,朱裂刀,(4lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-

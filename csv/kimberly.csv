@@ -1,0 +1,82 @@
+#SF6APP_META
+#characterId=kimberly
+#displayNameCN=
+#displayNameEN=Kimberly
+#(You can edit CSV freely. Lines starting with # are ignored on import.)
+id,category,nameEN,nameCN,input,inputDisplay,hitType,startup,active,recovery,onBlock,onHit,damage,superArt,driveOnHit,driveOnBlock,driveOnPunishCounter,cancel
+st_lp,normals,Standing Light Punch,站轻拳,5lp,,High,5,2,8,-2,5,270,300,250,-500,-2000,"Special, Drive, Super"
+st_mp,normals,Standing Medium Punch,站中拳,5mp,,High,6,3,18,-2,3,540,500,1000,-2000,-4000,"Special, Drive, Super"
+st_hp,normals,Standing Heavy Punch,站重拳,5hp,,High,9,3,20,-4,3,630,1000,2000,-5000,-10000,"Special, Drive, Super"
+st_lk,normals,Standing Light Kick,站轻脚,5lk,,Low,5,3,11,-3,1,270,300,250,-500,-2000,"Special, Drive, Super"
+st_mk,normals,Standing Medium Kick,站中脚,5mk,,Low,8,3,18,-4,1,540,700,1000,-2000,-4000,"Special, Drive, Super"
+st_hk,normals,Standing Heavy Kick,站重脚,5hk,,Low,12,4,17,2,7,630,1000,2500,-5000,-10000,-
+cr_lp,normals,Crouching Light Punch,下轻拳,2lp,,High,4,3,7,-2,4,270,300,250,-500,-2000,"Special, Drive, Super"
+cr_mp,normals,Crouching Medium Punch,下中拳,2mp,,High,6,3,13,-1,7,500,600,1200,-2500,-5000,"Special, Drive, Super"
+cr_hp,normals,Crouching Heavy Punch,下重拳,2hp,,High,8,6,17,-2,3,720,1000,2500,-5000,-10000,"Special, Drive, Super"
+cr_lk,normals,Crouching Light Kick,下轻脚,2lk,,Low,5,3,7,-2,2,180,300,250,-500,-2000,-
+cr_mk,normals,Crouching Medium Kick,下中脚,2mk,,Low,7,3,16,1,5,540,600,1200,-2500,-5000,-
+cr_hk,normals,Crouching Heavy Kick,下重脚,2hk,,Low,8,3,24,-10,-,810,1200,2500,-5000,-10000,-
+j_lp,normals,Jumping Light Punch,跳轻拳,j>lp,,High,4,10,-,-,-,270,300,500,-1500,-2000,-
+j_mp,normals,Jumping Medium Punch,跳中拳,j>mp,,High,6,4,-,-,-,450,500,1000,-2500,-5000,"Special, Drive, Super"
+j_hp,normals,Jumping Heavy Punch,跳重拳,j>hp,,Overhead,8,5,-,-,-,630,1000,2000,-4000,-5000,-
+j_lk,normals,Jumping Light Kick,跳轻脚,j>lk,,Overhead,5,10,-,-,-,270,300,500,-1500,-2000,-
+j_mk,normals,Jumping Medium Kick,跳中脚,j>mk,,Overhead,7,6,-,-,-,540,500,1000,-2500,-4000,-
+j_hk,normals,Jumping Heavy Kick,跳重脚,j>hk,,Overhead,9,6,-,-,-,630,1000,2000,-4000,-5000,-
+n3_mk,normals,Water Slicer Slide,水切り蹴り,3mk,,Low,11,10,16,-9,-3,450,500,1000,-2000,-4000,-
+b_hk,normals,Windmill Kick,風車,4hk,,High,22,2,19,-3,4,720,1000,2500,-5000,-10000,-
+f_hk,normals,Hisen Kick,飛箭蹴,6hk,,High,27,3,21,-3,1,720,800,1200,-4000,-7000,-
+step_up,specials,Step Up,矢来越え,7|8|9,6hk>7|8|9,-,-,-,-,-22,-10,-,-,-,-,-,-
+elbow_drop,normals,Elbow Drop,肘落とし,j>2mp,,High,13,13,-,-,-,540,500,1000,-2500,-4000,-
+bushin_tiger_fangs,targetCombos,Bushin Tiger Fangs,武神虎連牙,mp>hp,,High,10,3,26,-12,-,360,800,1500,-4000,-8000,"Special, Drive, Super"
+bushin_prism_strikes_2,targetCombos,Bushin Prism Strikes (2),武神天架拳（2段目）,lp>mp,,High,6,3,18,-6,1,360,400,800,-2000,-4000,-
+bushin_prism_strikes_3,targetCombos,Bushin Prism Strikes (3),武神天架拳（3段目）,lp>mp>hp,,High,12,2,25,-10,-,440,700,1500,-2000,-4000,-
+bushin_prism_strikes_4,targetCombos,Bushin Prism Strikes (4),武神天架拳（4段目）,lp>mp>hp>hk,,High,26,3,24,-12,-,520,800,1500,-2000,-4000,-
+bushin_hellchain_3,targetCombos,Bushin Hellchain (3),武神獄鎖拳（3段目）,lp>mp>2hp,,High,10,2,25,-10,2,580,700,1500,-2000,-4000,-
+bushin_hellchain_4,targetCombos,Bushin Hellchain (4),武神獄鎖拳（4段目）,lp>mp>2hp>hk,,High,15,3,24,-12,-,750,800,1500,-2000,-4000,-
+bushin_hellchain_throw,targetCombos,Bushin Hellchain Throw,武神獄鎖投げ,lp>mp>2hp>2hk,,High,15,3,23,-12,-,750,700,1500,-2000,-,-
+bushin_senpukyaku_light,specials,Bushin Senpu-kyaku (Light),武神旋風脚 (弱),214lk,,High,6,"6, 6, 6, 3",-,-30,-,990,1000,2000,-1000,-5000,-
+bushin_senpukyaku_medium,specials,Bushin Senpu-kyaku (Medium),武神旋風脚 (中),214mk,,High,7,"6, 6, 6, 3",-,-32,-,1080,1000,2000,-1000,-5000,-
+bushin_senpukyaku_heavy,specials,Bushin Senpu-kyaku (Heavy),武神旋風脚 (強),214hk,,High,8,"6, 6, 6, 3",-,-35,-,1170,1000,2000,-1000,-5000,-
+bushin_senpukyaku_od,specials,Bushin Senpu-kyaku (OD),武神旋風脚 (OD),214(kk),,High,6,"6, 6, 6, 6, 2",-,-40,-,1410,1200,-,-1000,-5000,-
+aerial_bushin_senpukyaku,specials,Aerial Bushin Senpu-kyaku,空中武神旋風脚,9>214*k,,High,8,"2, 2, 2",-,1,5,900,1000,2000,-4000,-5000,Super
+aerial_bushin_senpukyaku_od,specials,Aerial Bushin Senpu-kyaku (OD),空中武神旋風脚 (OD),9>214(kk),,High,8,"2, 3, 2, 3, 2",-,1,5,990,1200,-,-3000,-5000,Super
+sprint,specials,Sprint,疾駆け,236*k,,-,-,-,-,-,-,-,-,-,-,-,-
+kimberly_emergency_stop,specials,Emergency Stop,急停止,*p,236*k>*p,-,-,-,-,-,-,-,-,-,-,-,-
+torso_cleaver,specials,Torso Cleaver,胴刎ね,lk,236*k>lk,High,21,7,16,1,-,900,1200,2000,-4000,-6000,Super
+shadow_slide,specials,Shadow Slide,影すくい,mk,236*k>mk,Low,10,12,19,-12,-,720,1000,2000,-4000,-8000,Super
+neck_hunter,specials,Neck Hunter,首狩り,hk,236*k>hk,High,19,5,19,-3,-,900,1200,2000,-4000,-8000,Super
+arc_step,specials,Arc Step,アークステップ,5,236*k>5,High,8,"2, 2",26,-6,3,450,200,1000,-3000,-5000,-
+bushin_izuna_otoshi,specials,Bushin Izuna Otoshi,武神飯綱落とし,*p,236*k>*p,-,13,6,-,-,-,1440,3000,2000,-,-10000,-
+bushin_hojin_kick,specials,Bushin Hojin Kick,武神鉾刃脚,*k,236*k>*k,High,13,6,-,-8,-,630,1000,2000,-5000,-10000,-
+sprint_od,specials,Sprint (OD),疾駆け (OD),236(kk),,-,-,-,-,-,-,-,-,-,-,-,-
+kimberly_emergency_stop_od,specials,Emergency Stop (OD),急停止 (OD),*p,236(kk)>*p,-,-,-,-,-,-,-,-,-,-,-,-
+torso_cleaver_od,specials,Torso Cleaver (OD),胴刎ね (OD),lk,236(kk)>lk,High,17,"2, 5",16,3,-,1080,1200,-,-6000,-8000,Super
+shadow_slide_od,specials,Shadow Slide (OD),影すくい (OD),mk,236(kk)>mk,Low,8,"8, 4",19,-10,-,900,1000,-,-5000,-8000,Super
+neck_hunter_od,specials,Neck Hunter (OD),首狩り (OD),hk,236(kk)>hk,High,15,"2, 3",19,-1,-,1080,1200,-,-5000,-8000,Super
+arc_step_od,specials,Arc Step (OD),アークステップ (OD),5,236(kk)>5,-,8,"2, 2",26,-6,3,270,200,-,-3000,-5000,-
+bushin_izuna_otoshi_od,specials,Bushin Izuna Otoshi (OD),武神飯綱落とし (OD),*p,236(kk)>*p,-,13,6,-,-,-,900,1000,-,-,-10000,-
+bushin_hojin_kick_od,specials,Bushin Hojin Kick (OD),武神鉾刃脚 (OD),*k,236(kk)>*k,High,13,6,-,-8,-,630,1000,-,-2500,-10000,Super
+vagabond_edge_light,specials,Vagabond Edge (Light),逆転一文字 (弱),236lp,,High,10,3,21,-5,3,810,800,2000,-4000,-6000,Super
+vagabond_edge_medium,specials,Vagabond Edge (Medium),逆転一文字 (中),236mp,,High,17,"2, 3",28,-12,-,1080,1200,2400,-2000,-8000,Super
+vagabond_edge_heavy,specials,Vagabond Edge (Heavy),逆転一文字 (強),236hp,,-,24,"2, 1",28,-12,-,540,1000,2000,-2000,-6000,Super
+vagabond_edge_od,specials,Vagabond Edge (OD),逆転一文字 (OD),236(pp),,High,17,"2, 1",28,-12,-,540,1000,-,-2000,-6000,Super
+hidden_variable,specials,Hidden Variable,彩隠形,214*p,,-,-,-,-,-,-,-,-,-,-,-,-
+hidden_variable_od,specials,Hidden Variable (OD),彩隠形 (OD),214(pp),,-,-,-,-,-,-,-,-,-,-,-,-
+genius_at_play,specials,Genius at Play,召雷細工,22*p,,-,-,-,-,-,-,-,-,-,-,-,-
+shuriken_bomb_light,specials,Shuriken Bomb (Light),細工手裏剣 (弱),22lp,,-,122,10,-,-,-,450,600,1000,-4000,-6000,-
+shuriken_bomb_medium,specials,Shuriken Bomb (Medium),細工手裏剣 (中),22mp,,-,124,10,-,-,-,450,600,1000,-4000,-6000,-
+shuriken_bomb_heavy,specials,Shuriken Bomb (Heavy),細工手裏剣 (強),22hp,,-,128,10,-,-,-,450,600,1000,-4000,-6000,-
+genius_at_play_od,specials,Genius at Play (OD),召雷細工 (OD),22(pp),,-,-,-,-,-,-,-,-,-,-,-,-
+shuriken_bomb_spread_light,specials,Shuriken Bomb Spread (Light),乱れ細工手裏剣 (弱),22(lp+mp),,-,-,-,-,-,-,450,600,1000,-4000,-6000,-
+shuriken_bomb_spread_medium,specials,Shuriken Bomb Spread (Medium),乱れ細工手裏剣 (中),22(lp+hp),,-,-,-,-,-,-,450,600,1000,-4000,-6000,-
+shuriken_bomb_spread_heavy,specials,Shuriken Bomb Spread (Heavy),乱れ細工手裏剣 (強),22(mp+hp),,-,-,-,-,-,-,450,600,1000,-4000,-6000,-
+nue_twister,specials,Nue Twister,荒鶴捻り,j>236*p,,-,5,3,-,-,-,1440,2500,2000,-,-10000,-
+nue_twister_od,specials,Nue Twister (OD),荒鶴捻り (OD),j>236(pp),,-,5,3,-,-,-,900,1000,-,-,-10000,-
+bushin_beats,supers,Bushin Beats,武神乱舞,236236*k,,-,10,15,40,-25,-,1800,-,-,-2500,-5000,-
+bushin_thunderous_beats,supers,Bushin Thunderous Beats,武神雷鳴乱舞,236236*k,,-,10,15,40,-25,-,2200,-,-,-2500,-5001,-
+bushin_scramble,supers,Bushin Scramble,武神天翔亢竜,214214*p,,-,13,8,-,-25,-,2800,-,-,-5000,-10000,-
+soaring_bushin_scramble,supers,Soaring Bushin Scramble,空中武神天翔亢竜,9>214214*p,,-,13,1,-,-,-,2800,-,-,-5000,-10000,-
+bushin_ninjastar_cypher,supers,Bushin Ninjastar Cypher,武神顕現神楽,236236*p,,-,8,6,51,-35,-,4000,-,-,-7500,-15000,-
+bushin_ninjastar_cypher_ca,supers,Bushin Ninjastar Cypher (Critical Art),武神顕現神楽 (CA),236236*p,,-,8,6,51,-35,-,4500,-,-,-10000,-20000,-
+ripcord_throw,normals,Ripcord Throw,縄掛背負い,(lplk),,Throw,5,3,23,-,-,1082,2000,2000,-,-10000,-
+bell_ringer,normals,Bell Ringer,鐘打巴,(4lplk),,Throw,5,3,23,-,-,1082,2000,2000,-,-10000,-

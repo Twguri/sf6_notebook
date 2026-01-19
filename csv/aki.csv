@@ -1,0 +1,60 @@
+#SF6APP_META
+#characterId=aki
+#displayNameCN=
+#displayNameEN=Aki
+#(You can edit CSV freely. Lines starting with # are ignored on import.)
+id,category,nameEN,nameCN,input,inputDisplay,hitType,startup,active,recovery,onBlock,onHit,damage,superArt,driveOnHit,driveOnBlock,driveOnPunishCounter,cancel
+st_lp,normals,Standing Light Punch,站轻拳,5lp,,High,5,2,7,-1,4,300,300,250,-500,-2000,"Special, Drive, Super"
+st_mp,normals,Standing Medium Punch,站中拳,5mp,,High,6,5,16,-3,3,600,500,1500,-3000,-4000,"Special, Drive, Super"
+st_hp,normals,Standing Heavy Punch,站重拳,5hp,,High,12,3,21,-4,1,800,1000,2000,-5000,-8000,-
+st_lk,normals,Standing Light Kick,站轻脚,5lk,,High,4,3,12,-3,3,300,300,250,-500,-2000,"Special, Drive, Super"
+st_mk,normals,Standing Medium Kick,站中脚,5mk,,High,8,3,15,-2,6,700,700,2000,-4000,-6000,-
+st_hk,normals,Standing Heavy Kick,站重脚,5hk,,High,9,4,19,-3,4,800,1000,2000,-5000,-8000,"Special, Drive, Super"
+cr_lp,normals,Crouching Light Punch,下轻拳,2lp,,High,4,2,9,-1,4,300,300,250,-500,-2000,"Special, Drive, Super"
+cr_mp,normals,Crouching Medium Punch,下中拳,2mp,,High,8,3,18,-3,1,600,500,1500,-3000,-4000,"Special, Drive, Super"
+cr_hp,normals,Crouching Heavy Punch,下重拳,2hp,,Low,10,3,28,-8,-,900,1000,3000,-4000,-10000,-
+cr_lk,normals,Crouching Light Kick,下轻脚,2lk,,Low,5,3,8,-2,3,200,300,250,-500,-2000,-
+cr_mk,normals,Crouching Medium Kick,下中脚,2mk,,Low,7,3,16,1,5,600,600,1000,-2000,-4000,Super
+cr_hk,normals,Crouching Heavy Kick,下重脚,2hk,,Low,10,6,20,-3,0,900,1000,3000,-6000,-10000,Super
+j_lp,normals,Jumping Light Punch,跳轻拳,j>lp,,Overhead,5,9,-,-,-,300,300,500,-1500,-2000,-
+j_mp,normals,Jumping Medium Punch,跳中拳,j>mp,,Overhead,7,4,-,-,-,700,500,1000,-3000,-4000,-
+j_hp,normals,Jumping Heavy Punch,跳重拳,j>hp,,Overhead,11,6,-,-,-,800,1000,2000,-4000,-5000,-
+j_lk,normals,Jumping Light Kick,跳轻脚,j>lk,,Overhead,5,6,-,-,-,300,300,500,-1500,-2000,-
+j_mk,normals,Jumping Medium Kick,跳中脚,j>mk,,Overhead,7,6,-,-,-,600,500,1000,-2500,-4000,-
+j_hk,normals,Jumping Heavy Kick,跳重脚,j>hk,,Overhead,8,8,-,-,-,800,1000,2000,-4000,-5000,-
+n3_mp,normals,Pu Lao,蒲牢,3mp,,Overhead,24,3,18,-2,3,600,500,1500,-2500,-4000,-
+f_hp,normals,Chi Wen,螭吻,6hp,,Overhead,16,3,21,-4,3,900,1000,3000,-6000,-6000,Super
+f_hk,normals,Qiu Niu,囚牛,6hk,,High,14,"3, 3",16,2,4,800,1000,3000,-4000,-10000,-
+gong_fu,normals,Gong Fu,蚣蝮,9>6hp,,Overhead,9,5,-,-,-,800,1000,2000,-4000,-5000,-
+hun_dun,targetCombos,Hun Dun,渾沌,lp>lp,,High,8,2,14,-3,1,300,400,500,-1000,-4000,"Special, Drive, Super"
+qiong_qi,targetCombos,Qiong Qi,窮奇,hp>hp,,High,14,3,24,-15,-,400,600,3000,-6000,-10000,-
+nightshade_pulse,specials,Nightshade Pulse,紫煙砲,214lp,,High,17,-,-,-10,-5,500,600,1000,-2500,-2000,Super
+nightshade_chaser,specials,Nightshade Chaser,紫煙追,6*p,214lp>6*p,High,13,2,34,-16,-4,500,600,1000,-2500,-2000,Super
+nightshade_pulse_od,specials,Nightshade Pulse (OD),紫煙砲（OD）,214(pp),,High,16,-,-,1,-,700,600,-,-2000,-5000,Super
+nightshade_chaser_od,specials,Nightshade Chaser (OD),紫煙追（OD）,6*p,214(pp)>6*p,High,13,5,28,-13,-,600,600,-,-2500,-2000,Super
+nightshade_chaser_burst,specials,Nightshade Chaser (Burst),紫煙追 （炸裂）,5,214lp>5,High,-,-,-,-,-,800,300,1000,-1000,-2500,-
+nightshade_chaser_burst_od,specials,Nightshade Chaser (Burst OD),紫煙追 （炸裂OD）,5,214(pp)>5,High,-,-,-,-,-,1600,900,-,-3500,-2500,-
+orchid_spring,specials,Orchid Spring,紫泡泉,214mp,,-,26,-,-,-,-,-,-,-,-,-,-
+toxic_wreath,specials,Toxic Wreath,紫泡撒,214hp,,-,13,"3, 9",13,-4,-,800,600,2000,-3000,-4000,Super
+serpent_lash_light,specials,Serpent Lash (Light),蛇頭鞭（弱）,236lp,,High,14,3,26,-8,1,500,600,2000,-3000,-5000,Super
+serpent_lash_medium,specials,Serpent Lash (Medium),蛇頭鞭（中）,236mp,,High,17,6,24,-12,-,600,600,2000,-5000,-7000,Super
+serpent_lash_heavy,specials,Serpent Lash (Heavy),蛇頭鞭（強）,236hp,,High,11,6,32,-20,-,700,600,2500,-6000,-8000,Super
+serpent_lash_od,specials,Serpent Lash (OD),蛇頭鞭（OD）,236(pp),,High,21,5,25,-14,4,600,500,-,-4000,-6000,Other
+cruel_fate_light,specials,Cruel Fate (Light),凶襲突（弱）,214lk,,High,24,"2, 2, 2, 2",-,-3,1,800,800,2000,-4000,-5000,Super
+cruel_fate_medium,specials,Cruel Fate (Medium),凶襲突（中）,214mk,,High,28,"2, 2, 2, 2",-,-3,3,900,800,2000,-4000,-5000,Super
+cruel_fate_heavy,specials,Cruel Fate (Heavy),凶襲突（強）,214hk,,High,33,"2, 2, 2, 2",-,-3,4,1000,800,2000,-4000,-5000,Super
+cruel_fate_od,specials,Cruel Fate (OD),凶襲突（OD）,214(kk),,High,28,"3, 2, 2, 2",-,2,-,1600,1200,-,-4000,-9000,Super
+snake_step_light,specials,Snake Step (Light),蛇軽功（弱）,236lk,,-,-,-,-,-,-,-,-,-,-,-,-
+snake_step_medium,specials,Snake Step (Medium),蛇軽功（中）,236mk,,-,-,-,-,-,-,-,-,-,-,-,-
+snake_step_heavy,specials,Snake Step (Heavy),蛇軽功（強）,236hk,,-,-,-,-,-,-,-,-,-,-,-,-
+snake_step_od,specials,Snake Step (OD),蛇軽功（OD）,236(kk),,-,-,-,-,-,-,-,-,-,-,-,-
+sinister_slide,specials,Sinister Slide,悪鬼蛇行,2+(pp),,-,-,-,-,-,-,-,-,-,-,-,-
+venomous_fang,specials,Venomous Fang,猛毒牙,*p,2+(pp)>*p,-,19,15,30,-25,-,1100,1000,2000,-5000,-8000,-
+heel_strike,specials,Heel Strike,蛇連咬,*k,2+(pp)>*k,High,11,"3, 3",20,-3,4,600,600,3000,-4000,-7000,Super
+entrapment,specials,Entrapment,雁字搦,(lplk),2+(pp)>(lplk),-,23,3,55,-,-,1852,3000,5000,-,-10010,-
+deadly_implication,supers,Deadly Implication,死屍累々,236236*k,,High,10,3,68,-46,-,1800,-,-,-2500,-,-
+tainted_talons,supers,Tainted Talons,毒爪,214214*p,,High,7,-,65,-19,-,2500,-,-,-5000,-,-
+claws_of_ya_zi,supers,Claws of Ya Zi,睚眦,236236*p,,High,10,3,58,-36,-,4000,-,-,-7500,-,-
+claw_of_ya_zi_ca,supers,Claw of Ya Zi (Critical Art),睚眦（CA）,236236*p,,-,10,3,58,-36,-,4500,-,-,-10000,-,-
+whisper,normals,Whisper,贔屓,(lp+lk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-
+gluttony,normals,Gluttony,食腐,(4lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-

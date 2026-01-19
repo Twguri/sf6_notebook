@@ -1,0 +1,16 @@
+#SF6APP_META
+#characterId=common
+#displayNameCN=
+#displayNameEN=Common
+#(You can edit CSV freely. Lines starting with # are ignored on import.)
+id,category,nameEN,nameCN,input,inputDisplay,hitType,startup,active,recovery,onBlock,onHit,damage,superArt,driveOnHit,driveOnBlock,driveOnPunishCounter,cancel
+forward_dash,normals,Forward Dash,前ダッシュ,66,,-,-,-,-,-,-,-,-,-,-,-,-
+back_dash,normals,Back Dash,バックステップ,44,,-,-,-,-,-,-,-,-,-,-,-,-
+drive_parry,normals,Drive Parry,ドライブパリィ,(mpmk),,-,-,-,-,-,-,-,-,-,-,-,-
+drive_rush,normals,Parry Drive Rush,パリィドライブラッシュ,(6+mp+mk)>6,,-,-,-,-,-,-,-,-,-,-,-,-
+drive_impact,normals,Drive Impact,ドライブインパクト,(hphk),,-,-,-,-,-,-,-,-,-,-,-,-
+drive_rush_cancel,normals,Drive Rush Cancel,キャンセルドライブラッシュ,{66|(5mp+5mk)},,-,-,-,-,-,-,-,-,-,-,-,-
+drive_reversal,normals,Drive Reversal,ドライブリバーサル,(6hphk),,-,-,-,-,-,-,-,-,-,-,-,-
+forward,normals,Forward,前進,6,,-,-,-,-,-,-,-,-,-,-,-,-
+back,normals,Back,後退,4,,-,-,-,-,-,-,-,-,-,-,-,-
+jump,normals,Jump,ジャンプ,{7|8|9},,-,-,-,-,-,-,-,-,-,-,-,-

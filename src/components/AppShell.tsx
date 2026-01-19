@@ -1,7 +1,6 @@
 import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
-
+import { useEffect, useState } from "react";
 
 type AppShellProps = {
   title?: string;
@@ -15,6 +14,9 @@ type AppShellProps = {
   appTitle?: string;
   showAppTitle?: boolean;
 
+  /** 页面级：数据来源（像签名一样，极弱展示） */
+  dataSource?: ReactNode;
+
   children?: ReactNode;
 };
 
@@ -26,12 +28,14 @@ export default function AppShell({
   backLabel,
   appTitle,
   showAppTitle = false,
+  dataSource,
   children,
-  
 }: AppShellProps) {
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
   useEffect(() => {
     const setSBW = () => {
-      const sbw = window.innerWidth - document.documentElement.clientWidth; // 滚动条宽度
+      const sbw = window.innerWidth - document.documentElement.clientWidth;
       document.documentElement.style.setProperty("--sbw", `${sbw}px`);
     };
 
@@ -40,17 +44,25 @@ export default function AppShell({
     return () => window.removeEventListener("resize", setSBW);
   }, []);
 
+  useEffect(() => {
+    const onScroll = () => {
+      setShowBackToTop(window.scrollY > 300);
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <div
       style={{
         minHeight: "100vh",
         width: "100%",
-        minWidth:"100%",
         overflowX: "hidden",
         background: "radial-gradient(circle at top, #1a1630, #07060c)",
         color: "#fff",
         fontFamily:
-          'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif', 
+          'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
       }}
     >
       {/* Top bar */}
@@ -64,7 +76,6 @@ export default function AppShell({
           position: "relative",
         }}
       >
-        {/* 应用标题（仅在需要时显示） */}
         {showAppTitle ? (
           <div
             style={{
@@ -82,7 +93,6 @@ export default function AppShell({
           </div>
         ) : null}
 
-        {/* 返回按钮（可选） */}
         {backTo ? (
           <Link
             to={backTo}
@@ -97,7 +107,6 @@ export default function AppShell({
           </Link>
         ) : null}
 
-        {/* 页面标题 */}
         <div
           style={{
             fontSize: 18,
@@ -111,7 +120,6 @@ export default function AppShell({
           {title}
         </div>
 
-        {/* 语言切换 */}
         <div style={{ marginLeft: "auto" }}>
           <button
             type="button"
@@ -125,7 +133,6 @@ export default function AppShell({
               color: "#fff",
               cursor: "pointer",
               fontWeight: 900,
-              letterSpacing: 0.2,
             }}
           >
             {lang === "zh" ? "EN" : "中"}
@@ -133,7 +140,7 @@ export default function AppShell({
         </div>
       </div>
 
-      {/* Content container */}
+      {/* Content */}
       <div
         style={{
           width: "100%",
@@ -144,8 +151,25 @@ export default function AppShell({
         }}
       >
         {children}
+
+        {/* 页面级数据来源（像论文页脚） */}
+        {dataSource ? (
+          <div
+            style={{
+              marginTop: 32,
+              fontSize: 11,
+              color: "rgba(255,255,255,0.38)",
+              textAlign: "center",
+              letterSpacing: 0.2,
+            }}
+          >
+            {lang === "zh" ? "数据来源：" : "Data: "} {dataSource}
+          </div>
+        ) : null}
       </div>
-      <div style={{ padding: "24px 0 8px", textAlign: "center" }}>
+
+      {/* 全站签名（你的，未删除） */}
+      <div style={{ padding: "24px 0 12px", textAlign: "center" }}>
         <div
           style={{
             fontSize: 12,
@@ -158,7 +182,35 @@ export default function AppShell({
         </div>
       </div>
 
+      {/* Back to top */}
+      {showBackToTop ? (
+        <button
+          type="button"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          style={{
+            position: "fixed",
+            right: 18,
+            bottom: 18,
+            width: 46,
+            height: 46,
+            borderRadius: "60%",
+            border: "1px solid rgba(255,255,255,0.15)",
+            background: "rgba(0,0,0,0.45)",
+            color: "#fff",
+            cursor: "pointer",
+            fontSize: 18,
+            fontWeight: 900,
+            zIndex: 999,
+            backdropFilter: "blur(6px)",
 
+            display:"flex",
+            alignItems:"center",
+            justifyContent:"center"
+          }}
+        >
+          <span style={{ transform: "translateX(-0.5px)" }}>↑</span>
+        </button>
+      ) : null}
     </div>
   );
 }

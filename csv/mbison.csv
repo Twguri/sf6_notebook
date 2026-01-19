@@ -1,0 +1,71 @@
+#SF6APP_META
+#characterId=mbison
+#displayNameCN=
+#displayNameEN=Mbison
+#(You can edit CSV freely. Lines starting with # are ignored on import.)
+id,category,nameEN,nameCN,input,inputDisplay,hitType,startup,active,recovery,onBlock,onHit,damage,superArt,driveOnHit,driveOnBlock,driveOnPunishCounter,cancel
+st_lp,normals,Standing Light Punch,站轻拳,5lp,,High,5,3,9,-2,4,300,300,250,-500,-2000,"Special, Drive, Super"
+st_mp,normals,Standing Medium Punch,站中拳,5mp,,High,8,3,15,0,6,600,500,1500,-3000,-4000,"Special, Drive, Super"
+st_hp,normals,Standing Heavy Punch,站重拳,5hp,,High,19,3,17,1,4,1000,1000,2000,-5000,-10000,Super
+st_lk,normals,Standing Light Kick,站轻脚,5lk,,High,4,2,10,-1,3,300,300,250,-500,-2000,"Special, Drive, Super"
+st_mk,normals,Standing Medium Kick,站中脚,5mk,,High,10,4,16,-3,2,700,700,2000,-4000,-6000,-
+st_hk,normals,Standing Heavy Kick,站重脚,5hk,,High,13,4,19,-2,6,900,1000,3000,-5000,-10000,-
+cr_lp,normals,Crouching Light Punch,下轻拳,2lp,,High,4,2,10,-2,4,300,300,250,-500,-2000,"Special, Drive, Super"
+cr_mp,normals,Crouching Medium Punch,下中拳,2mp,,High,6,3,14,-1,5,600,500,1500,-3000,-4000,"Special, Drive, Super"
+cr_hp,normals,Crouching Heavy Punch,下重拳,2hp,,High,10,6,21,-9,0,900,1000,2000,-5000,-8000,"Special, Drive, Super"
+cr_lk,normals,Crouching Light Kick,下轻脚,2lk,,Low,5,2,10,-2,4,200,300,250,-500,-2000,-
+cr_mk,normals,Crouching Medium Kick,下中脚,2mk,,Low,8,3,19,-6,-2,500,500,1000,-2000,-4000,"Special, Drive, Super"
+cr_hk,normals,Crouching Heavy Kick,下重脚,2hk,,Low,11,3,26,-11,-,900,1000,3000,-4000,-10000,-
+j_lp,normals,Jumping Light Punch,跳轻拳,j>lp,,Overhead,5,4,-,-,-,300,300,500,-1500,-2000,-
+j_mp,normals,Jumping Medium Punch,跳中拳,j>mp,,Overhead,8,4,-,-,-,700,500,1000,-3000,-4000,-
+j_hp,normals,Jumping Heavy Punch,跳重拳,j>hp,,Overhead,9,6,-,-,-,800,1000,2000,-4000,-5000,-
+j_lk,normals,Jumping Light Kick,跳轻脚,j>lk,,Overhead,5,7,-,-,-,300,300,500,-1500,-2000,-
+j_mk,normals,Jumping Medium Kick,跳中脚,j>mk,,Overhead,7,7,-,-,-,500,500,1000,-2500,-4000,-
+j_hk,normals,Jumping Heavy Kick,跳重脚,j>hk,,Overhead,10,6,-,-,-,800,1000,2000,-4000,-5000,-
+f_hp,normals,Psycho Hammer,サイコハンマー,6hp,,Overhead,22,3,20,-3,3,800,1000,2000,-5000,-7000,-
+b_hk,normals,Evil Knee,イビルニー,4hk,,High,10,4,17,1,4,800,1000,3000,-5000,-8000,"Special, Drive, Super"
+n3_hk,normals,Hover Kick,ホバーキック,3hk,,Low,15,10,23,-15,-,900,1000,3000,-4000,-10000,-
+shadow_hammer,targetCombos,Shadow Hammer,シャドウハンマー,5mp>6hp,,Overhead,22,3,20,-3,3,800,500,2000,-5000,-7000,-
+shadow_spear,targetCombos,Shadow Spear,シャドウスピア,5mp>2hk,,Low,16,4,20,-3,3,700,600,3000,-3000,-4000,-
+hell_attack,targetCombos,Hell Attack,ヘルアタック,j>mp>mp,,High,7,4,-,-,-,700,500,1000,-3000,-4000,-
+psycho_crusher_attack_light,specials,Psycho Crusher Attack (Light),サイコクラッシャーアタック（弱）,[4]>6lp,,High,16,16,24,-20,-,1200,1200,2000,-6000,-10000,Super
+psycho_crusher_attack_light_psycho_mine,specials,[Psycho Mine] Psycho Crusher Attack (Light),[サイコマイン付与時] サイコクラッシャーアタック（弱）,[4]>6lp,,High,16,16,24,6,-,1700,1700,4000,-9000,-10000,Super
+psycho_crusher_attack_medium,specials,Psycho Crusher Attack (Medium),サイコクラッシャーアタック（中）,[4]>6mp,,High,20,16,24,-20,-,1400,1300,2500,-7000,-10000,Super
+psycho_crusher_attack_medium_psycho_mine,specials,[Psycho Mine] Psycho Crusher Attack (Medium),[サイコマイン付与時] サイコクラッシャーアタック（中）,[4]>6mp,,High,20,16,24,6,-,1900,1800,4500,-10000,-10000,Super
+psycho_crusher_attack_heavy,specials,Psycho Crusher Attack (Heavy),サイコクラッシャーアタック（強）,[4]>6hp,,High,24,26,24,-23,-,1600,1500,3000,-8000,-10000,Super
+psycho_crusher_attack_heavy_psycho_mine,specials,[Psycho Mine] Psycho Crusher Attack (Heavy),[サイコマイン付与時] サイコクラッシャーアタック（強）,[4]>6hp,,High,24,26,24,5,-,2100,2000,5000,-11000,-10000,Super
+psycho_crusher_attack_od,specials,Psycho Crusher Attack (OD),サイコクラッシャーアタック（OD）,[4]>6(pp),,High,16,16,20,-3,-,1300,1200,-,-10000,-7000,Super
+psycho_crusher_attack_od_psycho_mine,specials,[Psycho Mine] Psycho Crusher Attack (OD),[サイコマイン付与時] サイコクラッシャーアタック（OD）,[4]>6(pp),,High,16,16,20,10,-,2000,2800,-,-13000,-7000,-
+double_knee_press_light,specials,Double Knee Press (Light),ダブルニープレス（弱）,236lk,,High,13,"2, 2",20,-5,2,800,800,1500,-5000,-5000,Super
+double_knee_press_medium,specials,Double Knee Press (Medium),ダブルニープレス（中）,236mk,,High,17,"2, 2",20,-5,3,900,1000,2000,-5000,-5000,Super
+double_knee_press_heavy,specials,Double Knee Press (Heavy),ダブルニープレス（強）,236hk,,High,22,"2, 2",20,-4,3,1200,1200,2500,-5000,-5000,Super
+double_knee_press_od,specials,Double Knee Press (OD),ダブルニープレス（OD）,236(kk),,High,17,"2, 2, 3",28,-15,-,800,1000,-,-3000,-5000,Super
+backfist_combo_light,specials,Backfist Combo (Light),バックフィストコンボ（弱）,214lp,,High,13,"2, 5",25,-14,-,700,800,2000,-6000,-5000,Super
+backfist_combo_light_psycho_mine,specials,[Psycho Mine] Backfist Combo (Light),[サイコマイン付与時] バックフィストコンボ（弱）,214lp,,High,13,"2, 5",25,6,-,1300,1300,4000,-9000,-8000,Super
+backfist_combo_medium,specials,Backfist Combo (Medium),バックフィストコンボ（中）,214mp,,High,17,"2, 5",26,-15,-,800,1200,2500,-6000,-5000,Super
+backfist_combo_medium_psycho_mine,specials,[Psycho Mine] Backfist Combo (Medium),[サイコマイン付与時] バックフィストコンボ（中）,214mp,,High,17,"2, 5",26,6,-,1400,1700,4500,-9000,-8000,Super
+backfist_combo_heavy,specials,Backfist Combo (Heavy),バックフィストコンボ（強）,214hp,,High,22,"3, 5",26,-15,-,900,1000,2500,-6000,-5000,Super
+backfist_combo_heavy_psycho_mine,specials,[Psycho Mine] Backfist Combo (Heavy),[サイコマイン付与時] バックフィストコンボ（強）,214hp,,High,22,"3, 5",26,6,-,1500,1500,4500,-9000,-8000,Super
+backfist_combo_od,specials,Backfist Combo (OD),バックフィストコンボ（OD）,214(pp),,High,14,"2, 3, 3",44,-25,-,1200,1000,-,-9000,-7000,Super
+backfist_combo_od_psycho_mine,specials,[Psycho Mine] Backfist Combo (OD),[サイコマイン付与時] バックフィストコンボ（OD）,214(pp),,High,14,"2, 3, 3",44,-3,-,1700,1500,-,-12000,-10000,Super
+psycho_mine_self_detonation,specials,Psycho Mine (Self Detonation),サイコマイン（自動爆発）,5,,High,-,-,-,-,-,500,500,2000,-3000,-5000,-
+shadow_rise_light,specials,Shadow Rise (Light),シャドウライズ（弱）,[2]>8lk,,-,-,-,-,-,-,-,-,-,-,-,-
+shadow_rise_medium,specials,Shadow Rise (Medium),シャドウライズ（中）,[2]>8mk,,-,-,-,-,-,-,-,-,-,-,-,-
+shadow_rise_heavy,specials,Shadow Rise (Heavy),シャドウライズ（強）,[2]>8hk,,-,-,-,-,-,-,-,-,-,-,-,-
+shadow_rise_od,specials,Shadow Rise (OD),シャドウライズ（OD）,[2]>8(kk),,-,-,-,-,-,-,-,-,-,-,-,-
+head_press,specials,Head Press,ヘッドプレス,*k,[2]>8lk>*k,Overhead,15,1,-,-,-,800,1200,2500,-6000,-5000,-
+head_press_od,specials,Head Press (OD),ヘッドプレス（OD）,kk,[2]>8lk>kk,Overhead,15,1,-,-,-,2000,1800,-,-6000,-10000,-
+head_press_od_shadow_rise,specials,Head Press (OD Shadow Rise),ヘッドプレス（ODシャドウライズ）,*k,[2]>8(kk)>*k,Overhead,15,1,-,-,-,2000,1800,-,-6000,-10000,-
+somersault_skull_diver,specials,Somersault Skull Diver,サマーソルトスカルダイバー,*p,*k>*p,Overhead,12,10,29,-,-,800,1200,2500,-6000,-5000,-
+devil_reverse,specials,Devil Reverse,デビルリバース,*p,[2]>8lk>*p,Overhead,16,1,-,-,-,800,1200,2500,-6000,-5000,-
+devil_reverse_psycho_mine,specials,[Psycho Mine] Devil Reverse,[サイコマイン付与時] デビルリバース,*p,[2]>8lk>*p,Overhead,16,1,-,-,-,2000,2300,5750,-12000,-10500,-
+devil_reverse_od,specials,Devil Reverse (OD),デビルリバース（OD）,pp,[2]>8lk>pp,Overhead,21,1,-,4,-,1400,1600,-,-8000,-7000,-
+devil_reverse_od_psycho_mine,specials,[Psycho Mine] Devil Reverse (OD),[サイコマイン付与時] デビルリバース（OD）,pp,[2]>8lk>pp,Overhead,21,1,-,24,-,2600,2100,-,-13000,-13000,-
+devil_reverse_od_shadow_rise,specials,Devil Reverse (OD Shadow Rise),デビルリバース（ODシャドウライズ）,*p,[2]>8(kk)>*p,Overhead,21,1,-,4,-,1400,1600,-,-8000,-7000,-
+devil_reverse_od_shadow_rise_psycho_mine,specials,[Psycho Mine] Devil Reverse (OD Shadow Rise),[サイコマイン付与時] デビルリバース（ODシャドウライズ）,*p,[2]>8(kk)>*p,Overhead,21,1,-,24,-,2600,2100,-,-13000,-13000,-
+knee_press_nightmare,supers,Knee Press Nightmare,ニープレスナイトメア,236236*k,,Overhead,10,"2, 3, 2, 2",62,-41,-,2000,-,-,-2500,-5000,-
+psycho_punisher,supers,Psycho Punisher,サイコパニッシャー,214214*k,,High,26,7,52,-34,-,3000,-,-,-5000,-10000,-
+unlimited_psycho_crusher,supers,Unlimited Psycho Crusher,アンリミテッドサイコクラッシャー,236236*p,,High,10,6,65,-46,-,4000,-,-,-7500,-15000,-
+unlimitted_psycho_crusher_ca,supers,Unlimitted Psycho Crusher (Critical Art),アンリミテッドサイコクラッシャー（CA）,236236*p,,High,10,6,65,-46,-,4500,-,-,-10000,-20000,-
+deadly_throw,normals,Deadly Throw,デッドリースルー,(lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-
+death_tower,normals,Death Tower,デスタワー,(4lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-

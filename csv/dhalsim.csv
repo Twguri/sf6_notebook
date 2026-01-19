@@ -1,0 +1,85 @@
+#SF6APP_META
+#characterId=dhalsim
+#displayNameCN=
+#displayNameEN=Dhalsim
+#(You can edit CSV freely. Lines starting with # are ignored on import.)
+id,category,nameEN,nameCN,input,inputDisplay,hitType,startup,active,recovery,onBlock,onHit,damage,superArt,driveOnHit,driveOnBlock,driveOnPunishCounter,cancel
+st_lp,normals,Standing Light Punch,站轻拳,5lp,,High,4,3,8,-1,4,300,300,250,-500,-2000,"Special, Drive, Super"
+st_mp,normals,Standing Medium Punch,站中拳,5mp,,High,14,3,19,-5,0,700,500,2000,-3000,-6000,-
+st_hp,normals,Standing Heavy Punch,站重拳,5hp,,High,16,4,27,-11,-6,1000,1000,2500,-5000,-8000,-
+st_lk,normals,Standing Light Kick,站轻脚,5lk,,Low,9,4,11,-6,2,300,300,250,-500,-2000,"Special, Drive, Super"
+st_mk,normals,Standing Medium Kick,站中脚,5mk,,Low,12,3,18,-6,-2,600,500,2000,-3000,-6000,-
+st_hk,normals,Standing Heavy Kick,站重脚,5hk,,Low,17,3,20,-6,3,800,1000,2500,-4000,-8000,"Special, Drive, Super"
+cr_lp,normals,Crouching Light Punch,下轻拳,2lp,,High,5,3,9,-1,4,300,300,250,-500,-2000,"Special, Drive, Super"
+cr_mp,normals,Crouching Medium Punch,下中拳,2mp,,High,12,3,16,-4,0,600,500,2000,-3000,-6000,"Special, Drive, Super"
+cr_hp,normals,Crouching Heavy Punch,下重拳,2hp,,High,19,4,24,-12,-1,800,1000,2500,-4000,-8000,-
+cr_lk,normals,Crouching Light Kick,下轻脚,2lk,,Low,4,7,16,-10,-5,200,300,250,-500,-2000,-
+cr_mk,normals,Crouching Medium Kick,下中脚,2mk,,Low,10,13,14,-10,-3,500,500,1000,-2000,-3000,-
+cr_hk,normals,Crouching Heavy Kick,下重脚,2hk,,Low,12,16,20,-16,-,900,1000,2000,-4000,-7000,-
+j_lp,normals,Jumping Light Punch,跳轻拳,j>lp,,High,4,4,-,-,-,300,300,750,-1500,-2000,-
+j_mp,normals,Jumping Medium Punch,跳中拳,j>mp,,High,9,6,-,-,-,700,500,1500,-3000,-4000,"Special, Drive, Super"
+j_hp,normals,Jumping Heavy Punch,跳重拳,j>hp,,Overhead,13,4,-,-,-,800,1000,2500,-5000,-6000,-
+j_lk,normals,Jumping Light Kick,跳轻脚,j>lk,,Overhead,6,4,-,-,-,300,300,750,-1500,-2000,-
+j_mk,normals,Jumping Medium Kick,跳中脚,j>mk,,Overhead,11,6,-,-,-,500,500,1500,-3000,-4000,-
+j_hk,normals,Jumping Heavy Kick,跳重脚,j>hk,,Overhead,10,10,-,-,-,800,1000,2500,-5000,-6000,-
+b_mp,normals,Yoga Uppercut,ヨガアッパー,4mp,,High,8,6,16,-3,2,700,500,1500,-3000,-4000,"Special, Drive, Super"
+b_hp,normals,Yoga Lance,ヨガランス,4hp,,High,14,7,29,-16,-9,900,1000,2500,-5000,-8000,"Special, Drive, Super"
+n1_hp,normals,Nirvana Punch,涅槃パンチ,1hp,,High,10,4,20,-3,3,800,1000,2000,-5000,-8000,"Special, Drive, Super"
+n1_lk,normals,Agile Kick,アジャイルキック,1lk,,Low,5,3,10,-5,1,200,300,250,-500,-2000,-
+b_mk,normals,Divine Kick,合掌キック,4mk,,High,7,4,17,0,3,600,500,1500,-3000,-4000,"Special, Drive, Super"
+n1_mk,normals,Thrust Kick,スラストキック,1mk,,Low,8,3,20,-7,-3,500,500,1500,-3000,-4000,"Special, Drive, Super"
+b_hk,normals,Yoga Mountain,ヨガマウンテン,4hk,,High,14,6,20,-9,0,1000,1000,3000,-6000,-10000,-
+n1_hk,normals,Karma Kick,因果キック,1hk,,High,9,3,22,-7,-,900,1000,2500,-5000,-10000,-
+yoga_mummy,normals,Yoga Mummy,ヨガマミー,j>2lp,,Overhead,10,1,-,-,-,500,500,1500,-3000,-4000,"Special, Drive, Super"
+drill_kick_light,normals,Drill Kick (Light),ドリルキック (弱),j>2lk,,Overhead,9,1,-,-,-,500,500,1500,-3000,-4000,-
+drill_kick_medium,normals,Drill Kick (Medium),ドリルキック (中),j>2mk,,Overhead,9,1,-,-,-,500,500,1500,-3000,-4000,-
+drill_kick_heavy,normals,Drill Kick (Heavy),ドリルキック (強),j>2hk,,Overhead,9,1,-,-,-,500,500,1500,-3000,-4000,-
+cr_hk,normals,Long Sliding Kick,下重脚,2hk,,Low,12,16,20,-16,-,900,1000,2000,-4000,-7000,-
+yoga_fire_light,specials,Yoga Fire (Light),ヨガファイア (弱),236lp,,High,15,-,-,-6,-2,600,600,2000,-4000,-3000,Super
+yoga_fire_light_charged,specials,Yoga Fire (Light Charged),ヨガファイア (弱ホールド),236[lp],,High,43,-,-,-3,-,800,800,2000,-4000,-3000,Super
+yoga_fire_medium,specials,Yoga Fire (Medium),ヨガファイア (中),236mp,,High,15,-,-,-6,-2,600,600,2000,-4000,-3000,Super
+yoga_fire_medium_charged,specials,Yoga Fire (Medium Charged),ヨガファイア (中ホールド),236[mp],,High,43,-,-,-3,-,800,800,2000,-4000,-3000,Super
+yoga_fire_heavy,specials,Yoga Fire (Heavy),ヨガファイア (強),236hp,,High,15,-,-,-6,-2,600,600,2000,-4000,-3000,Super
+yoga_fire_heavy_charged,specials,Yoga Fire (Heavy Charged),ヨガファイア (強ホールド),236[hp],,High,43,-,-,-3,-,800,800,2000,-4000,-3000,Super
+yoga_fire_od_light,specials,Yoga Fire (Light OD),ヨガファイア (弱OD),236(lp+mp),,High,13,-,-,-3,-,1000,800,-,-4000,-5000,Super
+yoga_fire_od_medium,specials,Yoga Fire (Medium OD),ヨガファイア (中OD),236(lp+hp),,High,13,-,-,-3,-,1000,800,-,-4000,-5000,Super
+yoga_fire_od_heavy,specials,Yoga Fire (Heavy OD),ヨガファイア (強OD),236(mp+hp),,High,13,-,-,-3,-,1000,800,-,-4000,-5000,Super
+yoga_arch_light,specials,Yoga Arch (Light),ヨガアーチ (弱),236lk,,High,18,-,-,-1,1,600,600,2000,-4000,-3000,Super
+yoga_arch_medium,specials,Yoga Arch (Medium),ヨガアーチ (中),236mk,,High,18,-,-,-1,1,600,600,2000,-4000,-3000,Super
+yoga_arch_heavy,specials,Yoga Arch (Heavy),ヨガアーチ (強),236hk,,High,18,-,-,-1,1,600,600,2000,-4000,-3000,Super
+yoga_arch_od_light,specials,Yoga Arch (Light OD),ヨガアーチ (弱OD),236(lk+mk),,High,18,-,-,-3,1,1000,800,-,-2500,-5000,Super
+yoga_arch_od_medium,specials,Yoga Arch (Medium OD),ヨガアーチ (中OD),236(lk+hk),,High,18,-,-,-3,1,1000,800,-,-2500,-5000,Super
+yoga_arch_od_heavy,specials,Yoga Arch (Heavy OD),ヨガアーチ (強OD),236(mk+hk),,High,18,-,-,-3,1,1000,800,-,-2500,-5000,Super
+yoga_flame_light,specials,Yoga Flame (Light),ヨガフレイム（弱）,63214lp,,High,16,15,-,-4,-,800,900,2000,-4000,-5000,Super
+yoga_flame_medium,specials,Yoga Flame (Medium),ヨガフレイム（中）,63214mp,,High,20,16,-,-4,-,900,1000,2400,-5000,-5000,Super
+yoga_flame_heavy,specials,Yoga Flame (Heavy),ヨガフレイム（強）,63214hp,,High,26,17,-,-4,-,1200,1100,2700,-6000,-5000,Super
+yoga_flame_od,specials,Yoga Flame (OD),ヨガフレイム（OD）,63214(pp),,High,18,25,-,-11,-,800,1100,-,-4000,-5000,Super
+yoga_blast_light,specials,Yoga Blast (Light),ヨガブラスト（弱）,63214lk,,High,12,10,-,-6,-,1000,1200,3000,-6000,-6000,Super
+yoga_blast_medium,specials,Yoga Blast (Medium),ヨガブラスト（中）,63214mk,,High,15,10,-,-3,-,1200,1200,3000,-6000,-6000,Super
+yoga_blast_heavy,specials,Yoga Blast (Heavy),ヨガブラスト（強）,63214hk,,High,15,10,-,-3,-,1200,1200,3000,-6000,-6000,Super
+yoga_blast_od,specials,Yoga Blast (OD),ヨガブラスト（OD）,63214(kk),,High,12,10,-,0,-,1000,1200,-,-5000,-5000,Super
+yoga_comet_light,specials,Yoga Comet (Light),ヨガコメット (弱),j>63214lp,,High,30,-,-,-,-,800,1000,2000,-4000,-3000,-
+yoga_comet_medium,specials,Yoga Comet (Medium),ヨガコメット (中),j>63214mp,,High,30,-,-,-,-,800,1000,2000,-4000,-3000,-
+yoga_comet_heavy,specials,Yoga Comet (Heavy),ヨガコメット (強),j>63214hp,,High,30,-,-,-,-,800,1000,2000,-4000,-3000,-
+yoga_comet_od,specials,Yoga Comet (OD),ヨガコメット（OD）,j>63214(pp),,High,30,-,-,-,-,1200,1000,-,-4000,-5000,-
+yoga_float_immediate,normals,Yoga Float (Immediate),ヨガフロート (その場),2(kk),,-,-,-,-,-,-,-,-,-,-,-,-
+yoga_float_forward,normals,Yoga Float (Forward),ヨガフロート (前),3(kk),,-,-,-,-,-,-,-,-,-,-,-,-
+aerial_yoga_float,normals,Aerial Yoga Float,空中ヨガフロート,j>2(kk),,-,-,-,-,-,-,-,-,-,-,-,-
+yoga_teleport_punch,normals,Yoga Teleport (Punch),ヨガテレポート (パンチ),6(ppp),,-,-,-,-,-,-,-,-,-,-,-,-
+yoga_teleport_kick,normals,Yoga Teleport (Kick),ヨガテレポート (キック),6(kkk),,-,-,-,-,-,-,-,-,-,-,-,-
+aerial_yoga_teleport_punch,normals,Aerial Yoga Teleport (Punch),空中ヨガテレポート (パンチ),j>6(ppp),,-,-,-,-,-,-,-,-,-,-,-,-
+aerial_yoga_teleport_kick,normals,Aerial Yoga Teleport (Kick),空中ヨガテレポート (キック),j>6(kkk),,-,-,-,-,-,-,-,-,-,-,-,-
+yoga_teleport_backward,normals,Yoga Teleport (Backward),ヨガテレポート (後方),4+{(ppp)|(kkk)},,-,-,-,-,-,-,-,-,-,-,-,-
+aerial_yoga_teleport_backward_punch,normals,Aerial Yoga Teleport (Backward Punch),空中ヨガテレポート (後方パンチ),j>4(ppp),,-,-,-,-,-,-,-,-,-,-,-,-
+aerial_yoga_teleport_backward_kick,normals,Aerial Yoga Teleport (Backward Kick),空中ヨガテレポート (後ろキック),j>4(kkk),,-,-,-,-,-,-,-,-,-,-,-,-
+yoga_inferno_light,supers,Yoga Inferno (Light),ヨガインフェルノ (弱),236236lp,,High,10,84,-,-10,-,1920,-,-,5040,-5040,-
+yoga_inferno_medium,supers,Yoga Inferno (Medium),ヨガインフェルノ (中),236236mp,,High,10,84,-,-10,-,2100,-,-,5040,-5040,-
+yoga_inferno_heavy,supers,Yoga Inferno (Heavy),ヨガインフェルノ (強),236236hp,,High,10,84,-,-22,-,2040,-,-,5040,-5040,-
+yoga_sunburst_lv1,supers,Yoga Sunburst (Lv1),ヨガサンバースト (Lv1),214214*k,,High,7,-,-,-,-,2800,-,-,-2500,-10000,-
+yoga_sunburst_lv2,supers,Yoga Sunburst (Lv2),ヨガサンバースト (Lv2),214214[*k],,High,7,-,-,-,-,3100,-,-,-3500,-14000,-
+yoga_sunburst_lv3,supers,Yoga Sunburst (Lv3),ヨガサンバースト (Lv3),214214[*k],,High,7,-,-,-,-,4000,-,-,-4500,-18000,-
+merciless_yoga,supers,Merciless Yoga,ヨガマーシレス,236236*k,,High,10,5,75,-62,-,4000,-,-,-7500,-15000,-
+merciless_yoga_ca,supers,Merciless Yoga (Critical Art),ヨガマーシレス (CA),236236*k,,High,10,5,75,-62,-,4500,-,-,-10000,-20000,-
+yoga_smash,normals,Yoga Smash,ヨガスマッシュ,(lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-
+yoga_throw,normals,Yoga Throw,ヨガスロー,(5lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-
+yoga_splash,normals,Yoga Splash,ヨガスプラッシュ,(2lplk),,Throw,5,3,23,-,-,1200,2000,2000,-,-10000,-

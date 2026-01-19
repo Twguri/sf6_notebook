@@ -145,6 +145,18 @@ export default function AppShell({
       >
         {children}
       </div>
+      <div style={{ padding: "24px 0 8px", textAlign: "center" }}>
+        <div
+          style={{
+            fontSize: 12,
+            color: "rgba(255,255,255,0.45)",
+            fontWeight: 600,
+            letterSpacing: 0.2,
+          }}
+        >
+          © 2026 Twguri · SF6 Player Memo
+        </div>
+      </div>
 
 
     </div>

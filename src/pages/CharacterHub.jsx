@@ -16,7 +16,7 @@ export default function CharacterHub({ lang, t, toggleLang }) {
     >
       <div style={{ display: "grid", gap: 14, marginTop: 10 }}>
         <LinkCard to={`/c/${id}/frames`} title={t("framesTitle")} subtitle={t("framesSub")} theme="dark" />
-        <LinkCard to={`/c/${id}/combo`} title={t("combosTitle")} subtitle={t("combosSub")} theme="dark" />
+        <LinkCard to={`/c/${id}/combos`} title={t("combosTitle")} subtitle={t("combosSub")} theme="dark" />
         <LinkCard to={`/c/${id}/matchup`} title={t("matchupTitle")} subtitle={t("matchupsSub")} theme="dark" />
         <LinkCard to={`/c/${id}/tips`} title={t("tipsTitle")} subtitle={t("tipsSub")} theme="dark" />
       </div>

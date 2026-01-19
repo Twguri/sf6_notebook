@@ -8,7 +8,10 @@ import Placeholder from "./pages/Placeholder.jsx";
 import CharacterTips from "./pages/character/CharacterTips";
 import Matchup from "./pages/character/Matchup";
 import ComboPanel from "./pages/character/ComboPanel"; 
-
+import { exportLogbook, importLogbook } from "./utils/logbook";
+import ComboGroupsPage from "./pages/character/ComboGroupsPage";
+import ComboGroupPage from "./pages/character/ComboGroupPage";
+import { Navigate } from "react-router-dom";
 
 const I18N = {
   zh: {
@@ -70,9 +73,12 @@ export default function App() {
       <Route path="/" element={<CharacterSelect lang={lang} t={t} toggleLang={toggleLang} />} />
       <Route path="/c/:id" element={<CharacterHub lang={lang} t={t} toggleLang={toggleLang} />} />
       <Route path="/c/:id/frames" element={<Placeholder t={t} titleKey="framesTitle" />} />
-      <Route path="/c/:id/combo" element={<ComboPanel lang={lang} t={t} toggleLang={toggleLang} />}/>
+      <Route path="/c/:id/combo" element={<Navigate to="../combos" replace />} />
       <Route path="/c/:id/matchup" element={<Matchup lang={lang} t={t} toggleLang={toggleLang} />} />
       <Route path="/c/:id/tips" element={<CharacterTips lang={lang} t={t} toggleLang={toggleLang} />}/>
+      <Route path="/c/:id/combos" element={<ComboGroupsPage lang={lang} toggleLang={toggleLang} />} />
+      <Route path="/c/:id/combos/:groupId" element={<ComboGroupPage lang={lang} toggleLang={toggleLang} />} />
+
     </Routes>
   );
 }

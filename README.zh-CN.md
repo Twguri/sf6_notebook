@@ -1,3 +1,5 @@
+📍 **项目路线图**：见 [ROADMAP.zh-CN.md](ROADMAP.zh-CN.md)
+
 # SF6 Notebook（街霸6 玩家备忘录）
 
 SF6 Notebook 是一个**轻量、开源、以实战为导向**的《街头霸王 6（Street Fighter 6）》玩家备忘录与工具站。
@@ -48,7 +50,7 @@ SF6 Notebook 是一个**轻量、开源、以实战为导向**的《街头霸王
 项目已部署在 GitHub Pages：
 
 ```
-https://<你的用户名>.github.io/sf6_notebook/
+https://twguri.github.io/sf6_notebook/
 ```
 
 ---

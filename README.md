@@ -1,5 +1,7 @@
 
 [English](README.md) | [中文](README.zh-CN.md)
+📍 **Project Roadmap**: see [ROADMAP.md](ROADMAP.md)
+
 # SF6 Notebook
 
 A lightweight, open‑source notebook and utility site for **Street Fighter 6** players.

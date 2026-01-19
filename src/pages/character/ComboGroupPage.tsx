@@ -21,11 +21,18 @@ function uid(prefix: string) {
 }
 
 function sanitizeCommand(s: string) {
-  const ascii = s.replace(/[^\x20-\x7E]/g, "");
-  return ascii.replace(
-    /[^A-Za-z0-9 \t+\-*/().,:'"!?_=#@&%<>\[\]\\|^`~]/g,
-    ""
-  );
+  // 只清理控制字符（保留箭头等 Unicode）
+  return s
+    .replace(/[\u0000-\u001F\u007F]/g, "") // 控制字符
+    .replace(/\s+/g, " ")                  // 压缩空白
+    .trim();
+}
+
+function normalizeButtons(s: string) {
+  return s
+    .replace(/\b(lp|mp|hp|lk|mk|hk)\b/gi, (m) => m.toUpperCase())
+    .replace(/\b(pp|kk)\b/gi, (m) => m.toUpperCase())
+    .replace(/\b(p|k)\b/gi, (m) => m.toUpperCase());
 }
 function digitsToArrows(s: string) {
   const map: Record<string, string> = {
@@ -712,7 +719,7 @@ export default function ComboGroupPage({ lang, toggleLang }: Props) {
           onPick={(m: any) => {
             const ins = (m?.inputDisplay ?? m?.input ?? "").trim();
             if (!ins) return;
-            appendPickedInput(digitsToArrows(ins));;
+            appendPickedInput(digitsToArrows(normalizeButtons(ins)));
             setPickOpen(false);
           }}
         />

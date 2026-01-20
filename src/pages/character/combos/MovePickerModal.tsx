@@ -9,6 +9,13 @@ type MoveRow = {
   category?: string;
   hitType?: string;
 };
+function normalizeButtons(s: string) {
+  return s
+    .replace(/\b(lp|mp|hp|lk|mk|hk)\b/gi, (m) => m.toUpperCase())
+    .replace(/\b(ppp|kkk)\b/gi, (m) => m.toUpperCase())
+    .replace(/\b(pp|kk)\b/gi, (m) => m.toUpperCase())
+    .replace(/\b(p|k)\b/gi, (m) => m.toUpperCase());
+}
 
 function digitsToArrows(s: string) {
   const map: Record<string, string> = {
@@ -46,7 +53,7 @@ export default function MovePickerModal({
     return moves.filter((m) => {
       const name = (lang === "zh" ? m.nameCN : m.nameEN) ?? "";
       const other = (lang === "zh" ? m.nameEN : m.nameCN) ?? "";
-      const input = (m.inputDisplay ?? m.input ?? "") as string;
+      const input = (m.inputDisplay || m.input || "") as string;
       return (
         name.toLowerCase().includes(s) ||
         other.toLowerCase().includes(s) ||
@@ -175,7 +182,7 @@ export default function MovePickerModal({
             list.slice(0, 300).map((m) => {
               const name = (lang === "zh" ? m.nameCN : m.nameEN) ?? (m.nameEN ?? m.nameCN ?? m.id);
               const raw = (m.inputDisplay ?? m.input ?? "-") as string;
-              const shown = raw === "-" ? "-" : digitsToArrows(raw);
+              const shown = raw === "-" ? "-" : digitsToArrows(normalizeButtons(raw));
               const meta = `${m.category ?? "-"} · ${m.hitType ?? "-"}`;
 
               return (

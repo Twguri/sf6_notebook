@@ -30,10 +30,11 @@ function sanitizeCommand(s: string) {
 
 function normalizeButtons(s: string) {
   return s
-    .replace(/\b(lp|mp|hp|lk|mk|hk)\b/gi, (m) => m.toUpperCase())
-    .replace(/\b(pp|kk)\b/gi, (m) => m.toUpperCase())
-    .replace(/\b(p|k)\b/gi, (m) => m.toUpperCase())
-    .replace(/\b(ppp|kkk)\b/gi, (m) => m.toUpperCase());
+    // 长的先处理，避免被短的吃掉
+    .replace(/(^|[^a-zA-Z])(ppp|kkk)(?=[^a-zA-Z]|$)/gi, (_, pre, m) => pre + m.toUpperCase())
+    .replace(/(^|[^a-zA-Z])(pp|kk)(?=[^a-zA-Z]|$)/gi, (_, pre, m) => pre + m.toUpperCase())
+    .replace(/(^|[^a-zA-Z])(lp|mp|hp|lk|mk|hk)(?=[^a-zA-Z]|$)/gi, (_, pre, m) => pre + m.toUpperCase())
+    .replace(/(^|[^a-zA-Z])(p|k)(?=[^a-zA-Z]|$)/gi, (_, pre, m) => pre + m.toUpperCase());
 }
 
 function canonicalizeCommand(s: string) {
@@ -86,6 +87,8 @@ export default function ComboGroupPage({ lang, toggleLang }: Props) {
   // moves for picker
   const { moves: characterMoves } = useCharacterMoves(characterKey);
   const [pickOpen, setPickOpen] = useState(false);
+  const draftCmdRef = useRef<HTMLTextAreaElement | null>(null);
+const editCmdRef = useRef<HTMLTextAreaElement | null>(null);
 
   // storage
   const [groups, setGroups] = useState<ComboGroup[]>([]);
@@ -532,6 +535,7 @@ export default function ComboGroupPage({ lang, toggleLang }: Props) {
                 </div>
 
                 <FighterTextareaFixed
+                  textareaRef={draftCmdRef}
                   value={draft.command}
                   onChange={(next) => setDraft((d) => ({ ...d, command: next }))}
                   placeholder={t.cmdPH}
@@ -663,6 +667,7 @@ export default function ComboGroupPage({ lang, toggleLang }: Props) {
                           </div>
 
                           <FighterTextareaFixed
+                            textareaRef={editCmdRef}
                             value={editDraft.command}
                             onChange={(next) =>
                               setEditDraft((d) => (d ? { ...d, command: next } : d))
@@ -724,11 +729,30 @@ export default function ComboGroupPage({ lang, toggleLang }: Props) {
           moves={characterMoves}
           onClose={() => setPickOpen(false)}
           onPick={(m: any) => {
-            const ins = (m?.inputDisplay ?? m?.input ?? "").trim();
-            if (!ins) return;
-            appendPickedInput(canonicalizeCommand(ins));
+            const pickStr = (x: any) => (typeof x === "string" ? x : "");
+
+            // ✅ 兼容不知火舞（字段兜底）
+            const raw =
+              pickStr(m) ||
+              pickStr(m?.inputDisplay) ||
+              pickStr(m?.input) ||
+              pickStr(m?.command) ||
+              pickStr(m?.notation) ||
+              pickStr(m?.moveInput) ||
+              pickStr(m?.input_display);
+
+            if (!raw) {
+              console.warn("[MovePicker] empty input:", m);
+              return;
+            }
+
+            // ✅ 关键：在这里统一做规范化（大写 / 箭头）
+            const normalized = canonicalizeCommand(raw);
+
+            appendPickedInput(normalized);
             setPickOpen(false);
           }}
+
         />
       ) : null}
     </AppShell>

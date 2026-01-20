@@ -428,20 +428,29 @@ export function FighterTextarea({
 }
 
 // ===== Named export: FighterTextareaFixed (always fighter mode) =====
+// ===== Named export: FighterTextareaFixed (always fighter mode) =====
 export function FighterTextareaFixed({
   value,
   onChange,
   placeholder = "",
   minHeight = 80,
   style,
+  textareaRef, // ✅ 新增：外部可拿到 textarea DOM
 }: {
   value: string;
   onChange: (next: string) => void;
   placeholder?: string;
   minHeight?: number | string;
   style?: React.CSSProperties;
+  textareaRef?: React.MutableRefObject<HTMLTextAreaElement | null>; // ✅ A 方案
 }) {
   const taRef = useRef<HTMLTextAreaElement | null>(null);
+
+  // ✅ 同时设置内部 ref + 外部 ref（返回 void，避免 TS 报错）
+  const setRefs = (el: HTMLTextAreaElement | null): void => {
+    taRef.current = el;
+    if (textareaRef) textareaRef.current = el;
+  };
 
   const insertAtCaret = (insert: string) => {
     const el = taRef.current;
@@ -464,6 +473,7 @@ export function FighterTextareaFixed({
     // 固定 fighter：不允许切换
     if (e.ctrlKey || e.metaKey || e.altKey) return;
 
+    // Fighter 模式：数字 1-9 直接插入方向箭头
     if (isDigit1to9(e.key)) {
       e.preventDefault();
       insertAtCaret(DIR_MAP[e.key] ?? e.key);
@@ -494,6 +504,7 @@ export function FighterTextareaFixed({
     requestAnimationFrame(() => {
       const ta = taRef.current;
       if (!ta) return;
+
       ta.focus();
       ta.scrollTop = st;
       ta.scrollLeft = sl;
@@ -505,7 +516,7 @@ export function FighterTextareaFixed({
 
   return (
     <textarea
-      ref={taRef}
+      ref={setRefs} // ✅ 原来 ref={taRef}
       value={value}
       onChange={onChangeInner}
       onKeyDown={onKeyDown}

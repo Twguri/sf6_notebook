@@ -22,59 +22,64 @@ j_hp,normals,Jumping Heavy Punch,跳重拳,j>hp,,Overhead,9,5,-,-,-,800,1000,200
 j_lk,normals,Jumping Light Kick,跳轻脚,j>lk,,Overhead,5,7,-,-,-,300,300,500,-1500,-2000,-
 j_mk,normals,Jumping Medium Kick,跳中脚,j>mk,,Overhead,7,5,-,-,-,500,500,1000,-2500,-4000,-
 j_hk,normals,Jumping Heavy Kick,跳重脚,j>hk,,Overhead,10,6,-,-,-,800,1000,2000,-4000,-5000,-
-f_mp,normals,Senkotsu Uchi,扇骨打ち,6mp,,Overhead,20,3,18,-3,2,600,500,1500,-2500,-5000,-
-mai_l_musasabi_no_mai,specials,Musasabi no Mai (Light),ムササビの舞 (弱),214lk,,Overhead,15,2,24,-4,-,600,600,1000,-2000,-3000,-
-mai_boosted_l_musasabi_no_mai,specials,[Boosted] Musasabi no Mai (Light),[強化版] ムササビの舞 (弱),214lk,,Overhead,15,2,24,-2,-,700,600,1000,-2000,-3000,-
-mai_m_musasabi_no_mai,specials,Musasabi no Mai (Medium),ムササビの舞 (中),214mk,,Overhead,15,2,24,-4,-,600,600,1000,-2000,-3000,-
-mai_boosted_m_musasabi_no_mai,specials,[Boosted] Musasabi no Mai (Medium),[強化版] ムササビの舞 (中),214mk,,Overhead,15,2,24,-2,-,700,600,1000,-2000,-3000,-
-mai_h_musasabi_no_mai,specials,Musasabi no Mai (Heavy),ムササビの舞 (強),214hk,,Overhead,15,2,24,-4,-,600,600,1000,-2000,-3000,-
-mai_boosted_h_musasabi_no_mai,specials,[Boosted] Musasabi no Mai (Heavy),[強化版] ムササビの舞 (強),214hk,,Overhead,15,2,24,-2,-,700,600,1000,-2000,-3000,-
-mai_od_musasabi_no_mai,specials,Musasabi no Mai (OD),ムササビの舞 (OD),214kk,,Overhead,15,2,24,0,-,800,800,1000,-2000,-3000,-
-mai_boosted_od_musasabi_no_mai,specials,[Boosted] Musasabi no Mai (OD),[強化版] ムササビの舞 (OD),214kk,,Overhead,15,2,24,2,-,900,800,1000,-2000,-3000,-
-mai_midare_kachousen,specials,Midare Kachousen,乱れ花蝶扇,236pp>6*p,,High,15,-,-,0,-,900,300,-,-2000,-2000,-
-mai_boosted_midare_kachousen,specials,[Boosted] Midare Kachousen,[強化版] 乱れ花蝶扇,236pp>6*p,,High,15,-,-,0,-,1000,300,-,-2000,-2000,-
-mai_forward_throw,normals,Forward Throw,前投げ,lp+lk,,Throw,5,1,20,-,22,1200,1000,2000,-,-,-
-mai_back_throw,normals,Back Throw,後ろ投げ,4lp+lk,,Throw,5,1,20,-,22,1200,1000,2000,-,-,-
-mai_air_throw,normals,Air Throw,空中投げ,lp+lk,,Throw,5,1,20,-,22,1200,1000,2000,-,-,-
-mai_l_hishou_ryuuenjin,specials,Hishou Ryuuenjin (Light),飛翔龍炎陣 (弱),623lp,,High,5,18,15,-29,-,900,1000,2000,-8000,-5000,-
-mai_boosted_l_hishou_ryuuenjin,specials,[Boosted] Hishou Ryuuenjin (Light),[強化版] 飛翔龍炎陣 (弱),623lp,,High,5,18,15,-29,-,1000,1000,2000,-6000,-5000,-
-mai_m_hishou_ryuuenjin,specials,Hishou Ryuuenjin (Medium),飛翔龍炎陣 (中),623mp,,High,5,18,15,-29,-,900,1000,2000,-8000,-5000,-
-mai_boosted_m_hishou_ryuuenjin,specials,[Boosted] Hishou Ryuuenjin (Medium),[強化版] 飛翔龍炎陣 (中),623mp,,High,5,18,15,-29,-,1000,1000,2000,-6000,-5000,-
-mai_h_hishou_ryuuenjin,specials,Hishou Ryuuenjin (Heavy),飛翔龍炎陣 (強),623hp,,High,5,18,15,-29,-,900,1000,2000,-8000,-5000,-
-mai_boosted_h_hishou_ryuuenjin,specials,[Boosted] Hishou Ryuuenjin (Heavy),[強化版] 飛翔龍炎陣 (強),623hp,,High,5,18,15,-29,-,1000,1000,2000,-6000,-5000,-
-mai_od_hishou_ryuuenjin,specials,Hishou Ryuuenjin (OD),飛翔龍炎陣 (OD),623pp,,High,5,18,15,-29,-,1200,1200,2000,-8000,-5000,-
-mai_boosted_od_hishou_ryuuenjin,specials,[Boosted] Hishou Ryuuenjin (OD),[強化版] 飛翔龍炎陣 (OD),623pp,,High,5,18,15,-29,-,1300,1200,2000,-6000,-5000,-
-mai_hien_ren_kyaku_2,targetCombos,Hien Ren Kyaku (2),飛燕連脚（2段目）,5lk>5lk,,High,7,2,20,-10,-2,400,300,250,-500,-2000,-
-mai_hien_ren_kyaku_3,targetCombos,Hien Ren Kyaku (3),飛燕連脚（3段目）,5lk>5lk>5lk,,High,10,2,28,-10,3,500,300,250,-500,-2000,-
-mai_hoshi_kujaku_1,targetCombos,Hoshi Kujaku (1),星孔雀（1段目）,5hk>5hk,,High,8,5,20,-1,3,800,1000,2000,-5000,-10000,-
-mai_hoshi_kujaku_2,targetCombos,Hoshi Kujaku (2),星孔雀（2段目）,5hk>5hk>5hk,,High,9,3,38,-11,-,1200,1000,2000,-2500,-10000,-
-mai_l_kachousen,specials,Kachousen (Light),花蝶扇 (弱),236lp,,Overhead,15,2,24,-4,2,600,600,1000,-2000,-3000,-
-mai_boosted_l_kachousen,specials,[Boosted] Kachousen (Light),[強化版] 花蝶扇 (弱),236lp,,Overhead,15,2,24,-2,2,700,600,1000,-2000,-3000,-
-mai_m_kachousen,specials,Kachousen (Medium),花蝶扇 (中),236mp,,Overhead,15,2,24,-4,2,600,600,1000,-2000,-3000,-
-mai_boosted_m_kachousen,specials,[Boosted] Kachousen (Medium),[強化版] 花蝶扇 (中),236mp,,Overhead,15,2,24,-2,2,700,600,1000,-2000,-3000,-
-mai_h_kachousen,specials,Kachousen (Heavy),花蝶扇 (強),236hp,,Overhead,15,2,24,-4,2,600,600,1000,-2000,-3000,-
-mai_boosted_h_kachousen,specials,[Boosted] Kachousen (Heavy),[強化版] 花蝶扇 (強),236hp,,Overhead,15,2,24,-2,2,700,600,1000,-2000,-3000,-
-mai_od_kachousen,specials,Kachousen (OD),花蝶扇 (OD),236pp,,Overhead,15,2,24,0,2,800,600,1000,-2000,-3000,-
-mai_boosted_od_kachousen,specials,[Boosted] Kachousen (OD),[強化版] 花蝶扇 (OD),236pp,,Overhead,15,2,24,2,2,900,600,1000,-2000,-3000,-
-mai_l_ryuuenbu,specials,Ryuuenbu (Light),龍炎舞 (弱),214lp,,Overhead,15,2,24,-4,2,600,600,1000,-2000,-3000,-
-mai_boosted_l_ryuuenbu,specials,[Boosted] Ryuuenbu (Light),[強化版] 龍炎舞 (弱),214lp,,Overhead,15,2,24,-2,2,700,600,1000,-2000,-3000,-
-mai_m_ryuuenbu,specials,Ryuuenbu (Medium),龍炎舞 (中),214mp,,Overhead,15,2,24,-4,2,600,600,1000,-2000,-3000,-
-mai_boosted_m_ryuuenbu,specials,[Boosted] Ryuuenbu (Medium),[強化版] 龍炎舞 (中),214mp,,Overhead,15,2,24,-2,2,700,600,1000,-2000,-3000,-
-mai_h_ryuuenbu,specials,Ryuuenbu (Heavy),龍炎舞 (強),214hp,,Overhead,15,2,24,-4,2,600,600,1000,-2000,-3000,-
-mai_boosted_h_ryuuenbu,specials,[Boosted] Ryuuenbu (Heavy),[強化版] 龍炎舞 (強),214hp,,Overhead,15,2,24,-2,2,700,600,1000,-2000,-3000,-
-mai_od_ryuuenbu,specials,Ryuuenbu (OD),龍炎舞 (OD),214pp,,Overhead,15,2,24,0,2,800,600,1000,-2000,-3000,-
-mai_boosted_od_ryuuenbu,specials,[Boosted] Ryuuenbu (OD),[強化版] 龍炎舞 (OD),214pp,,Overhead,15,2,24,2,2,900,600,1000,-2000,-3000,-
-mai_l_hissatsu_shinobi_bachi,specials,Hissatsu Shinobi Bachi (Light),必殺忍蜂 (弱),623lk,,Overhead,15,2,24,-4,2,600,600,1000,-2000,-3000,-
-mai_boosted_l_hissatsu_shinobi_bachi,specials,[Boosted] Hissatsu Shinobi Bachi (Light),[強化版] 必殺忍蜂 (弱),623lk,,Overhead,15,2,24,-2,2,700,600,1000,-2000,-3000,-
-mai_m_hissatsu_shinobi_bachi,specials,Hissatsu Shinobi Bachi (Medium),必殺忍蜂 (中),623mk,,Overhead,15,2,24,-4,2,600,600,1000,-2000,-3000,-
-mai_boosted_m_hissatsu_shinobi_bachi,specials,[Boosted] Hissatsu Shinobi Bachi (Medium),[強化版] 必殺忍蜂 (中),623mk,,Overhead,15,2,24,-2,2,700,600,1000,-2000,-3000,-
-mai_h_hissatsu_shinobi_bachi,specials,Hissatsu Shinobi Bachi (Heavy),必殺忍蜂 (強),623hk,,Overhead,15,2,24,-4,2,600,600,1000,-2000,-3000,-
-mai_boosted_h_hissatsu_shinobi_bachi,specials,[Boosted] Hissatsu Shinobi Bachi (Heavy),[強化版] 必殺忍蜂 (強),623hk,,Overhead,15,2,24,-2,2,700,600,1000,-2000,-3000,-
-mai_od_hissatsu_shinobi_bachi,specials,Hissatsu Shinobi Bachi (OD),必殺忍蜂 (OD),623kk,,Overhead,15,2,24,0,2,800,600,1000,-2000,-3000,-
-mai_boosted_od_hissatsu_shinobi_bachi,specials,[Boosted] Hissatsu Shinobi Bachi (OD),[強化版] 必殺忍蜂 (OD),623kk,,Overhead,15,2,24,2,2,900,600,1000,-2000,-3000,-
-mai_kagerou_no_mai,supers,Kagerou no Mai,影炎の舞,236236*k,,High,6,34,51,-31,-,2000,-,-,-2500,-5000,-
-mai_boosted_kagerou_no_mai,supers,[Boosted] Kagerou no Mai,[強化版] 影炎の舞,236236*k,,High,6,90,46,-26,-,2300,-,-,-2500,-5000,-
-mai_chou_hissatsu_shinobi_bachi,supers,Chou Hissatsu Shinobi Bachi,超必殺忍蜂,236236*p,,High,7,"2, 2, 2, 2, 3",26,-24,-,2800,-,-,-5000,-10000,-
-mai_boosted_chou_hissatsu_shinobi_bachi,supers,[Boosted] Chou Hissatsu Shinobi Bachi,[強化版] 超必殺忍蜂,236236*p,,High,7,36,31,-24,-,3000,-,-,-5000,-10000,-
-mai_shiranui_ryuu_enbu_ada_zakura,supers,Shiranui Ryuu: Enbu Ada Zakura,不知火流：炎舞徒桜,214214*k,,High,10,"2, 2, 4, 4",46,-33,-,4000,-,-,-7500,-15000,-
-mai_boosted_shiranui_ryuu_enbu_ada_zakura,supers,[Boosted] Shiranui Ryuu: Enbu Ada Zakura,[強化版] 不知火流：炎舞徒桜,214214*k,,High,10,"2, 2, 4, 4",46,-33,-,4500,-,-,-10000,-20000,-
+f_mp,normals,Senkotsu Uchi,扇骨打,6mp,,Overhead,20,3,18,-3,2,600,500,1500,-2500,-5000,-
+mai_l_musasabi_no_mai,specials,Musasabi no Mai (Light),鼯鼠之舞（轻）,214lk,,High,21,-,18,-7~+1,-,1000,1000,2000,-4000,-5000,-
+mai_boosted_l_musasabi_no_mai,specials,[Boosted] Musasabi no Mai (Light),[带火] 鼯鼠之舞（轻）,214lk,,High,21,-,18,-4~+2,-,1100,1000,2000,-4000,-5000,-
+mai_m_musasabi_no_mai,specials,Musasabi no Mai (Medium),鼯鼠之舞 (中),214mk,,High,21,-,18,-7~+1,-,1000,1000,2000,-4000,-5000,-
+mai_boosted_m_musasabi_no_mai,specials,[Boosted] Musasabi no Mai (Medium),[带火] 鼯鼠之舞 (中),214mk,,High,21,-,18,-4~+2,-,1100,1000,2000,-4000,-5000,-
+mai_h_musasabi_no_mai,specials,Musasabi no Mai (Heavy),鼯鼠之舞 (重),214hk,,High,21,-,18,-7~+1,-,1000,1000,2000,-4000,-5000,-
+mai_boosted_h_musasabi_no_mai,specials,[Boosted] Musasabi no Mai (Heavy),[带火] 鼯鼠之舞 (重),214hk,,High,21,-,18,-4~+2,-,1100,1000,2000,-4000,-5000,-
+mai_od_musasabi_no_mai,specials,Musasabi no Mai (OD),鼯鼠之舞 (OD),214kk,,High,21,-,18,-7~+1,-,1200,1000,-,-4000,-5000,-
+mai_boosted_od_musasabi_no_mai,specials,[Boosted] Musasabi no Mai (OD),[带火] 鼯鼠之舞 (OD),214kk,,High,21,-,18,-4~+2,-,1300,1000,-,-4000,-5000,-
+mai_forward_throw,normals,Forward Throw,前投,lp+lk,,Throw,5,1,20,-,22,1200,1000,2000,-,-,-
+mai_back_throw,normals,Back Throw,后投,4lp+lk,,Throw,5,1,20,-,22,1200,1000,2000,-,-,-
+mai_air_throw,normals,Air Throw,空投,lp+lk,,Throw,5,1,20,-,22,1200,1000,2000,-,-,-
+mai_l_hishou_ryuuenjin,specials,Hishou Ryuuenjin (Light),飞翔龙炎阵（轻）,623lk,,High,5,18,15,-29,-,900,1000,2000,-8000,-5000,-
+mai_boosted_l_hishou_ryuuenjin,specials,[Boosted] Hishou Ryuuenjin (Light),[带火] 飞翔龙炎阵（轻）,623lk,,High,5,18,15,-29,-,1000,1000,2000,-6000,-5000,-
+mai_m_hishou_ryuuenjin,specials,Hishou Ryuuenjin (Medium),飞翔龙炎阵 (中),623mk,,High,6,18,14,-28,-,1100,1000,2000,-8000,-5000,-
+mai_boosted_m_hishou_ryuuenjin,specials,[Boosted] Hishou Ryuuenjin (Medium),[带火] 飞翔龙炎阵 (中),623mk,,High,6,18,13,-28,-,1200,1000,2000,-6000,-5000,-
+mai_h_hishou_ryuuenjin,specials,Hishou Ryuuenjin (Heavy),飞翔龙炎阵 (重),623hk,,High,7,18,14,-31,-,1200,1000,2000,-4000,-5000,-
+mai_boosted_h_hishou_ryuuenjin,specials,[Boosted] Hishou Ryuuenjin (Heavy),[带火] 飞翔龙炎阵 (重),623hk,,High,7,18,14,-31,-,1300,1000,2000,-4000,-5000,-
+mai_od_hishou_ryuuenjin,specials,Hishou Ryuuenjin (OD),飞翔龙炎阵 (OD),623kk,,High,6,17,19,-40,-,1600,1000,-,-4000,-,-
+mai_boosted_od_hishou_ryuuenjin,specials,[Boosted] Hishou Ryuuenjin (OD),[带火] 飛翔龍炎陣 (OD),623kk,,High,6,17,18,-40,-,1700,1000,-,-4000,-,-
+mai_hien_ren_kyaku_2,targetCombos,Hien Ren Kyaku (2),飞燕连脚（2段）,5lk>5lk,,High,7,2,20,-10,-2,400,300,250,-500,-2000,-
+mai_hien_ren_kyaku_3,targetCombos,Hien Ren Kyaku (3),飞燕连脚（3段）,5lk>5lk>5lk,,High,10,2,28,-10,3,500,300,250,-500,-2000,-
+mai_hoshi_kujaku_1,normals,Hoshi Kujaku (1),星孔雀（1段）,4hk,,High,8,5,20,-1,3,800,1000,2000,-5000,-10000,-
+mai_hoshi_kujaku_2,targetCombos,Hoshi Kujaku (2),星孔雀（2段）,4hk>5hk,,High,9,3,38,-11,-,1200,1000,2000,-2500,-10000,-
+mai_l_kachousen,specials,Kachousen (Light),花蝶扇 (轻),236lp,,High,16,2,32,-7,-1,500,600,1000,-2000,-3000,-
+mai_boosted_l_kachousen,specials,[Boosted] Kachousen (Light),[带火] 花蝶扇 （轻）,236lp,,High,16,2,29,-3,+1,700,600,1000,-2000,-3000,-
+mai_m_kachousen,specials,Kachousen (Medium),花蝶扇 (中),236mp,,High,14,2,34,-9,-3,600,600,1000,-2000,-3000,-
+mai_boosted_m_kachousen,specials,[Boosted] Kachousen (Medium),[带火] 花蝶扇 (中),236mp,,High,14,2,31,-5,-1,700,600,1000,-2000,-3000,-
+mai_h_kachousen,specials,Kachousen (Heavy),花蝶扇 (強),236hp,,High,12,2,36,-11,-5,600,600,1000,-2000,-3000,-
+mai_boosted_h_kachousen,specials,[Boosted] Kachousen (Heavy),[带火] 花蝶扇 (重),236hp,,High,12,2,33,-7,-3,700,600,1000,-2000,-3000,-
+mai_kachousen_charged,specials,Kachousen(Charged),花蝶扇（蓄力）,236[p],,High,32,-,30,+1,-1,600,900,2000,-3500,-3000,-
+mai_od_kachousen,specials,Kachousen (OD),花蝶扇 (OD),236pp,,High,12,2,30,-3,+3,700,900,-,-3500,-3000,-
+mai_od_kachousen_charged,specials,Kachousen (OD) (Charged),花蝶扇（OD）(蓄力),236[pp],,High,28,-,30,12,14,600,600,-,-2000,-4000,
+mai_midare_kachousen,specials,Midare Kachousen,花蝶乱扇,236pp>[6p],,High,15,-,24,0,-,900,300,-,-2000,-2000,
+mai_boosted_od_kachousen,specials,[Boosted] Kachousen (OD),[带火] 花蝶扇 (OD),236pp,,High,12,2,30,2,2,800,600,-,-3500,-3000,-
+mai_boosted_od_kachousen_charged,specials,[Boosted] Kachousen (OD)(Charged),[带火] 花蝶扇（OD）(蓄力),236[pp],,High,12,,30,12,14,700,1200,-,-4000,-2000,
+mai_boosted_midare_kachousen,specials,[Boosted] Midare Kachousen,[带火] 花蝶乱扇,236pp>[6p],,High,15,-,24,0,-,1000,300,-,-2000,-2000,
+mai_l_ryuuenbu,specials,Ryuuenbu (Light),龙炎舞 (弱),214lp,,High,14,7,15,-4,+3,800,600,2000,-2000,-2500,-
+mai_boosted_l_ryuuenbu,specials,[Boosted] Ryuuenbu (Light),[带火] 龙炎舞（轻）,214lp,,High,14,7,15,-2,-,900,600,2000,-2000,-2500,-
+mai_m_ryuuenbu,specials,Ryuuenbu (Medium),龙炎舞 (中),214mp,,High,14,"2, 7",16,-6,-,1000,1200,3000,-4000,-5000,-
+mai_boosted_m_ryuuenbu,specials,[Boosted] Ryuuenbu (Medium),[带火] 龙炎舞 (中),214mp,,High,14,"2, 7",16,-6,-,1100,1200,2000,-4000,-5000,-
+mai_h_ryuuenbu,specials,Ryuuenbu (Heavy),龙炎舞 (重),214hp,,High,15,"3, 10",12,-6,-,800,1200,2000,-4000,-5000,-
+mai_boosted_h_ryuuenbu,specials,[Boosted] Ryuuenbu (Heavy),[带火] 龙炎舞 (重),214hp,,High,15,"3, 10",12,-6,-,900,1200,2000,-4000,-5000,-
+mai_od_ryuuenbu,specials,Ryuuenbu (OD),龙炎舞 (OD),214pp,,High,16,"2, 5, 5",16,-12,-,1000,1200,-,-4000,-5000,-
+mai_boosted_od_ryuuenbu,specials,[Boosted] Ryuuenbu (OD),[带火] 龙炎舞 (OD),214pp,,High,16,"2, 5, 5",16,-12,-,1100,1200,-,-4000,-5000,-
+mai_l_hissatsu_shinobi_bachi,specials,Hissatsu Shinobi Bachi (Light),必杀·忍蜂 (轻),236lk,,High,10,"2, 17",16,-10,-,800,1000,2000,-5000,-5000,-
+mai_boosted_l_hissatsu_shinobi_bachi,specials,[Boosted] Hissatsu Shinobi Bachi (Light),[带火] 必杀·忍蜂（轻）,236lk,,High,10,"2, 17",16,-10,-,900,1000,2000,-5000,-5000,-
+mai_m_hissatsu_shinobi_bachi,specials,Hissatsu Shinobi Bachi (Medium),必杀·忍蜂 (中),236mk,,High,15,"2, 17",20,-12,-,900,1000,2000,-5000,-5000,-
+mai_boosted_m_hissatsu_shinobi_bachi,specials,[Boosted] Hissatsu Shinobi Bachi (Medium),[带火] 必杀·忍蜂 (中),236mk,,High,15,"2, 17",20,-12,-,1000,1000,2000,-5000,-5000,-
+mai_h_hissatsu_shinobi_bachi,specials,Hissatsu Shinobi Bachi (Heavy),必杀·忍蜂 (重),236hk,,High,18,"2, 17",21,-13,-,1000,1000,2000,-5000,-3000,-
+mai_boosted_h_hissatsu_shinobi_bachi,specials,[Boosted] Hissatsu Shinobi Bachi (Heavy),[带火] 必杀·忍蜂 (重),236hk,,High,18,"2, 17",21,-13,-,1100,1000,2000,-5000,-5000,-
+mai_od_hissatsu_shinobi_bachi,specials,Hissatsu Shinobi Bachi (OD),必杀·忍蜂 (OD),236kk,,High,14,"2, 17",32,-12,-,800,1000,-,-4500,-5000,-
+mai_boosted_od_hissatsu_shinobi_bachi,specials,[Boosted] Hissatsu Shinobi Bachi (OD),[带火] 必杀·忍蜂 (OD),236kk,,High,14,"2, 17",32,-12,-,900,1000,-,-4500,-5000,-
+mai_kagerou_no_mai,supers,Kagerou no Mai,阳炎之舞,236236p,,High,6,34,51,-31,-,2000,-,-,-2500,-5000,-
+mai_boosted_kagerou_no_mai,supers,[Boosted] Kagerou no Mai,[带火] 阳炎之舞,236236p,,High,6,90,46,-26,-,2300,-,-,-2500,-5000,-
+mai_chou_hissatsu_shinobi_bachi,supers,Chou Hissatsu Shinobi Bachi,超必杀·忍蜂,236236k,,High,7,"2, 2, 2, 2, 3",26,-24,-,2800,-,-,-5000,-10000,-
+mai_chou_hissatsu_shinobi_bachi_air,supers,Air Chou Hissatsu Shinobi Bachi,超必杀·忍蜂（空中）,9>236236k,,High,3,"2, 2, 2, 2, 3",24,-,-,2800,-,-,-5000,-10000,
+mai_boosted_chou_hissatsu_shinobi_bachi,supers,[Boosted] Chou Hissatsu Shinobi Bachi,[带火] 超必杀·忍蜂,236236k,,High,7,36,31,-24,-,3000,-,-,-5000,-10000,-
+mai_boosted_chou_hissatsu_shinobi_bachi_air,supers,[Boosted] Air Chou Hissatsu Shinobi Bachi,[带火] 超必杀·忍蜂（空中）,9>236236k,,High,3,24,24,-,-,3000,-,-,-5000,-10000,
+mai_shiranui_ryuu_enbu_ada_zakura,supers,Shiranui Ryuu: Enbu Ada Zakura,不知火流：炎舞仇樱,214214k,,High,10,"2, 2, 4, 4",46,-33,-,4000,-,-,-7500,-15000,-
+mai_boosted_shiranui_ryuu_enbu_ada_zakura,supers,CA Shiranui Ryuu: Enbu Ada Zakura,CA不知火流：炎舞仇樱,214214k,,High,10,"2, 2, 4, 4",46,-33,-,4500,-,-,-10000,-20000,-

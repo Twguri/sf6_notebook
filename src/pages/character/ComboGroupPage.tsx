@@ -32,8 +32,15 @@ function normalizeButtons(s: string) {
   return s
     .replace(/\b(lp|mp|hp|lk|mk|hk)\b/gi, (m) => m.toUpperCase())
     .replace(/\b(pp|kk)\b/gi, (m) => m.toUpperCase())
-    .replace(/\b(p|k)\b/gi, (m) => m.toUpperCase());
+    .replace(/\b(p|k)\b/gi, (m) => m.toUpperCase())
+    .replace(/\b(ppp|kkk)\b/gi, (m) => m.toUpperCase());
 }
+
+function canonicalizeCommand(s: string) {
+  // 顺序：先大写按钮 → 再数字转箭头 → 最后清理空白/控制字符
+  return sanitizeCommand(digitsToArrows(normalizeButtons(s)));
+}
+
 function digitsToArrows(s: string) {
   const map: Record<string, string> = {
     "1": "↙",
@@ -291,7 +298,7 @@ export default function ComboGroupPage({ lang, toggleLang }: Props) {
     const item: ComboItem = {
       id: uid("combo"),
       name: draft.name.trim(),
-      command: sanitizeCommand(draft.command.trim()),
+      command: canonicalizeCommand(draft.command),
       pressure: { zh: draft.pressureZh, en: draft.pressureEn },
       notes: { zh: draft.notesZh, en: draft.notesEn },
     };
@@ -345,7 +352,7 @@ export default function ComboGroupPage({ lang, toggleLang }: Props) {
         return {
           ...it,
           name: editDraft.name,
-          command: sanitizeCommand(editDraft.command),
+          command: canonicalizeCommand(editDraft.command),
           pressure: { zh: editDraft.pressureZh, en: editDraft.pressureEn },
           notes: { zh: editDraft.notesZh, en: editDraft.notesEn },
         };
@@ -719,7 +726,7 @@ export default function ComboGroupPage({ lang, toggleLang }: Props) {
           onPick={(m: any) => {
             const ins = (m?.inputDisplay ?? m?.input ?? "").trim();
             if (!ins) return;
-            appendPickedInput(digitsToArrows(normalizeButtons(ins)));
+            appendPickedInput(canonicalizeCommand(ins));
             setPickOpen(false);
           }}
         />

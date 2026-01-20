@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script>
+      (function () {
+        var hash = window.location.hash;
+        if (hash.startsWith("#!")) {
+          history.replaceState(null, "", hash.slice(2));
+        }
+      })();
+    </script>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

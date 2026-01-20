@@ -108,6 +108,16 @@ if (dirHold) {
   const btn = formatButtons(dirHold[3]);
   return `${dirsToArrows(dirs)} + ${btn}(${label})`;
 }
+// ---- bracket dir+button hold: [6p] / [4lp] / [6pp] ----
+// 显示：→ + P(蓄力) / ← + LP(蓄力)
+const bracketDirHold = s.match(/^\[([1-9])(\*?)(lp|mp|hp|lk|mk|hk|p|k|pp|kk)\]$/i);
+if (bracketDirHold) {
+  const dir = bracketDirHold[1];
+  const label = lang === "zh" ? "蓄力" : "charge";
+  const btn = formatButtons(bracketDirHold[3]);
+  const arrow = DIR_MAP[dir] ?? dir;
+  return `${arrow} + ${btn}(${label})`;
+}
 
   // ---- button hold: [lp] / [*p] / [pp] ----
   // 显示：LP(蓄力) / P(蓄力)（英文：LP(charge)）

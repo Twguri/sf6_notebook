@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import AppShell from "../../components/AppShell";
-import { FighterTextarea, FighterTextareaFixed } from "../../components/MemoEditor";
+import { FighterTextarea } from "../../components/MemoEditor";
 
 import type { ComboGroup, ComboItem } from "./combos/types";
 import { loadGroups, saveGroups } from "./combos/storage";
@@ -42,6 +42,86 @@ function canonicalizeCommand(s: string) {
   return sanitizeCommand(digitsToArrows(normalizeButtons(s)));
 }
 
+// -----------------------------
+// Command sequence (banner UI)
+// -----------------------------
+type CmdSeg = {
+  input: string; // 指令（保存为箭头版）
+  name: string; // 招式名称
+  note: string; // 一行备注
+};
+
+const CMD_TAG = "@@seq:";
+
+function decodeSegs(raw: string): CmdSeg[] | null {
+  const s = (raw ?? "").trim();
+  if (!s.startsWith(CMD_TAG)) return null;
+  try {
+    const json = s.slice(CMD_TAG.length);
+    const arr = JSON.parse(json);
+    if (!Array.isArray(arr)) return null;
+    return arr
+      .map((x) => ({
+        input: typeof x?.input === "string" ? x.input : "",
+        name: typeof x?.name === "string" ? x.name : "",
+        note: typeof x?.note === "string" ? x.note : "",
+      }))
+      .filter((x) => x.input || x.name || x.note);
+  } catch {
+    return null;
+  }
+}
+
+function encodeSegs(segs: CmdSeg[]) {
+  return CMD_TAG + JSON.stringify(segs ?? []);
+}
+
+function toSegsFromAnyCommand(raw: string): CmdSeg[] {
+  const decoded = decodeSegs(raw);
+  if (decoded) return decoded;
+  const legacy = (raw ?? "").trim();
+  if (!legacy) return [];
+  return [{ input: legacy, name: "", note: "" }];
+}
+
+function toSaveCommandFromSegs(segs: CmdSeg[]) {
+  const normalized = (segs ?? []).map((s) => ({
+    input: canonicalizeCommand(s.input ?? ""),
+    name: (s.name ?? "").trim(),
+    note: (s.note ?? "").trim(),
+  }));
+  return encodeSegs(normalized);
+}
+
+function getMoveLabel(m: any, lang: "zh" | "en") {
+  const pickStr = (x: any) => (typeof x === "string" ? x : "");
+  return (
+    pickStr(m?.moveName) ||
+    pickStr(m?.name) ||
+    pickStr(m?.move) ||
+    pickStr(m?.move_name) ||
+    pickStr(m?.move_name_EN) ||
+    pickStr(m?.moveNameEN) ||
+    pickStr(m?.moveNameZH) ||
+    (lang === "zh" ? pickStr(m?.move_name_CN) : pickStr(m?.move_name_EN)) ||
+    ""
+  );
+}
+
+function getMoveInput(m: any) {
+  const pickStr = (x: any) => (typeof x === "string" ? x : "");
+  return (
+    pickStr(m) ||
+    pickStr(m?.inputDisplay) ||
+    pickStr(m?.input) ||
+    pickStr(m?.command) ||
+    pickStr(m?.notation) ||
+    pickStr(m?.moveInput) ||
+    pickStr(m?.input_display) ||
+    ""
+  );
+}
+
 function digitsToArrows(s: string) {
   const map: Record<string, string> = {
     "1": "↙",
@@ -55,6 +135,21 @@ function digitsToArrows(s: string) {
     "9": "↗",
   };
   return s.replace(/[1-9]+/g, (m) => m.split("").map((d) => map[d] ?? d).join(" "));
+}
+
+function arrowsToDigits(s: string) {
+  const map: Record<string, string> = {
+    "↙": "1",
+    "↓": "2",
+    "↘": "3",
+    "←": "4",
+    "·": "5",
+    "→": "6",
+    "↖": "7",
+    "↑": "8",
+    "↗": "9",
+  };
+  return (s ?? "").replace(/[↙↓↘←·→↖↑↗]/g, (ch) => map[ch] ?? ch);
 }
 
 
@@ -87,8 +182,52 @@ export default function ComboGroupPage({ lang, toggleLang }: Props) {
   // moves for picker
   const { moves: characterMoves } = useCharacterMoves(characterKey);
   const [pickOpen, setPickOpen] = useState(false);
-  const draftCmdRef = useRef<HTMLTextAreaElement | null>(null);
-const editCmdRef = useRef<HTMLTextAreaElement | null>(null);
+  // picker context: insert/replace + target + index
+  const [pickCtx, setPickCtx] = useState<
+    | null
+    | {
+        target: "draft" | "edit";
+        mode: "insert" | "replace";
+        index: number;
+      }
+  >(null);
+
+  // command segments (banner UI)
+  const [draftSegs, setDraftSegs] = useState<CmdSeg[]>([]);
+  const [editSegs, setEditSegs] = useState<CmdSeg[]>([]);
+
+  // command display: arrows <-> digits (display only)
+  const [showArrows, setShowArrows] = useState<boolean>(() => {
+    try {
+      const v = localStorage.getItem("sf6_cmd_display_arrows");
+      if (v === "0") return false;
+      if (v === "1") return true;
+    } catch {}
+    return true;
+  });
+  function toggleCmdDisplay() {
+    setShowArrows((prev) => {
+      const next = !prev;
+      try {
+        localStorage.setItem("sf6_cmd_display_arrows", next ? "1" : "0");
+      } catch {}
+      return next;
+    });
+  }
+
+  // IME toggle: same as Ctrl+Alt+F
+  function toggleFighterIme() {
+    try {
+      const ev = new KeyboardEvent("keydown", {
+        key: "f",
+        code: "KeyF",
+        ctrlKey: true,
+        altKey: true,
+        bubbles: true,
+      });
+      window.dispatchEvent(ev);
+    } catch {}
+  }
 
   // storage
   const [groups, setGroups] = useState<ComboGroup[]>([]);
@@ -249,6 +388,62 @@ const editCmdRef = useRef<HTMLTextAreaElement | null>(null);
       cursor: "pointer",
       fontSize: 12,
     } as React.CSSProperties,
+
+    // ✅ 你调过的 + 按钮尺寸：不要改这里的宽高
+    plusBtn: {
+      width: 38,
+      height: 38,
+      borderRadius: 12,
+      border: "1px solid rgba(255,255,255,0.10)",
+      background: "rgba(255,255,255,0.06)",
+      color: "rgba(255,255,255,0.92)",
+      cursor: "pointer",
+      fontWeight: 900,
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      flex: "0 0 auto",
+    } as React.CSSProperties,
+
+    // banner（动作）
+    segBanner: {
+      width: 100,
+      borderRadius: 14,
+      border: "1px solid rgba(255,255,255,0.10)",
+      background: "rgba(255,255,255,0.04)",
+      padding: "10px 10px",
+      cursor: "pointer",
+      display: "flex",
+      flexDirection: "column",
+      gap: 6,
+      minWidth: 0,
+      flex: "0 0 auto",
+    } as React.CSSProperties,
+    segTiny: {
+      fontSize: 12,
+      fontWeight: 900,
+      color: "rgba(255,255,255,0.80)",
+      lineHeight: 1.2,
+      wordBreak: "break-word",
+    } as React.CSSProperties,
+    segSub: {
+      fontSize: 12,
+      fontWeight: 800,
+      color: "rgba(255,255,255,0.65)",
+      lineHeight: 1.2,
+      wordBreak: "break-word",
+    } as React.CSSProperties,
+    segInputLine: {
+      width: "75%",
+      height: 34,
+      borderRadius: 10,
+      border: "1px solid rgba(255,255,255,0.10)",
+      background: "rgba(0,0,0,0.12)",
+      color: "#fff",
+      padding: "0 10px",
+      outline: "none",
+      fontWeight: 800,
+    } as React.CSSProperties,
     labelRow: {
       display: "flex",
       alignItems: "center",
@@ -280,6 +475,37 @@ const editCmdRef = useRef<HTMLTextAreaElement | null>(null);
     notesEn: "",
   });
 
+  
+  // IME toggle (same as Ctrl+Alt+F inside FighterTextarea)
+  const [pressureImeNonce, setPressureImeNonce] = useState(0);
+  const [notesImeNonce, setNotesImeNonce] = useState(0);
+
+  // Keep refs so the IME button can focus the textarea (helps users immediately see the effect).
+  const pressureImeRef = useRef<HTMLTextAreaElement | null>(null);
+  const notesImeRef = useRef<HTMLTextAreaElement | null>(null);
+  const editPressureImeRef = useRef<HTMLTextAreaElement | null>(null);
+  const editNotesImeRef = useRef<HTMLTextAreaElement | null>(null);
+
+  const bumpPressureIme = () => {
+    setPressureImeNonce((n) => n + 1);
+    requestAnimationFrame(() => pressureImeRef.current?.focus());
+  };
+
+  const bumpNotesIme = () => {
+    setNotesImeNonce((n) => n + 1);
+    requestAnimationFrame(() => notesImeRef.current?.focus());
+  };
+
+  const bumpEditPressureIme = () => {
+    setPressureImeNonce((n) => n + 1);
+    requestAnimationFrame(() => editPressureImeRef.current?.focus());
+  };
+
+  const bumpEditNotesIme = () => {
+    setNotesImeNonce((n) => n + 1);
+    requestAnimationFrame(() => editNotesImeRef.current?.focus());
+  };
+
   function onAddComboClick() {
     setIsAdding(true);
     setDraft({
@@ -290,6 +516,8 @@ const editCmdRef = useRef<HTMLTextAreaElement | null>(null);
       notesZh: "",
       notesEn: "",
     });
+    setDraftSegs([]);
+    setEditSegs([]);
     setExpandedId(null);
     setEditDraft(null);
     setMenu(null);
@@ -301,7 +529,8 @@ const editCmdRef = useRef<HTMLTextAreaElement | null>(null);
     const item: ComboItem = {
       id: uid("combo"),
       name: draft.name.trim(),
-      command: canonicalizeCommand(draft.command),
+      // 若使用 banner 序列，则以序列为准；否则兼容旧的纯文本输入
+      command: draftSegs.length ? toSaveCommandFromSegs(draftSegs) : canonicalizeCommand(draft.command),
       pressure: { zh: draft.pressureZh, en: draft.pressureEn },
       notes: { zh: draft.notesZh, en: draft.notesEn },
     };
@@ -323,6 +552,8 @@ const editCmdRef = useRef<HTMLTextAreaElement | null>(null);
       notesZh: "",
       notesEn: "",
     });
+    setDraftSegs([]);
+    setEditSegs([]);
     setExpandedId(null);
     setEditDraft(null);
   }
@@ -355,7 +586,8 @@ const editCmdRef = useRef<HTMLTextAreaElement | null>(null);
         return {
           ...it,
           name: editDraft.name,
-          command: canonicalizeCommand(editDraft.command),
+          // 若使用 banner 序列，则以序列为准；否则兼容旧的纯文本输入
+          command: editSegs.length ? toSaveCommandFromSegs(editSegs) : canonicalizeCommand(editDraft.command),
           pressure: { zh: editDraft.pressureZh, en: editDraft.pressureEn },
           notes: { zh: editDraft.notesZh, en: editDraft.notesEn },
         };
@@ -383,6 +615,7 @@ const editCmdRef = useRef<HTMLTextAreaElement | null>(null);
       commitEditDraft();
       setExpandedId(null);
       setEditDraft(null);
+      setEditSegs([]);
       return;
     }
 
@@ -396,6 +629,7 @@ const editCmdRef = useRef<HTMLTextAreaElement | null>(null);
       notesZh: item.notes?.zh ?? "",
       notesEn: item.notes?.en ?? "",
     });
+    setEditSegs(toSegsFromAnyCommand(item.command));
   }
 
   function deleteItem(itemId: string) {
@@ -411,6 +645,7 @@ const editCmdRef = useRef<HTMLTextAreaElement | null>(null);
     if (expandedId === itemId) {
       setExpandedId(null);
       setEditDraft(null);
+      setEditSegs([]);
     }
 
     persist(next);
@@ -434,6 +669,9 @@ const editCmdRef = useRef<HTMLTextAreaElement | null>(null);
       notesZh: item.notes?.zh ?? "",
       notesEn: item.notes?.en ?? "",
     });
+    setEditSegs(toSegsFromAnyCommand(item.command));
+
+    setEditSegs(toSegsFromAnyCommand(item.command));
 
     setPendingNameFocusId(item.id);
   }
@@ -456,26 +694,56 @@ const editCmdRef = useRef<HTMLTextAreaElement | null>(null);
     return () => window.clearTimeout(timer);
   }, [pendingNameFocusId, expandedId]);
 
-  // ✅ 统一处理：从 Modal 选择招式后，把指令追加到“当前正在编辑的 command”
-  function appendPickedInput(insRaw: string) {
-    const ins = (insRaw ?? "").trim();
-    if (!ins) return;
+  function openPick(target: "draft" | "edit", mode: "insert" | "replace", index: number) {
+    setPickCtx({ target, mode, index });
+    setPickOpen(true);
+  }
 
-    // 优先：新增连段正在编辑
-    if (isAdding) {
-      setDraft((d) => {
-        const sep = d.command.trim().length ? " " : "";
-        return { ...d, command: `${d.command}${sep}${ins}` };
-      });
-      return;
+  function deletePickedSeg() {
+    if (!pickCtx) return;
+    if (pickCtx.mode !== "replace") return;
+    const doDelete = (arr: CmdSeg[]) => {
+      if (pickCtx.index < 0 || pickCtx.index >= arr.length) return arr;
+      const next = arr.slice();
+      next.splice(pickCtx.index, 1);
+      return next;
+    };
+    if (pickCtx.target === "draft") setDraftSegs((p) => doDelete(p));
+    else setEditSegs((p) => doDelete(p));
+    setPickOpen(false);
+    setPickCtx(null);
+  }
+
+  function applyPickedMove(m: any) {
+    if (!pickCtx) return;
+    const inputRaw = getMoveInput(m);
+    const nameRaw = getMoveLabel(m, lang);
+    if (!inputRaw) return;
+
+    const seg: CmdSeg = {
+      input: canonicalizeCommand(inputRaw),
+      name: (nameRaw || "").trim(),
+      note: "",
+    };
+
+    const doInsert = (arr: CmdSeg[]) => {
+      const idx = Math.max(0, Math.min(arr.length, pickCtx.index));
+      const next = arr.slice();
+      next.splice(idx, 0, seg);
+      return next;
+    };
+    const doReplace = (arr: CmdSeg[]) => {
+      if (pickCtx.index < 0 || pickCtx.index >= arr.length) return arr;
+      const next = arr.slice();
+      next[pickCtx.index] = { ...seg, note: "" };
+      return next;
+    };
+
+    if (pickCtx.target === "draft") {
+      setDraftSegs((prev) => (pickCtx.mode === "insert" ? doInsert(prev) : doReplace(prev)));
+    } else {
+      setEditSegs((prev) => (pickCtx.mode === "insert" ? doInsert(prev) : doReplace(prev)));
     }
-
-    // 其次：展开编辑某条连段
-    setEditDraft((d) => {
-      if (!d) return d;
-      const sep = d.command.trim().length ? " " : "";
-      return { ...d, command: `${d.command}${sep}${ins}` };
-    });
   }
 
   if (!currentGroup) {
@@ -529,45 +797,67 @@ const editCmdRef = useRef<HTMLTextAreaElement | null>(null);
                 <div style={S.labelRow}>
                   <div style={S.fieldLabel}>{t.command}</div>
 
-                  <button style={S.pickBtn} onClick={() => setPickOpen(true)}>
-                    {t.pick}
+                  <button style={S.pickBtn} onClick={toggleCmdDisplay}>
+                    {showArrows ? (lang === "zh" ? "箭头" : "Arrows") : (lang === "zh" ? "数字" : "Digits")}
                   </button>
                 </div>
 
-                <FighterTextareaFixed
-                  textareaRef={draftCmdRef}
-                  value={draft.command}
-                  onChange={(next) => setDraft((d) => ({ ...d, command: next }))}
-                  placeholder={t.cmdPH}
-                  minHeight={80}
-                  style={S.input}
+                <CommandSequenceEditor
+                  lang={lang}
+                  segs={draftSegs}
+                  showArrows={showArrows}
+                  onPickInsert={(index) => openPick("draft", "insert", index)}
+                  onPickReplace={(index) => openPick("draft", "replace", index)}
+                  onChangeNote={(index, note) =>
+                    setDraftSegs((prev) => {
+                      if (index < 0 || index >= prev.length) return prev;
+                      const next = prev.slice();
+                      next[index] = { ...next[index], note };
+                      return next;
+                    })
+                  }
+                  styles={S}
                 />
               </div>
 
               <div>
-                <div style={S.fieldLabel}>{t.pressure}</div>
+                <div style={S.labelRow}>
+                  <div style={S.fieldLabel}>{t.pressure}</div>
+                  <button type="button" style={S.pickBtn} onClick={bumpPressureIme}>
+                    {lang === "zh" ? "输入法" : "IME"}
+                  </button>
+                </div>
                 <FighterTextarea
                   value={lang === "zh" ? draft.pressureZh : draft.pressureEn}
                   onChange={(next) => {
                     if (lang === "zh") setDraft((d) => ({ ...d, pressureZh: next }));
                     else setDraft((d) => ({ ...d, pressureEn: next }));
                   }}
+                  toggleNonce={pressureImeNonce}
                   minHeight={120}
                   style={S.input}
+                  textareaRef={pressureImeRef}
                 />
                 <div style={S.thinText}>{t.hintFighter}</div>
               </div>
 
               <div>
-                <div style={S.fieldLabel}>{t.notes}</div>
+                <div style={S.labelRow}>
+                  <div style={S.fieldLabel}>{t.notes}</div>
+                  <button type="button" style={S.pickBtn} onClick={bumpNotesIme}>
+                    {lang === "zh" ? "输入法" : "IME"}
+                  </button>
+                </div>
                 <FighterTextarea
                   value={lang === "zh" ? draft.notesZh : draft.notesEn}
                   onChange={(next) => {
                     if (lang === "zh") setDraft((d) => ({ ...d, notesZh: next }));
                     else setDraft((d) => ({ ...d, notesEn: next }));
                   }}
+                  toggleNonce={notesImeNonce}
                   minHeight={120}
                   style={S.input}
+                  textareaRef={notesImeRef}
                 />
               </div>
 
@@ -661,25 +951,36 @@ const editCmdRef = useRef<HTMLTextAreaElement | null>(null);
                         <div>
                           <div style={S.labelRow}>
                             <div style={S.fieldLabel}>{t.command}</div>
-                            <button style={S.pickBtn} onClick={() => setPickOpen(true)}>
-                              {t.pick}
+                            <button style={S.pickBtn} onClick={toggleCmdDisplay}>
+                              {showArrows ? (lang === "zh" ? "箭头" : "Arrows") : (lang === "zh" ? "数字" : "Digits")}
                             </button>
                           </div>
 
-                          <FighterTextareaFixed
-                            textareaRef={editCmdRef}
-                            value={editDraft.command}
-                            onChange={(next) =>
-                              setEditDraft((d) => (d ? { ...d, command: next } : d))
+                          <CommandSequenceEditor
+                            lang={lang}
+                            segs={editSegs}
+                            showArrows={showArrows}
+                            onPickInsert={(index) => openPick("edit", "insert", index)}
+                            onPickReplace={(index) => openPick("edit", "replace", index)}
+                            onChangeNote={(index, note) =>
+                              setEditSegs((prev) => {
+                                if (index < 0 || index >= prev.length) return prev;
+                                const next = prev.slice();
+                                next[index] = { ...next[index], note };
+                                return next;
+                              })
                             }
-                            placeholder={t.cmdPH}
-                            minHeight={80}
-                            style={S.input}
+                            styles={S}
                           />
                         </div>
 
                         <div>
-                          <div style={S.fieldLabel}>{t.pressure}</div>
+                          <div style={S.labelRow}>
+                            <div style={S.fieldLabel}>{t.pressure}</div>
+                            <button type="button" style={S.pickBtn} onClick={bumpEditPressureIme}>
+                              {lang === "zh" ? "输入法" : "IME"}
+                            </button>
+                          </div>
                           <FighterTextarea
                             value={lang === "zh" ? editDraft.pressureZh : editDraft.pressureEn}
                             onChange={(next) =>
@@ -690,13 +991,20 @@ const editCmdRef = useRef<HTMLTextAreaElement | null>(null);
                                   : { ...d, pressureEn: next };
                               })
                             }
+                            toggleNonce={pressureImeNonce}
                             minHeight={120}
                             style={S.input}
+                            textareaRef={editPressureImeRef}
                           />
                         </div>
 
                         <div>
-                          <div style={S.fieldLabel}>{t.notes}</div>
+                          <div style={S.labelRow}>
+                            <div style={S.fieldLabel}>{t.notes}</div>
+                            <button type="button" style={S.pickBtn} onClick={bumpEditNotesIme}>
+                              {lang === "zh" ? "输入法" : "IME"}
+                            </button>
+                          </div>
                           <FighterTextarea
                             value={lang === "zh" ? editDraft.notesZh : editDraft.notesEn}
                             onChange={(next) =>
@@ -707,8 +1015,10 @@ const editCmdRef = useRef<HTMLTextAreaElement | null>(null);
                                   : { ...d, notesEn: next };
                               })
                             }
+                            toggleNonce={notesImeNonce}
                             minHeight={120}
                             style={S.input}
+                            textareaRef={editNotesImeRef}
                           />
                         </div>
                       </div>
@@ -723,37 +1033,55 @@ const editCmdRef = useRef<HTMLTextAreaElement | null>(null);
 
       {/* ✅ 关键：Modal 必须渲染在 return 里，否则点按钮不会有任何反应 */}
       {pickOpen ? (
-        <MovePickerModal
-          lang={lang}
-          toggleLang={toggleLang}
-          moves={characterMoves}
-          onClose={() => setPickOpen(false)}
-          onPick={(m: any) => {
-            const pickStr = (x: any) => (typeof x === "string" ? x : "");
+        <>
+          {/* Replace 弹窗额外操作：删除动作（红色） */}
+          {pickCtx && pickCtx.mode === "replace" ? (
+            <div
+              style={{
+                position: "fixed",
+                left: 12,
+                right: 12,
+                bottom: 12,
+                zIndex: 999999,
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <button
+                type="button"
+                onClick={() => deletePickedSeg()}
+                style={{
+                  width: "100%",
+                  maxWidth: 520,
+                  height: 44,
+                  borderRadius: 12,
+                  border: "1px solid rgba(255,255,255,0.12)",
+                  background: "rgba(255, 80, 80, 0.92)",
+                  color: "#111",
+                  fontWeight: 1000,
+                  cursor: "pointer",
+                }}
+              >
+                {lang === "zh" ? "删除动作" : "Delete move"}
+              </button>
+            </div>
+          ) : null}
 
-            // ✅ 兼容不知火舞（字段兜底）
-            const raw =
-              pickStr(m) ||
-              pickStr(m?.inputDisplay) ||
-              pickStr(m?.input) ||
-              pickStr(m?.command) ||
-              pickStr(m?.notation) ||
-              pickStr(m?.moveInput) ||
-              pickStr(m?.input_display);
-
-            if (!raw) {
-              console.warn("[MovePicker] empty input:", m);
-              return;
-            }
-
-            // ✅ 关键：在这里统一做规范化（大写 / 箭头）
-            const normalized = canonicalizeCommand(raw);
-
-            appendPickedInput(normalized);
-            setPickOpen(false);
-          }}
-
-        />
+          <MovePickerModal
+            lang={lang}
+            toggleLang={toggleLang}
+            moves={characterMoves}
+            onClose={() => {
+              setPickOpen(false);
+              setPickCtx(null);
+            }}
+            onPick={(m: any) => {
+              applyPickedMove(m);
+              setPickOpen(false);
+              setPickCtx(null);
+            }}
+          />
+        </>
       ) : null}
     </AppShell>
   );
@@ -803,6 +1131,101 @@ function TextAreaField({
         onChange={(e) => onChange(e.target.value)}
         onBlur={onBlur}
       />
+    </div>
+  );
+}
+
+function CommandSequenceEditor({
+  lang,
+  segs,
+  showArrows,
+  onPickInsert,
+  onPickReplace,
+  onChangeNote,
+  styles,
+}: {
+  lang: "zh" | "en";
+  segs: CmdSeg[];
+  showArrows: boolean;
+  onPickInsert: (index: number) => void;
+  onPickReplace: (index: number) => void;
+  onChangeNote: (index: number, note: string) => void;
+  styles: any;
+}) {
+  const S = styles as any;
+  const list = segs ?? [];
+
+  // 空态：只有一个 +
+  if (list.length === 0) {
+    return (
+      <button
+        type="button"
+        style={{ ...S.plusBtn, width: "100%", height: 44, justifyContent: "center" }}
+        onClick={() => onPickInsert(0)}
+        aria-label="add move"
+        title="+"
+      >
+        +
+      </button>
+    );
+  }
+
+  // 横向流式布局：+ seg + seg + ...（自动换行）
+  // 关键：渲染“插入位”按钮（length+1 个），这样不会出现相邻重复的 +。
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        alignItems: "flex-start",
+        gap: 10,
+      }}
+    >
+      {Array.from({ length: list.length + 1 }).map((_, insertIdx) => {
+        const seg = list[insertIdx];
+        const inputRaw = (seg?.input ?? "").trim();
+        const input = showArrows ? inputRaw : arrowsToDigits(inputRaw);
+        const name = (seg?.name ?? "").trim();
+        const note = seg?.note ?? "";
+
+        return (
+          <React.Fragment key={`slot-${insertIdx}`}>
+            <button
+              type="button"
+              style={S.plusBtn}
+              onClick={() => onPickInsert(insertIdx)}
+              aria-label={lang === "zh" ? "在此处插入" : "insert here"}
+              title="+"
+            >
+              +
+            </button>
+
+            {seg ? (
+              <div
+                style={S.segBanner}
+                onClick={() => onPickReplace(insertIdx)}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") onPickReplace(insertIdx);
+                }}
+              >
+                <div style={S.segTiny}>
+                  {input || (lang === "zh" ? "（请选择招式）" : "(Pick a move)")}
+                </div>
+                <div style={S.segSub}>{name || " "}</div>
+                <input
+                  style={S.segInputLine}
+                  value={note}
+                  placeholder={lang === "zh" ? "备注（1行）" : "Note (one line)"}
+                  onClick={(e) => e.stopPropagation()}
+                  onChange={(e) => onChangeNote(insertIdx, e.target.value)}
+                />
+              </div>
+            ) : null}
+          </React.Fragment>
+        );
+      })}
     </div>
   );
 }

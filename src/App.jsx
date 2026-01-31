@@ -13,6 +13,7 @@ import ComboGroupsPage from "./pages/character/ComboGroupsPage";
 import ComboGroupPage from "./pages/character/ComboGroupPage";
 import { Navigate } from "react-router-dom";
 import FrameDataCharacterPage from "./pages/FrameDataCharacterPage";
+import TrainingPlan from "./pages/character/TrainingPlan";
 
 const I18N = {
   zh: {
@@ -22,14 +23,16 @@ const I18N = {
     back: "← 返回",
 
     framesTitle: "角色指令和帧数表",
-    framesSub: "COMMAND LIST & FRAME DATA",
+    framesSub: "查询角色动作信息",
     combosTitle: "角色连段",
-    combosSub: "CHARACTER COMBO STRATEGIES",
-    matchupsSub: "STRATEGIES AGAINST ALL CHARACTERS",
-    tipsTitle: "角色心得",
-    tipsSub: "CHARACTER TIPS & INSIGHTS",
+    combosSub: "记录实用连段和压制技巧",
+    matchupsSub: "对战中的经验积累",
+    tipsTitle: "角色TIPS",
+    tipsSub: "关于角色的思考",
     blankHint: "空白页：下一步我们在这里加列表/新增/编辑。",
     matchupTitle:"全角色对策",
+    trainingTitle:"训练计划",
+    trainingSub:"添加与完成训练清单"
   },
   en: {
     selectCharacter: "Select Character",
@@ -45,8 +48,11 @@ const I18N = {
     tipsTitle: "Tips & Insights",
     tipsSub: "CHARACTER TIPS & INSIGHTS",
     matchupTitle:"Matchups",
+    trainingTitle:"Training Plan",
+    
 
     blankHint: "Placeholder: we will add list/create/edit here next.",
+    trainingSub:"ADD & COMPLETE DRILLS"
   },
 };
 
@@ -79,6 +85,7 @@ export default function App() {
       <Route path="/c/:id/tips" element={<CharacterTips lang={lang} t={t} toggleLang={toggleLang} />}/>
       <Route path="/c/:id/combos" element={<ComboGroupsPage lang={lang} toggleLang={toggleLang} />} />
       <Route path="/c/:id/combos/:groupId" element={<ComboGroupPage lang={lang} toggleLang={toggleLang} />} />
+      <Route path="/c/:id/training" element={<TrainingPlan lang={lang} t={t} toggleLang={toggleLang} />} />
 
     </Routes>
   );

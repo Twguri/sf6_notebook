@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 
 type FighterMode = "fighter" | "normal";
 
@@ -8,9 +8,16 @@ type MemoEditorProps = {
   placeholder?: string;
   hint?: string;
 
-  width?: number | string;     // e.g. "70vw"
-  maxWidth?: number;           // e.g. 1400
+  width?: number | string; // e.g. "70vw"
+  maxWidth?: number; // e.g. 1400
   minHeight?: number | string; // e.g. "70vh"
+
+  /**
+   * External trigger to toggle input mode (same as Ctrl+Alt+F).
+   * Increment/change this value to trigger a toggle.
+   * If omitted, MemoEditor behaves exactly as before.
+   */
+  externalToggleNonce?: number;
 };
 
 const DIR_MAP: Record<string, string> = {
@@ -36,32 +43,25 @@ function isWhitespace(ch: string) {
   return ch === " " || ch === "\t" || ch === "\n" || ch === "\r";
 }
 
-// 判断 token 左侧是否有“触发上下文”，避免普通英文误触发
+// Avoid accidentally uppercasing normal English words (e.g. "help").
 function hasTriggerContext(value: string, tokenStart: number): boolean {
-  // 向左跳过空白
   let i = tokenStart - 1;
   while (i >= 0 && isWhitespace(value[i])) i--;
 
-  // 行首：允许（你要更严格就 return false）
   if (i < 0) return true;
 
   const ch = value[i];
-
-  // 方向箭头 / 数字 / '>' 触发
   if (ARROWS.has(ch)) return true;
   if (ch >= "1" && ch <= "9") return true;
   if (ch === ">") return true;
 
-  // 其他符号（比如括号、逗号）也允许触发（更宽容）
+  // Symbol/punctuation triggers are allowed (more tolerant)
   if (!/[a-z0-9]/i.test(ch)) return true;
 
-  // 左侧是字母数字：不触发
   return false;
 }
 
-// 在光标位置附近检测是否刚完成了 token，若是则替换为大写版本并返回新光标
 function applyButtonTokenIfAny(value: string, caret: number): { value: string; caret: number } {
-  // 优先匹配 3 字符 token
   const tryMatch = (len: number) => {
     if (caret < len) return null;
     const start = caret - len;
@@ -70,7 +70,7 @@ function applyButtonTokenIfAny(value: string, caret: number): { value: string; c
     if (!(BUTTON_TOKENS as readonly string[]).includes(lower)) return null;
     if (!hasTriggerContext(value, start)) return null;
 
-    const replaced = lower.toUpperCase(); // 文本版映射
+    const replaced = lower.toUpperCase();
     const nextValue = value.slice(0, start) + replaced + value.slice(caret);
     const nextCaret = start + replaced.length;
     return { value: nextValue, caret: nextCaret };
@@ -87,6 +87,7 @@ export default function MemoEditor({
   width = "100%",
   maxWidth = 980,
   minHeight = "70vh",
+  externalToggleNonce,
 }: MemoEditorProps) {
   const key = useMemo(() => storageKey, [storageKey]);
 
@@ -96,6 +97,15 @@ export default function MemoEditor({
 
   const timerRef = useRef<number | null>(null);
   const taRef = useRef<HTMLTextAreaElement | null>(null);
+
+  const toggleMode = () => setMode((m) => (m === "fighter" ? "normal" : "fighter"));
+
+  // External toggle (same behavior as Ctrl+Alt+F)
+  useEffect(() => {
+    if (externalToggleNonce === undefined) return;
+    toggleMode();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [externalToggleNonce]);
 
   // load
   useEffect(() => {
@@ -118,9 +128,6 @@ export default function MemoEditor({
     };
   }, [text, key]);
 
-  const toggleMode = () => setMode((m) => (m === "fighter" ? "normal" : "fighter"));
-
-  // 在当前光标位置插入字符串
   const insertAtCaret = (insert: string) => {
     const el = taRef.current;
     if (!el) return;
@@ -139,7 +146,6 @@ export default function MemoEditor({
   };
 
   const onKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
-    // Ctrl + Alt + F（Win/Linux） / Cmd + Option + F（macOS）
     const hitToggle =
       ((e.ctrlKey && e.altKey) || (e.metaKey && e.altKey)) && e.code === "KeyF";
 
@@ -150,7 +156,7 @@ export default function MemoEditor({
       return;
     }
 
-    // Fighter 模式：数字 1-9 直接插入方向箭头（解决 caret 错位）
+    // Fighter mode: digits -> arrows
     if (mode === "fighter") {
       if (e.ctrlKey || e.metaKey || e.altKey) return;
 
@@ -162,11 +168,9 @@ export default function MemoEditor({
     }
   };
 
-  // ✅ 关键：在 onChange 里做 token 替换（lp/mp/ppp...）
   const onChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const el = e.currentTarget;
 
-    // 记录当前滚动/光标（避免受控更新导致跳动）
     const st = el.scrollTop;
     const sl = el.scrollLeft;
     const ss = el.selectionStart ?? 0;
@@ -176,7 +180,6 @@ export default function MemoEditor({
     let nextCaret = ss;
 
     if (mode === "fighter") {
-      // 只在“光标没有选区”的常规输入情况下做自动替换（更稳）
       if (ss === se) {
         const applied = applyButtonTokenIfAny(nextValue, ss);
         nextValue = applied.value;
@@ -192,7 +195,7 @@ export default function MemoEditor({
       ta.focus();
       ta.scrollTop = st;
       ta.scrollLeft = sl;
-      // 如果发生了替换，用 nextCaret，否则用原 selection
+
       if (mode === "fighter" && ss === se) {
         ta.setSelectionRange(nextCaret, nextCaret);
       } else {
@@ -202,8 +205,8 @@ export default function MemoEditor({
   };
 
   return (
-    <div style={{ marginTop: 12}}>
-      <div style={{width: "100%"}}>
+    <div style={{ marginTop: 12 }}>
+      <div style={{ width: width, maxWidth, margin: "0 auto" }}>
         <div
           style={{
             background: "#141414",
@@ -299,17 +302,33 @@ export function FighterTextarea({
   placeholder = "",
   minHeight = 120,
   style,
+  textareaRef,
+  toggleNonce,
 }: {
   value: string;
   onChange: (next: string) => void;
   placeholder?: string;
   minHeight?: number | string;
   style?: React.CSSProperties;
+  textareaRef?: React.MutableRefObject<HTMLTextAreaElement | null>;
+  /** External trigger to toggle mode (same effect as Ctrl+Alt+F) */
+  toggleNonce?: number;
 }) {
   const [mode, setMode] = useState<FighterMode>("normal");
   const taRef = useRef<HTMLTextAreaElement | null>(null);
 
-  // 在当前光标位置插入字符串
+  // expose textarea DOM
+  const setRefs = (el: HTMLTextAreaElement | null): void => {
+    taRef.current = el;
+    if (textareaRef) textareaRef.current = el;
+  };
+
+  // external toggle (same as Ctrl+Alt+F)
+  useEffect(() => {
+    if (toggleNonce === undefined) return;
+    setMode((m) => (m === "fighter" ? "normal" : "fighter"));
+  }, [toggleNonce]);
+
   const insertAtCaret = (insert: string) => {
     const el = taRef.current;
     if (!el) return;
@@ -328,7 +347,6 @@ export function FighterTextarea({
   };
 
   const onKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
-    // Ctrl + Alt + F（Win/Linux） / Cmd + Option + F（macOS）
     const hitToggle =
       ((e.ctrlKey && e.altKey) || (e.metaKey && e.altKey)) && e.code === "KeyF";
 
@@ -340,10 +358,8 @@ export function FighterTextarea({
     }
 
     if (mode !== "fighter") return;
-
     if (e.ctrlKey || e.metaKey || e.altKey) return;
 
-    // Fighter 模式：数字 1-9 直接插入方向箭头
     if (isDigit1to9(e.key)) {
       e.preventDefault();
       insertAtCaret(DIR_MAP[e.key] ?? e.key);
@@ -385,7 +401,6 @@ export function FighterTextarea({
 
   return (
     <div style={{ position: "relative" }}>
-      {/* 右上角模式提示（可删掉，不影响快捷键） */}
       <div
         style={{
           position: "absolute",
@@ -401,7 +416,7 @@ export function FighterTextarea({
       </div>
 
       <textarea
-        ref={taRef}
+        ref={setRefs}
         value={value}
         onChange={onChangeInner}
         onKeyDown={onKeyDown}
@@ -409,7 +424,7 @@ export function FighterTextarea({
         style={{
           width: "100%",
           minHeight,
-          padding: "26px 12px 10px", // 给右上角提示留空间
+          padding: "26px 12px 10px",
           borderRadius: 12,
           border: "1px solid rgba(255,255,255,0.10)",
           background: "rgba(255,255,255,0.06)",
@@ -427,26 +442,27 @@ export function FighterTextarea({
   );
 }
 
-// ===== Named export: FighterTextareaFixed (always fighter mode) =====
-// ===== Named export: FighterTextareaFixed (always fighter mode) =====
+/**
+ * FighterTextareaFixed: always in fighter mode.
+ * Used for cases where you don't want mode switching, but still want digits->arrows and token auto-uppercase.
+ */
 export function FighterTextareaFixed({
   value,
   onChange,
   placeholder = "",
   minHeight = 80,
   style,
-  textareaRef, // ✅ 新增：外部可拿到 textarea DOM
+  textareaRef,
 }: {
   value: string;
   onChange: (next: string) => void;
   placeholder?: string;
   minHeight?: number | string;
   style?: React.CSSProperties;
-  textareaRef?: React.MutableRefObject<HTMLTextAreaElement | null>; // ✅ A 方案
+  textareaRef?: React.MutableRefObject<HTMLTextAreaElement | null>;
 }) {
   const taRef = useRef<HTMLTextAreaElement | null>(null);
 
-  // ✅ 同时设置内部 ref + 外部 ref（返回 void，避免 TS 报错）
   const setRefs = (el: HTMLTextAreaElement | null): void => {
     taRef.current = el;
     if (textareaRef) textareaRef.current = el;
@@ -470,10 +486,8 @@ export function FighterTextareaFixed({
   };
 
   const onKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
-    // 固定 fighter：不允许切换
     if (e.ctrlKey || e.metaKey || e.altKey) return;
 
-    // Fighter 模式：数字 1-9 直接插入方向箭头
     if (isDigit1to9(e.key)) {
       e.preventDefault();
       insertAtCaret(DIR_MAP[e.key] ?? e.key);
@@ -492,7 +506,6 @@ export function FighterTextareaFixed({
     let nextValue = el.value;
     let nextCaret = ss;
 
-    // 固定 fighter：无选区时做 token 大写
     if (ss === se) {
       const applied = applyButtonTokenIfAny(nextValue, ss);
       nextValue = applied.value;
@@ -504,11 +517,9 @@ export function FighterTextareaFixed({
     requestAnimationFrame(() => {
       const ta = taRef.current;
       if (!ta) return;
-
       ta.focus();
       ta.scrollTop = st;
       ta.scrollLeft = sl;
-
       if (ss === se) ta.setSelectionRange(nextCaret, nextCaret);
       else ta.setSelectionRange(ss, se);
     });
@@ -516,7 +527,7 @@ export function FighterTextareaFixed({
 
   return (
     <textarea
-      ref={setRefs} // ✅ 原来 ref={taRef}
+      ref={setRefs}
       value={value}
       onChange={onChangeInner}
       onKeyDown={onKeyDown}
@@ -524,7 +535,7 @@ export function FighterTextareaFixed({
       style={{
         width: "100%",
         minHeight,
-        padding: "10px 12px",
+        padding: "12px 12px",
         borderRadius: 12,
         border: "1px solid rgba(255,255,255,0.10)",
         background: "rgba(255,255,255,0.06)",
@@ -537,12 +548,6 @@ export function FighterTextareaFixed({
         whiteSpace: "pre-wrap",
         ...style,
       }}
-      lang="en"
-      inputMode="text"
-      autoCorrect="off"
-      autoCapitalize="none"
-      spellCheck={false}
     />
   );
 }
-

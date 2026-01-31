@@ -1,30 +1,107 @@
 import fs from "node:fs";
 import path from "node:path";
 
+
+
+
+
+
+// ---- Paths (FINAL, EXPLICIT) ----
 const ROOT = process.cwd();
-const CSV_DIR = path.join(ROOT, "csv");
+
+// ✅ 输入：CSV 直接放在 src/data/sf6_data
+const CSV_DIR = path.join(ROOT, "src", "data", "sf6_data");
+
+// ✅ 输出：JSON 放在 src/data/frameData
 const OUT_DIR = path.join(ROOT, "src", "data", "frameData");
 
-const COLUMNS = [
-  "id",
-  "category",
-  "nameEN",
-  "nameCN",
-  "input",
-  "inputDisplay",
-  "hitType",
-  "startup",
-  "active",
-  "recovery",
-  "onBlock",
-  "onHit",
-  "damage",
-  "superArt",
-  "driveOnHit",
-  "driveOnBlock",
-  "driveOnPunishCounter",
-  "cancel",
-];
+
+
+// ---- Header canonicalization ----
+// Canonical (what you want to store). We DO NOT force lower-case because you want "Properties".
+// We map many possible CSV header spellings (human-friendly or typo) to these canonical keys.
+const HEADER_ALIASES = new Map(
+  Object.entries({
+    // common typos / spacing
+    catagory: "category",
+    "catagory ": "category",
+    " category": "category",
+
+    // names
+    "move name": "nameEN",
+    movename: "nameEN",
+    name_en: "nameEN",
+    "name en": "nameEN",
+    "move_name": "nameEN",
+    move_name: "nameEN",
+
+    "move name cn": "nameCN",
+    move_name_cn: "nameCN",
+    "move_name_cn": "nameCN",
+    name_cn: "nameCN",
+    "name cn": "nameCN",
+
+    // frame columns
+    "frame start-up": "startup",
+    "frame start up": "startup",
+    "start-up": "startup",
+    startup: "startup",
+    active: "active",
+    recovery: "recovery",
+
+    // advantage
+    "recovery hit": "onHit",
+    onhit: "onHit",
+    "on hit": "onHit",
+    "on-hit": "onHit",
+
+    block: "onBlock",
+    onblock: "onBlock",
+    "on block": "onBlock",
+    "on-block": "onBlock",
+
+    // drive & sa
+    "drive gauge increase hit": "driveOnHit",
+    "drive gauge decrease block": "driveOnBlock",
+    "punish counter": "driveOnPunishCounter",
+    "driveonpunishconter": "driveOnPunishCounter", // typo
+    "driveonpunishcounter": "driveOnPunishCounter",
+    "driveonpunish counter": "driveOnPunishCounter",
+    "super art gauge increase": "superArt",
+
+    // misc
+    "combo scaling": "comboScaling",
+    properties: "Properties",
+    "miscellaneous": "Miscellaneous",
+    notes_cn: "notesCN",
+    notes_en: "notesEN",
+  })
+);
+
+// Category normalization (6 buckets, in your desired order)
+const CATEGORY_ALIASES = new Map(
+  Object.entries({
+    normal: "normal",
+    normals: "normal",
+    "normal ": "normal",
+
+    targetcombo: "targetcombo",
+    "target combo": "targetcombo",
+    targetcombos: "targetcombo",
+    target: "targetcombo",
+
+    special: "special",
+    specials: "special",
+
+    super: "super",
+    supers: "super",
+
+    throw: "throw",
+    throws: "throw",
+
+    common: "common",
+  })
+);
 
 function ensureDir(p) {
   fs.mkdirSync(p, { recursive: true });
@@ -106,12 +183,46 @@ function todayISO() {
   return new Date().toISOString().slice(0, 10);
 }
 
+function normalizeHeader(h) {
+  // remove BOM and trim
+  const t = String(h ?? "")
+    .replace(/^\uFEFF/, "")
+    .trim();
+  if (!t) return "";
+  const key = t.toLowerCase();
+  return HEADER_ALIASES.get(key) ?? t;
+}
+
+function normalizeCategory(v) {
+  const t = String(v ?? "").trim().toLowerCase();
+  return CATEGORY_ALIASES.get(t) ?? (t ? "common" : "common");
+}
+
+function dedupeColumns(cols) {
+  const seen = new Map();
+  return cols.map((c) => {
+    if (!c) return c;
+    const n = seen.get(c) ?? 0;
+    seen.set(c, n + 1);
+    return n === 0 ? c : `${c}_${n + 1}`;
+  });
+}
+
 function importOne(id) {
   const csvPath = path.join(CSV_DIR, `${id}.csv`);
   if (!fs.existsSync(csvPath)) throw new Error(`CSV not found: ${csvPath}`);
 
-  const { meta, header, rows } = parseCSV(fs.readFileSync(csvPath, "utf-8"));
-  if (header.length === 0) throw new Error(`CSV has no header: ${csvPath}`);
+  const { meta, header: rawHeader, rows } = parseCSV(
+    fs.readFileSync(csvPath, "utf-8")
+  );
+  if (rawHeader.length === 0) throw new Error(`CSV has no header: ${csvPath}`);
+
+  // Normalize header names (trim + alias map) and preserve column order from CSV.
+  const normalizedHeader = dedupeColumns(rawHeader.map(normalizeHeader));
+  const headerMap = new Map();
+  for (let i = 0; i < rawHeader.length; i++) {
+    headerMap.set(rawHeader[i], normalizedHeader[i]);
+  }
 
   // Existing JSON (optional) for fallback names
   const outPath = path.join(OUT_DIR, `${id}.json`);
@@ -121,10 +232,18 @@ function importOne(id) {
   const displayNameCN = meta.displayNameCN ?? old?.displayNameCN ?? "";
   const displayNameEN = meta.displayNameEN ?? old?.displayNameEN ?? "";
 
-  // Build moves strictly from CSV
+  // Build moves from CSV, preserving *all* columns.
+  // Values are trimmed strings; missing columns are filled with "".
   const moves = rows.map((r) => {
     const m = {};
-    for (const k of COLUMNS) m[k] = (r[k] ?? "").trim();
+    // Copy every column based on the CSV header order
+    for (let i = 0; i < rawHeader.length; i++) {
+      const rawKey = rawHeader[i];
+      const key = normalizedHeader[i];
+      m[key] = String(r[rawKey] ?? "").trim();
+    }
+    // Normalize category into 6 buckets (avoid UI crash)
+    if ("category" in m) m.category = normalizeCategory(m.category);
     return m;
   });
 
@@ -139,6 +258,8 @@ function importOne(id) {
     displayNameCN,
     displayNameEN,
     lastUpdated: todayISO(),
+    // Preserve column order so the UI can render columns exactly as in the CSV
+    columns: normalizedHeader,
     nameCNMap,
     moves,
   };

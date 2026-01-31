@@ -19,6 +19,7 @@ export default function CharacterHub({ lang, t, toggleLang }) {
         <LinkCard to={`/c/${id}/combos`} title={t("combosTitle")} subtitle={t("combosSub")} theme="dark" />
         <LinkCard to={`/c/${id}/matchup`} title={t("matchupTitle")} subtitle={t("matchupsSub")} theme="dark" />
         <LinkCard to={`/c/${id}/tips`} title={t("tipsTitle")} subtitle={t("tipsSub")} theme="dark" />
+        <LinkCard to={`/c/${id}/training`} title={t("trainingTitle")} subtitle={t("trainingSub")} theme="dark" />
       </div>
     </AppShell>
   );

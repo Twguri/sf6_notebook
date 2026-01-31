@@ -2,26 +2,42 @@ import React, { useMemo } from "react";
 import { useParams } from "react-router-dom";
 
 import AppShell from "../components/AppShell";
+import MoveSearch from "../components/MoveSearch";
 import { getFrameData } from "../features/frameData/frameDataStore";
 import type { MoveRow } from "../features/frameData/frameDataStore";
-import MoveSearch from "../components/MoveSearch";
 
+type MoveCategory =
+  | "normal"
+  | "targetcombo"
+  | "special"
+  | "super"
+  | "throw"
+  | "common";
 
-type MoveCategory = "normals" | "targetCombos" | "specials" | "supers";
+// The JSON preserves *all* columns; moves can carry arbitrary keys.
+type AnyMoveRow = MoveRow & Record<string, any>;
 
+// Category order matters: we render sections in this order.
 const SECTION_META: Array<{
   key: MoveCategory;
   titleCN: string;
   titleEN: string;
 }> = [
-  { key: "normals", titleCN: "普通拳脚", titleEN: "Normals" },
-  { key: "targetCombos", titleCN: "Target Combo", titleEN: "Target Combos" },
-  { key: "specials", titleCN: "必杀技", titleEN: "Special Moves" },
-  { key: "supers", titleCN: "超级必杀技", titleEN: "Super Arts" },
+  { key: "normal", titleCN: "普通技", titleEN: "Normal" },
+  { key: "targetcombo", titleCN: "目标连段", titleEN: "Target Combo" },
+  { key: "special", titleCN: "必杀技", titleEN: "Special" },
+  { key: "super", titleCN: "超必杀", titleEN: "Super" },
+  { key: "throw", titleCN: "投技", titleEN: "Throw" },
+  { key: "common", titleCN: "通用", titleEN: "Common" },
 ];
 
 /** -----------------------------
  *  numpad -> arrows (display only)
+ *
+ *  input 已经被标准化：
+ *  - 只做数字方向 1-9 -> 箭头
+ *  - 只特判 {360}
+ *  - 其余不做模糊解析，保留原字符（例如 > / + ( ) 等）
  *  ----------------------------- */
 const DIR_MAP: Record<string, string> = {
   "1": "↙",
@@ -35,187 +51,22 @@ const DIR_MAP: Record<string, string> = {
   "9": "↗",
 };
 
-// 解析按钮：lplk -> LPLK, pp -> PP, p -> P
-function formatButtons(btn: string) {
-  const s = btn.toLowerCase();
-
-  // 先处理最常见的 pp/kk
-  if (s === "pp") return "PP";
-  if (s === "kk") return "KK";
-  if (s === "p") return "P";
-  if (s === "k") return "K";
-
-  // parse sequences like lplk / mp / hp / lk...
-  const tokens: string[] = [];
-  let i = 0;
-  while (i < s.length) {
-    const two = s.slice(i, i + 2);
-    if (["lp", "mp", "hp", "lk", "mk", "hk"].includes(two)) {
-      tokens.push(two.toUpperCase());
-      i += 2;
-      continue;
-    }
-    const one = s[i];
-    if (one === "p" || one === "k") {
-      tokens.push(one.toUpperCase());
-      i += 1;
-      continue;
-    }
-    i += 1;
-  }
-  return tokens.length ? tokens.join("") : btn.toUpperCase();
-}
-
-function isSingleDigitDir(dirs: string) {
-  return /^[1-9]$/.test(dirs);
-}
-
-function dirsToArrows(dirs: string) {
-  return dirs
-    .split("")
-    .map((d) => DIR_MAP[d] ?? d)
-    .join(" ");
-}
-
-/**
- * 支持输入格式：
- * - 236mp
- * - 236(pp)
- * - (4lplk)
- * - (lplk)
- * - 5hp>5hk  （TC 展示：•HP>•HK）
- * - {360}+p / {720}+*p （显示 360/720，并去掉 *）
- */
-function formatOneChunk(chunkRaw: string, lang: "zh" | "en") {
-  let s = chunkRaw.trim();
-  if (!s) return "-";
-
-  // 去掉星号标记：{720}+*p -> {720}+p
-  s = s.replace(/\*/g, "");
-
-  // 去掉空格（让 236 (pp) 也能解析）
-  s = s.replace(/\s+/g, "");
-
-  // 如果是整段括号包裹：(4lplk) / (lplk)
-  if (s.startsWith("(") && s.endsWith(")")) {
-    s = s.slice(1, -1);
-  }
-  // dirs + button hold: 214[lp] / 236[*p]
-const dirHold = s.match(/^([1-9]+)\[(\*?)(lp|mp|hp|lk|mk|hk|p|k|pp|kk)\]$/i);
-if (dirHold) {
-  const dirs = dirHold[1];
-  const label = lang === "zh" ? "蓄力" : "charge";
-  const btn = formatButtons(dirHold[3]);
-  return `${dirsToArrows(dirs)} + ${btn}(${label})`;
-}
-// ---- bracket dir+button hold: [6p] / [4lp] / [6pp] ----
-// 显示：→ + P(蓄力) / ← + LP(蓄力)
-const bracketDirHold = s.match(/^\[([1-9])(\*?)(lp|mp|hp|lk|mk|hk|p|k|pp|kk)\]$/i);
-if (bracketDirHold) {
-  const dir = bracketDirHold[1];
-  const label = lang === "zh" ? "蓄力" : "charge";
-  const btn = formatButtons(bracketDirHold[3]);
-  const arrow = DIR_MAP[dir] ?? dir;
-  return `${arrow} + ${btn}(${label})`;
-}
-
-  // ---- button hold: [lp] / [*p] / [pp] ----
-  // 显示：LP(蓄力) / P(蓄力)（英文：LP(charge)）
-  const holdBtn = s.match(/^\[(\*?)(lp|mp|hp|lk|mk|hk|p|k|pp|kk)\]$/i);
-  if (holdBtn) {
-    const label = lang === "zh" ? "蓄力" : "charge";
-    const btn = formatButtons(holdBtn[2]); // 会把 pp -> PP, lp -> LP
-    return `${btn}(${label})`;
-  }
-
-  // ---- charge: [4]>6lp / [4]>6(pp) / [4]>6p ----
-  // 规则：显示成 ←(charge)→ + LP（中文 charge=蓄力）
-  const charge = s.match(/^\[(\d)\]>(\d)(.+)$/i);
-  if (charge) {
-    const from = charge[1]; // usually 4 or 1 (down-back)
-    const to = charge[2];   // usually 6 or 8 (up)
-    let rest = charge[3] ?? "";
-
-    // rest might be (pp)
-    if (rest.startsWith("(") && rest.endsWith(")")) rest = rest.slice(1, -1);
-
-    const fromArrow = DIR_MAP[from] ?? from;
-    const toArrow = DIR_MAP[to] ?? to;
-    const label = lang === "zh" ? "蓄力" : "charge";
-    const btn = rest ? formatButtons(rest) : "";
-
-    // 你想要“←(charge)→”这种风格
-    const core = `${fromArrow}(${label})${toArrow}`;
-    return btn ? `${core} + ${btn}` : core;
-  }
-  // 处理 {360} / {720}
-  // 允许：{720}+p、{360}pp、{720}(pp)
-  const brace = s.match(/^\{(360|720)\}(?:\+)?(.+)?$/i);
-  if (brace) {
-    const spin = brace[1];
-    const rest = brace[2] ?? "";
-    if (!rest) return spin;
-
-    // rest 可能是 (pp) 或 pp 或 lplk
-    const restBtn =
-      rest.startsWith("(") && rest.endsWith(")")
-        ? rest.slice(1, -1)
-        : rest;
-
-    const btn = restBtn ? formatButtons(restBtn) : "";
-    return btn ? `${spin}+${btn}` : spin;
-  }
-
-  // 处理形如：236(pp)
-  const parenBtn = s.match(/^([1-9]+)\(([^)]+)\)$/i);
-  if (parenBtn) {
-    const dirs = parenBtn[1];
-    const btn = formatButtons(parenBtn[2]);
-    return `${dirsToArrows(dirs)} + ${btn}`;
-  }
-
-  // 常规：([dirs])?([buttons])?
-  // e.g. 236mp / 4lplk / lplk / pp / 214214p
-  const m = s.toLowerCase().match(/^([1-9]+)?([a-z]+)?$/);
-  if (!m) return chunkRaw.trim();
-
-  const dirs = m[1] ?? "";
-  const btnRaw = m[2] ?? "";
-
-  const btn = btnRaw ? formatButtons(btnRaw) : "";
-
-  if (!dirs && btn) return btn;
-  if (!btn && dirs) return dirsToArrows(dirs);
-
-  if (dirs && btn) {
-    // TC 里常见：5hp / 2mk 你希望显示成 “•HP” / “↓ + MK”？
-    // 你明确要求 TC: 5hp>5hk -> •HP>•HK
-    // 所以：单个方向数字 + 单个攻击按钮时，拼成 “•HP”（不加 +）
-    if (isSingleDigitDir(dirs)) {
-      return `${DIR_MAP[dirs]}${btn}`;
-    }
-    // 多位方向（236/214/623 等）用 “箭头 + 按键”
-    return `${dirsToArrows(dirs)} + ${btn}`;
-  }
-
-  return chunkRaw.trim();
-}
-
-function formatInput(input: string | undefined, lang: "zh" | "en") {
+// 输入显示模式切换：
+// - num: 仅处理 {360}，保留数字和其它符号
+// - dir: 在 num 的基础上做 1-9 -> 方向箭头
+function formatInputWithMode(input: string | undefined, mode: "dir" | "num") {
   if (!input) return "-";
-  const raw = input.trim();
-  if (!raw) return "-";
+  const raw = String(input);
+  if (!raw.trim()) return "-";
 
-  // Target Combo: 5hp>5hk 等
-  // 按你的要求，不要空格：•HP>•HK
-  if (raw.includes(">")) {
-    return raw
-      .split(">")
-      .map((x) => formatOneChunk(x,lang))
-      .join(">");
-  }
+  // {360} 特判：仅去掉花括号，保留其它字符
+  let s = raw.replace(/\{360\}/gi, "360");
 
-  return formatOneChunk(raw,lang);
+  if (mode === "num") return s;
+
+  // 数字方向 1-9 -> 箭头。逐字符替换，保留其它字符。
+  s = s.replace(/[1-9]/g, (d) => DIR_MAP[d] ?? d);
+  return s;
 }
 
 /** -----------------------------
@@ -229,8 +80,6 @@ const HITTYPE_DICT: Record<string, { zh: string; en: string }> = {
   Projectile: { zh: "飞道", en: "Projectile" },
 
   Overhead: { zh: "中段", en: "Overhead" },
-
-  // 兜底：如果数据层仍然传 midHigh，就强制当 Overhead（你说英文现在错）
   midHigh: { zh: "中段", en: "Overhead" },
   MidHigh: { zh: "中段", en: "Overhead" },
 
@@ -239,7 +88,7 @@ const HITTYPE_DICT: Record<string, { zh: string; en: string }> = {
 
 function translateHitType(value: string, lang: "zh" | "en") {
   if (!value || value === "-") return "-";
-  const key = value.trim();
+  const key = String(value).trim();
   const entry = HITTYPE_DICT[key];
   if (!entry) return value;
   return lang === "zh" ? entry.zh : entry.en;
@@ -261,13 +110,101 @@ function translateCancel(value: string, lang: "zh" | "en") {
   if (!value || value === "-") return "-";
   if (lang === "en") return value;
 
-  const parts = value
+  const parts = String(value)
     .split(/[,/＋+]/)
     .map((s) => s.trim())
     .filter(Boolean);
 
   const translated = parts.map((p) => CANCEL_TOKEN_DICT[p]?.zh ?? p);
   return translated.join("，");
+}
+
+/** -----------------------------
+ *  Properties 翻译
+ *  规则：保留符号，只翻译文本 token。
+ *  特判：只要出现 "Mid-air" + "Projectile"（允许中间用空格或 '-'），
+ *        中文一律显示“空中波动”。
+ *  ----------------------------- */
+const PROPERTIES_TOKEN_DICT: Record<string, { zh: string; en: string }> = {
+  High: { zh: "上段", en: "High" },
+  Mid: { zh: "中段", en: "Mid" },
+  Low: { zh: "下段", en: "Low" },
+  Throw: { zh: "投技", en: "Throw" },
+  Projectile: { zh: "波动", en: "Projectile" },
+  "Mid-air": { zh: "空中", en: "Mid-air" },
+  Midair: { zh: "空中", en: "Mid-air" },
+};
+
+function tokenizeKeepSymbols(s: string) {
+  const out: string[] = [];
+  let i = 0;
+  while (i < s.length) {
+    const ch = s[i];
+    const isLetter = (c: string) => /[A-Za-z]/.test(c);
+
+    if (isLetter(ch)) {
+      let j = i + 1;
+      while (j < s.length) {
+        const c = s[j];
+        if (
+          c === "-" &&
+          j + 1 < s.length &&
+          isLetter(s[j - 1]) &&
+          isLetter(s[j + 1])
+        ) {
+          j++;
+          continue;
+        }
+        if (!isLetter(c)) break;
+        j++;
+      }
+      out.push(s.slice(i, j));
+      i = j;
+      continue;
+    }
+
+    out.push(ch);
+    i++;
+  }
+  return out;
+}
+
+function translateConcatHighMidLow(word: string, lang: "zh" | "en") {
+  const parts = word.match(/High|Mid|Low|Throw/g);
+  if (!parts) return null;
+  if (parts.join("") !== word) return null;
+  if (lang === "en") return word;
+  return parts
+    .map((p) => PROPERTIES_TOKEN_DICT[p]?.zh ?? p)
+    .join(">")
+    .replace(/>\s*/g, ">");
+}
+
+function translateProperties(value: string, lang: "zh" | "en") {
+  if (!value || value === "-") return "-";
+  const raw = String(value).trim();
+  if (!raw) return "-";
+
+  if (lang === "zh") {
+    const normalized = raw.replace(/\s+/g, " ");
+    const hasMidAir = /mid-?air/i.test(normalized);
+    const hasProjectile = /projectile/i.test(normalized);
+    if (hasMidAir && hasProjectile) return "空中波动";
+  }
+
+  const tokens = tokenizeKeepSymbols(raw);
+  const translated = tokens.map((tok) => {
+    if (!/^[A-Za-z][A-Za-z-]*$/.test(tok)) return tok;
+
+    const concat = translateConcatHighMidLow(tok, lang);
+    if (concat) return concat;
+
+    const entry = PROPERTIES_TOKEN_DICT[tok];
+    if (!entry) return tok;
+    return lang === "zh" ? entry.zh : entry.en;
+  });
+
+  return translated.join("");
 }
 
 /** -----------------------------
@@ -298,46 +235,198 @@ function Section({
   );
 }
 
-function MoveTable({ rows, lang }: { rows: MoveRow[]; lang: "zh" | "en" }) {
+const COLUMN_LABELS: Record<string, { zh: string; en: string }> = {
+  id: { zh: "ID", en: "ID" },
+  category: { zh: "类别", en: "Category" },
+  __name: { zh: "名称", en: "Name" },
+  input: { zh: "指令", en: "Input" },
+  hitType: { zh: "判定", en: "Hit Type" },
+  startup: { zh: "发动", en: "Startup" },
+  active: { zh: "打击", en: "Active" },
+  recovery: { zh: "收招", en: "Recovery" },
+  onHit: { zh: "打中", en: "On Hit" },
+  onBlock: { zh: "打防", en: "On Block" },
+  damage: { zh: "伤害", en: "Damage" },
+  comboScaling: { zh: "补正", en: "Combo Scaling" },
+  driveOnHit: { zh: "斗气(中)", en: "DG On Hit" },
+  driveOnBlock: { zh: "斗气(防)", en: "DG On Block" },
+  driveOnPunishCounter: { zh: "斗气(确反)", en: "DG Punish" },
+  superArt: { zh: "能量回收", en: "SA Gain" },
+  cancel: { zh: "取消", en: "Cancel" },
+  properties: { zh: "属性", en: "Properties" },
+  Properties: { zh: "属性", en: "Properties" },
+  misc: { zh: "杂项", en: "Misc" },
+  Miscellaneous: { zh: "杂项", en: "Misc" },
+  __notes: { zh: "备注", en: "Notes" },
+};
+
+function buildDisplayColumns(columns: string[]) {
+  // 需求：招式名称列固定在最左侧。
+  const out: string[] = ["__name"];
+  let hasNotes = false;
+
+  for (const c of columns) {
+    if (!c) continue;
+
+    // name* 已经映射到 __name（且 __name 已经在最左侧）
+    if (c === "nameEN" || c === "nameCN") continue;
+
+    if (c === "notesEN" || c === "notesCN") {
+      if (!hasNotes) out.push("__notes");
+      hasNotes = true;
+      continue;
+    }
+
+    // 避免重复插入 __name
+    if (c === "__name") continue;
+
+    out.push(c);
+  }
+
+  return out;
+}
+
+function labelForColumn(col: string, lang: "zh" | "en") {
+  const meta = COLUMN_LABELS[col];
+  if (!meta) return col;
+  return lang === "zh" ? meta.zh : meta.en;
+}
+
+function valueForCell(
+  m: AnyMoveRow,
+  col: string,
+  lang: "zh" | "en",
+  inputView: "dir" | "num"
+) {
+  const v = (key: string) => {
+    const raw = m?.[key];
+    const s = raw == null ? "" : String(raw);
+    return s.trim() ? s : "-";
+  };
+
+  switch (col) {
+    case "__name":
+      return lang === "zh" ? v("nameCN") : v("nameEN");
+    case "__notes":
+      return lang === "zh" ? v("notesCN") : v("notesEN");
+    case "input":
+      return formatInputWithMode(m.input, inputView);
+    case "hitType":
+      return translateHitType(v("hitType"), lang);
+    case "cancel":
+      return translateCancel(v("cancel"), lang);
+    case "properties":
+    case "Properties":
+      return translateProperties(v(col), lang);
+    default:
+      return v(col);
+  }
+}
+
+function normalizeCategory(raw: any): MoveCategory {
+  const t = String(raw ?? "").trim();
+  if (!t) return "common";
+
+  // new format
+  if (
+    t === "normal" ||
+    t === "targetcombo" ||
+    t === "special" ||
+    t === "super" ||
+    t === "throw" ||
+    t === "common"
+  ) {
+    return t;
+  }
+
+  // legacy format
+  if (t === "normals") return "normal";
+  if (t === "targetCombos") return "targetcombo";
+  if (t === "specials") return "special";
+  if (t === "supers") return "super";
+
+  return "common";
+}
+
+function MoveTable({
+  rows,
+  columns,
+  lang,
+  inputView,
+  onToggleInputView,
+}: {
+  rows: AnyMoveRow[];
+  columns: string[];
+  lang: "zh" | "en";
+  inputView: "dir" | "num";
+  onToggleInputView: () => void;
+}) {
+  const displayColumns = useMemo(() => buildDisplayColumns(columns), [columns]);
+  const minWidth = Math.max(720, displayColumns.length * 130);
+
   return (
     <div
       style={{
-        overflowX: "auto",
         borderRadius: 12,
         border: "1px solid rgba(255,255,255,0.10)",
         background: "rgba(255,255,255,0.03)",
       }}
     >
-      <table
+      {/* 右上角：输入显示切换（不影响搜索功能） */}
+      <div
         style={{
-          width: "100%",
-          borderCollapse: "collapse",
-          minWidth: 1340,
+          display: "flex",
+          justifyContent: "flex-end",
+          padding: "10px 12px 0 12px",
         }}
       >
+        <button
+          type="button"
+          onClick={onToggleInputView}
+          style={{
+            padding: "6px 10px",
+            borderRadius: 10,
+            border: "1px solid rgba(255,255,255,0.20)",
+            background: "rgba(255,255,255,0.06)",
+            color: "inherit",
+            cursor: "pointer",
+            whiteSpace: "nowrap",
+            fontSize: 13,
+            fontWeight: 650,
+          }}
+          title={
+            inputView === "dir"
+              ? lang === "zh"
+                ? "切换为数字显示"
+                : "Switch to numbers"
+              : lang === "zh"
+                ? "切换为方向显示"
+                : "Switch to directions"
+          }
+        >
+          {lang === "zh"
+            ? inputView === "dir"
+              ? "输入：方向"
+              : "输入：数字"
+            : inputView === "dir"
+              ? "Input: Directions"
+              : "Input: Numbers"}
+        </button>
+      </div>
+
+      <div style={{ overflowX: "auto", padding: "10px 0 0 0" }}>
+        <table
+          style={{
+            width: "100%",
+            borderCollapse: "collapse",
+            minWidth,
+          }}
+        >
         <thead>
           <tr>
-            {[
-              lang === "zh" ? "招式" : "Move",
-              lang === "zh" ? "指令" : "Input",
-              lang === "zh" ? "判定" : "Hit Type",
-              lang === "zh" ? "发动" : "Startup",
-              lang === "zh" ? "打击" : "Active",
-              lang === "zh" ? "收招" : "Recovery",
-              lang === "zh" ? "打防" : "On Block",
-              lang === "zh" ? "打中" : "On Hit",
-
-              lang === "zh" ? "斗气(中)" : "DG On Hit",
-              lang === "zh" ? "斗气(防)" : "DG On Block",
-              lang === "zh" ? "斗气(确反)" : "DG Punish",
-
-              lang === "zh" ? "伤害" : "Damage",
-              lang === "zh" ? "能量回收" : "SA Gain",
-
-              lang === "zh" ? "取消" : "Cancel",
-            ].map((h) => (
+            {displayColumns.map((col) => (
               <th
-                key={h}
+                key={col}
                 style={{
                   textAlign: "left",
                   fontSize: 13,
@@ -347,44 +436,45 @@ function MoveTable({ rows, lang }: { rows: MoveRow[]; lang: "zh" | "en" }) {
                   borderBottom: "1px solid rgba(255,255,255,0.10)",
                   color: "rgba(255,255,255,0.78)",
                   whiteSpace: "nowrap",
+                  ...(col === "__name" ? thStickyLeft : null),
                 }}
               >
-                {h}
+                {labelForColumn(col, lang)}
               </th>
             ))}
           </tr>
         </thead>
 
         <tbody>
-          {rows.map((m) => (
-            <tr
-              key={m.id}
-              style={{ borderBottom: "1px solid rgba(255,255,255,0.06)" }}
-            >
-              <td style={tdStrong}>{lang === "zh" ? m.nameCN : m.nameEN}</td>
+          {rows.map((m, idx) => {
+            const key = String(m.id || `${idx}`);
+            return (
+              <tr
+                key={key}
+                style={{ borderBottom: "1px solid rgba(255,255,255,0.06)" }}
+              >
+                {displayColumns.map((col) => {
+                  const cell = valueForCell(m, col, lang, inputView);
 
-              <td style={tdMono}>{formatInput(m.input,lang)}</td>
+                  const style =
+                    col === "__name"
+                      ? { ...tdStrong, ...tdStickyLeft }
+                      : col === "__notes"
+                        ? tdNotes
+                        : tdMono;
 
-              <td style={tdMono}>{translateHitType(m.hitType, lang)}</td>
-
-              <td style={tdMono}>{m.startup}</td>
-              <td style={tdMono}>{m.active}</td>
-              <td style={tdMono}>{m.recovery}</td>
-              <td style={tdMono}>{m.onBlock}</td>
-              <td style={tdMono}>{m.onHit}</td>
-
-              <td style={tdMono}>{(m as any).driveOnHit ?? "-"}</td>
-              <td style={tdMono}>{(m as any).driveOnBlock ?? "-"}</td>
-              <td style={tdMono}>{(m as any).driveOnPunishCounter ?? "-"}</td>
-
-              <td style={tdMono}>{(m as any).damage ?? "-"}</td>
-              <td style={tdMono}>{(m as any).superArt ?? "-"}</td>
-
-              <td style={tdMono}>{translateCancel(m.cancel, lang)}</td>
-            </tr>
-          ))}
+                  return (
+                    <td key={col} style={style}>
+                      {cell}
+                    </td>
+                  );
+                })}
+              </tr>
+            );
+          })}
         </tbody>
-      </table>
+        </table>
+      </div>
     </div>
   );
 }
@@ -405,6 +495,33 @@ const tdStrong: React.CSSProperties = {
   whiteSpace: "nowrap",
 };
 
+// 备注列：限定宽度，允许换行
+const tdNotes: React.CSSProperties = {
+  padding: "12px 14px",
+  fontSize: 14,
+  color: "rgba(255,255,255,0.92)",
+  whiteSpace: "normal",
+  maxWidth: 280,
+  width: 280,
+  overflowWrap: "anywhere",
+  lineHeight: 1.35,
+};
+
+// 左侧固定列（招式名称）
+const thStickyLeft: React.CSSProperties = {
+  position: "sticky",
+  left: 0,
+  zIndex: 3,
+  background: "rgba(18,18,18,0.95)",
+};
+
+const tdStickyLeft: React.CSSProperties = {
+  position: "sticky",
+  left: 0,
+  zIndex: 2,
+  background: "rgba(18,18,18,0.92)",
+};
+
 export default function FrameDataCharacterPage({
   lang,
   toggleLang,
@@ -417,6 +534,9 @@ export default function FrameDataCharacterPage({
   const { id } = useParams();
   const data = id ? getFrameData(id) : null;
 
+  // 输入显示模式：方向箭头 / 数字
+  const [inputView, setInputView] = React.useState<"dir" | "num">("dir");
+
   if (!data) {
     return (
       <AppShell
@@ -427,7 +547,6 @@ export default function FrameDataCharacterPage({
         backLabel={t("back")}
       >
         <div style={{ padding: 16, opacity: 0.9, fontSize: 16 }}>
-          
           {lang === "zh"
             ? "该角色帧数数据尚未收录。你可以在 src/data/frameData/ 下添加对应的 JSON 文件。"
             : "Frame data for this character is not added yet. Add its JSON file under src/data/frameData/."}
@@ -436,14 +555,27 @@ export default function FrameDataCharacterPage({
     );
   }
 
+  const columns: string[] = (
+    (data as any).columns && Array.isArray((data as any).columns)
+      ? (data as any).columns
+      : Object.keys(((data as any).moves?.[0] as any) ?? {})
+  ).filter((c: string) => c !== "id" && c !== "category");
+
   const grouped = useMemo(() => {
-    const g: Record<MoveCategory, MoveRow[]> = {
-      normals: [],
-      targetCombos: [],
-      specials: [],
-      supers: [],
+    const g: Record<MoveCategory, AnyMoveRow[]> = {
+      normal: [],
+      targetcombo: [],
+      special: [],
+      super: [],
+      throw: [],
+      common: [],
     };
-    for (const m of data.moves) g[m.category].push(m);
+
+    for (const mm of (data as any).moves as AnyMoveRow[]) {
+      const key = normalizeCategory(mm.category);
+      g[key].push(mm);
+    }
+
     return g;
   }, [data.moves]);
 
@@ -456,13 +588,12 @@ export default function FrameDataCharacterPage({
       backLabel={t("back")}
     >
       <div style={{ padding: 16 }}>
+        {/* 搜索功能保持不动 */}
         <MoveSearch
           moves={data.moves}
           lang={lang}
           t={t}
           onSelect={(move) => {
-            // 现在先做“跳到该分类并高亮/定位”也行，
-            // 最简单先 console.log，未来连招界面直接复用 onSelect
             console.log("selected", move);
           }}
         />
@@ -476,7 +607,15 @@ export default function FrameDataCharacterPage({
               key={sec.key}
               title={lang === "zh" ? sec.titleCN : sec.titleEN}
             >
-              <MoveTable rows={rows} lang={lang} />
+              <MoveTable
+                rows={rows}
+                columns={columns}
+                lang={lang}
+                inputView={inputView}
+                onToggleInputView={() =>
+                  setInputView((v) => (v === "dir" ? "num" : "dir"))
+                }
+              />
             </Section>
           );
         })}

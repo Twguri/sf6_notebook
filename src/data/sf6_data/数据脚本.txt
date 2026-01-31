@@ -1,0 +1,25 @@
+(() => {
+  // 找到页面上最大的 table（一般就是帧表）
+  const tables = [...document.querySelectorAll("table")];
+  if (!tables.length) {
+    console.log("No <table> found. Try scrolling until the frame table is visible, then run again.");
+    return;
+  }
+  const table = tables
+    .map(t => ({ t, rows: t.querySelectorAll("tr").length, cols: (t.querySelector("tr")?.children.length || 0) }))
+    .sort((a, b) => (b.rows * b.cols) - (a.rows * a.cols))[0].t;
+
+  const esc = (s) => {
+    s = (s ?? "").toString().replace(/\s+/g, " ").trim();
+    if (/[",\n]/.test(s)) return `"${s.replace(/"/g, '""')}"`;
+    return s;
+  };
+
+  const rows = [...table.querySelectorAll("tr")].map(tr =>
+    [...tr.children].map(td => esc(td.innerText))
+  );
+
+  const csv = rows.map(r => r.join(",")).join("\n");
+  copy(csv);
+  console.log("✅ CSV copied to clipboard. Paste into a .csv file.");
+})();

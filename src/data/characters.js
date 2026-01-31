@@ -9,7 +9,7 @@ export const CHARACTERS = [
   { id: "marisa", nameCN: "玛丽莎", nameEN: "MARISA", img: `${BASE}characters/marisa.png` },
   { id: "lily", nameCN: "莉莉", nameEN: "LILY", img: `${BASE}characters/lily.png` },
   { id: "jp", nameCN: "JP", nameEN: "JP", img: `${BASE}characters/jp.png` },
-  { id: "juri", nameCN: "朱莉", nameEN: "JURI", img: `${BASE}characters/juri.png` },
+  { id: "juri", nameCN: "韩蛛俐", nameEN: "JURI", img: `${BASE}characters/juri.png` },
   { id: "deejay", nameCN: "迪杰", nameEN: "DEE JAY", img: `${BASE}characters/deejay.png` },
   { id: "cammy", nameCN: "嘉米", nameEN: "CAMMY", img: `${BASE}characters/cammy.png` },
   { id: "ryu", nameCN: "隆", nameEN: "RYU", img: `${BASE}characters/ryu.png` },

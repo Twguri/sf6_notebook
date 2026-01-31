@@ -52,7 +52,7 @@ function HelpModal({
           },
           {
             h: "帧数表数据来源",
-            p: "游戏内自测 + 官方信息 + ComboMasher 数据整合。部分数据可能会随版本更新出现滞后，目前仍在持续录入与校对中。",
+            p: "目前帧数表部分数据来自与卡普空官网的帧数数据，部分汉化翻译可能与原意有出入，关于备注部分的内容请以游戏内实际数据为准",
           },
           {
             h: "角色对策中怎么换对手？",
@@ -60,11 +60,11 @@ function HelpModal({
           },
           {
             h: "连段功能怎么用？",
-            p: "你可以创建/编辑/删除你的连段与连段组。进入 Combo 后先新建连段组（例如：确反连、板边连、绿冲连……），再在组内添加连段。连段默认包含：名称、指令、后续压制、注意事项。指令栏固定为格斗键盘输入；后续压制/注意事项可用 Ctrl+Alt+F 切换输入模式。指令输入支持键盘输入，也可以通过右上角“招式选择器”搜索并插入招式。",
+            p: "你可以创建/编辑/删除你的连段与连段组。进入 Combo 后先新建连段组（例如：确反连、板边连、绿冲连……），再在组内添加连段,点击加号就可以选择连段组件，点击已经添加的连段组件可以删除动作。连段默认包含：名称、指令、后续压制、注意事项。指令栏固定为格斗键盘输入；后续压制/注意事项可用 Ctrl+Alt+F 切换输入模式。",
           },
           {
             h: "关于更新",
-            p: "当前版本 1.1.0：更新了帧数表（部分）以及连段输入（招式选择器）。帧数表仍在持续完善中。",
+            p: "当前版本 1.2.0：更新了帧数表（全角色）以及连段输入（招式选择器）和训练计划功能。帧数表仍在持续完善中。",
           },
         ]
       : [
@@ -82,7 +82,7 @@ function HelpModal({
           },
           {
             h: "Frame Data sources",
-            p: "Compiled from in-game testing, official information, and ComboMasher data. Some values may lag behind after game updates; the database is still being actively filled and verified.",
+            p: "Source of Frame data is from the Street Fighter 6 offical website. The actual data and notes part might have some mistakes, pleas refer to the actuall in-game data.",
           },
           {
             h: "How do I change the opponent in Matchup?",
@@ -90,11 +90,11 @@ function HelpModal({
           },
           {
             h: "How do I use Combos?",
-            p: "You can create/edit/delete combos and combo groups. Go to Combo → create a combo group (e.g., punishes, corner, Drive Rush, etc.) → add combos inside. Each combo includes: name, command, oki/follow-ups, and notes. The Command field is fixed to Fighter Input; the follow-up/notes fields can toggle input mode via Ctrl+Alt+F. You can type commands directly or insert moves via the move picker (search and select).",
+            p: "You can create/edit/delete combos and combo groups. Go to Combo → create a combo group (e.g., punishes, corner, Drive Rush, etc.) → add combos inside，you can add move by click + button, clicking on existing movement allows you to change the move or remove it from the combo. Each combo includes: name, command, oki/follow-ups, and notes. The Command field is fixed to Fighter Input; the follow-up/notes fields can toggle input mode via Ctrl+Alt+F. ",
           },
           {
             h: "Updates",
-            p: "Current version: 1.1.0. Added partial frame data and improved combo input with a move picker. The frame data section is still being expanded and verified.",
+            p: "Current version: 1.2.0. updated all characters' frame data and improved combo input with a move picker, and training plan section. The frame data section is still being expanded and verified.",
           },
         ];
 

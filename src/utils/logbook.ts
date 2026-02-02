@@ -8,6 +8,7 @@ const PREFIXES = [
   "character:tips:",
   "sf6app:character:tips:",
   "sf6app:memo:character:tips:",
+  "character:training",
 ] as const;
 
 export type LogbookData = {

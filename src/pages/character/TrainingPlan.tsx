@@ -11,25 +11,44 @@ function makeId() {
   return `${Date.now()}-${Math.random().toString(16).slice(2)}`;
 }
 
+const TRAINING_PREFIX = "character:training:"; // ✅ 与 logbook.ts 的 PREFIXES 对齐
+const LEGACY_PREFIX = "sf6_training_plan_";    // ✅ 旧 key 前缀（用于迁移）
+
 export default function TrainingPlan({ lang, t, toggleLang }: any) {
   const { id } = useParams();
   const charId = (id || "").toLowerCase();
 
-  const storageKey = React.useMemo(() => `sf6_training_plan_${charId}`, [charId]);
+  // ✅ 新 key（会被 logbook.ts 收集导出）
+  const storageKey = React.useMemo(() => `${TRAINING_PREFIX}${charId}`, [charId]);
+  // ✅ 旧 key（迁移用）
+  const legacyKey = React.useMemo(() => `${LEGACY_PREFIX}${charId}`, [charId]);
 
   const [items, setItems] = React.useState<Item[]>(() => {
     try {
+      // 1) 新 key 优先读取
       const raw = localStorage.getItem(storageKey);
-      if (!raw) return [];
-      const parsed = JSON.parse(raw);
-      if (Array.isArray(parsed)) return parsed.filter(Boolean);
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        return Array.isArray(parsed) ? parsed.filter(Boolean) : [];
+      }
+
+      // 2) 若新 key 没有，尝试迁移旧 key
+      const oldRaw = localStorage.getItem(legacyKey);
+      if (oldRaw) {
+        const parsed = JSON.parse(oldRaw);
+        const arr = Array.isArray(parsed) ? parsed.filter(Boolean) : [];
+        localStorage.setItem(storageKey, JSON.stringify(arr));
+        localStorage.removeItem(legacyKey);
+        return arr;
+      }
+
       return [];
     } catch {
       return [];
     }
   });
 
-  // 持久化：每个角色一个清单
+  // ✅ 持久化（写到新 key）
   React.useEffect(() => {
     try {
       localStorage.setItem(storageKey, JSON.stringify(items));
@@ -40,7 +59,6 @@ export default function TrainingPlan({ lang, t, toggleLang }: any) {
 
   const onAdd = () => {
     setItems((prev) => [...prev, { id: makeId(), text: "" }]);
-    // 添加后把页面滚到底部（更像“按钮在下方”的体验）
     requestAnimationFrame(() => {
       window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
     });
@@ -50,7 +68,7 @@ export default function TrainingPlan({ lang, t, toggleLang }: any) {
     setItems((prev) => prev.map((it) => (it.id === itemId ? { ...it, text } : it)));
   };
 
-  // 勾选后 banner 消失（删除）
+  // ✅ 勾选后 banner 消失（删除）
   const onDone = (itemId: string) => {
     setItems((prev) => prev.filter((it) => it.id !== itemId));
   };
@@ -64,10 +82,7 @@ export default function TrainingPlan({ lang, t, toggleLang }: any) {
       backLabel={t("back")}
     >
       <div style={{ marginTop: 12 }}>
-        {/* 可选：小标题/说明 */}
-        <div style={{ opacity: 0.75, marginBottom: 10 }}>
-          {t("trainingSub")}
-        </div>
+        <div style={{ opacity: 0.75, marginBottom: 10 }}>{t("trainingSub")}</div>
 
         {/* banners */}
         <div style={{ display: "grid", gap: 10 }}>
@@ -99,7 +114,6 @@ export default function TrainingPlan({ lang, t, toggleLang }: any) {
                 }}
               />
 
-              {/* 右侧小勾选框：勾选就删除 */}
               <label
                 style={{
                   display: "flex",
@@ -136,10 +150,10 @@ export default function TrainingPlan({ lang, t, toggleLang }: any) {
               background: "rgba(255,255,255,0.08)",
               color: "inherit",
               fontSize: 22,
-              display:"flex",
-              alignItems:"center",
-              justifyContent:"center",
-              lineHeight:1,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              lineHeight: 1,
               cursor: "pointer",
             }}
             aria-label="add"

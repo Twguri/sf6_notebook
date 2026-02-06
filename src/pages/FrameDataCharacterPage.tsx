@@ -24,7 +24,7 @@ const SECTION_META: Array<{
   titleEN: string;
 }> = [
   { key: "normal", titleCN: "普通技", titleEN: "Normal" },
-  { key: "targetcombo", titleCN: "目标连段", titleEN: "Target Combo" },
+  { key: "targetcombo", titleCN: "TC", titleEN: "Target Combo" },
   { key: "special", titleCN: "必杀技", titleEN: "Special" },
   { key: "super", titleCN: "超必杀", titleEN: "Super" },
   { key: "throw", titleCN: "投技", titleEN: "Throw" },

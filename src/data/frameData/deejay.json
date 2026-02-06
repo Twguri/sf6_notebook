@@ -2,7 +2,7 @@
   "characterId": "deejay",
   "displayNameCN": "",
   "displayNameEN": "Deejay",
-  "lastUpdated": "2026-01-31",
+  "lastUpdated": "2026-02-06",
   "columns": [
     "id",
     "category",
@@ -136,7 +136,7 @@
     {
       "id": "standing_light_punch_l",
       "category": "normal",
-      "nameEN": "Standing Light Punch L",
+      "nameEN": "Standing Light Punch",
       "nameCN": "站轻拳",
       "input": "5LP",
       "startup": "4",
@@ -158,7 +158,7 @@
     {
       "id": "standing_light_kick_l",
       "category": "normal",
-      "nameEN": "Standing Light Kick L",
+      "nameEN": "Standing Light Kick",
       "nameCN": "站轻脚",
       "input": "5LK",
       "startup": "5",
@@ -180,7 +180,7 @@
     {
       "id": "standing_medium_punch_m",
       "category": "normal",
-      "nameEN": "Standing Medium Punch M",
+      "nameEN": "Standing Medium Punch",
       "nameCN": "站中拳",
       "input": "5MP",
       "startup": "7",
@@ -202,7 +202,7 @@
     {
       "id": "standing_medium_kick_m",
       "category": "normal",
-      "nameEN": "Standing Medium Kick M",
+      "nameEN": "Standing Medium Kick",
       "nameCN": "站中脚",
       "input": "5MK",
       "startup": "9",
@@ -224,7 +224,7 @@
     {
       "id": "standing_heavy_punch_h",
       "category": "normal",
-      "nameEN": "Standing Heavy Punch H",
+      "nameEN": "Standing Heavy Punch",
       "nameCN": "站重拳",
       "input": "5HP",
       "startup": "9",
@@ -246,7 +246,7 @@
     {
       "id": "standing_heavy_kick_h",
       "category": "normal",
-      "nameEN": "Standing Heavy Kick H",
+      "nameEN": "Standing Heavy Kick",
       "nameCN": "站重脚",
       "input": "5HK",
       "startup": "12",
@@ -268,7 +268,7 @@
     {
       "id": "crouching_light_punch_l",
       "category": "normal",
-      "nameEN": "Crouching Light Punch L",
+      "nameEN": "Crouching Light Punch",
       "nameCN": "下轻拳",
       "input": "2LP",
       "startup": "5",
@@ -290,7 +290,7 @@
     {
       "id": "crouching_light_kick_l",
       "category": "normal",
-      "nameEN": "Crouching Light Kick L",
+      "nameEN": "Crouching Light Kick",
       "nameCN": "下轻脚",
       "input": "2LK",
       "startup": "5",
@@ -312,7 +312,7 @@
     {
       "id": "crouching_medium_punch_m",
       "category": "normal",
-      "nameEN": "Crouching Medium Punch M",
+      "nameEN": "Crouching Medium Punch",
       "nameCN": "下中拳",
       "input": "2MP",
       "startup": "6",
@@ -334,7 +334,7 @@
     {
       "id": "crouching_medium_kick_m",
       "category": "normal",
-      "nameEN": "Crouching Medium Kick M",
+      "nameEN": "Crouching Medium Kick",
       "nameCN": "下中脚",
       "input": "2MK",
       "startup": "8",
@@ -356,7 +356,7 @@
     {
       "id": "crouching_heavy_punch_h",
       "category": "normal",
-      "nameEN": "Crouching Heavy Punch H",
+      "nameEN": "Crouching Heavy Punch",
       "nameCN": "下重拳",
       "input": "2HP",
       "startup": "8",
@@ -378,7 +378,7 @@
     {
       "id": "crouching_heavy_kick_h",
       "category": "normal",
-      "nameEN": "Crouching Heavy Kick H",
+      "nameEN": "Crouching Heavy Kick",
       "nameCN": "下重脚",
       "input": "2HK",
       "startup": "14",
@@ -400,7 +400,7 @@
     {
       "id": "jumping_light_punch_during_a_jump_l",
       "category": "normal",
-      "nameEN": "Jumping Light Punch (During a jump) L",
+      "nameEN": "Jumping Light Punch (During a jump)",
       "nameCN": "跳轻拳",
       "input": "J>LP",
       "startup": "4",
@@ -422,7 +422,7 @@
     {
       "id": "jumping_light_kick_during_a_jump_l",
       "category": "normal",
-      "nameEN": "Jumping Light Kick (During a jump) L",
+      "nameEN": "Jumping Light Kick (During a jump)",
       "nameCN": "跳轻脚",
       "input": "J>LK",
       "startup": "4",
@@ -444,7 +444,7 @@
     {
       "id": "jumping_medium_punch_during_a_jump_m",
       "category": "normal",
-      "nameEN": "Jumping Medium Punch (During a jump) M",
+      "nameEN": "Jumping Medium Punch (During a jump)",
       "nameCN": "跳中拳",
       "input": "J>MP",
       "startup": "6",
@@ -466,7 +466,7 @@
     {
       "id": "jumping_medium_kick_during_a_jump_m",
       "category": "normal",
-      "nameEN": "Jumping Medium Kick (During a jump) M",
+      "nameEN": "Jumping Medium Kick (During a jump)",
       "nameCN": "跳中脚",
       "input": "J>MK",
       "startup": "8",
@@ -488,7 +488,7 @@
     {
       "id": "jumping_heavy_punch_during_a_jump_h",
       "category": "normal",
-      "nameEN": "Jumping Heavy Punch (During a jump) H",
+      "nameEN": "Jumping Heavy Punch (During a jump)",
       "nameCN": "跳重拳",
       "input": "J>HP",
       "startup": "9",
@@ -510,7 +510,7 @@
     {
       "id": "jumping_heavy_kick_during_a_jump_h",
       "category": "normal",
-      "nameEN": "Jumping Heavy Kick (During a jump) H",
+      "nameEN": "Jumping Heavy Kick (During a jump)",
       "nameCN": "跳重脚",
       "input": "J>HK",
       "startup": "10",
@@ -532,7 +532,7 @@
     {
       "id": "knee_shot_during_a_forward_jump_l",
       "category": "normal",
-      "nameEN": "Knee Shot (During a forward jump) L",
+      "nameEN": "Knee Shot (During a forward jump)",
       "nameCN": "飞膝撞",
       "input": "9>2LK",
       "startup": "6",
@@ -554,7 +554,7 @@
     {
       "id": "sunrise_heel_m",
       "category": "normal",
-      "nameEN": "Sunrise Heel M",
+      "nameEN": "Sunrise Heel",
       "nameCN": "日出脚踝踢",
       "input": "6MP",
       "startup": "19",
@@ -576,7 +576,7 @@
     {
       "id": "face_breaker_h",
       "category": "normal",
-      "nameEN": "Face Breaker H",
+      "nameEN": "Face Breaker",
       "nameCN": "破脸",
       "input": "4HK",
       "startup": "7",
@@ -598,7 +598,7 @@
     {
       "id": "threebeat_combo_2_l_m",
       "category": "targetcombo",
-      "nameEN": "Threebeat Combo (2) L M",
+      "nameEN": "Threebeat Combo (2)",
       "nameCN": "三拍连招（二段）",
       "input": "5LP>5MK",
       "startup": "9",
@@ -620,7 +620,7 @@
     {
       "id": "threebeat_combo_3_l_m_m",
       "category": "common",
-      "nameEN": "Threebeat Combo (3) L M M",
+      "nameEN": "Threebeat Combo (3)",
       "nameCN": "三拍连招（三段）",
       "input": "5P>5MK>5MK",
       "startup": "14",
@@ -642,7 +642,7 @@
     {
       "id": "dee_jay_special_2_m_h",
       "category": "targetcombo",
-      "nameEN": "Dee Jay Special (2) M H",
+      "nameEN": "Dee Jay Special (2)",
       "nameCN": "DJ特色（二段）",
       "input": "5MP>5HP",
       "startup": "11",
@@ -664,7 +664,7 @@
     {
       "id": "dee_jay_special_3_m_h_h",
       "category": "targetcombo",
-      "nameEN": "Dee Jay Special (3) M H H",
+      "nameEN": "Dee Jay Special (3)",
       "nameCN": "DJ特色（三段）",
       "input": "5MP>5HP>5HP",
       "startup": "13",
@@ -686,7 +686,7 @@
     {
       "id": "funky_dance_2_m_m",
       "category": "targetcombo",
-      "nameEN": "Funky Dance (2) M M",
+      "nameEN": "Funky Dance (2)",
       "nameCN": "放克舞（二段）",
       "input": "5MP>5MP",
       "startup": "12",
@@ -708,7 +708,7 @@
     {
       "id": "funky_dance_3_m_m_h",
       "category": "targetcombo",
-      "nameEN": "Funky Dance (3) M M H",
+      "nameEN": "Funky Dance (3)",
       "nameCN": "放克舞（三段）",
       "input": "5MP>5MP>5HP",
       "startup": "20",
@@ -730,7 +730,7 @@
     {
       "id": "funky_dance_feint_m_m_h",
       "category": "targetcombo",
-      "nameEN": "Funky Dance Feint M M H",
+      "nameEN": "Funky Dance Feint",
       "nameCN": "放克舞·假动作",
       "input": "5MP>5MP>4HP",
       "startup": "",
@@ -752,7 +752,7 @@
     {
       "id": "party_in_the_air_during_a_jump_m_h",
       "category": "targetcombo",
-      "nameEN": "Party in the Air (During a jump) M H",
+      "nameEN": "Party in the Air (During a jump)",
       "nameCN": "空中聚会",
       "input": "J>MP>HP",
       "startup": "8",
@@ -796,7 +796,7 @@
     {
       "id": "l_air_slasher_l",
       "category": "special",
-      "nameEN": "L Air Slasher L",
+      "nameEN": "Air Slasher",
       "nameCN": "破空飞刃（轻）",
       "input": "[4]6LP",
       "startup": "",
@@ -818,7 +818,7 @@
     {
       "id": "m_air_slasher_m",
       "category": "special",
-      "nameEN": "M Air Slasher M",
+      "nameEN": "Air Slasher",
       "nameCN": "破空飞刃（中）",
       "input": "[4]6MP",
       "startup": "17",
@@ -840,7 +840,7 @@
     {
       "id": "h_air_slasher_h",
       "category": "special",
-      "nameEN": "H Air Slasher H",
+      "nameEN": "Air Slasher",
       "nameCN": "破空飞刃（重）",
       "input": "[4]6HP",
       "startup": "17",
@@ -906,7 +906,7 @@
     {
       "id": "l_jackknife_maximum_l",
       "category": "special",
-      "nameEN": "L Jackknife Maximum L",
+      "nameEN": "Jackknife Maximum",
       "nameCN": "屈体极点踢（轻）",
       "input": "[2]8LK",
       "startup": "",
@@ -928,7 +928,7 @@
     {
       "id": "m_jackknife_maximum_m",
       "category": "special",
-      "nameEN": "M Jackknife Maximum M",
+      "nameEN": "Jackknife Maximum",
       "nameCN": "屈体极点踢（中）",
       "input": "[2]8MK",
       "startup": "6",
@@ -950,7 +950,7 @@
     {
       "id": "h_jackknife_maximum_h",
       "category": "special",
-      "nameEN": "H Jackknife Maximum H",
+      "nameEN": "Jackknife Maximum",
       "nameCN": "屈体极点踢（重）",
       "input": "[2]8HK",
       "startup": "5",
@@ -994,7 +994,7 @@
     {
       "id": "roll_through_feint_l",
       "category": "special",
-      "nameEN": "Roll Through Feint L",
+      "nameEN": "Roll Through Feint",
       "nameCN": "佯动旋转步",
       "input": "236LK",
       "startup": "",
@@ -1016,7 +1016,7 @@
     {
       "id": "quick_rolling_sobat_m",
       "category": "special",
-      "nameEN": "Quick Rolling Sobat M",
+      "nameEN": "Quick Rolling Sobat",
       "nameCN": "快速翻身后旋踢",
       "input": "236MK",
       "startup": "12",
@@ -1038,7 +1038,7 @@
     {
       "id": "double_rolling_sobat_h",
       "category": "special",
-      "nameEN": "Double Rolling Sobat H",
+      "nameEN": "Double Rolling Sobat",
       "nameCN": "双翻后旋踢",
       "input": "236HK",
       "startup": "15",
@@ -1082,7 +1082,7 @@
     {
       "id": "l_machine_gun_uppercut_l",
       "category": "special",
-      "nameEN": "L Machine Gun Uppercut L",
+      "nameEN": "Machine Gun Uppercut",
       "nameCN": "机枪上勾拳（轻）",
       "input": "214LP",
       "startup": "15",
@@ -1104,7 +1104,7 @@
     {
       "id": "m_machine_gun_uppercut_m",
       "category": "special",
-      "nameEN": "M Machine Gun Uppercut M",
+      "nameEN": "Machine Gun Uppercut",
       "nameCN": "机枪上勾拳（中）",
       "input": "214MP",
       "startup": "22",
@@ -1126,7 +1126,7 @@
     {
       "id": "h_machine_gun_uppercut_h",
       "category": "special",
-      "nameEN": "H Machine Gun Uppercut H",
+      "nameEN": "Machine Gun Uppercut",
       "nameCN": "机枪上勾拳（重）",
       "input": "214HP",
       "startup": "28",
@@ -1214,7 +1214,7 @@
     {
       "id": "funky_slicer_during_jus_cool_l",
       "category": "special",
-      "nameEN": "Funky Slicer (During Jus Cool) L",
+      "nameEN": "Funky Slicer (During Jus Cool)",
       "nameCN": "放克刀锋踢",
       "input": "214K>LK",
       "startup": "12",
@@ -1236,7 +1236,7 @@
     {
       "id": "od_funky_slicer_during_od_jus_cool_l",
       "category": "special",
-      "nameEN": "OD Funky Slicer (During OD Jus Cool) L",
+      "nameEN": "OD Funky Slicer (During OD Jus Cool)",
       "nameCN": "OD放克刀锋踢",
       "input": "214KK>LK",
       "startup": "9",
@@ -1258,7 +1258,7 @@
     {
       "id": "waning_moon_during_jus_cool_m",
       "category": "special",
-      "nameEN": "Waning Moon (During Jus Cool) M",
+      "nameEN": "Waning Moon (During Jus Cool)",
       "nameCN": "残月",
       "input": "214K>MK",
       "startup": "25",
@@ -1280,7 +1280,7 @@
     {
       "id": "od_waning_moon_during_od_jus_cool_m",
       "category": "special",
-      "nameEN": "OD Waning Moon (During OD Jus Cool) M",
+      "nameEN": "OD Waning Moon (During OD Jus Cool)",
       "nameCN": "OD残月",
       "input": "214KK>MK",
       "startup": "19",
@@ -1302,7 +1302,7 @@
     {
       "id": "maximum_strike_during_jus_cool_h",
       "category": "special",
-      "nameEN": "Maximum Strike (During Jus Cool) H",
+      "nameEN": "Maximum Strike (During Jus Cool)",
       "nameCN": "极点上踢",
       "input": "214K>HK",
       "startup": "15",
@@ -1324,7 +1324,7 @@
     {
       "id": "od_maximum_strike_during_od_jus_cool_h",
       "category": "special",
-      "nameEN": "OD Maximum Strike (During OD Jus Cool) H",
+      "nameEN": "OD Maximum Strike (During OD Jus Cool)",
       "nameCN": "OD极点上踢",
       "input": "214KK>HK",
       "startup": "11",
@@ -1456,7 +1456,7 @@
     {
       "id": "sa2_lowkey_sunrise_festival_l",
       "category": "super",
-      "nameEN": "SA2 Lowkey Sunrise Festival L",
+      "nameEN": "SA2 Lowkey Sunrise Festival",
       "nameCN": "日出音乐节·低调（1）",
       "input": "236236LP",
       "startup": "12",
@@ -1478,7 +1478,7 @@
     {
       "id": "sa2_lowkey_sunrise_festival_2_l_l",
       "category": "super",
-      "nameEN": "SA2 Lowkey Sunrise Festival (2) L L",
+      "nameEN": "SA2 Lowkey Sunrise Festival (2)",
       "nameCN": "日出音乐节·低调（2）",
       "input": "236236LP>LK",
       "startup": "11",
@@ -1500,7 +1500,7 @@
     {
       "id": "sa2_lowkey_sunrise_festival_3_l_l_m",
       "category": "super",
-      "nameEN": "SA2 Lowkey Sunrise Festival (3) L L M",
+      "nameEN": "SA2 Lowkey Sunrise Festival (3)",
       "nameCN": "日出音乐节·低调（3）",
       "input": "236236LP>LP>MP",
       "startup": "10",
@@ -1522,7 +1522,7 @@
     {
       "id": "sa2_lowkey_sunrise_festival_4_l_l_m_h",
       "category": "super",
-      "nameEN": "SA2 Lowkey Sunrise Festival (4) L L M H",
+      "nameEN": "SA2 Lowkey Sunrise Festival (4)",
       "nameCN": "日出音乐节·低调（4）",
       "input": "236236LP>LP>MP>HP",
       "startup": "12",
@@ -1544,7 +1544,7 @@
     {
       "id": "sa2_lowkey_sunrise_festival_5_l_l_m_h_l",
       "category": "super",
-      "nameEN": "SA2 Lowkey Sunrise Festival (5) L L M H L",
+      "nameEN": "SA2 Lowkey Sunrise Festival (5)",
       "nameCN": "日出音乐节·低调（5）",
       "input": "236236LP>LP>MP>HP>LK",
       "startup": "15",
@@ -1566,7 +1566,7 @@
     {
       "id": "sa2_lowkey_sunrise_festival_6_l_l_m_h_l_m",
       "category": "super",
-      "nameEN": "SA2 Lowkey Sunrise Festival (6) L L M H L M",
+      "nameEN": "SA2 Lowkey Sunrise Festival (6)",
       "nameCN": "日出音乐节·低调（6）",
       "input": "236236LP>LP>MP>HP>LK>MK",
       "startup": "17",
@@ -1588,7 +1588,7 @@
     {
       "id": "sa2_lowkey_sunrise_festival_7_l_l_m_h_l_m_h",
       "category": "super",
-      "nameEN": "SA2 Lowkey Sunrise Festival (7) L L M H L M H",
+      "nameEN": "SA2 Lowkey Sunrise Festival (7)",
       "nameCN": "日出音乐节·低调（7）",
       "input": "236236LP>LP>MP>HP>LK>MK>HK",
       "startup": "18",
@@ -1610,7 +1610,7 @@
     {
       "id": "sa2_marvelous_sunrise_festival_m",
       "category": "super",
-      "nameEN": "SA2 Marvelous Sunrise Festival M",
+      "nameEN": "SA2 Marvelous Sunrise Festival",
       "nameCN": "日出音乐节·超凡（1）",
       "input": "236236MP",
       "startup": "12",
@@ -1632,7 +1632,7 @@
     {
       "id": "sa2_marvelous_sunrise_festival_2_m_l",
       "category": "super",
-      "nameEN": "SA2 Marvelous Sunrise Festival (2) M L",
+      "nameEN": "SA2 Marvelous Sunrise Festival (2)",
       "nameCN": "日出音乐节·超凡（2）",
       "input": "236236MP>LP",
       "startup": "11",
@@ -1654,7 +1654,7 @@
     {
       "id": "sa2_marvelous_sunrise_festival_3_m_l_m",
       "category": "super",
-      "nameEN": "SA2 Marvelous Sunrise Festival (3) M L M",
+      "nameEN": "SA2 Marvelous Sunrise Festival (3)",
       "nameCN": "日出音乐节·超凡（3）",
       "input": "236236MP>LP>MP",
       "startup": "10",
@@ -1676,7 +1676,7 @@
     {
       "id": "sa2_marvelous_sunrise_festival_4_m_l_m_h",
       "category": "super",
-      "nameEN": "SA2 Marvelous Sunrise Festival (4) M L M H",
+      "nameEN": "SA2 Marvelous Sunrise Festival (4)",
       "nameCN": "日出音乐节·超凡（4）",
       "input": "236236MP>LP>MP>HP",
       "startup": "12",
@@ -1698,7 +1698,7 @@
     {
       "id": "sa2_marvelous_sunrise_festival_5_m_l_m_h_l",
       "category": "super",
-      "nameEN": "SA2 Marvelous Sunrise Festival (5) M L M H L",
+      "nameEN": "SA2 Marvelous Sunrise Festival (5)",
       "nameCN": "日出音乐节·超凡（5）",
       "input": "236236MP>LP>MP>HP>LK",
       "startup": "15",
@@ -1720,7 +1720,7 @@
     {
       "id": "sa2_marvelous_sunrise_festival_6_m_l_m_h_l_m",
       "category": "super",
-      "nameEN": "SA2 Marvelous Sunrise Festival (6) M L M H L M",
+      "nameEN": "SA2 Marvelous Sunrise Festival (6)",
       "nameCN": "日出音乐节·超凡（6）",
       "input": "236236MP>LP>MP>HP>LK>MK",
       "startup": "17",
@@ -1742,7 +1742,7 @@
     {
       "id": "sa2_marvelous_sunrise_festival_7_m_l_m_h_l_m_h",
       "category": "super",
-      "nameEN": "SA2 Marvelous Sunrise Festival (7) M L M H L M H",
+      "nameEN": "SA2 Marvelous Sunrise Festival (7)",
       "nameCN": "日出音乐节·超凡（7）",
       "input": "236236MP>LP>MP>HP>LK>MK>HK",
       "startup": "18",
@@ -1764,7 +1764,7 @@
     {
       "id": "sa2_headliner_sunrise_festival_h",
       "category": "super",
-      "nameEN": "SA2 Headliner Sunrise Festival H",
+      "nameEN": "SA2 Headliner Sunrise Festival",
       "nameCN": "日出音乐节·极点（1）",
       "input": "236236HP",
       "startup": "12",
@@ -1786,7 +1786,7 @@
     {
       "id": "sa2_headliner_sunrise_festival_2_h_l",
       "category": "super",
-      "nameEN": "SA2 Headliner Sunrise Festival (2) H L",
+      "nameEN": "SA2 Headliner Sunrise Festival (2)",
       "nameCN": "日出音乐节·极点（2）",
       "input": "236236HP>LP",
       "startup": "11",
@@ -1808,7 +1808,7 @@
     {
       "id": "sa2_headliner_sunrise_festival_3_h_l_m",
       "category": "super",
-      "nameEN": "SA2 Headliner Sunrise Festival (3) H L M",
+      "nameEN": "SA2 Headliner Sunrise Festival (3)",
       "nameCN": "日出音乐节·极点（3）",
       "input": "236236HP>LP>MP",
       "startup": "10",
@@ -1830,7 +1830,7 @@
     {
       "id": "sa2_headliner_sunrise_festival_4_h_l_m_h",
       "category": "super",
-      "nameEN": "SA2 Headliner Sunrise Festival (4) H L M H",
+      "nameEN": "SA2 Headliner Sunrise Festival (4)",
       "nameCN": "日出音乐节·极点（4）",
       "input": "236236HP>LP>MP>HP",
       "startup": "12",
@@ -1852,7 +1852,7 @@
     {
       "id": "sa2_headliner_sunrise_festival_5_h_l_m_h_l",
       "category": "super",
-      "nameEN": "SA2 Headliner Sunrise Festival (5) H L M H L",
+      "nameEN": "SA2 Headliner Sunrise Festival (5)",
       "nameCN": "日出音乐节·极点（5）",
       "input": "236236HP>LP>MP>HP>LK",
       "startup": "15",
@@ -1874,7 +1874,7 @@
     {
       "id": "sa2_headliner_sunrise_festival_6_h_l_m_h_l_m",
       "category": "super",
-      "nameEN": "SA2 Headliner Sunrise Festival (6) H L M H L M",
+      "nameEN": "SA2 Headliner Sunrise Festival (6)",
       "nameCN": "日出音乐节·极点（6）",
       "input": "236236HP>LP>MP>HP>LK>MK",
       "startup": "17",
@@ -1896,7 +1896,7 @@
     {
       "id": "sa2_headliner_sunrise_festival_7_h_l_m_h_l_m_h",
       "category": "super",
-      "nameEN": "SA2 Headliner Sunrise Festival (7) H L M H L M H",
+      "nameEN": "SA2 Headliner Sunrise Festival (7)",
       "nameCN": "日出音乐节·极点（7）",
       "input": "236236HP>LP>MP>HP>LK>MK>HK",
       "startup": "18",
@@ -1918,7 +1918,7 @@
     {
       "id": "sa2_climactic_strike_marvelous_after_marvelous_sunrise_festival_connects_h",
       "category": "super",
-      "nameEN": "SA2 Climactic Strike (Marvelous) (After Marvelous Sunrise Festival connects) H",
+      "nameEN": "SA2 Climactic Strike (Marvelous) (After Marvelous Sunrise Festival connects)",
       "nameCN": "日出音乐节·超凡（7）>激昂重拳",
       "input": "236236MP>LP>MP>HP>LK>MK>HK>HP",
       "startup": "11",
@@ -1940,7 +1940,7 @@
     {
       "id": "sa2_climactic_strike_headliner_after_headliner_sunrise_festival_connects_h",
       "category": "super",
-      "nameEN": "SA2 Climactic Strike (Headliner) (After Headliner Sunrise Festival connects) H",
+      "nameEN": "SA2 Climactic Strike (Headliner) (After Headliner Sunrise Festival connects)",
       "nameCN": "日出音乐节·极点（7）>激昂重拳",
       "input": "236236HP>LP>MP>HP>LK>MK>HK>HP",
       "startup": "11",
@@ -1962,7 +1962,7 @@
     {
       "id": "sa2_encore_beat_marvelous_after_marvelous_sunrise_festival_connects_h",
       "category": "super",
-      "nameEN": "SA2 Encore Beat (Marvelous) (After Marvelous Sunrise Festival connects) H",
+      "nameEN": "SA2 Encore Beat (Marvelous) (After Marvelous Sunrise Festival connects)",
       "nameCN": "日出音乐节·超凡（7）>返场节拍",
       "input": "236236MP>LP>MP>HP>LK>MK>HK>HK",
       "startup": "33",
@@ -1984,7 +1984,7 @@
     {
       "id": "sa2_encore_beat_headliner_after_headliner_sunrise_festival_connects_h",
       "category": "super",
-      "nameEN": "SA2 Encore Beat (Headliner) (After Headliner Sunrise Festival connects) H",
+      "nameEN": "SA2 Encore Beat (Headliner) (After Headliner Sunrise Festival connects)",
       "nameCN": "日出音乐节·极点（7）>返场节拍",
       "input": "236236HP>LP>MP>HP>LK>MK>HK>HK",
       "startup": "33",
@@ -2006,7 +2006,7 @@
     {
       "id": "failed_version_sa2_sunrise_festival_2_l",
       "category": "super",
-      "nameEN": "(Failed version) SA2 Sunrise Festival (2) L",
+      "nameEN": "(Failed version) SA2 Sunrise Festival (2)",
       "nameCN": "（失败）日出音乐节（2）",
       "input": "236236P>LP",
       "startup": "11",
@@ -2028,7 +2028,7 @@
     {
       "id": "failed_version_sa2_sunrise_festival_3_l_m",
       "category": "super",
-      "nameEN": "(Failed version) SA2 Sunrise Festival (3) L M",
+      "nameEN": "(Failed version) SA2 Sunrise Festival (3)",
       "nameCN": "（失败）日出音乐节（3）",
       "input": "236236P>LP>MP",
       "startup": "10",
@@ -2050,7 +2050,7 @@
     {
       "id": "failed_version_sa2_sunrise_festival_4_l_m_h",
       "category": "super",
-      "nameEN": "(Failed version) SA2 Sunrise Festival (4) L M H",
+      "nameEN": "(Failed version) SA2 Sunrise Festival (4)",
       "nameCN": "（失败）日出音乐节（4）",
       "input": "236236P>LP>MP>HP",
       "startup": "12",
@@ -2072,7 +2072,7 @@
     {
       "id": "failed_version_sa2_sunrise_festival_5_l_m_h_l",
       "category": "super",
-      "nameEN": "(Failed version) SA2 Sunrise Festival (5) L M H L",
+      "nameEN": "(Failed version) SA2 Sunrise Festival (5)",
       "nameCN": "（失败）日出音乐节（5）",
       "input": "236236P>LP>MP>HP>LK",
       "startup": "15",
@@ -2094,7 +2094,7 @@
     {
       "id": "failed_version_sa2_sunrise_festival_6_l_m_h_l_m",
       "category": "super",
-      "nameEN": "(Failed version) SA2 Sunrise Festival (6) L M H L M",
+      "nameEN": "(Failed version) SA2 Sunrise Festival (6)",
       "nameCN": "（失败）日出音乐节（6）",
       "input": "236236P>LP>MP>HP>LK>MK",
       "startup": "17",
@@ -2116,7 +2116,7 @@
     {
       "id": "failed_version_sa2_sunrise_festival_7_l_m_h_l_m_h",
       "category": "super",
-      "nameEN": "(Failed version) SA2 Sunrise Festival (7) L M H L M H",
+      "nameEN": "(Failed version) SA2 Sunrise Festival (7)",
       "nameCN": "（失败）日出音乐节（7）",
       "input": "236236P>LP>MP>HP>LK>MK>HK",
       "startup": "18",
@@ -2182,7 +2182,7 @@
     {
       "id": "diss_track_when_near_opponent_l_l",
       "category": "throw",
-      "nameEN": "Diss Track (When near opponent) L L",
+      "nameEN": "Diss Track (When near opponent)",
       "nameCN": "蹬踩·节拍",
       "input": "LPLK",
       "startup": "5",
@@ -2204,7 +2204,7 @@
     {
       "id": "flip_throw_when_near_opponent_l_l",
       "category": "throw",
-      "nameEN": "Flip Throw (When near opponent) L L",
+      "nameEN": "Flip Throw (When near opponent)",
       "nameCN": "翻转摔",
       "input": "4LPLK",
       "startup": "5",
@@ -2270,7 +2270,7 @@
     {
       "id": "drive_impact_wild_beat_h_h",
       "category": "common",
-      "nameEN": "Drive Impact: Wild Beat H H",
+      "nameEN": "Drive Impact: Wild Beat",
       "nameCN": "迸放：狂野节拍",
       "input": "HPHK",
       "startup": "26",
@@ -2292,7 +2292,7 @@
     {
       "id": "drive_reversal_while_blocking_leg_scratch_when_blocking_or_during_a_successful_drive_parry_h_h",
       "category": "common",
-      "nameEN": "Drive Reversal (while blocking): Leg Scratch (When blocking or during a successful Drive Parry) H H",
+      "nameEN": "Drive Reversal (while blocking): Leg Scratch (When blocking or during a successful Drive Parry)",
       "nameCN": "斗反（格挡）：双腿擦",
       "input": "6HPHK",
       "startup": "20",
@@ -2314,7 +2314,7 @@
     {
       "id": "drive_reversal_while_recovering_leg_scratch_during_knockdown_recovery_h_h",
       "category": "common",
-      "nameEN": "Drive Reversal (while recovering): Leg Scratch (During knockdown recovery) H H",
+      "nameEN": "Drive Reversal (while recovering): Leg Scratch (During knockdown recovery)",
       "nameCN": "斗反（起身）：双腿擦",
       "input": "6HPHK",
       "startup": "18",
@@ -2336,7 +2336,7 @@
     {
       "id": "drive_parry_m_m",
       "category": "common",
-      "nameEN": "Drive Parry M M",
+      "nameEN": "Drive Parry",
       "nameCN": "蓝防",
       "input": "MPMK",
       "startup": "1",
@@ -2358,7 +2358,7 @@
     {
       "id": "perfect_parry_strike_block_direction_m_m",
       "category": "common",
-      "nameEN": "Perfect Parry (strike) Block Direction M M",
+      "nameEN": "Perfect Parry (strike) Block Direction",
       "nameCN": "完美精防（打击）",
       "input": "4/1MPMK",
       "startup": "1",
@@ -2380,7 +2380,7 @@
     {
       "id": "perfect_parry_projectile_m_m",
       "category": "common",
-      "nameEN": "Perfect Parry (projectile) M M",
+      "nameEN": "Perfect Parry (projectile)",
       "nameCN": "完美精防（波动）",
       "input": "MPMK",
       "startup": "1",
@@ -2424,7 +2424,7 @@
     {
       "id": "cancel_drive_rush_while_connecting_with_a_specialcancelable_move_m_m",
       "category": "common",
-      "nameEN": "Cancel Drive Rush (While connecting with a special-cancelable move) ( ) M M",
+      "nameEN": "Cancel Drive Rush (While connecting with a special-cancelable move) ( )",
       "nameCN": "绿冲取消",
       "input": "MPMK/66",
       "startup": "",

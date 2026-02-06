@@ -2,7 +2,7 @@
   "characterId": "mai",
   "displayNameCN": "",
   "displayNameEN": "Mai",
-  "lastUpdated": "2026-01-31",
+  "lastUpdated": "2026-02-06",
   "columns": [
     "id",
     "category",
@@ -121,7 +121,7 @@
     {
       "id": "standing_light_punch_l",
       "category": "normal",
-      "nameEN": "Standing Light Punch L",
+      "nameEN": "Standing Light Punch",
       "nameCN": "站轻拳",
       "input": "5LP",
       "startup": "4",
@@ -143,7 +143,7 @@
     {
       "id": "standing_light_kick_l",
       "category": "normal",
-      "nameEN": "Standing Light Kick L",
+      "nameEN": "Standing Light Kick",
       "nameCN": "站轻脚",
       "input": "5LK",
       "startup": "4",
@@ -165,7 +165,7 @@
     {
       "id": "standing_medium_punch_m",
       "category": "normal",
-      "nameEN": "Standing Medium Punch M",
+      "nameEN": "Standing Medium Punch",
       "nameCN": "站中拳",
       "input": "5MP",
       "startup": "8",
@@ -187,7 +187,7 @@
     {
       "id": "standing_medium_kick_m",
       "category": "normal",
-      "nameEN": "Standing Medium Kick M",
+      "nameEN": "Standing Medium Kick",
       "nameCN": "站中脚",
       "input": "5MK",
       "startup": "9",
@@ -209,7 +209,7 @@
     {
       "id": "standing_heavy_punch_h",
       "category": "normal",
-      "nameEN": "Standing Heavy Punch H",
+      "nameEN": "Standing Heavy Punch",
       "nameCN": "站重拳",
       "input": "5HP",
       "startup": "9",
@@ -231,7 +231,7 @@
     {
       "id": "standing_heavy_kick_h",
       "category": "normal",
-      "nameEN": "Standing Heavy Kick H",
+      "nameEN": "Standing Heavy Kick",
       "nameCN": "站重脚",
       "input": "5HK",
       "startup": "14",
@@ -253,7 +253,7 @@
     {
       "id": "crouching_light_punch_l",
       "category": "normal",
-      "nameEN": "Crouching Light Punch L",
+      "nameEN": "Crouching Light Punch",
       "nameCN": "下轻拳",
       "input": "2LP",
       "startup": "4",
@@ -275,7 +275,7 @@
     {
       "id": "crouching_light_kick_l",
       "category": "normal",
-      "nameEN": "Crouching Light Kick L",
+      "nameEN": "Crouching Light Kick",
       "nameCN": "下轻脚",
       "input": "2LK",
       "startup": "5",
@@ -297,7 +297,7 @@
     {
       "id": "crouching_medium_punch_m",
       "category": "normal",
-      "nameEN": "Crouching Medium Punch M",
+      "nameEN": "Crouching Medium Punch",
       "nameCN": "下中拳",
       "input": "2MP",
       "startup": "6",
@@ -319,7 +319,7 @@
     {
       "id": "crouching_medium_kick_m",
       "category": "normal",
-      "nameEN": "Crouching Medium Kick M",
+      "nameEN": "Crouching Medium Kick",
       "nameCN": "下中脚",
       "input": "2MK",
       "startup": "7",
@@ -341,7 +341,7 @@
     {
       "id": "crouching_heavy_punch_h",
       "category": "normal",
-      "nameEN": "Crouching Heavy Punch H",
+      "nameEN": "Crouching Heavy Punch",
       "nameCN": "下重拳",
       "input": "2HP",
       "startup": "10",
@@ -363,7 +363,7 @@
     {
       "id": "crouching_heavy_kick_h",
       "category": "normal",
-      "nameEN": "Crouching Heavy Kick H",
+      "nameEN": "Crouching Heavy Kick",
       "nameCN": "下重脚",
       "input": "2HK",
       "startup": "9",
@@ -385,7 +385,7 @@
     {
       "id": "jumping_light_punch_during_a_jump_l",
       "category": "normal",
-      "nameEN": "Jumping Light Punch (During a jump) L",
+      "nameEN": "Jumping Light Punch (During a jump)",
       "nameCN": "跳轻拳",
       "input": "J>LP",
       "startup": "4",
@@ -407,7 +407,7 @@
     {
       "id": "jumping_light_kick_during_a_jump_l",
       "category": "normal",
-      "nameEN": "Jumping Light Kick (During a jump) L",
+      "nameEN": "Jumping Light Kick (During a jump)",
       "nameCN": "跳轻脚",
       "input": "J>LK",
       "startup": "5",
@@ -429,7 +429,7 @@
     {
       "id": "jumping_medium_punch_during_a_jump_m",
       "category": "normal",
-      "nameEN": "Jumping Medium Punch (During a jump) M",
+      "nameEN": "Jumping Medium Punch (During a jump)",
       "nameCN": "跳中拳",
       "input": "J>MP",
       "startup": "7",
@@ -451,7 +451,7 @@
     {
       "id": "jumping_medium_kick_during_a_jump_m",
       "category": "normal",
-      "nameEN": "Jumping Medium Kick (During a jump) M",
+      "nameEN": "Jumping Medium Kick (During a jump)",
       "nameCN": "跳中脚",
       "input": "J>MK",
       "startup": "7",
@@ -473,7 +473,7 @@
     {
       "id": "jumping_heavy_punch_during_a_jump_h",
       "category": "normal",
-      "nameEN": "Jumping Heavy Punch (During a jump) H",
+      "nameEN": "Jumping Heavy Punch (During a jump)",
       "nameCN": "跳重拳",
       "input": "J>HP",
       "startup": "9",
@@ -495,7 +495,7 @@
     {
       "id": "jumping_heavy_kick_during_a_jump_h",
       "category": "normal",
-      "nameEN": "Jumping Heavy Kick (During a jump) H",
+      "nameEN": "Jumping Heavy Kick (During a jump)",
       "nameCN": "跳重脚",
       "input": "J>HK",
       "startup": "10",
@@ -517,7 +517,7 @@
     {
       "id": "senkotsu_uchi_m",
       "category": "normal",
-      "nameEN": "Senkotsu Uchi M",
+      "nameEN": "Senkotsu Uchi",
       "nameCN": "扇骨打",
       "input": "6MP",
       "startup": "20",
@@ -539,7 +539,7 @@
     {
       "id": "hien_ren_kyaku2_l_l",
       "category": "targetcombo",
-      "nameEN": "Hien Ren Kyaku(2) L L",
+      "nameEN": "Hien Ren Kyaku(2)",
       "nameCN": "飞燕连脚（二段）",
       "input": "5LK>5LK",
       "startup": "7",
@@ -561,7 +561,7 @@
     {
       "id": "hien_ren_kyaku3_l_l_l",
       "category": "targetcombo",
-      "nameEN": "Hien Ren Kyaku(3) L L L",
+      "nameEN": "Hien Ren Kyaku(3)",
       "nameCN": "飞燕连脚（三段）",
       "input": "5LK>LK>5LK",
       "startup": "10",
@@ -583,7 +583,7 @@
     {
       "id": "hoshi_kujaku1_h",
       "category": "normal",
-      "nameEN": "Hoshi Kujaku(1) H",
+      "nameEN": "Hoshi Kujaku(1)",
       "nameCN": "星孔雀（一段）",
       "input": "4HK",
       "startup": "8",
@@ -605,7 +605,7 @@
     {
       "id": "hoshi_kujaku2_h_h",
       "category": "targetcombo",
-      "nameEN": "Hoshi Kujaku(2) H H",
+      "nameEN": "Hoshi Kujaku(2)",
       "nameCN": "星孔雀（TC）",
       "input": "4HK>HK",
       "startup": "9",
@@ -627,7 +627,7 @@
     {
       "id": "l_kachousen_l",
       "category": "special",
-      "nameEN": "L Kachousen L",
+      "nameEN": "Kachousen",
       "nameCN": "花蝶扇（轻）",
       "input": "236LP",
       "startup": "16",
@@ -649,7 +649,7 @@
     {
       "id": "l_kachousencharged_hold_l",
       "category": "special",
-      "nameEN": "L Kachousen(Charged) Hold L",
+      "nameEN": "Kachousen(Charged) Hold",
       "nameCN": "花蝶扇（轻）（蓄力）",
       "input": "236[LP]",
       "startup": "32",
@@ -671,7 +671,7 @@
     {
       "id": "boostedl_kachousen_l",
       "category": "special",
-      "nameEN": "[Boosted]L Kachousen L",
+      "nameEN": "[Boosted]L Kachousen",
       "nameCN": "[强化]花蝶扇（轻）",
       "input": "236LP",
       "startup": "16",
@@ -693,7 +693,7 @@
     {
       "id": "boostedl_kachousencharged_hold_l",
       "category": "special",
-      "nameEN": "[Boosted]L Kachousen(Charged) Hold L",
+      "nameEN": "[Boosted]L Kachousen(Charged) Hold",
       "nameCN": "[强化]花蝶扇（轻）（蓄力）",
       "input": "236[LP]",
       "startup": "32",
@@ -715,7 +715,7 @@
     {
       "id": "m_kachousen_m",
       "category": "special",
-      "nameEN": "M Kachousen M",
+      "nameEN": "Kachousen",
       "nameCN": "花蝶扇（中）",
       "input": "236MP",
       "startup": "14",
@@ -737,7 +737,7 @@
     {
       "id": "m_kachousencharged_hold_m",
       "category": "special",
-      "nameEN": "M Kachousen(Charged) Hold M",
+      "nameEN": "Kachousen(Charged) Hold",
       "nameCN": "花蝶扇（中）（蓄力）",
       "input": "236[MP]",
       "startup": "32",
@@ -759,7 +759,7 @@
     {
       "id": "boostedm_kachousen_m",
       "category": "special",
-      "nameEN": "[Boosted]M Kachousen M",
+      "nameEN": "[Boosted]M Kachousen",
       "nameCN": "[强化]花蝶扇（中）",
       "input": "236MP",
       "startup": "14",
@@ -781,7 +781,7 @@
     {
       "id": "boostedm_kachousencharged_hold_m",
       "category": "special",
-      "nameEN": "[Boosted]M Kachousen(Charged) Hold M",
+      "nameEN": "[Boosted]M Kachousen(Charged) Hold",
       "nameCN": "[强化]花蝶扇（中）（蓄力）",
       "input": "236[MP]",
       "startup": "32",
@@ -803,7 +803,7 @@
     {
       "id": "h_kachousen_h",
       "category": "special",
-      "nameEN": "H Kachousen H",
+      "nameEN": "Kachousen",
       "nameCN": "花蝶扇（重）",
       "input": "236HP",
       "startup": "12",
@@ -825,7 +825,7 @@
     {
       "id": "h_kachousencharged_hold_h",
       "category": "special",
-      "nameEN": "H Kachousen(Charged) Hold H",
+      "nameEN": "Kachousen(Charged) Hold",
       "nameCN": "花蝶扇（重）（蓄力）",
       "input": "236[HP]",
       "startup": "32",
@@ -847,7 +847,7 @@
     {
       "id": "boostedh_kachousen_h",
       "category": "special",
-      "nameEN": "[Boosted]H Kachousen H",
+      "nameEN": "[Boosted]H Kachousen",
       "nameCN": "[强化]花蝶扇（重）",
       "input": "236HP",
       "startup": "12",
@@ -869,7 +869,7 @@
     {
       "id": "boostedh_kachousencharged_hold_h",
       "category": "special",
-      "nameEN": "[Boosted]H Kachousen(Charged) Hold H",
+      "nameEN": "[Boosted]H Kachousen(Charged) Hold",
       "nameCN": "[强化]花蝶扇（重）（蓄力）",
       "input": "236[HP]",
       "startup": "32",
@@ -1023,7 +1023,7 @@
     {
       "id": "l_hishou_ryuuenjin_l",
       "category": "special",
-      "nameEN": "L Hishou Ryuuenjin L",
+      "nameEN": "Hishou Ryuuenjin",
       "nameCN": "飞翔龙炎阵（轻）",
       "input": "623LK",
       "startup": "5",
@@ -1045,7 +1045,7 @@
     {
       "id": "boostedl_hishou_ryuuenjin_l",
       "category": "special",
-      "nameEN": "[Boosted]L Hishou Ryuuenjin L",
+      "nameEN": "[Boosted]L Hishou Ryuuenjin",
       "nameCN": "[强化]飞翔龙炎阵（轻）",
       "input": "623LK",
       "startup": "5",
@@ -1067,7 +1067,7 @@
     {
       "id": "m_hishou_ryuuenjin_m",
       "category": "special",
-      "nameEN": "M Hishou Ryuuenjin M",
+      "nameEN": "Hishou Ryuuenjin",
       "nameCN": "飞翔龙炎阵（中）",
       "input": "623MK",
       "startup": "6",
@@ -1089,7 +1089,7 @@
     {
       "id": "boostedm_hishou_ryuuenjin_m",
       "category": "special",
-      "nameEN": "[Boosted]M Hishou Ryuuenjin M",
+      "nameEN": "[Boosted]M Hishou Ryuuenjin",
       "nameCN": "[强化]飞翔龙炎阵（中）",
       "input": "623MK",
       "startup": "6",
@@ -1111,7 +1111,7 @@
     {
       "id": "h_hishou_ryuuenjin_h",
       "category": "special",
-      "nameEN": "H Hishou Ryuuenjin H",
+      "nameEN": "Hishou Ryuuenjin",
       "nameCN": "飞翔龙炎阵（重）",
       "input": "623HK",
       "startup": "7",
@@ -1133,7 +1133,7 @@
     {
       "id": "boostedh_hishou_ryuuenjin_h",
       "category": "special",
-      "nameEN": "[Boosted]H Hishou Ryuuenjin H",
+      "nameEN": "[Boosted]H Hishou Ryuuenjin",
       "nameCN": "[强化]飞翔龙炎阵（重）",
       "input": "623HK",
       "startup": "7",
@@ -1199,7 +1199,7 @@
     {
       "id": "l_ryuuenbu_l",
       "category": "special",
-      "nameEN": "L Ryuuenbu L",
+      "nameEN": "Ryuuenbu",
       "nameCN": "龙炎舞（轻）",
       "input": "214LP",
       "startup": "14",
@@ -1221,7 +1221,7 @@
     {
       "id": "boostedl_ryuuenbu_l",
       "category": "special",
-      "nameEN": "[Boosted]L Ryuuenbu L",
+      "nameEN": "[Boosted]L Ryuuenbu",
       "nameCN": "[强化]龙炎舞（轻）",
       "input": "214LP",
       "startup": "14",
@@ -1243,7 +1243,7 @@
     {
       "id": "m_ryuuenbu_m",
       "category": "special",
-      "nameEN": "M Ryuuenbu M",
+      "nameEN": "Ryuuenbu",
       "nameCN": "龙炎舞（中）",
       "input": "214MP",
       "startup": "14",
@@ -1265,7 +1265,7 @@
     {
       "id": "boostedm_ryuuenbu_m",
       "category": "special",
-      "nameEN": "[Boosted]M Ryuuenbu M",
+      "nameEN": "[Boosted]M Ryuuenbu",
       "nameCN": "[强化]龙炎舞（中）",
       "input": "214MP",
       "startup": "14",
@@ -1287,7 +1287,7 @@
     {
       "id": "h_ryuuenbu_h",
       "category": "special",
-      "nameEN": "H Ryuuenbu H",
+      "nameEN": "Ryuuenbu",
       "nameCN": "龙炎舞（重）",
       "input": "214HP",
       "startup": "15",
@@ -1309,7 +1309,7 @@
     {
       "id": "boostedh_ryuuenbu_h",
       "category": "special",
-      "nameEN": "[Boosted]H Ryuuenbu H",
+      "nameEN": "[Boosted]H Ryuuenbu",
       "nameCN": "[强化]龙炎舞（重）",
       "input": "214HP",
       "startup": "15",
@@ -1375,7 +1375,7 @@
     {
       "id": "l_hissatsu_shinobi_bachi_l",
       "category": "special",
-      "nameEN": "L Hissatsu Shinobi Bachi L",
+      "nameEN": "Hissatsu Shinobi Bachi",
       "nameCN": "必杀·忍蜂（轻）",
       "input": "236LK",
       "startup": "10",
@@ -1397,7 +1397,7 @@
     {
       "id": "boostedl_hissatsu_shinobi_bachi_l",
       "category": "special",
-      "nameEN": "[Boosted]L Hissatsu Shinobi Bachi L",
+      "nameEN": "[Boosted]L Hissatsu Shinobi Bachi",
       "nameCN": "[强化]必杀·忍蜂（轻）",
       "input": "236LK",
       "startup": "10",
@@ -1419,7 +1419,7 @@
     {
       "id": "m_hissatsu_shinobi_bachi_m",
       "category": "special",
-      "nameEN": "M Hissatsu Shinobi Bachi M",
+      "nameEN": "Hissatsu Shinobi Bachi",
       "nameCN": "必杀·忍蜂（中）",
       "input": "236MK",
       "startup": "15",
@@ -1441,7 +1441,7 @@
     {
       "id": "boostedm_hissatsu_shinobi_bachi_m",
       "category": "special",
-      "nameEN": "[Boosted]M Hissatsu Shinobi Bachi M",
+      "nameEN": "[Boosted]M Hissatsu Shinobi Bachi",
       "nameCN": "[强化]必杀·忍蜂（中）",
       "input": "236MK",
       "startup": "15",
@@ -1463,7 +1463,7 @@
     {
       "id": "h_hissatsu_shinobi_bachi_h",
       "category": "special",
-      "nameEN": "H Hissatsu Shinobi Bachi H",
+      "nameEN": "Hissatsu Shinobi Bachi",
       "nameCN": "必杀·忍蜂（重）",
       "input": "236HK",
       "startup": "18",
@@ -1485,7 +1485,7 @@
     {
       "id": "boostedh_hissatsu_shinobi_bachi_h",
       "category": "special",
-      "nameEN": "[Boosted]H Hissatsu Shinobi Bachi H",
+      "nameEN": "[Boosted]H Hissatsu Shinobi Bachi",
       "nameCN": "[强化]必杀·忍蜂（重）",
       "input": "236HK",
       "startup": "18",
@@ -1815,7 +1815,7 @@
     {
       "id": "shiranui_gourin_when_near_opponent_l_l",
       "category": "throw",
-      "nameEN": "Shiranui Gourin (When near opponent) L L",
+      "nameEN": "Shiranui Gourin (When near opponent)",
       "nameCN": "不知火刚临",
       "input": "LPLK",
       "startup": "5",
@@ -1837,7 +1837,7 @@
     {
       "id": "fuusha_kuzushi_when_near_opponent_l_l",
       "category": "throw",
-      "nameEN": "Fuusha Kuzushi (When near opponent) L L",
+      "nameEN": "Fuusha Kuzushi (When near opponent)",
       "nameCN": "风车崩",
       "input": "4LPLK",
       "startup": "5",
@@ -1859,7 +1859,7 @@
     {
       "id": "yume_zakura_during_a_jump_when_near_opponent_l_l",
       "category": "throw",
-      "nameEN": "Yume Zakura (During a jump) (When near opponent) L L",
+      "nameEN": "Yume Zakura (During a jump) (When near opponent)",
       "nameCN": "梦樱",
       "input": "J>LPLK",
       "startup": "5",
@@ -1925,7 +1925,7 @@
     {
       "id": "drive_impact_botan_ichige_h_h",
       "category": "common",
-      "nameEN": "Drive Impact: Botan Ichige H H",
+      "nameEN": "Drive Impact: Botan Ichige",
       "nameCN": "迸放：牡丹一华",
       "input": "HPHK",
       "startup": "26",
@@ -1947,7 +1947,7 @@
     {
       "id": "drive_reversal_while_blocking_yusura_ume_when_blocking_or_during_a_successful_drive_parry_h_h",
       "category": "common",
-      "nameEN": "Drive Reversal (while blocking): Yusura Ume (When blocking or during a successful Drive Parry) H H",
+      "nameEN": "Drive Reversal (while blocking): Yusura Ume (When blocking or during a successful Drive Parry)",
       "nameCN": "斗反（防守中）：山樱桃",
       "input": "6HPHK",
       "startup": "20",
@@ -1969,7 +1969,7 @@
     {
       "id": "drive_reversal_while_recovering_yusura_ume_during_knockdown_recovery_h_h",
       "category": "common",
-      "nameEN": "Drive Reversal (while recovering): Yusura Ume (During knockdown recovery) H H",
+      "nameEN": "Drive Reversal (while recovering): Yusura Ume (During knockdown recovery)",
       "nameCN": "斗反（起身中）：山樱桃",
       "input": "6HPHK",
       "startup": "18",
@@ -1991,7 +1991,7 @@
     {
       "id": "drive_parry_m_m",
       "category": "common",
-      "nameEN": "Drive Parry M M",
+      "nameEN": "Drive Parry",
       "nameCN": "蓝防",
       "input": "MPMK",
       "startup": "1",
@@ -2013,7 +2013,7 @@
     {
       "id": "perfect_parry_strike_block_direction_m_m",
       "category": "common",
-      "nameEN": "Perfect Parry (strike) Block Direction M M",
+      "nameEN": "Perfect Parry (strike) Block Direction",
       "nameCN": "完美精防（打击）",
       "input": "4/1MPMK",
       "startup": "1",
@@ -2035,7 +2035,7 @@
     {
       "id": "perfect_parry_projectile_m_m",
       "category": "common",
-      "nameEN": "Perfect Parry (projectile) M M",
+      "nameEN": "Perfect Parry (projectile)",
       "nameCN": "完美精防（飞行道具）",
       "input": "MPMK",
       "startup": "1",

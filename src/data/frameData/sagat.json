@@ -2,7 +2,7 @@
   "characterId": "sagat",
   "displayNameCN": "",
   "displayNameEN": "",
-  "lastUpdated": "2026-01-31",
+  "lastUpdated": "2026-02-06",
   "columns": [
     "id",
     "category",
@@ -101,7 +101,7 @@
     {
       "id": "standing_light_punch_l",
       "category": "normal",
-      "nameEN": "Standing Light Punch L",
+      "nameEN": "Standing Light Punch",
       "nameCN": "站轻拳",
       "input": "5LP",
       "startup": "5",
@@ -123,7 +123,7 @@
     {
       "id": "standing_light_kick_l",
       "category": "normal",
-      "nameEN": "Standing Light Kick L",
+      "nameEN": "Standing Light Kick",
       "nameCN": "站轻脚",
       "input": "5LK",
       "startup": "7",
@@ -145,7 +145,7 @@
     {
       "id": "standing_medium_punch_m",
       "category": "normal",
-      "nameEN": "Standing Medium Punch M",
+      "nameEN": "Standing Medium Punch",
       "nameCN": "站中拳",
       "input": "5MP",
       "startup": "6",
@@ -167,7 +167,7 @@
     {
       "id": "standing_medium_kick_m",
       "category": "normal",
-      "nameEN": "Standing Medium Kick M",
+      "nameEN": "Standing Medium Kick",
       "nameCN": "站中脚",
       "input": "5MK",
       "startup": "11",
@@ -189,7 +189,7 @@
     {
       "id": "standing_heavy_punch_h",
       "category": "normal",
-      "nameEN": "Standing Heavy Punch H",
+      "nameEN": "Standing Heavy Punch",
       "nameCN": "站重拳",
       "input": "5HP",
       "startup": "15",
@@ -211,7 +211,7 @@
     {
       "id": "standing_heavy_kick_h",
       "category": "normal",
-      "nameEN": "Standing Heavy Kick H",
+      "nameEN": "Standing Heavy Kick",
       "nameCN": "站重脚",
       "input": "5HK",
       "startup": "10",
@@ -233,7 +233,7 @@
     {
       "id": "crouching_light_punch_l",
       "category": "normal",
-      "nameEN": "Crouching Light Punch L",
+      "nameEN": "Crouching Light Punch",
       "nameCN": "下轻拳",
       "input": "2LP",
       "startup": "4",
@@ -255,7 +255,7 @@
     {
       "id": "crouching_light_kick_l",
       "category": "normal",
-      "nameEN": "Crouching Light Kick L",
+      "nameEN": "Crouching Light Kick",
       "nameCN": "下轻脚",
       "input": "2LK",
       "startup": "5",
@@ -277,7 +277,7 @@
     {
       "id": "crouching_medium_punch_m",
       "category": "normal",
-      "nameEN": "Crouching Medium Punch M",
+      "nameEN": "Crouching Medium Punch",
       "nameCN": "下中拳",
       "input": "2MP",
       "startup": "7",
@@ -299,7 +299,7 @@
     {
       "id": "crouching_medium_kick_m",
       "category": "normal",
-      "nameEN": "Crouching Medium Kick M",
+      "nameEN": "Crouching Medium Kick",
       "nameCN": "下中脚",
       "input": "2MK",
       "startup": "9",
@@ -321,7 +321,7 @@
     {
       "id": "crouching_heavy_punch_h",
       "category": "normal",
-      "nameEN": "Crouching Heavy Punch H",
+      "nameEN": "Crouching Heavy Punch",
       "nameCN": "下重拳",
       "input": "2HP",
       "startup": "11",
@@ -343,7 +343,7 @@
     {
       "id": "crouching_heavy_kick_h",
       "category": "normal",
-      "nameEN": "Crouching Heavy Kick H",
+      "nameEN": "Crouching Heavy Kick",
       "nameCN": "下重脚",
       "input": "2HK",
       "startup": "11",
@@ -365,7 +365,7 @@
     {
       "id": "jumping_light_punch_during_a_jump_l",
       "category": "normal",
-      "nameEN": "Jumping Light Punch (During a jump) L",
+      "nameEN": "Jumping Light Punch (During a jump)",
       "nameCN": "跳轻拳",
       "input": "J>LP",
       "startup": "4",
@@ -387,7 +387,7 @@
     {
       "id": "jumping_light_kick_during_a_jump_l",
       "category": "normal",
-      "nameEN": "Jumping Light Kick (During a jump) L",
+      "nameEN": "Jumping Light Kick (During a jump)",
       "nameCN": "跳轻脚",
       "input": "J>LK",
       "startup": "5",
@@ -409,7 +409,7 @@
     {
       "id": "jumping_medium_punch_during_a_jump_m",
       "category": "normal",
-      "nameEN": "Jumping Medium Punch (During a jump) M",
+      "nameEN": "Jumping Medium Punch (During a jump)",
       "nameCN": "跳中拳",
       "input": "J>MP",
       "startup": "8",
@@ -431,7 +431,7 @@
     {
       "id": "jumping_medium_kick_during_a_jump_m",
       "category": "normal",
-      "nameEN": "Jumping Medium Kick (During a jump) M",
+      "nameEN": "Jumping Medium Kick (During a jump)",
       "nameCN": "跳中脚",
       "input": "J>MK",
       "startup": "8",
@@ -453,7 +453,7 @@
     {
       "id": "jumping_heavy_punch_during_a_jump_h",
       "category": "normal",
-      "nameEN": "Jumping Heavy Punch (During a jump) H",
+      "nameEN": "Jumping Heavy Punch (During a jump)",
       "nameCN": "跳重拳",
       "input": "J>HP",
       "startup": "10",
@@ -475,7 +475,7 @@
     {
       "id": "jumping_heavy_kick_during_a_jump_h",
       "category": "normal",
-      "nameEN": "Jumping Heavy Kick (During a jump) H",
+      "nameEN": "Jumping Heavy Kick (During a jump)",
       "nameCN": "跳重脚",
       "input": "J>HK",
       "startup": "10",
@@ -497,7 +497,7 @@
     {
       "id": "tiger_heavy_elbow_m",
       "category": "normal",
-      "nameEN": "Tiger Heavy Elbow M",
+      "nameEN": "Tiger Heavy Elbow",
       "nameCN": "猛虎重砸肘",
       "input": "6MP",
       "startup": "22",
@@ -519,7 +519,7 @@
     {
       "id": "tiger_monolith_h",
       "category": "normal",
-      "nameEN": "Tiger Monolith H",
+      "nameEN": "Tiger Monolith",
       "nameCN": "猛虎巨石",
       "input": "4HP",
       "startup": "8",
@@ -541,7 +541,7 @@
     {
       "id": "low_step_kick_l",
       "category": "normal",
-      "nameEN": "Low Step Kick L",
+      "nameEN": "Low Step Kick",
       "nameCN": "前踏低扫踢",
       "input": "6LK",
       "startup": "18",
@@ -563,7 +563,7 @@
     {
       "id": "high_step_kick_h",
       "category": "normal",
-      "nameEN": "High Step Kick H",
+      "nameEN": "High Step Kick",
       "nameCN": "前踏高扫踢",
       "input": "6HK",
       "startup": "16",
@@ -585,7 +585,7 @@
     {
       "id": "middle_step_kick_m_h",
       "category": "targetcombo",
-      "nameEN": "Middle Step Kick M H",
+      "nameEN": "Middle Step Kick",
       "nameCN": "前踏中扫踢",
       "input": "5MK>5HK",
       "startup": "19",
@@ -607,7 +607,7 @@
     {
       "id": "tiger_sting_h_h",
       "category": "targetcombo",
-      "nameEN": "Tiger Sting H H",
+      "nameEN": "Tiger Sting",
       "nameCN": "猛虎扎",
       "input": "5HP>5HK",
       "startup": "16",
@@ -629,7 +629,7 @@
     {
       "id": "tiger_slash_m_h",
       "category": "targetcombo",
-      "nameEN": "Tiger Slash M H",
+      "nameEN": "Tiger Slash",
       "nameCN": "猛虎斩",
       "input": "2MP>5HP",
       "startup": "20",
@@ -651,7 +651,7 @@
     {
       "id": "tiger_rise_m_h",
       "category": "targetcombo",
-      "nameEN": "Tiger Rise M H",
+      "nameEN": "Tiger Rise",
       "nameCN": "猛虎升",
       "input": "2MP>5HK",
       "startup": "18",
@@ -673,7 +673,7 @@
     {
       "id": "m_high_tiger_shot_m",
       "category": "special",
-      "nameEN": "M High Tiger Shot M",
+      "nameEN": "High Tiger Shot",
       "nameCN": "猛虎波（中）",
       "input": "236MP",
       "startup": "16",
@@ -695,7 +695,7 @@
     {
       "id": "h_high_tiger_shot_h",
       "category": "special",
-      "nameEN": "H High Tiger Shot H",
+      "nameEN": "High Tiger Shot",
       "nameCN": "猛虎波（重）",
       "input": "236HP",
       "startup": "12",
@@ -717,7 +717,7 @@
     {
       "id": "od_high_tiger_shot_m_h",
       "category": "special",
-      "nameEN": "OD High Tiger Shot M H",
+      "nameEN": "OD High Tiger Shot",
       "nameCN": "OD猛虎波",
       "input": "236MPHP",
       "startup": "21",
@@ -739,7 +739,7 @@
     {
       "id": "low_tiger_shot_l",
       "category": "special",
-      "nameEN": "Low Tiger Shot L",
+      "nameEN": "Low Tiger Shot",
       "nameCN": "下段猛虎波",
       "input": "236LP",
       "startup": "14",
@@ -783,7 +783,7 @@
     {
       "id": "l_tiger_uppercut_l",
       "category": "special",
-      "nameEN": "L Tiger Uppercut L",
+      "nameEN": "Tiger Uppercut",
       "nameCN": "猛虎升龙破（轻）",
       "input": "623LP",
       "startup": "5",
@@ -805,7 +805,7 @@
     {
       "id": "m_tiger_uppercut_m",
       "category": "special",
-      "nameEN": "M Tiger Uppercut M",
+      "nameEN": "Tiger Uppercut",
       "nameCN": "猛虎升龙破（中）",
       "input": "623MP",
       "startup": "10",
@@ -827,7 +827,7 @@
     {
       "id": "h_tiger_uppercut_h",
       "category": "special",
-      "nameEN": "H Tiger Uppercut H",
+      "nameEN": "Tiger Uppercut",
       "nameCN": "猛虎升龙破（重）",
       "input": "623HP",
       "startup": "18",
@@ -849,7 +849,7 @@
     {
       "id": "h_tiger_uppercutcharged_hold_h",
       "category": "special",
-      "nameEN": "H Tiger Uppercut(Charged) Hold H",
+      "nameEN": "Tiger Uppercut(Charged) Hold",
       "nameCN": "猛虎升龙破（重）（蓄力）",
       "input": "623[HP]",
       "startup": "35",
@@ -893,7 +893,7 @@
     {
       "id": "l_tiger_knee_crush_l",
       "category": "special",
-      "nameEN": "L Tiger Knee Crush L",
+      "nameEN": "Tiger Knee Crush",
       "nameCN": "猛虎跳膝撞（轻）",
       "input": "236LK",
       "startup": "14",
@@ -915,7 +915,7 @@
     {
       "id": "m_tiger_knee_crush_m",
       "category": "special",
-      "nameEN": "M Tiger Knee Crush M",
+      "nameEN": "Tiger Knee Crush",
       "nameCN": "猛虎跳膝撞（中）",
       "input": "236MK",
       "startup": "18",
@@ -937,7 +937,7 @@
     {
       "id": "h_tiger_knee_crush_h",
       "category": "special",
-      "nameEN": "H Tiger Knee Crush H",
+      "nameEN": "Tiger Knee Crush",
       "nameCN": "猛虎跳膝撞（重）",
       "input": "236HK",
       "startup": "22",
@@ -981,7 +981,7 @@
     {
       "id": "l_tiger_nexus_l",
       "category": "special",
-      "nameEN": "L Tiger Nexus L",
+      "nameEN": "Tiger Nexus",
       "nameCN": "猛虎连结（轻）",
       "input": "214LK",
       "startup": "17",
@@ -1003,7 +1003,7 @@
     {
       "id": "m_tiger_nexus_m",
       "category": "special",
-      "nameEN": "M Tiger Nexus M",
+      "nameEN": "Tiger Nexus",
       "nameCN": "猛虎连结（中）",
       "input": "214MK",
       "startup": "20",
@@ -1025,7 +1025,7 @@
     {
       "id": "h_tiger_nexus_h",
       "category": "special",
-      "nameEN": "H Tiger Nexus H",
+      "nameEN": "Tiger Nexus",
       "nameCN": "猛虎连结（重）",
       "input": "214HK",
       "startup": "28",
@@ -1069,7 +1069,7 @@
     {
       "id": "mighty_tiger_during_tiger_nexus_l",
       "category": "special",
-      "nameEN": "Mighty Tiger (During Tiger Nexus) L",
+      "nameEN": "Mighty Tiger (During Tiger Nexus)",
       "nameCN": "猛虎猛击",
       "input": "214K>6LK",
       "startup": "15",
@@ -1091,7 +1091,7 @@
     {
       "id": "od_mighty_tiger_during_od_tiger_nexus_l",
       "category": "special",
-      "nameEN": "OD Mighty Tiger (During OD Tiger Nexus) L",
+      "nameEN": "OD Mighty Tiger (During OD Tiger Nexus)",
       "nameCN": "OD猛虎猛击",
       "input": "214KK>6LK",
       "startup": "15",
@@ -1113,7 +1113,7 @@
     {
       "id": "greedy_tiger_during_tiger_nexus_m",
       "category": "special",
-      "nameEN": "Greedy Tiger (During Tiger Nexus) M",
+      "nameEN": "Greedy Tiger (During Tiger Nexus)",
       "nameCN": "猛虎贪婪",
       "input": "214K>6MK",
       "startup": "17",
@@ -1135,7 +1135,7 @@
     {
       "id": "od_greedy_tiger_during_od_tiger_nexus_m",
       "category": "special",
-      "nameEN": "OD Greedy Tiger (During OD Tiger Nexus) M",
+      "nameEN": "OD Greedy Tiger (During OD Tiger Nexus)",
       "nameCN": "OD猛虎贪婪",
       "input": "214KK>6MK",
       "startup": "17",
@@ -1157,7 +1157,7 @@
     {
       "id": "nova_tiger_during_tiger_nexus_h",
       "category": "special",
-      "nameEN": "Nova Tiger (During Tiger Nexus) H",
+      "nameEN": "Nova Tiger (During Tiger Nexus)",
       "nameCN": "猛虎新星",
       "input": "214K>6HK",
       "startup": "21",
@@ -1179,7 +1179,7 @@
     {
       "id": "od_nova_tiger_during_od_tiger_nexus_h",
       "category": "special",
-      "nameEN": "OD Nova Tiger (During OD Tiger Nexus) H",
+      "nameEN": "OD Nova Tiger (During OD Tiger Nexus)",
       "nameCN": "OD猛虎新星",
       "input": "214KK>6HK",
       "startup": "21",
@@ -1377,7 +1377,7 @@
     {
       "id": "tiger_hang_when_near_opponent_l_l",
       "category": "throw",
-      "nameEN": "Tiger Hang (When near opponent) L L",
+      "nameEN": "Tiger Hang (When near opponent)",
       "nameCN": "猛虎悬",
       "input": "LPLK",
       "startup": "5",
@@ -1399,7 +1399,7 @@
     {
       "id": "tiger_carry_when_near_opponent_l_l",
       "category": "throw",
-      "nameEN": "Tiger Carry (When near opponent) L L",
+      "nameEN": "Tiger Carry (When near opponent)",
       "nameCN": "猛虎摔",
       "input": "4LPLK",
       "startup": "5",
@@ -1465,7 +1465,7 @@
     {
       "id": "drive_impact_tiger_punishment_h_h",
       "category": "common",
-      "nameEN": "Drive Impact: Tiger Punishment H H",
+      "nameEN": "Drive Impact: Tiger Punishment",
       "nameCN": "迸发：猛虎惩戒",
       "input": "HPHK",
       "startup": "26",
@@ -1487,7 +1487,7 @@
     {
       "id": "drive_reversal_while_blocking_tiger_twin_babel_when_blocking_or_during_a_successful_drive_parry_h_h",
       "category": "common",
-      "nameEN": "Drive Reversal (while blocking): Tiger Twin Babel (When blocking or during a successful Drive Parry) H H",
+      "nameEN": "Drive Reversal (while blocking): Tiger Twin Babel (When blocking or during a successful Drive Parry)",
       "nameCN": "斗反（格挡）：猛虎双塔",
       "input": "6HPHK",
       "startup": "20",
@@ -1509,7 +1509,7 @@
     {
       "id": "drive_reversal_while_recovering_tiger_twin_babel_during_knockdown_recovery_h_h",
       "category": "common",
-      "nameEN": "Drive Reversal (while recovering): Tiger Twin Babel (During knockdown recovery) H H",
+      "nameEN": "Drive Reversal (while recovering): Tiger Twin Babel (During knockdown recovery)",
       "nameCN": "斗反（起身）：猛虎双塔",
       "input": "6HPHK",
       "startup": "18",
@@ -1531,7 +1531,7 @@
     {
       "id": "drive_parry_m_m",
       "category": "common",
-      "nameEN": "Drive Parry M M",
+      "nameEN": "Drive Parry",
       "nameCN": "蓝防",
       "input": "MPMK",
       "startup": "1",
@@ -1553,7 +1553,7 @@
     {
       "id": "perfect_parry_strike_block_direction_m_m",
       "category": "common",
-      "nameEN": "Perfect Parry (strike) Block Direction M M",
+      "nameEN": "Perfect Parry (strike) Block Direction",
       "nameCN": "完美精防（打击）",
       "input": "4/1MPMK",
       "startup": "1",
@@ -1575,7 +1575,7 @@
     {
       "id": "perfect_parry_projectile_m_m",
       "category": "common",
-      "nameEN": "Perfect Parry (projectile) M M",
+      "nameEN": "Perfect Parry (projectile)",
       "nameCN": "完美精防（波动）",
       "input": "MPMK",
       "startup": "1",

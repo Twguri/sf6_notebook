@@ -2,7 +2,7 @@
   "characterId": "akuma",
   "displayNameCN": "",
   "displayNameEN": "Akuma",
-  "lastUpdated": "2026-01-31",
+  "lastUpdated": "2026-02-06",
   "columns": [
     "id",
     "category",
@@ -122,7 +122,7 @@
     {
       "id": "standing_light_punch_l",
       "category": "normal",
-      "nameEN": "Standing Light Punch L",
+      "nameEN": "Standing Light Punch",
       "nameCN": "站轻拳",
       "input": "5LP",
       "startup": "4",
@@ -144,7 +144,7 @@
     {
       "id": "standing_light_kick_l",
       "category": "normal",
-      "nameEN": "Standing Light Kick L",
+      "nameEN": "Standing Light Kick",
       "nameCN": "站轻脚",
       "input": "5LK",
       "startup": "5",
@@ -166,7 +166,7 @@
     {
       "id": "standing_medium_punch_m",
       "category": "normal",
-      "nameEN": "Standing Medium Punch M",
+      "nameEN": "Standing Medium Punch",
       "nameCN": "站中拳",
       "input": "5MP",
       "startup": "6",
@@ -188,7 +188,7 @@
     {
       "id": "standing_medium_kick_m",
       "category": "normal",
-      "nameEN": "Standing Medium Kick M",
+      "nameEN": "Standing Medium Kick",
       "nameCN": "站中脚",
       "input": "5MK",
       "startup": "7",
@@ -210,7 +210,7 @@
     {
       "id": "standing_heavy_punch_h",
       "category": "normal",
-      "nameEN": "Standing Heavy Punch H",
+      "nameEN": "Standing Heavy Punch",
       "nameCN": "站重拳",
       "input": "5HP",
       "startup": "9",
@@ -232,7 +232,7 @@
     {
       "id": "standing_heavy_kick_h",
       "category": "normal",
-      "nameEN": "Standing Heavy Kick H",
+      "nameEN": "Standing Heavy Kick",
       "nameCN": "站重脚",
       "input": "5HK",
       "startup": "13",
@@ -254,7 +254,7 @@
     {
       "id": "crouching_light_punch_l",
       "category": "normal",
-      "nameEN": "Crouching Light Punch L",
+      "nameEN": "Crouching Light Punch",
       "nameCN": "下轻拳",
       "input": "2LP",
       "startup": "4",
@@ -276,7 +276,7 @@
     {
       "id": "crouching_light_kick_l",
       "category": "normal",
-      "nameEN": "Crouching Light Kick L",
+      "nameEN": "Crouching Light Kick",
       "nameCN": "下轻脚",
       "input": "2LK",
       "startup": "5",
@@ -298,7 +298,7 @@
     {
       "id": "crouching_medium_punch_m",
       "category": "normal",
-      "nameEN": "Crouching Medium Punch M",
+      "nameEN": "Crouching Medium Punch",
       "nameCN": "下中拳",
       "input": "2MP",
       "startup": "6",
@@ -320,7 +320,7 @@
     {
       "id": "crouching_medium_kick_m",
       "category": "normal",
-      "nameEN": "Crouching Medium Kick M",
+      "nameEN": "Crouching Medium Kick",
       "nameCN": "下中脚",
       "input": "2MK",
       "startup": "8",
@@ -342,7 +342,7 @@
     {
       "id": "crouching_heavy_punch_h",
       "category": "normal",
-      "nameEN": "Crouching Heavy Punch H",
+      "nameEN": "Crouching Heavy Punch",
       "nameCN": "下重拳",
       "input": "2HP",
       "startup": "8",
@@ -364,7 +364,7 @@
     {
       "id": "crouching_heavy_kick_h",
       "category": "normal",
-      "nameEN": "Crouching Heavy Kick H",
+      "nameEN": "Crouching Heavy Kick",
       "nameCN": "下重脚",
       "input": "2HK",
       "startup": "9",
@@ -386,7 +386,7 @@
     {
       "id": "jumping_light_punch_during_a_jump_l",
       "category": "normal",
-      "nameEN": "Jumping Light Punch (During a jump) L",
+      "nameEN": "Jumping Light Punch (During a jump)",
       "nameCN": "跳轻拳",
       "input": "J>LP",
       "startup": "4",
@@ -408,7 +408,7 @@
     {
       "id": "jumping_light_kick_during_a_jump_l",
       "category": "normal",
-      "nameEN": "Jumping Light Kick (During a jump) L",
+      "nameEN": "Jumping Light Kick (During a jump)",
       "nameCN": "跳轻脚",
       "input": "J>LK",
       "startup": "6",
@@ -430,7 +430,7 @@
     {
       "id": "jumping_medium_punch_during_a_jump_m",
       "category": "normal",
-      "nameEN": "Jumping Medium Punch (During a jump) M",
+      "nameEN": "Jumping Medium Punch (During a jump)",
       "nameCN": "跳中拳",
       "input": "J>MP",
       "startup": "8",
@@ -452,7 +452,7 @@
     {
       "id": "jumping_medium_kick_during_a_jump_m",
       "category": "normal",
-      "nameEN": "Jumping Medium Kick (During a jump) M",
+      "nameEN": "Jumping Medium Kick (During a jump)",
       "nameCN": "跳中脚",
       "input": "J>MK",
       "startup": "7",
@@ -474,7 +474,7 @@
     {
       "id": "jumping_heavy_punch_during_a_jump_h",
       "category": "normal",
-      "nameEN": "Jumping Heavy Punch (During a jump) H",
+      "nameEN": "Jumping Heavy Punch (During a jump)",
       "nameCN": "跳重拳",
       "input": "J>HP",
       "startup": "9",
@@ -496,7 +496,7 @@
     {
       "id": "jumping_heavy_kick_during_a_jump_h",
       "category": "normal",
-      "nameEN": "Jumping Heavy Kick (During a jump) H",
+      "nameEN": "Jumping Heavy Kick (During a jump)",
       "nameCN": "跳重脚",
       "input": "J>HK",
       "startup": "12",
@@ -518,7 +518,7 @@
     {
       "id": "skull_splitter_m",
       "category": "normal",
-      "nameEN": "Skull Splitter M",
+      "nameEN": "Skull Splitter",
       "nameCN": "头盖破杀",
       "input": "6MP",
       "startup": "20",
@@ -540,7 +540,7 @@
     {
       "id": "resso_snap_kick_m",
       "category": "normal",
-      "nameEN": "Resso Snap Kick M",
+      "nameEN": "Resso Snap Kick",
       "nameCN": "裂枪腿",
       "input": "6MK",
       "startup": "10",
@@ -562,7 +562,7 @@
     {
       "id": "rago_high_kick_h",
       "category": "normal",
-      "nameEN": "Rago High Kick H",
+      "nameEN": "Rago High Kick",
       "nameCN": "罗豪脚",
       "input": "4HK",
       "startup": "12",
@@ -584,7 +584,7 @@
     {
       "id": "viscera_piercer_m_m",
       "category": "targetcombo",
-      "nameEN": "Viscera Piercer M M",
+      "nameEN": "Viscera Piercer",
       "nameCN": "六腑穿",
       "input": "5MP>5MP",
       "startup": "7",
@@ -606,7 +606,7 @@
     {
       "id": "bone_crusher_axe_kick_m_h",
       "category": "targetcombo",
-      "nameEN": "Bone Crusher Axe Kick M H",
+      "nameEN": "Bone Crusher Axe Kick",
       "nameCN": "骸斩",
       "input": "5MK>5HK",
       "startup": "20",
@@ -628,7 +628,7 @@
     {
       "id": "kikoku_combination1_h",
       "category": "normal",
-      "nameEN": "Kikoku Combination(1) H",
+      "nameEN": "Kikoku Combination(1)",
       "nameCN": "鬼哭连击（一段）",
       "input": "6HP",
       "startup": "13",
@@ -650,7 +650,7 @@
     {
       "id": "kikoku_combination2_h_h",
       "category": "targetcombo",
-      "nameEN": "Kikoku Combination(2) H H",
+      "nameEN": "Kikoku Combination(2)",
       "nameCN": "鬼哭连击（两段）",
       "input": "6HP>6HP",
       "startup": "10",
@@ -672,7 +672,7 @@
     {
       "id": "kikoku_combination3_h_h_h",
       "category": "targetcombo",
-      "nameEN": "Kikoku Combination(3) H H H",
+      "nameEN": "Kikoku Combination(3)",
       "nameCN": "鬼哭连击（三段）",
       "input": "6HP>6HP>5HP",
       "startup": "9",
@@ -694,7 +694,7 @@
     {
       "id": "tenmaku_blade_kick_during_a_forward_jump_m",
       "category": "normal",
-      "nameEN": "Tenmaku Blade Kick (During a forward jump) M",
+      "nameEN": "Tenmaku Blade Kick (During a forward jump)",
       "nameCN": "天魔空刃腿",
       "input": "9>2MK",
       "startup": "16",
@@ -716,7 +716,7 @@
     {
       "id": "l_gou_hadokenlv1_l",
       "category": "special",
-      "nameEN": "L Gou Hadoken(Lv1) L",
+      "nameEN": "Gou Hadoken(Lv1)",
       "nameCN": "豪波动拳（轻）",
       "input": "236LP",
       "startup": "16",
@@ -738,7 +738,7 @@
     {
       "id": "l_gou_hadokenlv2_hold_l",
       "category": "special",
-      "nameEN": "L Gou Hadoken(Lv2) Hold L",
+      "nameEN": "Gou Hadoken(Lv2) Hold",
       "nameCN": "豪波动拳（轻）（一段蓄力）",
       "input": "236[LP]",
       "startup": "31",
@@ -760,7 +760,7 @@
     {
       "id": "l_gou_hadokenlv3_hold_l",
       "category": "special",
-      "nameEN": "L Gou Hadoken(Lv3) Hold L",
+      "nameEN": "Gou Hadoken(Lv3) Hold",
       "nameCN": "豪波动拳（轻）（两段蓄力）",
       "input": "236[LP]",
       "startup": "56",
@@ -782,7 +782,7 @@
     {
       "id": "m_gou_hadokenlv1_m",
       "category": "special",
-      "nameEN": "M Gou Hadoken(Lv1) M",
+      "nameEN": "Gou Hadoken(Lv1)",
       "nameCN": "豪波动拳（中）",
       "input": "236MP",
       "startup": "14",
@@ -804,7 +804,7 @@
     {
       "id": "m_gou_hadokenlv2_hold_m",
       "category": "special",
-      "nameEN": "M Gou Hadoken(Lv2) Hold M",
+      "nameEN": "Gou Hadoken(Lv2) Hold",
       "nameCN": "豪波动拳（中）（一段蓄力）",
       "input": "236[MP]",
       "startup": "31",
@@ -826,7 +826,7 @@
     {
       "id": "m_gou_hadokenlv3_hold_m",
       "category": "special",
-      "nameEN": "M Gou Hadoken(Lv3) Hold M",
+      "nameEN": "Gou Hadoken(Lv3) Hold",
       "nameCN": "豪波动拳（中）（两段蓄力）",
       "input": "236[MP]",
       "startup": "56",
@@ -848,7 +848,7 @@
     {
       "id": "h_gou_hadokenlv1_h",
       "category": "special",
-      "nameEN": "H Gou Hadoken(Lv1) H",
+      "nameEN": "Gou Hadoken(Lv1)",
       "nameCN": "豪波动拳（重）",
       "input": "236HP",
       "startup": "12",
@@ -870,7 +870,7 @@
     {
       "id": "h_gou_hadokenlv2_hold_h",
       "category": "special",
-      "nameEN": "H Gou Hadoken(Lv2) Hold H",
+      "nameEN": "Gou Hadoken(Lv2) Hold",
       "nameCN": "豪波动拳（重）（一段蓄力）",
       "input": "236[HP]",
       "startup": "31",
@@ -892,7 +892,7 @@
     {
       "id": "h_gou_hadokenlv3_hold_h",
       "category": "special",
-      "nameEN": "H Gou Hadoken(Lv3) Hold H",
+      "nameEN": "Gou Hadoken(Lv3) Hold",
       "nameCN": "豪波动拳（重）（两段蓄力）",
       "input": "236[HP]",
       "startup": "56",
@@ -958,7 +958,7 @@
     {
       "id": "l_zanku_hadoken_during_a_forward_jump_l",
       "category": "special",
-      "nameEN": "L Zanku Hadoken (During a forward jump) L",
+      "nameEN": "Zanku Hadoken (During a forward jump)",
       "nameCN": "斩空波动拳（轻）",
       "input": "9>236LP",
       "startup": "13",
@@ -980,7 +980,7 @@
     {
       "id": "m_zanku_hadoken_during_a_forward_jump_m",
       "category": "special",
-      "nameEN": "M Zanku Hadoken (During a forward jump) M",
+      "nameEN": "Zanku Hadoken (During a forward jump)",
       "nameCN": "斩空波动拳（中）",
       "input": "9>236MP",
       "startup": "13",
@@ -1002,7 +1002,7 @@
     {
       "id": "h_zanku_hadoken_during_a_forward_jump_h",
       "category": "special",
-      "nameEN": "H Zanku Hadoken (During a forward jump) H",
+      "nameEN": "Zanku Hadoken (During a forward jump)",
       "nameCN": "斩空波动拳（重）",
       "input": "9>236HP",
       "startup": "13",
@@ -1046,7 +1046,7 @@
     {
       "id": "l_gou_shoryuken_l",
       "category": "special",
-      "nameEN": "L Gou Shoryuken L",
+      "nameEN": "Gou Shoryuken",
       "nameCN": "豪升龙拳（轻）",
       "input": "623LP",
       "startup": "5",
@@ -1068,7 +1068,7 @@
     {
       "id": "m_gou_shoryuken_m",
       "category": "special",
-      "nameEN": "M Gou Shoryuken M",
+      "nameEN": "Gou Shoryuken",
       "nameCN": "豪升龙拳（中）",
       "input": "623MP",
       "startup": "6",
@@ -1090,7 +1090,7 @@
     {
       "id": "h_gou_shoryuken_h",
       "category": "special",
-      "nameEN": "H Gou Shoryuken H",
+      "nameEN": "Gou Shoryuken",
       "nameCN": "豪升龙拳（重）",
       "input": "623HP",
       "startup": "7",
@@ -1134,7 +1134,7 @@
     {
       "id": "l_tatsumaki_zankukyaku_l",
       "category": "special",
-      "nameEN": "L Tatsumaki Zanku-kyaku L",
+      "nameEN": "Tatsumaki Zanku-kyaku",
       "nameCN": "龙卷斩空腿（轻）",
       "input": "214LK",
       "startup": "12",
@@ -1156,7 +1156,7 @@
     {
       "id": "m_tatsumaki_zankukyaku_m",
       "category": "special",
-      "nameEN": "M Tatsumaki Zanku-kyaku M",
+      "nameEN": "Tatsumaki Zanku-kyaku",
       "nameCN": "龙卷斩空腿（中）",
       "input": "214MK",
       "startup": "11",
@@ -1178,7 +1178,7 @@
     {
       "id": "h_tatsumaki_zankukyaku_h",
       "category": "special",
-      "nameEN": "H Tatsumaki Zanku-kyaku H",
+      "nameEN": "Tatsumaki Zanku-kyaku",
       "nameCN": "龙卷斩空腿（重）",
       "input": "214HK",
       "startup": "7",
@@ -1266,7 +1266,7 @@
     {
       "id": "l_adamant_flame1_l",
       "category": "special",
-      "nameEN": "L Adamant Flame(1) L",
+      "nameEN": "Adamant Flame(1)",
       "nameCN": "金刚灼火（轻）（一段）",
       "input": "214LP",
       "startup": "15",
@@ -1288,7 +1288,7 @@
     {
       "id": "l_adamant_flame2_l",
       "category": "special",
-      "nameEN": "L Adamant Flame(2) L",
+      "nameEN": "Adamant Flame(2)",
       "nameCN": "金刚灼火（轻）（二段）",
       "input": "214LP>6P",
       "startup": "7",
@@ -1310,7 +1310,7 @@
     {
       "id": "m_adamant_flame1_m",
       "category": "special",
-      "nameEN": "M Adamant Flame(1) M",
+      "nameEN": "Adamant Flame(1)",
       "nameCN": "金刚灼火（中）（一段）",
       "input": "214MP",
       "startup": "19",
@@ -1332,7 +1332,7 @@
     {
       "id": "m_adamant_flame2_m",
       "category": "special",
-      "nameEN": "M Adamant Flame(2) M",
+      "nameEN": "Adamant Flame(2)",
       "nameCN": "金刚灼火（中）（二段）",
       "input": "214MP>6P",
       "startup": "7",
@@ -1354,7 +1354,7 @@
     {
       "id": "h_adamant_flame1_h",
       "category": "special",
-      "nameEN": "H Adamant Flame(1) H",
+      "nameEN": "Adamant Flame(1)",
       "nameCN": "金刚灼火（重）（一段）",
       "input": "214HP",
       "startup": "23",
@@ -1376,7 +1376,7 @@
     {
       "id": "h_adamant_flame2_h",
       "category": "special",
-      "nameEN": "H Adamant Flame(2) H",
+      "nameEN": "Adamant Flame(2)",
       "nameCN": "金刚灼火（重）（二段）",
       "input": "214HP>6P",
       "startup": "11",
@@ -1442,7 +1442,7 @@
     {
       "id": "l_demon_raid_l",
       "category": "special",
-      "nameEN": "L Demon Raid L",
+      "nameEN": "Demon Raid",
       "nameCN": "百鬼袭（轻）",
       "input": "236LK",
       "startup": "",
@@ -1464,7 +1464,7 @@
     {
       "id": "m_demon_raid_m",
       "category": "special",
-      "nameEN": "M Demon Raid M",
+      "nameEN": "Demon Raid",
       "nameCN": "百鬼袭（中）",
       "input": "236MK",
       "startup": "",
@@ -1486,7 +1486,7 @@
     {
       "id": "h_demon_raid_h",
       "category": "special",
-      "nameEN": "H Demon Raid H",
+      "nameEN": "Demon Raid",
       "nameCN": "百鬼袭（重）",
       "input": "236HK",
       "startup": "",
@@ -1706,7 +1706,7 @@
     {
       "id": "oboro_throw_during_ashura_senku_forward_l_l",
       "category": "special",
-      "nameEN": "Oboro Throw (During Ashura Senku (forward)) L L",
+      "nameEN": "Oboro Throw (During Ashura Senku (forward))",
       "nameCN": "胧",
       "input": "6KKK>LPLK",
       "startup": "8",
@@ -1838,7 +1838,7 @@
     {
       "id": "ca_shun_goku_satsu_l_l_l_h",
       "category": "super",
-      "nameEN": "CA Shun Goku Satsu L L L H",
+      "nameEN": "CA Shun Goku Satsu",
       "nameCN": "瞬狱杀",
       "input": "LP>LP>6>LK>HP",
       "startup": "6+0",
@@ -1860,7 +1860,7 @@
     {
       "id": "goshoha_when_near_opponent_l_l",
       "category": "throw",
-      "nameEN": "Goshoha (When near opponent) L L",
+      "nameEN": "Goshoha (When near opponent)",
       "nameCN": "豪冲破",
       "input": "LPLK",
       "startup": "5",
@@ -1882,7 +1882,7 @@
     {
       "id": "shuretto_when_near_opponent_l_l",
       "category": "throw",
-      "nameEN": "Shuretto (When near opponent) L L",
+      "nameEN": "Shuretto (When near opponent)",
       "nameCN": "朱裂刀",
       "input": "4LPLK",
       "startup": "5",
@@ -1948,7 +1948,7 @@
     {
       "id": "drive_impact_oni_goroshi_h_h",
       "category": "common",
-      "nameEN": "Drive Impact: Oni Goroshi H H",
+      "nameEN": "Drive Impact: Oni Goroshi",
       "nameCN": "迸发：鬼杀",
       "input": "HPHK",
       "startup": "26",
@@ -1970,7 +1970,7 @@
     {
       "id": "drive_reversal_while_blocking_souha_double_palm_when_blocking_or_during_a_successful_drive_parry_h_h",
       "category": "common",
-      "nameEN": "Drive Reversal (while blocking): Souha Double Palm (When blocking or during a successful Drive Parry) H H",
+      "nameEN": "Drive Reversal (while blocking): Souha Double Palm (When blocking or during a successful Drive Parry)",
       "nameCN": "斗反（防守中）：双破",
       "input": "6HPHK",
       "startup": "20",
@@ -1992,7 +1992,7 @@
     {
       "id": "drive_reversal_while_recovering_souha_double_palm_during_knockdown_recovery_h_h",
       "category": "common",
-      "nameEN": "Drive Reversal (while recovering): Souha Double Palm (During knockdown recovery) H H",
+      "nameEN": "Drive Reversal (while recovering): Souha Double Palm (During knockdown recovery)",
       "nameCN": "斗反（起身时）：双破",
       "input": "6HPHK",
       "startup": "18",
@@ -2014,7 +2014,7 @@
     {
       "id": "drive_parry_m_m",
       "category": "common",
-      "nameEN": "Drive Parry M M",
+      "nameEN": "Drive Parry",
       "nameCN": "蓝防",
       "input": "MPMK",
       "startup": "1",
@@ -2036,7 +2036,7 @@
     {
       "id": "perfect_parry_strike_block_direction_m_m",
       "category": "common",
-      "nameEN": "Perfect Parry (strike) Block Direction M M",
+      "nameEN": "Perfect Parry (strike) Block Direction",
       "nameCN": "完美精防（打击）",
       "input": "4/1MPMK",
       "startup": "1",
@@ -2058,7 +2058,7 @@
     {
       "id": "perfect_parry_projectile_m_m",
       "category": "common",
-      "nameEN": "Perfect Parry (projectile) M M",
+      "nameEN": "Perfect Parry (projectile)",
       "nameCN": "完美精防（波动）",
       "input": "MPMK",
       "startup": "1",
@@ -2102,7 +2102,7 @@
     {
       "id": "cancel_drive_rush_while_connecting_with_a_specialcancelable_move_m_m",
       "category": "common",
-      "nameEN": "Cancel Drive Rush (While connecting with a special-cancelable move) ( ) M M",
+      "nameEN": "Cancel Drive Rush (While connecting with a special-cancelable move) ( )",
       "nameCN": "绿冲取消",
       "input": "MPMK/66",
       "startup": "",

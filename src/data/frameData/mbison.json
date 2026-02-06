@@ -2,7 +2,7 @@
   "characterId": "mbison",
   "displayNameCN": "",
   "displayNameEN": "Mbison",
-  "lastUpdated": "2026-01-31",
+  "lastUpdated": "2026-02-06",
   "columns": [
     "id",
     "category",
@@ -103,7 +103,7 @@
     {
       "id": "standing_light_punch_l",
       "category": "normal",
-      "nameEN": "Standing Light Punch L",
+      "nameEN": "Standing Light Punch",
       "nameCN": "站轻拳",
       "input": "5LP",
       "startup": "5",
@@ -125,7 +125,7 @@
     {
       "id": "standing_light_kick_l",
       "category": "normal",
-      "nameEN": "Standing Light Kick L",
+      "nameEN": "Standing Light Kick",
       "nameCN": "站轻脚",
       "input": "5LK",
       "startup": "4",
@@ -147,7 +147,7 @@
     {
       "id": "standing_medium_punch_m",
       "category": "normal",
-      "nameEN": "Standing Medium Punch M",
+      "nameEN": "Standing Medium Punch",
       "nameCN": "站中拳",
       "input": "5MP",
       "startup": "8",
@@ -169,7 +169,7 @@
     {
       "id": "standing_medium_kick_m",
       "category": "normal",
-      "nameEN": "Standing Medium Kick M",
+      "nameEN": "Standing Medium Kick",
       "nameCN": "站中脚",
       "input": "5MK",
       "startup": "10",
@@ -191,7 +191,7 @@
     {
       "id": "standing_heavy_punch_h",
       "category": "normal",
-      "nameEN": "Standing Heavy Punch H",
+      "nameEN": "Standing Heavy Punch",
       "nameCN": "站重拳",
       "input": "5HP",
       "startup": "19",
@@ -213,7 +213,7 @@
     {
       "id": "standing_heavy_kick_h",
       "category": "normal",
-      "nameEN": "Standing Heavy Kick H",
+      "nameEN": "Standing Heavy Kick",
       "nameCN": "站重脚",
       "input": "5HK",
       "startup": "13",
@@ -235,7 +235,7 @@
     {
       "id": "crouching_light_punch_l",
       "category": "normal",
-      "nameEN": "Crouching Light Punch L",
+      "nameEN": "Crouching Light Punch",
       "nameCN": "下轻拳",
       "input": "2LP",
       "startup": "4",
@@ -257,7 +257,7 @@
     {
       "id": "crouching_light_kick_l",
       "category": "normal",
-      "nameEN": "Crouching Light Kick L",
+      "nameEN": "Crouching Light Kick",
       "nameCN": "下轻脚",
       "input": "2LK",
       "startup": "5",
@@ -279,7 +279,7 @@
     {
       "id": "crouching_medium_punch_m",
       "category": "normal",
-      "nameEN": "Crouching Medium Punch M",
+      "nameEN": "Crouching Medium Punch",
       "nameCN": "下中拳",
       "input": "2MP",
       "startup": "6",
@@ -301,7 +301,7 @@
     {
       "id": "crouching_medium_kick_m",
       "category": "normal",
-      "nameEN": "Crouching Medium Kick M",
+      "nameEN": "Crouching Medium Kick",
       "nameCN": "下中脚",
       "input": "2MK",
       "startup": "8",
@@ -323,7 +323,7 @@
     {
       "id": "crouching_heavy_punch_h",
       "category": "normal",
-      "nameEN": "Crouching Heavy Punch H",
+      "nameEN": "Crouching Heavy Punch",
       "nameCN": "下重拳",
       "input": "2HP",
       "startup": "10",
@@ -345,7 +345,7 @@
     {
       "id": "crouching_heavy_kick_h",
       "category": "normal",
-      "nameEN": "Crouching Heavy Kick H",
+      "nameEN": "Crouching Heavy Kick",
       "nameCN": "下重脚",
       "input": "2HK",
       "startup": "11",
@@ -367,7 +367,7 @@
     {
       "id": "jumping_light_punch_during_a_jump_l",
       "category": "normal",
-      "nameEN": "Jumping Light Punch (During a jump) L",
+      "nameEN": "Jumping Light Punch (During a jump)",
       "nameCN": "跳轻拳",
       "input": "J>LP",
       "startup": "5",
@@ -389,7 +389,7 @@
     {
       "id": "jumping_light_kick_during_a_jump_l",
       "category": "normal",
-      "nameEN": "Jumping Light Kick (During a jump) L",
+      "nameEN": "Jumping Light Kick (During a jump)",
       "nameCN": "跳轻脚",
       "input": "J>LK",
       "startup": "5",
@@ -411,7 +411,7 @@
     {
       "id": "jumping_medium_punch_during_a_jump_m",
       "category": "normal",
-      "nameEN": "Jumping Medium Punch (During a jump) M",
+      "nameEN": "Jumping Medium Punch (During a jump)",
       "nameCN": "跳中拳",
       "input": "J>MP",
       "startup": "8",
@@ -433,7 +433,7 @@
     {
       "id": "jumping_medium_kick_during_a_jump_m",
       "category": "normal",
-      "nameEN": "Jumping Medium Kick (During a jump) M",
+      "nameEN": "Jumping Medium Kick (During a jump)",
       "nameCN": "跳中脚",
       "input": "J>MK",
       "startup": "7",
@@ -455,7 +455,7 @@
     {
       "id": "jumping_heavy_punch_during_a_jump_h",
       "category": "normal",
-      "nameEN": "Jumping Heavy Punch (During a jump) H",
+      "nameEN": "Jumping Heavy Punch (During a jump)",
       "nameCN": "跳重拳",
       "input": "J>HP",
       "startup": "9",
@@ -477,7 +477,7 @@
     {
       "id": "jumping_heavy_kick_during_a_jump_h",
       "category": "normal",
-      "nameEN": "Jumping Heavy Kick (During a jump) H",
+      "nameEN": "Jumping Heavy Kick (During a jump)",
       "nameCN": "跳重脚",
       "input": "J>HK",
       "startup": "10",
@@ -499,7 +499,7 @@
     {
       "id": "psycho_hammer_h",
       "category": "normal",
-      "nameEN": "Psycho Hammer H",
+      "nameEN": "Psycho Hammer",
       "nameCN": "精神重锤",
       "input": "6HP",
       "startup": "22",
@@ -521,7 +521,7 @@
     {
       "id": "evil_knee_h",
       "category": "normal",
-      "nameEN": "Evil Knee H",
+      "nameEN": "Evil Knee",
       "nameCN": "邪恶之膝",
       "input": "4HK",
       "startup": "10",
@@ -543,7 +543,7 @@
     {
       "id": "hover_kick_h",
       "category": "normal",
-      "nameEN": "Hover Kick H",
+      "nameEN": "Hover Kick",
       "nameCN": "滑铲踢",
       "input": "3HK",
       "startup": "15",
@@ -565,7 +565,7 @@
     {
       "id": "shadow_hammer_m_h",
       "category": "targetcombo",
-      "nameEN": "Shadow Hammer M H",
+      "nameEN": "Shadow Hammer",
       "nameCN": "重影锤",
       "input": "5MP>6HP",
       "startup": "22",
@@ -587,7 +587,7 @@
     {
       "id": "shadow_spear_m_h",
       "category": "targetcombo",
-      "nameEN": "Shadow Spear M H",
+      "nameEN": "Shadow Spear",
       "nameCN": "邪影矛",
       "input": "5MP>2HK",
       "startup": "16",
@@ -609,7 +609,7 @@
     {
       "id": "hell_attack_during_a_jump_m_m",
       "category": "targetcombo",
-      "nameEN": "Hell Attack (During a jump) M M",
+      "nameEN": "Hell Attack (During a jump)",
       "nameCN": "地狱攻击",
       "input": "J>5MP>5MP",
       "startup": "7",
@@ -631,7 +631,7 @@
     {
       "id": "l_psycho_crusher_attack_l",
       "category": "special",
-      "nameEN": "L Psycho Crusher Attack L",
+      "nameEN": "Psycho Crusher Attack",
       "nameCN": "精神力旋冲（轻）",
       "input": "[4]6LP",
       "startup": "14",
@@ -653,7 +653,7 @@
     {
       "id": "when_psycho_mine_is_embeddedl_psycho_crusher_attack_l",
       "category": "special",
-      "nameEN": "[when Psycho Mine is embedded]L Psycho Crusher Attack L",
+      "nameEN": "[when Psycho Mine is embedded]L Psycho Crusher Attack",
       "nameCN": "精神力旋冲（轻）（炸弹）",
       "input": "[4]6LP",
       "startup": "14",
@@ -675,7 +675,7 @@
     {
       "id": "m_psycho_crusher_attack_m",
       "category": "special",
-      "nameEN": "M Psycho Crusher Attack M",
+      "nameEN": "Psycho Crusher Attack",
       "nameCN": "精神力旋冲（中）",
       "input": "[4]6MP",
       "startup": "20",
@@ -697,7 +697,7 @@
     {
       "id": "when_psycho_mine_is_embeddedm_psycho_crusher_attack_m",
       "category": "special",
-      "nameEN": "[when Psycho Mine is embedded]M Psycho Crusher Attack M",
+      "nameEN": "[when Psycho Mine is embedded]M Psycho Crusher Attack",
       "nameCN": "精神力旋冲（中）（炸弹）",
       "input": "[4]6MP",
       "startup": "20",
@@ -719,7 +719,7 @@
     {
       "id": "h_psycho_crusher_attack_h",
       "category": "special",
-      "nameEN": "H Psycho Crusher Attack H",
+      "nameEN": "Psycho Crusher Attack",
       "nameCN": "精神力旋冲（重）",
       "input": "[4]6HP",
       "startup": "24",
@@ -741,7 +741,7 @@
     {
       "id": "when_psycho_mine_is_embeddedh_psycho_crusher_attack_h",
       "category": "special",
-      "nameEN": "[when Psycho Mine is embedded]H Psycho Crusher Attack H",
+      "nameEN": "[when Psycho Mine is embedded]H Psycho Crusher Attack",
       "nameCN": "精神力旋冲（重）（炸弹）",
       "input": "[4]6HP",
       "startup": "24",
@@ -807,7 +807,7 @@
     {
       "id": "l_double_knee_press_l",
       "category": "special",
-      "nameEN": "L Double Knee Press L",
+      "nameEN": "Double Knee Press",
       "nameCN": "双膝爆（轻）",
       "input": "236LK",
       "startup": "13",
@@ -829,7 +829,7 @@
     {
       "id": "m_double_knee_press_m",
       "category": "special",
-      "nameEN": "M Double Knee Press M",
+      "nameEN": "Double Knee Press",
       "nameCN": "双膝爆（中）",
       "input": "236MK",
       "startup": "17",
@@ -851,7 +851,7 @@
     {
       "id": "h_double_knee_press_h",
       "category": "special",
-      "nameEN": "H Double Knee Press H",
+      "nameEN": "Double Knee Press",
       "nameCN": "双膝爆（重）",
       "input": "236HK",
       "startup": "22",
@@ -895,7 +895,7 @@
     {
       "id": "l_backfist_combo_l",
       "category": "special",
-      "nameEN": "L Backfist Combo L",
+      "nameEN": "Backfist Combo",
       "nameCN": "反手拳连招（轻）",
       "input": "214LP",
       "startup": "13",
@@ -917,7 +917,7 @@
     {
       "id": "when_psycho_mine_is_embeddedl_backfist_combo_l",
       "category": "special",
-      "nameEN": "[when Psycho Mine is embedded]L Backfist Combo L",
+      "nameEN": "[when Psycho Mine is embedded]L Backfist Combo",
       "nameCN": "反手拳连招（轻）（炸弹）",
       "input": "214LP",
       "startup": "13",
@@ -939,7 +939,7 @@
     {
       "id": "m_backfist_combo_m",
       "category": "special",
-      "nameEN": "M Backfist Combo M",
+      "nameEN": "Backfist Combo",
       "nameCN": "反手拳连招（中）",
       "input": "214MP",
       "startup": "17",
@@ -961,7 +961,7 @@
     {
       "id": "when_psycho_mine_is_embeddedm_backfist_combo_m",
       "category": "special",
-      "nameEN": "[when Psycho Mine is embedded]M Backfist Combo M",
+      "nameEN": "[when Psycho Mine is embedded]M Backfist Combo",
       "nameCN": "反手拳连招（中）（炸弹）",
       "input": "214MP",
       "startup": "17",
@@ -983,7 +983,7 @@
     {
       "id": "h_backfist_combo_h",
       "category": "special",
-      "nameEN": "H Backfist Combo H",
+      "nameEN": "Backfist Combo",
       "nameCN": "反手拳连招（重）",
       "input": "214HP",
       "startup": "22",
@@ -1005,7 +1005,7 @@
     {
       "id": "when_psycho_mine_is_embeddedh_backfist_combo_h",
       "category": "special",
-      "nameEN": "[when Psycho Mine is embedded]H Backfist Combo H",
+      "nameEN": "[when Psycho Mine is embedded]H Backfist Combo",
       "nameCN": "反手拳连招（重）（炸弹）",
       "input": "214HP",
       "startup": "22",
@@ -1093,7 +1093,7 @@
     {
       "id": "l_shadow_rise_l",
       "category": "special",
-      "nameEN": "L Shadow Rise L",
+      "nameEN": "Shadow Rise",
       "nameCN": "影升（轻）",
       "input": "[2]8LK",
       "startup": "",
@@ -1115,7 +1115,7 @@
     {
       "id": "m_shadow_rise_m",
       "category": "special",
-      "nameEN": "M Shadow Rise M",
+      "nameEN": "Shadow Rise",
       "nameCN": "影升（中）",
       "input": "[2]8MK",
       "startup": "",
@@ -1137,7 +1137,7 @@
     {
       "id": "h_shadow_rise_h",
       "category": "special",
-      "nameEN": "H Shadow Rise H",
+      "nameEN": "Shadow Rise",
       "nameCN": "影升（重）",
       "input": "[2]8HK",
       "startup": "",
@@ -1423,7 +1423,7 @@
     {
       "id": "deadly_throw_when_near_opponent_l_l",
       "category": "throw",
-      "nameEN": "Deadly Throw (When near opponent) L L",
+      "nameEN": "Deadly Throw (When near opponent)",
       "nameCN": "夺命摔",
       "input": "LPLK",
       "startup": "5",
@@ -1445,7 +1445,7 @@
     {
       "id": "death_tower_when_near_opponent_l_l",
       "category": "throw",
-      "nameEN": "Death Tower (When near opponent) L L",
+      "nameEN": "Death Tower (When near opponent)",
       "nameCN": "死亡之塔",
       "input": "4LPLK",
       "startup": "5",
@@ -1511,7 +1511,7 @@
     {
       "id": "drive_impact_hell_twist_h_h",
       "category": "common",
-      "nameEN": "Drive Impact: Hell Twist H H",
+      "nameEN": "Drive Impact: Hell Twist",
       "nameCN": "迸放：地狱螺旋腿",
       "input": "HPHK",
       "startup": "26",
@@ -1533,7 +1533,7 @@
     {
       "id": "drive_reversal_while_blocking_hell_drive_when_blocking_or_during_a_successful_drive_parry_h_h",
       "category": "common",
-      "nameEN": "Drive Reversal (while blocking): Hell Drive (When blocking or during a successful Drive Parry) H H",
+      "nameEN": "Drive Reversal (while blocking): Hell Drive (When blocking or during a successful Drive Parry)",
       "nameCN": "斗反（格挡）：地狱突进",
       "input": "6HPHK",
       "startup": "20",
@@ -1555,7 +1555,7 @@
     {
       "id": "drive_reversal_while_recovering_hell_drive_during_knockdown_recovery_h_h",
       "category": "common",
-      "nameEN": "Drive Reversal (while recovering): Hell Drive (During knockdown recovery) H H",
+      "nameEN": "Drive Reversal (while recovering): Hell Drive (During knockdown recovery)",
       "nameCN": "斗反（倒地）：地狱突进",
       "input": "6HPHK",
       "startup": "18",
@@ -1577,7 +1577,7 @@
     {
       "id": "drive_parry_m_m",
       "category": "common",
-      "nameEN": "Drive Parry M M",
+      "nameEN": "Drive Parry",
       "nameCN": "蓝防",
       "input": "MPMK",
       "startup": "1",
@@ -1599,7 +1599,7 @@
     {
       "id": "perfect_parry_strike_block_direction_m_m",
       "category": "common",
-      "nameEN": "Perfect Parry (strike) Block Direction M M",
+      "nameEN": "Perfect Parry (strike) Block Direction",
       "nameCN": "完美精防（打击）",
       "input": "4/1MPMK",
       "startup": "1",
@@ -1621,7 +1621,7 @@
     {
       "id": "perfect_parry_projectile_m_m",
       "category": "common",
-      "nameEN": "Perfect Parry (projectile) M M",
+      "nameEN": "Perfect Parry (projectile)",
       "nameCN": "完美精防（波动）",
       "input": "MPMK",
       "startup": "1",

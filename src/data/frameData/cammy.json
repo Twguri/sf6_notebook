@@ -2,7 +2,7 @@
   "characterId": "cammy",
   "displayNameCN": "",
   "displayNameEN": "Cammy",
-  "lastUpdated": "2026-01-31",
+  "lastUpdated": "2026-02-06",
   "columns": [
     "id",
     "category",
@@ -106,7 +106,7 @@
     {
       "id": "standing_light_punch_l",
       "category": "normal",
-      "nameEN": "Standing Light Punch L",
+      "nameEN": "Standing Light Punch",
       "nameCN": "站轻拳",
       "input": "5LP",
       "startup": "4",
@@ -128,7 +128,7 @@
     {
       "id": "standing_light_kick_l",
       "category": "normal",
-      "nameEN": "Standing Light Kick L",
+      "nameEN": "Standing Light Kick",
       "nameCN": "站轻脚",
       "input": "5LK",
       "startup": "5",
@@ -150,7 +150,7 @@
     {
       "id": "standing_medium_punch_m",
       "category": "normal",
-      "nameEN": "Standing Medium Punch M",
+      "nameEN": "Standing Medium Punch",
       "nameCN": "站中拳",
       "input": "5MP",
       "startup": "6",
@@ -172,7 +172,7 @@
     {
       "id": "standing_medium_kick_m",
       "category": "normal",
-      "nameEN": "Standing Medium Kick M",
+      "nameEN": "Standing Medium Kick",
       "nameCN": "站中脚",
       "input": "5MK",
       "startup": "8",
@@ -194,7 +194,7 @@
     {
       "id": "standing_heavy_punch_h",
       "category": "normal",
-      "nameEN": "Standing Heavy Punch H",
+      "nameEN": "Standing Heavy Punch",
       "nameCN": "站重拳",
       "input": "5HP",
       "startup": "8",
@@ -216,7 +216,7 @@
     {
       "id": "standing_heavy_kick_h",
       "category": "normal",
-      "nameEN": "Standing Heavy Kick H",
+      "nameEN": "Standing Heavy Kick",
       "nameCN": "站中脚",
       "input": "5HK",
       "startup": "11",
@@ -238,7 +238,7 @@
     {
       "id": "crouching_light_punch_l",
       "category": "normal",
-      "nameEN": "Crouching Light Punch L",
+      "nameEN": "Crouching Light Punch",
       "nameCN": "下轻拳",
       "input": "2LP",
       "startup": "4",
@@ -260,7 +260,7 @@
     {
       "id": "crouching_light_kick_l",
       "category": "normal",
-      "nameEN": "Crouching Light Kick L",
+      "nameEN": "Crouching Light Kick",
       "nameCN": "下轻脚",
       "input": "2LK",
       "startup": "5",
@@ -282,7 +282,7 @@
     {
       "id": "crouching_medium_punch_m",
       "category": "normal",
-      "nameEN": "Crouching Medium Punch M",
+      "nameEN": "Crouching Medium Punch",
       "nameCN": "下中拳",
       "input": "2MP",
       "startup": "7",
@@ -304,7 +304,7 @@
     {
       "id": "crouching_medium_kick_m",
       "category": "normal",
-      "nameEN": "Crouching Medium Kick M",
+      "nameEN": "Crouching Medium Kick",
       "nameCN": "下中脚",
       "input": "2MK",
       "startup": "8",
@@ -326,7 +326,7 @@
     {
       "id": "crouching_heavy_punch_h",
       "category": "normal",
-      "nameEN": "Crouching Heavy Punch H",
+      "nameEN": "Crouching Heavy Punch",
       "nameCN": "下重拳",
       "input": "2HP",
       "startup": "10",
@@ -348,7 +348,7 @@
     {
       "id": "crouching_heavy_kick_h",
       "category": "normal",
-      "nameEN": "Crouching Heavy Kick H",
+      "nameEN": "Crouching Heavy Kick",
       "nameCN": "下重脚",
       "input": "2HK",
       "startup": "9",
@@ -370,7 +370,7 @@
     {
       "id": "jumping_light_punch_during_a_jump_l",
       "category": "normal",
-      "nameEN": "Jumping Light Punch (During a jump) L",
+      "nameEN": "Jumping Light Punch (During a jump)",
       "nameCN": "跳轻拳",
       "input": "J>LP",
       "startup": "4",
@@ -392,7 +392,7 @@
     {
       "id": "jumping_light_kick_during_a_jump_l",
       "category": "normal",
-      "nameEN": "Jumping Light Kick (During a jump) L",
+      "nameEN": "Jumping Light Kick (During a jump)",
       "nameCN": "跳轻脚",
       "input": "J>LK",
       "startup": "4",
@@ -414,7 +414,7 @@
     {
       "id": "jumping_medium_punch_during_a_jump_m",
       "category": "normal",
-      "nameEN": "Jumping Medium Punch (During a jump) M",
+      "nameEN": "Jumping Medium Punch (During a jump)",
       "nameCN": "跳中拳",
       "input": "J>MP",
       "startup": "6",
@@ -436,7 +436,7 @@
     {
       "id": "jumping_medium_kick_during_a_jump_m",
       "category": "normal",
-      "nameEN": "Jumping Medium Kick (During a jump) M",
+      "nameEN": "Jumping Medium Kick (During a jump)",
       "nameCN": "跳中脚",
       "input": "J>MK",
       "startup": "7",
@@ -458,7 +458,7 @@
     {
       "id": "jumping_heavy_punch_during_a_jump_h",
       "category": "normal",
-      "nameEN": "Jumping Heavy Punch (During a jump) H",
+      "nameEN": "Jumping Heavy Punch (During a jump)",
       "nameCN": "跳重拳",
       "input": "J>HP",
       "startup": "8",
@@ -480,7 +480,7 @@
     {
       "id": "jumping_heavy_kick_during_a_jump_h",
       "category": "normal",
-      "nameEN": "Jumping Heavy Kick (During a jump) H",
+      "nameEN": "Jumping Heavy Kick (During a jump)",
       "nameCN": "跳重脚",
       "input": "J>HK",
       "startup": "10",
@@ -502,7 +502,7 @@
     {
       "id": "lift_uppercut_m",
       "category": "normal",
-      "nameEN": "Lift Uppercut M",
+      "nameEN": "Lift Uppercut",
       "nameCN": "上袭勾拳",
       "input": "4MP",
       "startup": "5",
@@ -524,7 +524,7 @@
     {
       "id": "delayed_ripper_h",
       "category": "normal",
-      "nameEN": "Delayed Ripper H",
+      "nameEN": "Delayed Ripper",
       "nameCN": "延时死神",
       "input": "6HK",
       "startup": "18",
@@ -546,7 +546,7 @@
     {
       "id": "assault_blade_h",
       "category": "normal",
-      "nameEN": "Assault Blade H",
+      "nameEN": "Assault Blade",
       "nameCN": "强袭利刃",
       "input": "4HK",
       "startup": "9",
@@ -568,7 +568,7 @@
     {
       "id": "lift_combination_m_h",
       "category": "targetcombo",
-      "nameEN": "Lift Combination M H",
+      "nameEN": "Lift Combination",
       "nameCN": "上袭组合技",
       "input": "4MP>5HK",
       "startup": "9",
@@ -590,7 +590,7 @@
     {
       "id": "swing_combination_h_h",
       "category": "targetcombo",
-      "nameEN": "Swing Combination H H",
+      "nameEN": "Swing Combination",
       "nameCN": "摇摆组合技",
       "input": "5HP>5HK",
       "startup": "13",
@@ -612,7 +612,7 @@
     {
       "id": "l_spiral_arrow_l",
       "category": "special",
-      "nameEN": "L Spiral Arrow L",
+      "nameEN": "Spiral Arrow",
       "nameCN": "螺旋飞箭（轻）",
       "input": "236LK",
       "startup": "9",
@@ -634,7 +634,7 @@
     {
       "id": "m_spiral_arrow_m",
       "category": "special",
-      "nameEN": "M Spiral Arrow M",
+      "nameEN": "Spiral Arrow",
       "nameCN": "螺旋飞箭（中）",
       "input": "236MK",
       "startup": "9",
@@ -656,7 +656,7 @@
     {
       "id": "h_spiral_arrow_h",
       "category": "special",
-      "nameEN": "H Spiral Arrow H",
+      "nameEN": "Spiral Arrow",
       "nameCN": "螺旋飞箭（重）",
       "input": "236HK",
       "startup": "15",
@@ -678,7 +678,7 @@
     {
       "id": "h_spiral_arrowcharged_hold_h",
       "category": "special",
-      "nameEN": "H Spiral Arrow(Charged) Hold H",
+      "nameEN": "Spiral Arrow(Charged) Hold",
       "nameCN": "螺旋飞箭（重）（蓄力）",
       "input": "236[HK]",
       "startup": "27",
@@ -722,7 +722,7 @@
     {
       "id": "l_cannon_spike_l",
       "category": "special",
-      "nameEN": "L Cannon Spike L",
+      "nameEN": "Cannon Spike",
       "nameCN": "神枪机兵（轻）",
       "input": "623LK",
       "startup": "5",
@@ -744,7 +744,7 @@
     {
       "id": "m_cannon_spike_m",
       "category": "special",
-      "nameEN": "M Cannon Spike M",
+      "nameEN": "Cannon Spike",
       "nameCN": "神枪机兵（中）",
       "input": "623MK",
       "startup": "6",
@@ -766,7 +766,7 @@
     {
       "id": "h_cannon_spike_h",
       "category": "special",
-      "nameEN": "H Cannon Spike H",
+      "nameEN": "Cannon Spike",
       "nameCN": "神枪机兵（重）",
       "input": "623HK",
       "startup": "7",
@@ -788,7 +788,7 @@
     {
       "id": "h_cannon_spikecharged_hold_h",
       "category": "special",
-      "nameEN": "H Cannon Spike(Charged) Hold H",
+      "nameEN": "Cannon Spike(Charged) Hold",
       "nameCN": "神枪机兵（重）（蓄力）",
       "input": "623[HK]",
       "startup": "24",
@@ -832,7 +832,7 @@
     {
       "id": "l_quick_spin_knuckle_l",
       "category": "special",
-      "nameEN": "L Quick Spin Knuckle L",
+      "nameEN": "Quick Spin Knuckle",
       "nameCN": "快旋反手拳（轻）",
       "input": "214LP",
       "startup": "21",
@@ -854,7 +854,7 @@
     {
       "id": "m_quick_spin_knuckle_m",
       "category": "special",
-      "nameEN": "M Quick Spin Knuckle M",
+      "nameEN": "Quick Spin Knuckle",
       "nameCN": "快旋反手拳（中）",
       "input": "214MP",
       "startup": "24",
@@ -876,7 +876,7 @@
     {
       "id": "h_quick_spin_knuckle_h",
       "category": "special",
-      "nameEN": "H Quick Spin Knuckle H",
+      "nameEN": "Quick Spin Knuckle",
       "nameCN": "快旋反手拳（重）",
       "input": "214HP",
       "startup": "28",
@@ -986,7 +986,7 @@
     {
       "id": "hooligan_combinationcharged_hold_h",
       "category": "special",
-      "nameEN": "Hooligan Combination(Charged) Hold H",
+      "nameEN": "Hooligan Combination(Charged) Hold",
       "nameCN": "流氓组合技（蓄力）",
       "input": "236[HP]",
       "startup": "",
@@ -1228,7 +1228,7 @@
     {
       "id": "fatal_leg_twister_during_hooligan_combinationwhen_close_to_a_standing_opponent_l_l",
       "category": "special",
-      "nameEN": "Fatal Leg Twister (During Hooligan Combination)(When close to a standing opponent) L L",
+      "nameEN": "Fatal Leg Twister (During Hooligan Combination)(When close to a standing opponent)",
       "nameCN": "夺命旋风腿",
       "input": "236P>LPLK",
       "startup": "10",
@@ -1250,7 +1250,7 @@
     {
       "id": "fatal_leg_twistercharged_during_hooligan_combinationwhen_close_to_a_standing_opponent_l_l",
       "category": "special",
-      "nameEN": "Fatal Leg Twister(Charged) (During Hooligan Combination)(When close to a standing opponent) L L",
+      "nameEN": "Fatal Leg Twister(Charged) (During Hooligan Combination)(When close to a standing opponent)",
       "nameCN": "夺命旋风腿（蓄力）",
       "input": "236[HP]>LPLK",
       "startup": "10",
@@ -1272,7 +1272,7 @@
     {
       "id": "od_fatal_leg_twister_during_hooligan_combinationwhen_close_to_a_standing_opponent_l_l",
       "category": "special",
-      "nameEN": "OD Fatal Leg Twister (During Hooligan Combination)(When close to a standing opponent) L L",
+      "nameEN": "OD Fatal Leg Twister (During Hooligan Combination)(When close to a standing opponent)",
       "nameCN": "OD夺命旋风腿",
       "input": "236PP>LPLK",
       "startup": "10",
@@ -1470,7 +1470,7 @@
     {
       "id": "rough_landing_when_near_opponent_l_l",
       "category": "throw",
-      "nameEN": "Rough Landing (When near opponent) L L",
+      "nameEN": "Rough Landing (When near opponent)",
       "nameCN": "粗暴摔地",
       "input": "LPLK",
       "startup": "5",
@@ -1492,7 +1492,7 @@
     {
       "id": "delta_throw_when_near_opponent_l_l",
       "category": "throw",
-      "nameEN": "Delta Throw (When near opponent) L L",
+      "nameEN": "Delta Throw (When near opponent)",
       "nameCN": "三角洲绞颈摔",
       "input": "4LPLK",
       "startup": "5",
@@ -1514,7 +1514,7 @@
     {
       "id": "leg_scissors_choke_during_a_jump_when_near_opponent_l_l",
       "category": "throw",
-      "nameEN": "Leg Scissors Choke (During a jump) (When near opponent) L L",
+      "nameEN": "Leg Scissors Choke (During a jump) (When near opponent)",
       "nameCN": "双腿剪刀绞",
       "input": "J>LPLK",
       "startup": "5",
@@ -1580,7 +1580,7 @@
     {
       "id": "drive_impact_spin_raider_h_h",
       "category": "common",
-      "nameEN": "Drive Impact: Spin Raider H H",
+      "nameEN": "Drive Impact: Spin Raider",
       "nameCN": "迸发：旋转袭击者",
       "input": "HPHK",
       "startup": "26",
@@ -1602,7 +1602,7 @@
     {
       "id": "drive_reversal_while_blocking_countersnipe_when_blocking_or_during_a_successful_drive_parry_h_h",
       "category": "common",
-      "nameEN": "Drive Reversal (while blocking): Countersnipe (When blocking or during a successful Drive Parry) H H",
+      "nameEN": "Drive Reversal (while blocking): Countersnipe (When blocking or during a successful Drive Parry)",
       "nameCN": "斗反（格挡）：反狙击",
       "input": "6HPHK",
       "startup": "20",
@@ -1624,7 +1624,7 @@
     {
       "id": "drive_reversal_while_recovering_countersnipe_during_knockdown_recovery_h_h",
       "category": "common",
-      "nameEN": "Drive Reversal (while recovering): Countersnipe (During knockdown recovery) H H",
+      "nameEN": "Drive Reversal (while recovering): Countersnipe (During knockdown recovery)",
       "nameCN": "斗反（起身）：反狙击",
       "input": "6HPHK",
       "startup": "18",
@@ -1646,7 +1646,7 @@
     {
       "id": "drive_parry_m_m",
       "category": "common",
-      "nameEN": "Drive Parry M M",
+      "nameEN": "Drive Parry",
       "nameCN": "蓝防",
       "input": "MPMK",
       "startup": "1",
@@ -1668,7 +1668,7 @@
     {
       "id": "perfect_parry_strike_block_direction_m_m",
       "category": "common",
-      "nameEN": "Perfect Parry (strike) Block Direction M M",
+      "nameEN": "Perfect Parry (strike) Block Direction",
       "nameCN": "完美精防（打击）",
       "input": "4/1MPMK",
       "startup": "1",
@@ -1690,7 +1690,7 @@
     {
       "id": "perfect_parry_projectile_m_m",
       "category": "common",
-      "nameEN": "Perfect Parry (projectile) M M",
+      "nameEN": "Perfect Parry (projectile)",
       "nameCN": "完美精防（波动）",
       "input": "MPMK",
       "startup": "1",
@@ -1734,7 +1734,7 @@
     {
       "id": "cancel_drive_rush_while_connecting_with_a_specialcancelable_move_m_m",
       "category": "common",
-      "nameEN": "Cancel Drive Rush (While connecting with a special-cancelable move) ( ) M M",
+      "nameEN": "Cancel Drive Rush (While connecting with a special-cancelable move) ( )",
       "nameCN": "绿冲取消",
       "input": "MPMK/66",
       "startup": "",

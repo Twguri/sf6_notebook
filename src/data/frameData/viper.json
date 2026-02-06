@@ -2,7 +2,7 @@
   "characterId": "cviper",
   "displayNameCN": "",
   "displayNameEN": "",
-  "lastUpdated": "2026-01-31",
+  "lastUpdated": "2026-02-06",
   "columns": [
     "id",
     "category",
@@ -100,7 +100,7 @@
     {
       "id": "standing_light_punch_l",
       "category": "normal",
-      "nameEN": "Standing Light Punch L",
+      "nameEN": "Standing Light Punch",
       "nameCN": "站轻拳",
       "input": "5LP",
       "startup": "4",
@@ -122,7 +122,7 @@
     {
       "id": "standing_light_kick_l",
       "category": "normal",
-      "nameEN": "Standing Light Kick L",
+      "nameEN": "Standing Light Kick",
       "nameCN": "站轻脚",
       "input": "5LK",
       "startup": "5",
@@ -144,7 +144,7 @@
     {
       "id": "standing_medium_punch_m",
       "category": "normal",
-      "nameEN": "Standing Medium Punch M",
+      "nameEN": "Standing Medium Punch",
       "nameCN": "站中拳",
       "input": "5MP",
       "startup": "8",
@@ -166,7 +166,7 @@
     {
       "id": "standing_medium_kick_m",
       "category": "normal",
-      "nameEN": "Standing Medium Kick M",
+      "nameEN": "Standing Medium Kick",
       "nameCN": "站中脚",
       "input": "5MK",
       "startup": "8",
@@ -188,7 +188,7 @@
     {
       "id": "standing_heavy_punch_h",
       "category": "normal",
-      "nameEN": "Standing Heavy Punch H",
+      "nameEN": "Standing Heavy Punch",
       "nameCN": "站重拳",
       "input": "5HP",
       "startup": "12",
@@ -210,7 +210,7 @@
     {
       "id": "standing_heavy_kick_h",
       "category": "normal",
-      "nameEN": "Standing Heavy Kick H",
+      "nameEN": "Standing Heavy Kick",
       "nameCN": "站重脚",
       "input": "5HK",
       "startup": "10",
@@ -232,7 +232,7 @@
     {
       "id": "crouching_light_punch_l",
       "category": "normal",
-      "nameEN": "Crouching Light Punch L",
+      "nameEN": "Crouching Light Punch",
       "nameCN": "下轻拳",
       "input": "2LP",
       "startup": "4",
@@ -254,7 +254,7 @@
     {
       "id": "crouching_light_kick_l",
       "category": "normal",
-      "nameEN": "Crouching Light Kick L",
+      "nameEN": "Crouching Light Kick",
       "nameCN": "下轻脚",
       "input": "2LK",
       "startup": "5",
@@ -276,7 +276,7 @@
     {
       "id": "crouching_medium_punch_m",
       "category": "normal",
-      "nameEN": "Crouching Medium Punch M",
+      "nameEN": "Crouching Medium Punch",
       "nameCN": "下中拳",
       "input": "2MP",
       "startup": "6",
@@ -298,7 +298,7 @@
     {
       "id": "crouching_medium_kick_m",
       "category": "normal",
-      "nameEN": "Crouching Medium Kick M",
+      "nameEN": "Crouching Medium Kick",
       "nameCN": "下中脚",
       "input": "2MK",
       "startup": "8",
@@ -320,7 +320,7 @@
     {
       "id": "crouching_heavy_punch_h",
       "category": "normal",
-      "nameEN": "Crouching Heavy Punch H",
+      "nameEN": "Crouching Heavy Punch",
       "nameCN": "下重拳",
       "input": "2HP",
       "startup": "9",
@@ -342,7 +342,7 @@
     {
       "id": "crouching_heavy_kick_h",
       "category": "normal",
-      "nameEN": "Crouching Heavy Kick H",
+      "nameEN": "Crouching Heavy Kick",
       "nameCN": "下中脚",
       "input": "2HK",
       "startup": "10",
@@ -364,7 +364,7 @@
     {
       "id": "jumping_light_punch_during_a_jump_l",
       "category": "normal",
-      "nameEN": "Jumping Light Punch (During a jump) L",
+      "nameEN": "Jumping Light Punch (During a jump)",
       "nameCN": "跳轻拳",
       "input": "J>LP",
       "startup": "5",
@@ -386,7 +386,7 @@
     {
       "id": "jumping_light_kick_during_a_jump_l",
       "category": "normal",
-      "nameEN": "Jumping Light Kick (During a jump) L",
+      "nameEN": "Jumping Light Kick (During a jump)",
       "nameCN": "跳轻脚",
       "input": "J>LK",
       "startup": "5",
@@ -408,7 +408,7 @@
     {
       "id": "jumping_medium_punch_during_a_jump_m",
       "category": "normal",
-      "nameEN": "Jumping Medium Punch (During a jump) M",
+      "nameEN": "Jumping Medium Punch (During a jump)",
       "nameCN": "跳中拳",
       "input": "J>MP",
       "startup": "8",
@@ -430,7 +430,7 @@
     {
       "id": "jumping_medium_kick_during_a_jump_m",
       "category": "normal",
-      "nameEN": "Jumping Medium Kick (During a jump) M",
+      "nameEN": "Jumping Medium Kick (During a jump)",
       "nameCN": "跳中脚",
       "input": "J>MK",
       "startup": "7",
@@ -452,7 +452,7 @@
     {
       "id": "jumping_heavy_punch_during_a_jump_h",
       "category": "normal",
-      "nameEN": "Jumping Heavy Punch (During a jump) H",
+      "nameEN": "Jumping Heavy Punch (During a jump)",
       "nameCN": "跳重拳",
       "input": "J>HP",
       "startup": "11",
@@ -474,7 +474,7 @@
     {
       "id": "jumping_heavy_kick_during_a_jump_h",
       "category": "normal",
-      "nameEN": "Jumping Heavy Kick (During a jump) H",
+      "nameEN": "Jumping Heavy Kick (During a jump)",
       "nameCN": "跳重脚",
       "input": "J>HK",
       "startup": "8",
@@ -496,7 +496,7 @@
     {
       "id": "neutral_jumping_heavy_kick_during_a_neutral_jump_h",
       "category": "normal",
-      "nameEN": "Neutral Jumping Heavy Kick (During a neutral jump) H",
+      "nameEN": "Neutral Jumping Heavy Kick (During a neutral jump)",
       "nameCN": "直跳重脚",
       "input": "8>HK",
       "startup": "10",
@@ -518,7 +518,7 @@
     {
       "id": "viper_elbow_m",
       "category": "normal",
-      "nameEN": "Viper Elbow M",
+      "nameEN": "Viper Elbow",
       "nameCN": "毒蛇肘击",
       "input": "6MP",
       "startup": "22",
@@ -540,7 +540,7 @@
     {
       "id": "double_kick_h",
       "category": "normal",
-      "nameEN": "Double Kick H",
+      "nameEN": "Double Kick",
       "nameCN": "双连踢",
       "input": "6HK",
       "startup": "11",
@@ -606,7 +606,7 @@
     {
       "id": "l_thunder_dash_l",
       "category": "special",
-      "nameEN": "L Thunder Dash L",
+      "nameEN": "Thunder Dash",
       "nameCN": "雷电掴打（轻）",
       "input": "214LP",
       "startup": "17",
@@ -628,7 +628,7 @@
     {
       "id": "m_thunder_dash_m",
       "category": "special",
-      "nameEN": "M Thunder Dash M",
+      "nameEN": "Thunder Dash",
       "nameCN": "雷电掴打（中）",
       "input": "214MP",
       "startup": "16",
@@ -650,7 +650,7 @@
     {
       "id": "h_thunder_dash_h",
       "category": "special",
-      "nameEN": "H Thunder Dash H",
+      "nameEN": "Thunder Dash",
       "nameCN": "雷电掴打（重）",
       "input": "214HP",
       "startup": "7",
@@ -694,7 +694,7 @@
     {
       "id": "l_tracer_combination_during_l_thunder_dash",
       "category": "special",
-      "nameEN": "L Tracer Combination (During L Thunder Dash)",
+      "nameEN": "Tracer Combination (During Thunder Dash)",
       "nameCN": "追踪组合技（轻）",
       "input": "214LP>6PP",
       "startup": "15",
@@ -716,7 +716,7 @@
     {
       "id": "m_tracer_combination_during_m_thunder_dash",
       "category": "special",
-      "nameEN": "M Tracer Combination (During M Thunder Dash)",
+      "nameEN": "Tracer Combination (During Thunder Dash)",
       "nameCN": "追踪组合技（中）",
       "input": "214MP>6PP",
       "startup": "21",
@@ -738,7 +738,7 @@
     {
       "id": "h_tracer_combination_during_h_thunder_dash",
       "category": "special",
-      "nameEN": "H Tracer Combination (During H Thunder Dash)",
+      "nameEN": "Tracer Combination (During Thunder Dash)",
       "nameCN": "追踪组合技（重）",
       "input": "214HP>6PP",
       "startup": "17",
@@ -782,7 +782,7 @@
     {
       "id": "l_burning_kick_l",
       "category": "special",
-      "nameEN": "L Burning Kick L",
+      "nameEN": "Burning Kick",
       "nameCN": "烈焰踢（轻）",
       "input": "236LK",
       "startup": "23",
@@ -804,7 +804,7 @@
     {
       "id": "m_burning_kick_m",
       "category": "special",
-      "nameEN": "M Burning Kick M",
+      "nameEN": "Burning Kick",
       "nameCN": "烈焰踢（中）",
       "input": "236MK",
       "startup": "25",
@@ -826,7 +826,7 @@
     {
       "id": "h_burning_kick_h",
       "category": "special",
-      "nameEN": "H Burning Kick H",
+      "nameEN": "Burning Kick",
       "nameCN": "烈焰踢（重）",
       "input": "236HK",
       "startup": "27",
@@ -914,7 +914,7 @@
     {
       "id": "l_aerial_burning_kick_during_a_neutral_or_forward_jump_l",
       "category": "special",
-      "nameEN": "L Aerial Burning Kick (During a neutral or forward jump) L",
+      "nameEN": "Aerial Burning Kick (During a neutral or forward jump)",
       "nameCN": "空中烈焰踢（轻）",
       "input": "8/9>236LK",
       "startup": "22",
@@ -936,7 +936,7 @@
     {
       "id": "m_aerial_burning_kick_during_a_neutral_or_forward_jump_m",
       "category": "special",
-      "nameEN": "M Aerial Burning Kick (During a neutral or forward jump) M",
+      "nameEN": "Aerial Burning Kick (During a neutral or forward jump)",
       "nameCN": "空中烈焰踢（中）",
       "input": "8/9>236MK",
       "startup": "20",
@@ -958,7 +958,7 @@
     {
       "id": "h_aerial_burning_kick_during_a_neutral_or_forward_jump_h",
       "category": "special",
-      "nameEN": "H Aerial Burning Kick (During a neutral or forward jump) H",
+      "nameEN": "Aerial Burning Kick (During a neutral or forward jump)",
       "nameCN": "空中烈焰踢（重）",
       "input": "8/9>236HK",
       "startup": "18",
@@ -1002,7 +1002,7 @@
     {
       "id": "l_seismic_hammer_l",
       "category": "special",
-      "nameEN": "L Seismic Hammer L",
+      "nameEN": "Seismic Hammer",
       "nameCN": "震地重锤（轻）",
       "input": "623LP",
       "startup": "24",
@@ -1024,7 +1024,7 @@
     {
       "id": "m_seismic_hammer_m",
       "category": "special",
-      "nameEN": "M Seismic Hammer M",
+      "nameEN": "Seismic Hammer",
       "nameCN": "震地重锤（中）",
       "input": "623MP",
       "startup": "24",
@@ -1046,7 +1046,7 @@
     {
       "id": "h_seismic_hammer_h",
       "category": "special",
-      "nameEN": "H Seismic Hammer H",
+      "nameEN": "Seismic Hammer",
       "nameCN": "震地重锤（重）",
       "input": "623HP",
       "startup": "24",
@@ -1354,7 +1354,7 @@
     {
       "id": "high_impulse_when_near_opponent_l_l",
       "category": "throw",
-      "nameEN": "High Impulse (When near opponent) L L",
+      "nameEN": "High Impulse (When near opponent)",
       "nameCN": "过载脉冲",
       "input": "LPLK",
       "startup": "5",
@@ -1376,7 +1376,7 @@
     {
       "id": "thunder_cradle_when_near_opponent_l_l",
       "category": "throw",
-      "nameEN": "Thunder Cradle (When near opponent) L L",
+      "nameEN": "Thunder Cradle (When near opponent)",
       "nameCN": "闪电环抱",
       "input": "4LPLK",
       "startup": "5",
@@ -1442,7 +1442,7 @@
     {
       "id": "drive_impact_viper_cannon_h_h",
       "category": "common",
-      "nameEN": "Drive Impact: Viper Cannon H H",
+      "nameEN": "Drive Impact: Viper Cannon",
       "nameCN": "迸放：毒蛇炮",
       "input": "HPHK",
       "startup": "26",
@@ -1464,7 +1464,7 @@
     {
       "id": "drive_reversal_while_blocking_counter_spark_when_blocking_or_during_a_successful_drive_parry_h_h",
       "category": "common",
-      "nameEN": "Drive Reversal (while blocking): Counter Spark (When blocking or during a successful Drive Parry) H H",
+      "nameEN": "Drive Reversal (while blocking): Counter Spark (When blocking or during a successful Drive Parry)",
       "nameCN": "斗反（格挡）：电光反击",
       "input": "6HPHK",
       "startup": "20",
@@ -1486,7 +1486,7 @@
     {
       "id": "drive_reversal_while_recovering_counter_spark_during_knockdown_recovery_h_h",
       "category": "common",
-      "nameEN": "Drive Reversal (while recovering): Counter Spark (During knockdown recovery) H H",
+      "nameEN": "Drive Reversal (while recovering): Counter Spark (During knockdown recovery)",
       "nameCN": "斗反（起身）：电光反击",
       "input": "6HPHK",
       "startup": "18",
@@ -1508,7 +1508,7 @@
     {
       "id": "drive_parry_m_m",
       "category": "common",
-      "nameEN": "Drive Parry M M",
+      "nameEN": "Drive Parry",
       "nameCN": "蓝防",
       "input": "MPMK",
       "startup": "1",
@@ -1530,7 +1530,7 @@
     {
       "id": "perfect_parry_strike_block_direction_m_m",
       "category": "common",
-      "nameEN": "Perfect Parry (strike) Block Direction M M",
+      "nameEN": "Perfect Parry (strike) Block Direction",
       "nameCN": "完美精防（打击）",
       "input": "4/1MPMK",
       "startup": "1",
@@ -1552,7 +1552,7 @@
     {
       "id": "perfect_parry_projectile_m_m",
       "category": "common",
-      "nameEN": "Perfect Parry (projectile) M M",
+      "nameEN": "Perfect Parry (projectile)",
       "nameCN": "完美精防（波动）",
       "input": "MPMK",
       "startup": "1",

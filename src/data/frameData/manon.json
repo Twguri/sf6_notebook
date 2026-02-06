@@ -2,7 +2,7 @@
   "characterId": "manon",
   "displayNameCN": "",
   "displayNameEN": "Manon",
-  "lastUpdated": "2026-01-31",
+  "lastUpdated": "2026-02-06",
   "columns": [
     "id",
     "category",
@@ -90,7 +90,7 @@
     {
       "id": "standing_light_punch_l",
       "category": "normal",
-      "nameEN": "Standing Light Punch L",
+      "nameEN": "Standing Light Punch",
       "nameCN": "站轻拳",
       "input": "5LP",
       "startup": "4",
@@ -112,7 +112,7 @@
     {
       "id": "standing_light_kick_l",
       "category": "normal",
-      "nameEN": "Standing Light Kick L",
+      "nameEN": "Standing Light Kick",
       "nameCN": "站轻脚",
       "input": "5LK",
       "startup": "5",
@@ -134,7 +134,7 @@
     {
       "id": "standing_medium_punch_m",
       "category": "normal",
-      "nameEN": "Standing Medium Punch M",
+      "nameEN": "Standing Medium Punch",
       "nameCN": "站中拳",
       "input": "5MP",
       "startup": "7",
@@ -156,7 +156,7 @@
     {
       "id": "standing_medium_kick_m",
       "category": "normal",
-      "nameEN": "Standing Medium Kick M",
+      "nameEN": "Standing Medium Kick",
       "nameCN": "站中脚",
       "input": "5MK",
       "startup": "10",
@@ -178,7 +178,7 @@
     {
       "id": "standing_heavy_punch_h",
       "category": "normal",
-      "nameEN": "Standing Heavy Punch H",
+      "nameEN": "Standing Heavy Punch",
       "nameCN": "站重拳",
       "input": "5HP",
       "startup": "10",
@@ -200,7 +200,7 @@
     {
       "id": "standing_heavy_kick_h",
       "category": "normal",
-      "nameEN": "Standing Heavy Kick H",
+      "nameEN": "Standing Heavy Kick",
       "nameCN": "站重脚",
       "input": "5HK",
       "startup": "15",
@@ -222,7 +222,7 @@
     {
       "id": "crouching_light_punch_l",
       "category": "normal",
-      "nameEN": "Crouching Light Punch L",
+      "nameEN": "Crouching Light Punch",
       "nameCN": "下轻拳",
       "input": "2LP",
       "startup": "4",
@@ -244,7 +244,7 @@
     {
       "id": "crouching_light_kick_l",
       "category": "normal",
-      "nameEN": "Crouching Light Kick L",
+      "nameEN": "Crouching Light Kick",
       "nameCN": "下轻脚",
       "input": "2LK",
       "startup": "5",
@@ -266,7 +266,7 @@
     {
       "id": "crouching_medium_punch_m",
       "category": "normal",
-      "nameEN": "Crouching Medium Punch M",
+      "nameEN": "Crouching Medium Punch",
       "nameCN": "下中拳",
       "input": "2MP",
       "startup": "7",
@@ -288,7 +288,7 @@
     {
       "id": "crouching_medium_kick_m",
       "category": "normal",
-      "nameEN": "Crouching Medium Kick M",
+      "nameEN": "Crouching Medium Kick",
       "nameCN": "下中脚",
       "input": "2MK",
       "startup": "8",
@@ -310,7 +310,7 @@
     {
       "id": "crouching_heavy_punch_h",
       "category": "normal",
-      "nameEN": "Crouching Heavy Punch H",
+      "nameEN": "Crouching Heavy Punch",
       "nameCN": "下重拳",
       "input": "2HP",
       "startup": "10",
@@ -332,7 +332,7 @@
     {
       "id": "crouching_heavy_kick_h",
       "category": "normal",
-      "nameEN": "Crouching Heavy Kick H",
+      "nameEN": "Crouching Heavy Kick",
       "nameCN": "下重脚",
       "input": "2HK",
       "startup": "11",
@@ -354,7 +354,7 @@
     {
       "id": "jumping_light_punch_during_a_jump_l",
       "category": "normal",
-      "nameEN": "Jumping Light Punch (During a jump) L",
+      "nameEN": "Jumping Light Punch (During a jump)",
       "nameCN": "跳轻拳",
       "input": "J>LP",
       "startup": "5",
@@ -376,7 +376,7 @@
     {
       "id": "jumping_light_kick_during_a_jump_l",
       "category": "normal",
-      "nameEN": "Jumping Light Kick (During a jump) L",
+      "nameEN": "Jumping Light Kick (During a jump)",
       "nameCN": "跳轻脚",
       "input": "J>LK",
       "startup": "6",
@@ -398,7 +398,7 @@
     {
       "id": "jumping_medium_punch_during_a_jump_m",
       "category": "normal",
-      "nameEN": "Jumping Medium Punch (During a jump) M",
+      "nameEN": "Jumping Medium Punch (During a jump)",
       "nameCN": "跳中拳",
       "input": "J>MP",
       "startup": "8",
@@ -420,7 +420,7 @@
     {
       "id": "jumping_medium_kick_during_a_jump_m",
       "category": "normal",
-      "nameEN": "Jumping Medium Kick (During a jump) M",
+      "nameEN": "Jumping Medium Kick (During a jump)",
       "nameCN": "跳中脚",
       "input": "J>MK",
       "startup": "7",
@@ -442,7 +442,7 @@
     {
       "id": "jumping_heavy_punch_during_a_jump_h",
       "category": "normal",
-      "nameEN": "Jumping Heavy Punch (During a jump) H",
+      "nameEN": "Jumping Heavy Punch (During a jump)",
       "nameCN": "跳重拳",
       "input": "J>HP",
       "startup": "9",
@@ -464,7 +464,7 @@
     {
       "id": "jumping_heavy_kick_during_a_jump_h",
       "category": "normal",
-      "nameEN": "Jumping Heavy Kick (During a jump) H",
+      "nameEN": "Jumping Heavy Kick (During a jump)",
       "nameCN": "跳重脚",
       "input": "J>HK",
       "startup": "11",
@@ -486,7 +486,7 @@
     {
       "id": "rvrence_h",
       "category": "normal",
-      "nameEN": "Révérence H",
+      "nameEN": "Révérence",
       "nameCN": "屈膝礼",
       "input": "4HP",
       "startup": "8",
@@ -508,7 +508,7 @@
     {
       "id": "tomoe_derrire_h",
       "category": "normal",
-      "nameEN": "Tomoe Derrière H",
+      "nameEN": "Tomoe Derrière",
       "nameCN": "巴后位",
       "input": "3HK",
       "startup": "11",
@@ -530,7 +530,7 @@
     {
       "id": "terre_m_m",
       "category": "targetcombo",
-      "nameEN": "À Terre M M",
+      "nameEN": "À Terre",
       "nameCN": "地面动作",
       "input": "5MP>5MP",
       "startup": "10",
@@ -552,7 +552,7 @@
     {
       "id": "en_haut1_m",
       "category": "normal",
-      "nameEN": "En Haut(1) M",
+      "nameEN": "En Haut(1)",
       "nameCN": "高位舞步（一段）",
       "input": "4MK",
       "startup": "10",
@@ -574,7 +574,7 @@
     {
       "id": "en_haut2_m_m",
       "category": "common",
-      "nameEN": "En Haut(2) M M",
+      "nameEN": "En Haut(2)",
       "nameCN": "高位舞步（二段）",
       "input": "4MK>5MK",
       "startup": "14",
@@ -596,7 +596,7 @@
     {
       "id": "temps_li_h_h",
       "category": "targetcombo",
-      "nameEN": "Temps Lié H H",
+      "nameEN": "Temps Lié",
       "nameCN": "重心转移",
       "input": "5HP>5HP",
       "startup": "5",
@@ -618,7 +618,7 @@
     {
       "id": "allong_h_h",
       "category": "targetcombo",
-      "nameEN": "Allongé H H",
+      "nameEN": "Allongé",
       "nameCN": "阿隆热",
       "input": "2HP>5HP",
       "startup": "4",
@@ -640,7 +640,7 @@
     {
       "id": "l_mange_dorattack_changes_according_to_medal_level_when_near_opponent_l",
       "category": "special",
-      "nameEN": "L Manège Doré(Attack changes according to Medal level) (When near opponent) L",
+      "nameEN": "Manège Doré(Attack changes according to Medal level) (When near opponent)",
       "nameCN": "金色圆周转（轻）",
       "input": "63214LP",
       "startup": "10",
@@ -662,7 +662,7 @@
     {
       "id": "m_mange_dorattack_changes_according_to_medal_level_when_near_opponent_m",
       "category": "special",
-      "nameEN": "M Manège Doré(Attack changes according to Medal level) (When near opponent) M",
+      "nameEN": "Manège Doré(Attack changes according to Medal level) (When near opponent)",
       "nameCN": "金色圆周转（中）",
       "input": "63214MP",
       "startup": "8",
@@ -684,7 +684,7 @@
     {
       "id": "h_mange_dorattack_changes_according_to_medal_level_when_near_opponent_h",
       "category": "special",
-      "nameEN": "H Manège Doré(Attack changes according to Medal level) (When near opponent) H",
+      "nameEN": "Manège Doré(Attack changes according to Medal level) (When near opponent)",
       "nameCN": "金色圆周转（重）",
       "input": "63214HP",
       "startup": "5",
@@ -728,7 +728,7 @@
     {
       "id": "l_rondpoint_l",
       "category": "special",
-      "nameEN": "L Rond-point L",
+      "nameEN": "Rond-point",
       "nameCN": "环岛点（轻）",
       "input": "236LK",
       "startup": "9",
@@ -750,7 +750,7 @@
     {
       "id": "m_rondpoint_m",
       "category": "special",
-      "nameEN": "M Rond-point M",
+      "nameEN": "Rond-point",
       "nameCN": "环岛点（中）",
       "input": "236MK",
       "startup": "11",
@@ -772,7 +772,7 @@
     {
       "id": "h_rondpoint_h",
       "category": "special",
-      "nameEN": "H Rond-point H",
+      "nameEN": "Rond-point",
       "nameCN": "环岛点（重）",
       "input": "236HK",
       "startup": "14",
@@ -816,7 +816,7 @@
     {
       "id": "l_dgag_l",
       "category": "special",
-      "nameEN": "L Dégagé L",
+      "nameEN": "Dégagé",
       "nameCN": "代噶热（轻）",
       "input": "214LK",
       "startup": "16",
@@ -838,7 +838,7 @@
     {
       "id": "m_dgag_m",
       "category": "special",
-      "nameEN": "M Dégagé M",
+      "nameEN": "Dégagé",
       "nameCN": "代噶热（中）",
       "input": "214MK",
       "startup": "16",
@@ -860,7 +860,7 @@
     {
       "id": "h_dgag_h",
       "category": "special",
-      "nameEN": "H Dégagé H",
+      "nameEN": "Dégagé",
       "nameCN": "代噶热（重）",
       "input": "214HK",
       "startup": "20",
@@ -904,7 +904,7 @@
     {
       "id": "l_renversattack_changes_according_to_medal_level_l",
       "category": "special",
-      "nameEN": "L Renversé(Attack changes according to Medal level) L",
+      "nameEN": "Renversé(Attack changes according to Medal level)",
       "nameCN": "芭蕾回旋（轻）",
       "input": "236LP",
       "startup": "22",
@@ -926,7 +926,7 @@
     {
       "id": "m_renversattack_changes_according_to_medal_level_m",
       "category": "special",
-      "nameEN": "M Renversé(Attack changes according to Medal level) M",
+      "nameEN": "Renversé(Attack changes according to Medal level)",
       "nameCN": "芭蕾回旋（中）",
       "input": "236MP",
       "startup": "25",
@@ -948,7 +948,7 @@
     {
       "id": "h_renversattack_changes_according_to_medal_level_h",
       "category": "special",
-      "nameEN": "H Renversé(Attack changes according to Medal level) H",
+      "nameEN": "Renversé(Attack changes according to Medal level)",
       "nameCN": "芭蕾回旋（重）",
       "input": "236HP",
       "startup": "29",
@@ -1124,7 +1124,7 @@
     {
       "id": "ouchi_gari_when_near_opponent_l_l",
       "category": "throw",
-      "nameEN": "Ouchi Gari (When near opponent) L L",
+      "nameEN": "Ouchi Gari (When near opponent)",
       "nameCN": "大内刈",
       "input": "LPLK",
       "startup": "5",
@@ -1146,7 +1146,7 @@
     {
       "id": "uchi_mata_when_near_opponent_l_l",
       "category": "throw",
-      "nameEN": "Uchi Mata (When near opponent) L L",
+      "nameEN": "Uchi Mata (When near opponent)",
       "nameCN": "内股",
       "input": "4LPLK",
       "startup": "5",
@@ -1212,7 +1212,7 @@
     {
       "id": "drive_impact_glissade_h_h",
       "category": "common",
-      "nameEN": "Drive Impact: Glissade H H",
+      "nameEN": "Drive Impact: Glissade",
       "nameCN": "迸放：",
       "input": "HPHK",
       "startup": "26",
@@ -1234,7 +1234,7 @@
     {
       "id": "drive_reversal_while_blocking_cart_when_blocking_or_during_a_successful_drive_parry_h_h",
       "category": "common",
-      "nameEN": "Drive Reversal (while blocking): Écarté (When blocking or during a successful Drive Parry) H H",
+      "nameEN": "Drive Reversal (while blocking): Écarté (When blocking or during a successful Drive Parry)",
       "nameCN": "斗反（格挡）：",
       "input": "6HPHK",
       "startup": "20",
@@ -1256,7 +1256,7 @@
     {
       "id": "drive_reversal_while_recovering_cart_during_knockdown_recovery_h_h",
       "category": "common",
-      "nameEN": "Drive Reversal (while recovering): Écarté (During knockdown recovery) H H",
+      "nameEN": "Drive Reversal (while recovering): Écarté (During knockdown recovery)",
       "nameCN": "斗反（起身）：",
       "input": "6HPHK",
       "startup": "18",
@@ -1278,7 +1278,7 @@
     {
       "id": "drive_parry_m_m",
       "category": "common",
-      "nameEN": "Drive Parry M M",
+      "nameEN": "Drive Parry",
       "nameCN": "蓝防",
       "input": "MPMK",
       "startup": "1",
@@ -1300,7 +1300,7 @@
     {
       "id": "perfect_parry_strike_block_direction_m_m",
       "category": "common",
-      "nameEN": "Perfect Parry (strike) Block Direction M M",
+      "nameEN": "Perfect Parry (strike) Block Direction",
       "nameCN": "完美精防（打击）",
       "input": "4/1MPMK",
       "startup": "1",
@@ -1322,7 +1322,7 @@
     {
       "id": "perfect_parry_projectile_m_m",
       "category": "common",
-      "nameEN": "Perfect Parry (projectile) M M",
+      "nameEN": "Perfect Parry (projectile)",
       "nameCN": "完美精防（波动）",
       "input": "MPMK",
       "startup": "1",
@@ -1366,7 +1366,7 @@
     {
       "id": "cancel_drive_rush_while_connecting_with_a_specialcancelable_move_m_m",
       "category": "common",
-      "nameEN": "Cancel Drive Rush (While connecting with a special-cancelable move) ( ) M M",
+      "nameEN": "Cancel Drive Rush (While connecting with a special-cancelable move) ( )",
       "nameCN": "绿冲取消",
       "input": "MPMK/66",
       "startup": "",

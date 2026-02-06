@@ -400,8 +400,8 @@ function MoveTable({
                 ? "切换为数字显示"
                 : "Switch to numbers"
               : lang === "zh"
-                ? "切换为方向显示"
-                : "Switch to directions"
+              ? "切换为方向显示"
+              : "Switch to directions"
           }
         >
           {lang === "zh"
@@ -409,12 +409,21 @@ function MoveTable({
               ? "输入：方向"
               : "输入：数字"
             : inputView === "dir"
-              ? "Input: Directions"
-              : "Input: Numbers"}
+            ? "Input: Directions"
+            : "Input: Numbers"}
         </button>
       </div>
 
-      <div style={{ overflowX: "auto", padding: "10px 0 0 0" }}>
+      {/* 表格滚动容器：同时支持横向+纵向滚动，表头 sticky 才会生效 */}
+      <div
+        style={{
+          overflowX: "auto",
+          overflowY: "auto",
+          maxHeight: "70vh",
+          padding: 0,
+          position : "relative",
+        }}
+      >
         <table
           style={{
             width: "100%",
@@ -422,57 +431,63 @@ function MoveTable({
             minWidth,
           }}
         >
-        <thead>
-          <tr>
-            {displayColumns.map((col) => (
-              <th
-                key={col}
-                style={{
-                  textAlign: "left",
-                  fontSize: 13,
-                  fontWeight: 750,
-                  letterSpacing: 0.3,
-                  padding: "12px 14px",
-                  borderBottom: "1px solid rgba(255,255,255,0.10)",
-                  color: "rgba(255,255,255,0.78)",
-                  whiteSpace: "nowrap",
-                  ...(col === "__name" ? thStickyLeft : null),
-                }}
-              >
-                {labelForColumn(col, lang)}
-              </th>
-            ))}
-          </tr>
-        </thead>
+          <thead>
+            <tr>
+              {displayColumns.map((col) => {
+                const isName = col === "__name";
+                return (
+                  <th
+                    key={col}
+                    style={{
+                      ...thStickyTop,
+                      textAlign: "left",
+                      fontSize: 13,
+                      fontWeight: 750,
+                      letterSpacing: 0.3,
+                      padding: "20px 20px",
+                      borderBottom: "1px solid rgba(255,255,255,0.10)",
+                      color: "rgba(255,255,255,0.78)",
+                      whiteSpace: "nowrap",
+                      ...(isName
+                        ? { ...thStickyLeft, ...thNameCol }
+                        : undefined),
+                    }}
+                  >
+                    {labelForColumn(col, lang)}
+                  </th>
+                );
+              })}
+            </tr>
+          </thead>
 
-        <tbody>
-          {rows.map((m, idx) => {
-            const key = String(m.id || `${idx}`);
-            return (
-              <tr
-                key={key}
-                style={{ borderBottom: "1px solid rgba(255,255,255,0.06)" }}
-              >
-                {displayColumns.map((col) => {
-                  const cell = valueForCell(m, col, lang, inputView);
+          <tbody>
+            {rows.map((m, idx) => {
+              const key = String(m.id || `${idx}`);
+              return (
+                <tr
+                  key={key}
+                  style={{ borderBottom: "1px solid rgba(255,255,255,0.06)" }}
+                >
+                  {displayColumns.map((col) => {
+                    const cell = valueForCell(m, col, lang, inputView);
 
-                  const style =
-                    col === "__name"
-                      ? { ...tdStrong, ...tdStickyLeft }
-                      : col === "__notes"
+                    const style =
+                      col === "__name"
+                        ? { ...tdStrong, ...tdStickyLeft, ...tdNameCol }
+                        : col === "__notes"
                         ? tdNotes
                         : tdMono;
 
-                  return (
-                    <td key={col} style={style}>
-                      {cell}
-                    </td>
-                  );
-                })}
-              </tr>
-            );
-          })}
-        </tbody>
+                    return (
+                      <td key={col} style={style}>
+                        {cell}
+                      </td>
+                    );
+                  })}
+                </tr>
+              );
+            })}
+          </tbody>
         </table>
       </div>
     </div>
@@ -507,12 +522,45 @@ const tdNotes: React.CSSProperties = {
   lineHeight: 1.35,
 };
 
+// ----------------------
+// 新增：最左列宽度限制
+// ----------------------
+const NAME_COL_WIDTH = 180; // 你想更窄就 180/200，更宽就 240/260
+
+const thNameCol: React.CSSProperties = {
+  width: NAME_COL_WIDTH,
+  minWidth: NAME_COL_WIDTH,
+  maxWidth: NAME_COL_WIDTH,
+};
+
+const tdNameCol: React.CSSProperties = {
+  width: NAME_COL_WIDTH,
+  minWidth: NAME_COL_WIDTH,
+  maxWidth: NAME_COL_WIDTH,
+  whiteSpace: "normal",
+  overflowWrap: "anywhere",
+  lineHeight: 1.25,
+};
+
+// 表头 sticky 到顶部（在表格滚动容器内生效）
+const THEAD_HEIGHT = 50; // 👈 你可以试 40 / 44 / 48
+
+const thStickyTop: React.CSSProperties = {
+  position: "sticky",
+  top: 0,
+  zIndex: 10,               // 提高层级，确保压住 tbody
+  height: THEAD_HEIGHT,     // 👈 黑条高度
+  lineHeight: `${THEAD_HEIGHT}px`, // 垂直居中
+  padding: "0 14px",        // 取消上下 padding，避免高度叠加
+  background: "rgba(18,18,18,1)", // 不要透明
+};
+
 // 左侧固定列（招式名称）
 const thStickyLeft: React.CSSProperties = {
   position: "sticky",
   left: 0,
-  zIndex: 3,
-  background: "rgba(18,18,18,0.95)",
+  zIndex: 11, // 比普通表头更高一点，避免交叉时被盖住
+  background: "rgba(18,18,18,0.98)",
 };
 
 const tdStickyLeft: React.CSSProperties = {

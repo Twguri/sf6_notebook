@@ -2,7 +2,7 @@
   "characterId": "kimberly",
   "displayNameCN": "",
   "displayNameEN": "Kimberly",
-  "lastUpdated": "2026-01-31",
+  "lastUpdated": "2026-02-06",
   "columns": [
     "id",
     "category",
@@ -117,7 +117,7 @@
     {
       "id": "standing_light_punch_l",
       "category": "normal",
-      "nameEN": "Standing Light Punch L",
+      "nameEN": "Standing Light Punch",
       "nameCN": "站轻拳",
       "input": "5LP",
       "startup": "5",
@@ -139,7 +139,7 @@
     {
       "id": "standing_light_kick_l",
       "category": "normal",
-      "nameEN": "Standing Light Kick L",
+      "nameEN": "Standing Light Kick",
       "nameCN": "站轻脚",
       "input": "5LK",
       "startup": "5",
@@ -161,7 +161,7 @@
     {
       "id": "standing_medium_punch_m",
       "category": "normal",
-      "nameEN": "Standing Medium Punch M",
+      "nameEN": "Standing Medium Punch",
       "nameCN": "站中拳",
       "input": "5MP",
       "startup": "6",
@@ -183,7 +183,7 @@
     {
       "id": "standing_medium_kick_m",
       "category": "normal",
-      "nameEN": "Standing Medium Kick M",
+      "nameEN": "Standing Medium Kick",
       "nameCN": "站中脚",
       "input": "5MK",
       "startup": "8",
@@ -205,7 +205,7 @@
     {
       "id": "standing_heavy_punch_h",
       "category": "normal",
-      "nameEN": "Standing Heavy Punch H",
+      "nameEN": "Standing Heavy Punch",
       "nameCN": "站重拳",
       "input": "5HP",
       "startup": "9",
@@ -227,7 +227,7 @@
     {
       "id": "standing_heavy_kick_h",
       "category": "normal",
-      "nameEN": "Standing Heavy Kick H",
+      "nameEN": "Standing Heavy Kick",
       "nameCN": "站重脚",
       "input": "5HK",
       "startup": "12",
@@ -249,7 +249,7 @@
     {
       "id": "crouching_light_punch_l",
       "category": "normal",
-      "nameEN": "Crouching Light Punch L",
+      "nameEN": "Crouching Light Punch",
       "nameCN": "下轻拳",
       "input": "2LP",
       "startup": "4",
@@ -271,7 +271,7 @@
     {
       "id": "crouching_light_kick_l",
       "category": "normal",
-      "nameEN": "Crouching Light Kick L",
+      "nameEN": "Crouching Light Kick",
       "nameCN": "下轻脚",
       "input": "2LK",
       "startup": "5",
@@ -293,7 +293,7 @@
     {
       "id": "crouching_medium_punch_m",
       "category": "normal",
-      "nameEN": "Crouching Medium Punch M",
+      "nameEN": "Crouching Medium Punch",
       "nameCN": "下中拳",
       "input": "2MP",
       "startup": "6",
@@ -315,7 +315,7 @@
     {
       "id": "crouching_medium_kick_m",
       "category": "normal",
-      "nameEN": "Crouching Medium Kick M",
+      "nameEN": "Crouching Medium Kick",
       "nameCN": "下中脚",
       "input": "2MK",
       "startup": "7",
@@ -337,7 +337,7 @@
     {
       "id": "crouching_heavy_punch_h",
       "category": "normal",
-      "nameEN": "Crouching Heavy Punch H",
+      "nameEN": "Crouching Heavy Punch",
       "nameCN": "下重拳",
       "input": "2HP",
       "startup": "8",
@@ -359,7 +359,7 @@
     {
       "id": "crouching_heavy_kick_h",
       "category": "normal",
-      "nameEN": "Crouching Heavy Kick H",
+      "nameEN": "Crouching Heavy Kick",
       "nameCN": "下重脚",
       "input": "2HK",
       "startup": "8",
@@ -381,7 +381,7 @@
     {
       "id": "jumping_light_punch_during_a_jump_l",
       "category": "normal",
-      "nameEN": "Jumping Light Punch (During a jump) L",
+      "nameEN": "Jumping Light Punch (During a jump)",
       "nameCN": "跳轻拳",
       "input": "J>LP",
       "startup": "4",
@@ -403,7 +403,7 @@
     {
       "id": "jumping_light_kick_during_a_jump_l",
       "category": "normal",
-      "nameEN": "Jumping Light Kick (During a jump) L",
+      "nameEN": "Jumping Light Kick (During a jump)",
       "nameCN": "跳轻脚",
       "input": "J>LK",
       "startup": "5",
@@ -425,7 +425,7 @@
     {
       "id": "jumping_medium_punch_during_a_jump_m",
       "category": "normal",
-      "nameEN": "Jumping Medium Punch (During a jump) M",
+      "nameEN": "Jumping Medium Punch (During a jump)",
       "nameCN": "跳中拳",
       "input": "J>MP",
       "startup": "6",
@@ -447,7 +447,7 @@
     {
       "id": "jumping_medium_kick_during_a_jump_m",
       "category": "normal",
-      "nameEN": "Jumping Medium Kick (During a jump) M",
+      "nameEN": "Jumping Medium Kick (During a jump)",
       "nameCN": "跳中脚",
       "input": "J>MK",
       "startup": "7",
@@ -469,7 +469,7 @@
     {
       "id": "jumping_heavy_punch_during_a_jump_h",
       "category": "normal",
-      "nameEN": "Jumping Heavy Punch (During a jump) H",
+      "nameEN": "Jumping Heavy Punch (During a jump)",
       "nameCN": "跳重拳",
       "input": "J>HP",
       "startup": "8",
@@ -491,7 +491,7 @@
     {
       "id": "jumping_heavy_kick_during_a_jump_h",
       "category": "normal",
-      "nameEN": "Jumping Heavy Kick (During a jump) H",
+      "nameEN": "Jumping Heavy Kick (During a jump)",
       "nameCN": "跳重脚",
       "input": "J>HK",
       "startup": "9",
@@ -513,7 +513,7 @@
     {
       "id": "water_slicer_slide_m",
       "category": "normal",
-      "nameEN": "Water Slicer Slide M",
+      "nameEN": "Water Slicer Slide",
       "nameCN": "水漂腿",
       "input": "3MK",
       "startup": "11",
@@ -535,7 +535,7 @@
     {
       "id": "windmill_kick_h",
       "category": "normal",
-      "nameEN": "Windmill Kick H",
+      "nameEN": "Windmill Kick",
       "nameCN": "风车踢",
       "input": "4HK",
       "startup": "22",
@@ -557,7 +557,7 @@
     {
       "id": "hisen_kick_h",
       "category": "normal",
-      "nameEN": "Hisen Kick H",
+      "nameEN": "Hisen Kick",
       "nameCN": "飞箭踢",
       "input": "6HK",
       "startup": "27",
@@ -601,7 +601,7 @@
     {
       "id": "elbow_drop_at_the_peak_of_a_forward_jump_m",
       "category": "normal",
-      "nameEN": "Elbow Drop (At the peak of a forward jump) M",
+      "nameEN": "Elbow Drop (At the peak of a forward jump)",
       "nameCN": "肘落",
       "input": "9>2MP",
       "startup": "13",
@@ -623,7 +623,7 @@
     {
       "id": "bushin_tiger_fangs_m_h",
       "category": "targetcombo",
-      "nameEN": "Bushin Tiger Fangs M H",
+      "nameEN": "Bushin Tiger Fangs",
       "nameCN": "武神虎连牙",
       "input": "5MP>5HP",
       "startup": "10",
@@ -645,7 +645,7 @@
     {
       "id": "bushin_prism_strikes2_l_m",
       "category": "targetcombo",
-      "nameEN": "Bushin Prism Strikes(2) L M",
+      "nameEN": "Bushin Prism Strikes(2)",
       "nameCN": "武神天架拳（两段）",
       "input": "5LP>5MP",
       "startup": "6",
@@ -667,7 +667,7 @@
     {
       "id": "bushin_prism_strikes3_l_m_h",
       "category": "targetcombo",
-      "nameEN": "Bushin Prism Strikes(3) L M H",
+      "nameEN": "Bushin Prism Strikes(3)",
       "nameCN": "武神天架拳（三段）",
       "input": "5LP>5MP>5HP",
       "startup": "12",
@@ -689,7 +689,7 @@
     {
       "id": "bushin_prism_strikes4_l_m_h_h",
       "category": "targetcombo",
-      "nameEN": "Bushin Prism Strikes(4) L M H H",
+      "nameEN": "Bushin Prism Strikes(4)",
       "nameCN": "武神天架拳（四段）",
       "input": "5LP>5MP>5HP>5HK",
       "startup": "26",
@@ -711,7 +711,7 @@
     {
       "id": "bushin_hellchain3_l_m_h",
       "category": "targetcombo",
-      "nameEN": "Bushin Hellchain(3) L M H",
+      "nameEN": "Bushin Hellchain(3)",
       "nameCN": "武神狱锁拳（三段）",
       "input": "5LP>5MP>2HP",
       "startup": "10",
@@ -733,7 +733,7 @@
     {
       "id": "bushin_hellchain4_l_m_h_h",
       "category": "targetcombo",
-      "nameEN": "Bushin Hellchain(4) L M H H",
+      "nameEN": "Bushin Hellchain(4)",
       "nameCN": "武神狱锁拳（四段）",
       "input": "5LP>5MP>2HP>5HK",
       "startup": "15",
@@ -755,7 +755,7 @@
     {
       "id": "bushin_hellchain_throw_l_m_h_h",
       "category": "targetcombo",
-      "nameEN": "Bushin Hellchain Throw L M H H",
+      "nameEN": "Bushin Hellchain Throw",
       "nameCN": "武神狱锁摔",
       "input": "5LP>5MP>2HP>2HK",
       "startup": "15",
@@ -777,7 +777,7 @@
     {
       "id": "l_bushin_senpukyaku_l",
       "category": "special",
-      "nameEN": "L Bushin Senpukyaku L",
+      "nameEN": "Bushin Senpukyaku",
       "nameCN": "武神旋风腿（轻）",
       "input": "214HK",
       "startup": "6",
@@ -799,7 +799,7 @@
     {
       "id": "m_bushin_senpukyaku_m",
       "category": "special",
-      "nameEN": "M Bushin Senpukyaku M",
+      "nameEN": "Bushin Senpukyaku",
       "nameCN": "武神旋风腿（中）",
       "input": "214MK",
       "startup": "7",
@@ -821,7 +821,7 @@
     {
       "id": "h_bushin_senpukyaku_h",
       "category": "special",
-      "nameEN": "H Bushin Senpukyaku H",
+      "nameEN": "Bushin Senpukyaku",
       "nameCN": "武神旋风腿（重）",
       "input": "214HK",
       "startup": "8",
@@ -997,7 +997,7 @@
     {
       "id": "torso_cleaver_during_sprint_l",
       "category": "special",
-      "nameEN": "Torso Cleaver (During Sprint) L",
+      "nameEN": "Torso Cleaver (During Sprint)",
       "nameCN": "体砍",
       "input": "236K>LK",
       "startup": "21",
@@ -1019,7 +1019,7 @@
     {
       "id": "od_torso_cleaver_during_od_sprint_l",
       "category": "special",
-      "nameEN": "OD Torso Cleaver (During OD Sprint) L",
+      "nameEN": "OD Torso Cleaver (During OD Sprint)",
       "nameCN": "OD体砍",
       "input": "236KK>LK",
       "startup": "17",
@@ -1041,7 +1041,7 @@
     {
       "id": "shadow_slide_during_sprint_m",
       "category": "special",
-      "nameEN": "Shadow Slide (During Sprint) M",
+      "nameEN": "Shadow Slide (During Sprint)",
       "nameCN": "影捞",
       "input": "236K>MK",
       "startup": "10",
@@ -1063,7 +1063,7 @@
     {
       "id": "od_shadow_slide_during_od_sprint_m",
       "category": "special",
-      "nameEN": "OD Shadow Slide (During OD Sprint) M",
+      "nameEN": "OD Shadow Slide (During OD Sprint)",
       "nameCN": "OD影捞",
       "input": "236KK>MK",
       "startup": "8",
@@ -1085,7 +1085,7 @@
     {
       "id": "neck_hunter_during_sprint_h",
       "category": "special",
-      "nameEN": "Neck Hunter (During Sprint) H",
+      "nameEN": "Neck Hunter (During Sprint)",
       "nameCN": "猎首",
       "input": "236K>HK",
       "startup": "19",
@@ -1107,7 +1107,7 @@
     {
       "id": "od_neck_hunter_during_od_sprint_h",
       "category": "special",
-      "nameEN": "OD Neck Hunter (During OD Sprint) H",
+      "nameEN": "OD Neck Hunter (During OD Sprint)",
       "nameCN": "OD猎首",
       "input": "236KK>HK",
       "startup": "15",
@@ -1261,7 +1261,7 @@
     {
       "id": "l_vagabond_edge_l",
       "category": "special",
-      "nameEN": "L Vagabond Edge L",
+      "nameEN": "Vagabond Edge",
       "nameCN": "流转一文字（轻）",
       "input": "236LP",
       "startup": "10",
@@ -1283,7 +1283,7 @@
     {
       "id": "m_vagabond_edge_m",
       "category": "special",
-      "nameEN": "M Vagabond Edge M",
+      "nameEN": "Vagabond Edge",
       "nameCN": "流转一文字（中）",
       "input": "236MP",
       "startup": "17",
@@ -1305,7 +1305,7 @@
     {
       "id": "h_vagabond_edge_h",
       "category": "special",
-      "nameEN": "H Vagabond Edge H",
+      "nameEN": "Vagabond Edge",
       "nameCN": "流转一文字（重）",
       "input": "236HP",
       "startup": "24",
@@ -1437,7 +1437,7 @@
     {
       "id": "l_shuriken_bomb_with_at_least_1_shuriken_bomb_stock_l",
       "category": "special",
-      "nameEN": "L Shuriken Bomb (With at least 1 Shuriken Bomb stock) L",
+      "nameEN": "Shuriken Bomb (With at least 1 Shuriken Bomb stock)",
       "nameCN": "手里剑炸弹（轻）",
       "input": "22LP",
       "startup": "122*",
@@ -1459,7 +1459,7 @@
     {
       "id": "m_shuriken_bomb_with_at_least_1_shuriken_bomb_stock_m",
       "category": "special",
-      "nameEN": "M Shuriken Bomb (With at least 1 Shuriken Bomb stock) M",
+      "nameEN": "Shuriken Bomb (With at least 1 Shuriken Bomb stock)",
       "nameCN": "手里剑炸弹（中）",
       "input": "22MP",
       "startup": "124*",
@@ -1481,7 +1481,7 @@
     {
       "id": "h_shuriken_bomb_with_at_least_1_shuriken_bomb_stock_h",
       "category": "special",
-      "nameEN": "H Shuriken Bomb (With at least 1 Shuriken Bomb stock) H",
+      "nameEN": "Shuriken Bomb (With at least 1 Shuriken Bomb stock)",
       "nameCN": "手里剑炸弹（重）",
       "input": "22HP",
       "startup": "128*",
@@ -1503,7 +1503,7 @@
     {
       "id": "l_shuriken_bomb_spread_with_at_least_2_shuriken_bomb_stocks_l_m",
       "category": "special",
-      "nameEN": "L Shuriken Bomb Spread (With at least 2 Shuriken Bomb stocks) L M",
+      "nameEN": "Shuriken Bomb Spread (With at least 2 Shuriken Bomb stocks)",
       "nameCN": "OD手里剑炸弹（轻）",
       "input": "22LPMP",
       "startup": "122*",
@@ -1525,7 +1525,7 @@
     {
       "id": "m_shuriken_bomb_spread_with_at_least_2_shuriken_bomb_stocks_l_h",
       "category": "special",
-      "nameEN": "M Shuriken Bomb Spread (With at least 2 Shuriken Bomb stocks) L H",
+      "nameEN": "Shuriken Bomb Spread (With at least 2 Shuriken Bomb stocks)",
       "nameCN": "OD手里剑炸弹（中）",
       "input": "22LPHP",
       "startup": "122*",
@@ -1547,7 +1547,7 @@
     {
       "id": "h_shuriken_bomb_spread_with_at_least_2_shuriken_bomb_stocks_m_h",
       "category": "special",
-      "nameEN": "H Shuriken Bomb Spread (With at least 2 Shuriken Bomb stocks) M H",
+      "nameEN": "Shuriken Bomb Spread (With at least 2 Shuriken Bomb stocks)",
       "nameCN": "OD手里剑炸弹（重）",
       "input": "22MPHP",
       "startup": "124*",
@@ -1745,7 +1745,7 @@
     {
       "id": "ripcord_throw_when_near_opponent_l_l",
       "category": "throw",
-      "nameEN": "Ripcord Throw (When near opponent) L L",
+      "nameEN": "Ripcord Throw (When near opponent)",
       "nameCN": "绳缚背负投",
       "input": "LPLK",
       "startup": "5",
@@ -1767,7 +1767,7 @@
     {
       "id": "bell_ringer_when_near_opponent_l_l",
       "category": "throw",
-      "nameEN": "Bell Ringer (When near opponent) L L",
+      "nameEN": "Bell Ringer (When near opponent)",
       "nameCN": "敲钟巴投",
       "input": "4LPLK",
       "startup": "5",
@@ -1833,7 +1833,7 @@
     {
       "id": "drive_impact_steadfast_strike_h_h",
       "category": "common",
-      "nameEN": "Drive Impact: Steadfast Strike H H",
+      "nameEN": "Drive Impact: Steadfast Strike",
       "nameCN": "迸放：不动咎",
       "input": "HPHK",
       "startup": "26",
@@ -1855,7 +1855,7 @@
     {
       "id": "drive_reversal_while_blocking_shapeless_state_when_blocking_or_during_a_successful_drive_parry_h_h",
       "category": "common",
-      "nameEN": "Drive Reversal (while blocking): Shapeless State (When blocking or during a successful Drive Parry) H H",
+      "nameEN": "Drive Reversal (while blocking): Shapeless State (When blocking or during a successful Drive Parry)",
       "nameCN": "斗反（格挡）：转",
       "input": "6HPHK",
       "startup": "20",
@@ -1877,7 +1877,7 @@
     {
       "id": "drive_reversal_while_recovering_shapeless_state_during_knockdown_recovery_h_h",
       "category": "common",
-      "nameEN": "Drive Reversal (while recovering): Shapeless State (During knockdown recovery) H H",
+      "nameEN": "Drive Reversal (while recovering): Shapeless State (During knockdown recovery)",
       "nameCN": "斗反（起身）：转",
       "input": "6HPHK",
       "startup": "18",
@@ -1899,7 +1899,7 @@
     {
       "id": "drive_parry_m_m",
       "category": "common",
-      "nameEN": "Drive Parry M M",
+      "nameEN": "Drive Parry",
       "nameCN": "蓝防",
       "input": "MPMK",
       "startup": "1",
@@ -1921,7 +1921,7 @@
     {
       "id": "perfect_parry_strike_block_direction_m_m",
       "category": "common",
-      "nameEN": "Perfect Parry (strike) Block Direction M M",
+      "nameEN": "Perfect Parry (strike) Block Direction",
       "nameCN": "完美精防（打击）",
       "input": "4/1MPMK",
       "startup": "1",
@@ -1943,7 +1943,7 @@
     {
       "id": "perfect_parry_projectile_m_m",
       "category": "common",
-      "nameEN": "Perfect Parry (projectile) M M",
+      "nameEN": "Perfect Parry (projectile)",
       "nameCN": "完美精防（波动）",
       "input": "MPMK",
       "startup": "1",
@@ -1987,7 +1987,7 @@
     {
       "id": "cancel_drive_rush_while_connecting_with_a_specialcancelable_move_m_m",
       "category": "common",
-      "nameEN": "Cancel Drive Rush (While connecting with a special-cancelable move) ( ) M M",
+      "nameEN": "Cancel Drive Rush (While connecting with a special-cancelable move) ( )",
       "nameCN": "绿冲取消",
       "input": "MPMK/66",
       "startup": "",

@@ -2,7 +2,7 @@
   "characterId": "elena",
   "displayNameCN": "",
   "displayNameEN": "",
-  "lastUpdated": "2026-01-31",
+  "lastUpdated": "2026-02-06",
   "columns": [
     "id",
     "category",
@@ -110,7 +110,7 @@
     {
       "id": "standing_light_punch_l",
       "category": "normal",
-      "nameEN": "Standing Light Punch L",
+      "nameEN": "Standing Light Punch",
       "nameCN": "站轻拳",
       "input": "5LP",
       "startup": "5",
@@ -132,7 +132,7 @@
     {
       "id": "standing_light_kick_l",
       "category": "normal",
-      "nameEN": "Standing Light Kick L",
+      "nameEN": "Standing Light Kick",
       "nameCN": "站轻脚",
       "input": "5LK",
       "startup": "5",
@@ -154,7 +154,7 @@
     {
       "id": "standing_medium_punch_m",
       "category": "normal",
-      "nameEN": "Standing Medium Punch M",
+      "nameEN": "Standing Medium Punch",
       "nameCN": "站中拳",
       "input": "5MP",
       "startup": "8",
@@ -176,7 +176,7 @@
     {
       "id": "standing_medium_kick_m",
       "category": "normal",
-      "nameEN": "Standing Medium Kick M",
+      "nameEN": "Standing Medium Kick",
       "nameCN": "站中脚",
       "input": "5MK",
       "startup": "6",
@@ -198,7 +198,7 @@
     {
       "id": "standing_heavy_punch_h",
       "category": "normal",
-      "nameEN": "Standing Heavy Punch H",
+      "nameEN": "Standing Heavy Punch",
       "nameCN": "站重拳",
       "input": "5HP",
       "startup": "12",
@@ -220,7 +220,7 @@
     {
       "id": "standing_heavy_kick_h",
       "category": "normal",
-      "nameEN": "Standing Heavy Kick H",
+      "nameEN": "Standing Heavy Kick",
       "nameCN": "站重脚",
       "input": "5HK",
       "startup": "12",
@@ -242,7 +242,7 @@
     {
       "id": "crouching_light_punch_l",
       "category": "normal",
-      "nameEN": "Crouching Light Punch L",
+      "nameEN": "Crouching Light Punch",
       "nameCN": "下轻拳",
       "input": "2LP",
       "startup": "4",
@@ -264,7 +264,7 @@
     {
       "id": "crouching_light_kick_l",
       "category": "normal",
-      "nameEN": "Crouching Light Kick L",
+      "nameEN": "Crouching Light Kick",
       "nameCN": "下轻脚",
       "input": "2LK",
       "startup": "5",
@@ -286,7 +286,7 @@
     {
       "id": "crouching_medium_punch_m",
       "category": "normal",
-      "nameEN": "Crouching Medium Punch M",
+      "nameEN": "Crouching Medium Punch",
       "nameCN": "下中拳",
       "input": "2MP",
       "startup": "8",
@@ -308,7 +308,7 @@
     {
       "id": "crouching_medium_kick_m",
       "category": "normal",
-      "nameEN": "Crouching Medium Kick M",
+      "nameEN": "Crouching Medium Kick",
       "nameCN": "下中脚",
       "input": "2MK",
       "startup": "9",
@@ -330,7 +330,7 @@
     {
       "id": "crouching_heavy_punch_h",
       "category": "normal",
-      "nameEN": "Crouching Heavy Punch H",
+      "nameEN": "Crouching Heavy Punch",
       "nameCN": "下重拳",
       "input": "2HP",
       "startup": "9",
@@ -352,7 +352,7 @@
     {
       "id": "crouching_heavy_kick_h",
       "category": "normal",
-      "nameEN": "Crouching Heavy Kick H",
+      "nameEN": "Crouching Heavy Kick",
       "nameCN": "下重脚",
       "input": "2HK",
       "startup": "11",
@@ -374,7 +374,7 @@
     {
       "id": "jumping_light_punch_during_a_jump_l",
       "category": "normal",
-      "nameEN": "Jumping Light Punch (During a jump) L",
+      "nameEN": "Jumping Light Punch (During a jump)",
       "nameCN": "跳轻拳",
       "input": "J>LP",
       "startup": "5",
@@ -396,7 +396,7 @@
     {
       "id": "jumping_light_kick_during_a_jump_l",
       "category": "normal",
-      "nameEN": "Jumping Light Kick (During a jump) L",
+      "nameEN": "Jumping Light Kick (During a jump)",
       "nameCN": "跳轻脚",
       "input": "J>LK",
       "startup": "5",
@@ -418,7 +418,7 @@
     {
       "id": "jumping_medium_punch_during_a_jump_m",
       "category": "normal",
-      "nameEN": "Jumping Medium Punch (During a jump) M",
+      "nameEN": "Jumping Medium Punch (During a jump)",
       "nameCN": "跳中拳",
       "input": "J>MP",
       "startup": "8",
@@ -440,7 +440,7 @@
     {
       "id": "jumping_medium_kick_during_a_jump_m",
       "category": "normal",
-      "nameEN": "Jumping Medium Kick (During a jump) M",
+      "nameEN": "Jumping Medium Kick (During a jump)",
       "nameCN": "跳中脚",
       "input": "J>MK",
       "startup": "7",
@@ -462,7 +462,7 @@
     {
       "id": "jumping_heavy_punch_during_a_jump_h",
       "category": "normal",
-      "nameEN": "Jumping Heavy Punch (During a jump) H",
+      "nameEN": "Jumping Heavy Punch (During a jump)",
       "nameCN": "跳重拳",
       "input": "J>HP",
       "startup": "10",
@@ -484,7 +484,7 @@
     {
       "id": "jumping_heavy_kick_during_a_jump_h",
       "category": "normal",
-      "nameEN": "Jumping Heavy Kick (During a jump) H",
+      "nameEN": "Jumping Heavy Kick (During a jump)",
       "nameCN": "跳重脚",
       "input": "J>HK",
       "startup": "10",
@@ -506,7 +506,7 @@
     {
       "id": "slide_h",
       "category": "normal",
-      "nameEN": "Slide H",
+      "nameEN": "Slide",
       "nameCN": "滑铲",
       "input": "3HK",
       "startup": "14",
@@ -528,7 +528,7 @@
     {
       "id": "round_arch_h",
       "category": "normal",
-      "nameEN": "Round Arch H",
+      "nameEN": "Round Arch",
       "nameCN": "圆弧踢",
       "input": "4HK",
       "startup": "14",
@@ -550,7 +550,7 @@
     {
       "id": "starling_beak2_m_m",
       "category": "targetcombo",
-      "nameEN": "Starling Beak(2) M M",
+      "nameEN": "Starling Beak(2)",
       "nameCN": "椋鸟喙啄",
       "input": "5MP>5MP",
       "startup": "17",
@@ -572,7 +572,7 @@
     {
       "id": "handstand_whip1_m",
       "category": "normal",
-      "nameEN": "Handstand Whip(1) M",
+      "nameEN": "Handstand Whip(1)",
       "nameCN": "倒立腿鞭",
       "input": "6MK",
       "startup": "20",
@@ -594,7 +594,7 @@
     {
       "id": "handstand_whip2_m_m",
       "category": "targetcombo",
-      "nameEN": "Handstand Whip(2) M M",
+      "nameEN": "Handstand Whip(2)",
       "nameCN": "倒立腿鞭（二段）",
       "input": "6MK>5MK",
       "startup": "14",
@@ -616,7 +616,7 @@
     {
       "id": "hind_kick2_m_h",
       "category": "targetcombo",
-      "nameEN": "Hind Kick(2) M H",
+      "nameEN": "Hind Kick(2)",
       "nameCN": "后蹄踢",
       "input": "5MK>5HK",
       "startup": "12",
@@ -638,7 +638,7 @@
     {
       "id": "fluttering_lark2_m_h",
       "category": "targetcombo",
-      "nameEN": "Fluttering Lark(2) M H",
+      "nameEN": "Fluttering Lark(2)",
       "nameCN": "云雀振翅",
       "input": "2MK>HK",
       "startup": "15",
@@ -660,7 +660,7 @@
     {
       "id": "turning_tail2_h_h",
       "category": "targetcombo",
-      "nameEN": "Turning Tail(2) H H",
+      "nameEN": "Turning Tail(2)",
       "nameCN": "回旋尾鞭",
       "input": "5HP>5HP",
       "startup": "17",
@@ -682,7 +682,7 @@
     {
       "id": "trunk_slap1_h",
       "category": "normal",
-      "nameEN": "Trunk Slap(1) H",
+      "nameEN": "Trunk Slap(1)",
       "nameCN": "象鼻掴打",
       "input": "6HP",
       "startup": "16",
@@ -704,7 +704,7 @@
     {
       "id": "trunk_slap2_h_h",
       "category": "targetcombo",
-      "nameEN": "Trunk Slap(2) H H",
+      "nameEN": "Trunk Slap(2)",
       "nameCN": "象鼻掴打（二段）",
       "input": "6HP>5HP",
       "startup": "13",
@@ -726,7 +726,7 @@
     {
       "id": "trunk_slap3_h_h_h",
       "category": "targetcombo",
-      "nameEN": "Trunk Slap(3) H H H",
+      "nameEN": "Trunk Slap(3)",
       "nameCN": "象鼻掴打（三段）",
       "input": "6HP>5HP>5HP",
       "startup": "7",
@@ -748,7 +748,7 @@
     {
       "id": "soaring_raid_during_a_jump_l_m",
       "category": "targetcombo",
-      "nameEN": "Soaring Raid (During a jump) L M",
+      "nameEN": "Soaring Raid (During a jump)",
       "nameCN": "翱翔奇袭",
       "input": "J>LP>MK",
       "startup": "6",
@@ -770,7 +770,7 @@
     {
       "id": "raptor_range_during_a_jump_m_h",
       "category": "targetcombo",
-      "nameEN": "Raptor Range (During a jump) M H",
+      "nameEN": "Raptor Range (During a jump)",
       "nameCN": "猛禽突击",
       "input": "J>MP>HP",
       "startup": "12",
@@ -792,7 +792,7 @@
     {
       "id": "l_rhino_horn_l",
       "category": "special",
-      "nameEN": "L Rhino Horn L",
+      "nameEN": "Rhino Horn",
       "nameCN": "犀角踢（轻）",
       "input": "236LK",
       "startup": "13",
@@ -814,7 +814,7 @@
     {
       "id": "m_rhino_horn_m",
       "category": "special",
-      "nameEN": "M Rhino Horn M",
+      "nameEN": "Rhino Horn",
       "nameCN": "犀角踢（中）",
       "input": "236MK",
       "startup": "17",
@@ -836,7 +836,7 @@
     {
       "id": "h_rhino_horn_h",
       "category": "special",
-      "nameEN": "H Rhino Horn H",
+      "nameEN": "Rhino Horn",
       "nameCN": "犀角踢（重）",
       "input": "236HK",
       "startup": "21",
@@ -880,7 +880,7 @@
     {
       "id": "l_scratch_wheel_l",
       "category": "special",
-      "nameEN": "L Scratch Wheel L",
+      "nameEN": "Scratch Wheel",
       "nameCN": "轮刮踢（轻）",
       "input": "623LK",
       "startup": "5",
@@ -902,7 +902,7 @@
     {
       "id": "m_scratch_wheel_m",
       "category": "special",
-      "nameEN": "M Scratch Wheel M",
+      "nameEN": "Scratch Wheel",
       "nameCN": "轮刮踢（中）",
       "input": "623MK",
       "startup": "6",
@@ -924,7 +924,7 @@
     {
       "id": "h_scratch_wheel_h",
       "category": "special",
-      "nameEN": "H Scratch Wheel H",
+      "nameEN": "Scratch Wheel",
       "nameCN": "轮刮踢（重）",
       "input": "623HK",
       "startup": "7",
@@ -968,7 +968,7 @@
     {
       "id": "l_lynx_song_l",
       "category": "special",
-      "nameEN": "L Lynx Song L",
+      "nameEN": "Lynx Song",
       "nameCN": "连结之歌（轻）",
       "input": "236LP",
       "startup": "",
@@ -990,7 +990,7 @@
     {
       "id": "m_lynx_song_m",
       "category": "special",
-      "nameEN": "M Lynx Song M",
+      "nameEN": "Lynx Song",
       "nameCN": "连结之歌（中）",
       "input": "236MP",
       "startup": "",
@@ -1012,7 +1012,7 @@
     {
       "id": "h_lynx_song_h",
       "category": "special",
-      "nameEN": "H Lynx Song H",
+      "nameEN": "Lynx Song",
       "nameCN": "连结之歌（重）",
       "input": "236HP",
       "startup": "",
@@ -1056,7 +1056,7 @@
     {
       "id": "leopard_snap_during_lynx_song_l",
       "category": "special",
-      "nameEN": "Leopard Snap (During Lynx Song) L",
+      "nameEN": "Leopard Snap (During Lynx Song)",
       "nameCN": "花豹讯击",
       "input": "236P>6LK",
       "startup": "10",
@@ -1078,7 +1078,7 @@
     {
       "id": "boostedleopard_snap_during_od_lynx_song_lynx_whirl_l",
       "category": "special",
-      "nameEN": "[Boosted]Leopard Snap (During OD Lynx Song Lynx Whirl) L",
+      "nameEN": "[Boosted]Leopard Snap (During OD Lynx Song Lynx Whirl)",
       "nameCN": "OD花豹讯击",
       "input": "236PP>6LK",
       "startup": "10",
@@ -1100,7 +1100,7 @@
     {
       "id": "harvest_circle_during_lynx_song_m",
       "category": "special",
-      "nameEN": "Harvest Circle (During Lynx Song) M",
+      "nameEN": "Harvest Circle (During Lynx Song)",
       "nameCN": "圆弧收割",
       "input": "236P>6MK",
       "startup": "8",
@@ -1122,7 +1122,7 @@
     {
       "id": "boostedharvest_circle_during_od_lynx_song_lynx_whirl_m",
       "category": "special",
-      "nameEN": "[Boosted]Harvest Circle (During OD Lynx Song Lynx Whirl) M",
+      "nameEN": "[Boosted]Harvest Circle (During OD Lynx Song Lynx Whirl)",
       "nameCN": "OD圆弧收割",
       "input": "236PP>6MK",
       "startup": "8",
@@ -1144,7 +1144,7 @@
     {
       "id": "mallet_smash_during_lynx_song_h",
       "category": "special",
-      "nameEN": "Mallet Smash (During Lynx Song) H",
+      "nameEN": "Mallet Smash (During Lynx Song)",
       "nameCN": "猛锤踢",
       "input": "236P>6HK",
       "startup": "22",
@@ -1166,7 +1166,7 @@
     {
       "id": "boostedmallet_smash_during_od_lynx_song_lynx_whirl_h",
       "category": "special",
-      "nameEN": "[Boosted]Mallet Smash (During OD Lynx Song Lynx Whirl) H",
+      "nameEN": "[Boosted]Mallet Smash (During OD Lynx Song Lynx Whirl)",
       "nameCN": "OD猛锤踢",
       "input": "236PP>6HK",
       "startup": "22",
@@ -1188,7 +1188,7 @@
     {
       "id": "l_lynx_whirl_during_lynx_song_spinning_scythe_l",
       "category": "special",
-      "nameEN": "L Lynx Whirl (During Lynx Song Spinning Scythe) L",
+      "nameEN": "Lynx Whirl (During Lynx Song Spinning Scythe)",
       "nameCN": "连结回旋（轻）",
       "input": "236P/214K>LP",
       "startup": "",
@@ -1210,7 +1210,7 @@
     {
       "id": "m_lynx_whirl_during_lynx_song_spinning_scythe_m",
       "category": "special",
-      "nameEN": "M Lynx Whirl (During Lynx Song Spinning Scythe) M",
+      "nameEN": "Lynx Whirl (During Lynx Song Spinning Scythe)",
       "nameCN": "连结回旋（中）",
       "input": "236P/214K>MP",
       "startup": "",
@@ -1232,7 +1232,7 @@
     {
       "id": "h_lynx_whirl_during_lynx_song_spinning_scythe_h",
       "category": "special",
-      "nameEN": "H Lynx Whirl (During Lynx Song Spinning Scythe) H",
+      "nameEN": "Lynx Whirl (During Lynx Song Spinning Scythe)",
       "nameCN": "连结回旋（重）",
       "input": "236P/214K>HP",
       "startup": "",
@@ -1276,7 +1276,7 @@
     {
       "id": "l_spinning_scythe_l",
       "category": "special",
-      "nameEN": "L Spinning Scythe L",
+      "nameEN": "Spinning Scythe",
       "nameCN": "旋转镰刀（轻）",
       "input": "214LK",
       "startup": "15",
@@ -1298,7 +1298,7 @@
     {
       "id": "m_spinning_scythe_m",
       "category": "special",
-      "nameEN": "M Spinning Scythe M",
+      "nameEN": "Spinning Scythe",
       "nameCN": "旋转镰刀（中）",
       "input": "214MK",
       "startup": "20",
@@ -1320,7 +1320,7 @@
     {
       "id": "h_spinning_scythe_h",
       "category": "special",
-      "nameEN": "H Spinning Scythe H",
+      "nameEN": "Spinning Scythe",
       "nameCN": "旋转镰刀（重）",
       "input": "214HK",
       "startup": "24",
@@ -1364,7 +1364,7 @@
     {
       "id": "l_moon_glider1_l",
       "category": "special",
-      "nameEN": "L Moon Glider(1) L",
+      "nameEN": "Moon Glider(1)",
       "nameCN": "半月残影踢（轻）",
       "input": "214LP",
       "startup": "20",
@@ -1386,7 +1386,7 @@
     {
       "id": "m_moon_glider1_m",
       "category": "special",
-      "nameEN": "M Moon Glider(1) M",
+      "nameEN": "Moon Glider(1)",
       "nameCN": "半月残影踢（中）",
       "input": "214MP",
       "startup": "24",
@@ -1408,7 +1408,7 @@
     {
       "id": "h_moon_glider1_h",
       "category": "special",
-      "nameEN": "H Moon Glider(1) H",
+      "nameEN": "Moon Glider(1)",
       "nameCN": "半月残影踢（重）",
       "input": "214HP",
       "startup": "28",
@@ -1584,7 +1584,7 @@
     {
       "id": "leg_tackle_when_near_opponent_l_l",
       "category": "throw",
-      "nameEN": "Leg Tackle (When near opponent) L L",
+      "nameEN": "Leg Tackle (When near opponent)",
       "nameCN": "腿锁摔",
       "input": "LPLK",
       "startup": "5",
@@ -1606,7 +1606,7 @@
     {
       "id": "leg_lift_throw_when_near_opponent_l_l",
       "category": "throw",
-      "nameEN": "Leg Lift Throw (When near opponent) L L",
+      "nameEN": "Leg Lift Throw (When near opponent)",
       "nameCN": "腿举抛",
       "input": "4LPLK",
       "startup": "5",
@@ -1672,7 +1672,7 @@
     {
       "id": "drive_impact_giraffe_neck_h_h",
       "category": "common",
-      "nameEN": "Drive Impact: Giraffe Neck H H",
+      "nameEN": "Drive Impact: Giraffe Neck",
       "nameCN": "迸放：长颈鹿踢",
       "input": "HPHK",
       "startup": "26",
@@ -1694,7 +1694,7 @@
     {
       "id": "drive_reversal_while_blocking_boar_charge_when_blocking_or_during_a_successful_drive_parry_h_h",
       "category": "common",
-      "nameEN": "Drive Reversal (while blocking): Boar Charge (When blocking or during a successful Drive Parry) H H",
+      "nameEN": "Drive Reversal (while blocking): Boar Charge (When blocking or during a successful Drive Parry)",
       "nameCN": "斗反（格挡）：野猪冲锋",
       "input": "6HPHK",
       "startup": "20",
@@ -1716,7 +1716,7 @@
     {
       "id": "drive_reversal_while_recovering_boar_charge_during_knockdown_recovery_h_h",
       "category": "common",
-      "nameEN": "Drive Reversal (while recovering): Boar Charge (During knockdown recovery) H H",
+      "nameEN": "Drive Reversal (while recovering): Boar Charge (During knockdown recovery)",
       "nameCN": "斗反（起身）：野猪冲锋",
       "input": "6HPHK",
       "startup": "18",
@@ -1738,7 +1738,7 @@
     {
       "id": "drive_parry_m_m",
       "category": "common",
-      "nameEN": "Drive Parry M M",
+      "nameEN": "Drive Parry",
       "nameCN": "蓝防",
       "input": "MPMK",
       "startup": "1",
@@ -1760,7 +1760,7 @@
     {
       "id": "perfect_parry_strike_block_direction_m_m",
       "category": "common",
-      "nameEN": "Perfect Parry (strike) Block Direction M M",
+      "nameEN": "Perfect Parry (strike) Block Direction",
       "nameCN": "完美精防（打击）",
       "input": "4/1MPMK",
       "startup": "1",
@@ -1782,7 +1782,7 @@
     {
       "id": "perfect_parry_projectile_m_m",
       "category": "common",
-      "nameEN": "Perfect Parry (projectile) M M",
+      "nameEN": "Perfect Parry (projectile)",
       "nameCN": "完美精防（波动）",
       "input": "MPMK",
       "startup": "1",

@@ -2,7 +2,7 @@
   "characterId": "blanka",
   "displayNameCN": "",
   "displayNameEN": "Blanka",
-  "lastUpdated": "2026-01-31",
+  "lastUpdated": "2026-02-06",
   "columns": [
     "id",
     "category",
@@ -122,7 +122,7 @@
     {
       "id": "standing_light_punch_l",
       "category": "normal",
-      "nameEN": "Standing Light Punch L",
+      "nameEN": "Standing Light Punch",
       "nameCN": "站轻拳",
       "input": "5LP",
       "startup": "5",
@@ -144,7 +144,7 @@
     {
       "id": "standing_light_kick_l",
       "category": "normal",
-      "nameEN": "Standing Light Kick L",
+      "nameEN": "Standing Light Kick",
       "nameCN": "站轻脚",
       "input": "5LK",
       "startup": "4",
@@ -166,7 +166,7 @@
     {
       "id": "standing_medium_punch_m",
       "category": "normal",
-      "nameEN": "Standing Medium Punch M",
+      "nameEN": "Standing Medium Punch",
       "nameCN": "站中拳",
       "input": "5MP",
       "startup": "10",
@@ -188,7 +188,7 @@
     {
       "id": "standing_medium_kick_m",
       "category": "normal",
-      "nameEN": "Standing Medium Kick M",
+      "nameEN": "Standing Medium Kick",
       "nameCN": "站中脚",
       "input": "5MK",
       "startup": "8",
@@ -210,7 +210,7 @@
     {
       "id": "standing_heavy_punch_h",
       "category": "normal",
-      "nameEN": "Standing Heavy Punch H",
+      "nameEN": "Standing Heavy Punch",
       "nameCN": "站重拳",
       "input": "5HP",
       "startup": "10",
@@ -232,7 +232,7 @@
     {
       "id": "standing_heavy_kick_h",
       "category": "normal",
-      "nameEN": "Standing Heavy Kick H",
+      "nameEN": "Standing Heavy Kick",
       "nameCN": "站重脚",
       "input": "5HK",
       "startup": "7",
@@ -254,7 +254,7 @@
     {
       "id": "crouching_light_punch_l",
       "category": "normal",
-      "nameEN": "Crouching Light Punch L",
+      "nameEN": "Crouching Light Punch",
       "nameCN": "下轻拳",
       "input": "2LP",
       "startup": "6",
@@ -276,7 +276,7 @@
     {
       "id": "crouching_light_kick_l",
       "category": "normal",
-      "nameEN": "Crouching Light Kick L",
+      "nameEN": "Crouching Light Kick",
       "nameCN": "下轻脚",
       "input": "2LK",
       "startup": "5",
@@ -298,7 +298,7 @@
     {
       "id": "crouching_medium_punch_m",
       "category": "normal",
-      "nameEN": "Crouching Medium Punch M",
+      "nameEN": "Crouching Medium Punch",
       "nameCN": "下中拳",
       "input": "2MP",
       "startup": "9",
@@ -320,7 +320,7 @@
     {
       "id": "crouching_medium_kick_m",
       "category": "normal",
-      "nameEN": "Crouching Medium Kick M",
+      "nameEN": "Crouching Medium Kick",
       "nameCN": "下中拳",
       "input": "2MK",
       "startup": "8",
@@ -342,7 +342,7 @@
     {
       "id": "crouching_heavy_punch_h",
       "category": "normal",
-      "nameEN": "Crouching Heavy Punch H",
+      "nameEN": "Crouching Heavy Punch",
       "nameCN": "下重拳",
       "input": "2HP",
       "startup": "15",
@@ -364,7 +364,7 @@
     {
       "id": "crouching_heavy_kick_h",
       "category": "normal",
-      "nameEN": "Crouching Heavy Kick H",
+      "nameEN": "Crouching Heavy Kick",
       "nameCN": "下重脚",
       "input": "2HK",
       "startup": "11",
@@ -386,7 +386,7 @@
     {
       "id": "jumping_light_punch_during_a_jump_l",
       "category": "normal",
-      "nameEN": "Jumping Light Punch (During a jump) L",
+      "nameEN": "Jumping Light Punch (During a jump)",
       "nameCN": "跳轻拳",
       "input": "J>LP",
       "startup": "4",
@@ -408,7 +408,7 @@
     {
       "id": "jumping_light_kick_during_a_jump_l",
       "category": "normal",
-      "nameEN": "Jumping Light Kick (During a jump) L",
+      "nameEN": "Jumping Light Kick (During a jump)",
       "nameCN": "跳轻脚",
       "input": "J>LK",
       "startup": "5",
@@ -430,7 +430,7 @@
     {
       "id": "jumping_medium_punch_during_a_jump_m",
       "category": "normal",
-      "nameEN": "Jumping Medium Punch (During a jump) M",
+      "nameEN": "Jumping Medium Punch (During a jump)",
       "nameCN": "跳中拳",
       "input": "J>MP",
       "startup": "7",
@@ -452,7 +452,7 @@
     {
       "id": "jumping_medium_kick_during_a_jump_m",
       "category": "normal",
-      "nameEN": "Jumping Medium Kick (During a jump) M",
+      "nameEN": "Jumping Medium Kick (During a jump)",
       "nameCN": "跳中脚",
       "input": "J>MK",
       "startup": "7",
@@ -474,7 +474,7 @@
     {
       "id": "jumping_heavy_punch_during_a_jump_h",
       "category": "normal",
-      "nameEN": "Jumping Heavy Punch (During a jump) H",
+      "nameEN": "Jumping Heavy Punch (During a jump)",
       "nameCN": "跳重拳",
       "input": "J>HP",
       "startup": "9",
@@ -496,7 +496,7 @@
     {
       "id": "jumping_heavy_kick_during_a_jump_h",
       "category": "normal",
-      "nameEN": "Jumping Heavy Kick (During a jump) H",
+      "nameEN": "Jumping Heavy Kick (During a jump)",
       "nameCN": "跳重脚",
       "input": "J>HK",
       "startup": "11",
@@ -518,7 +518,7 @@
     {
       "id": "neutral_jumping_heavy_punch_during_a_neutral_jump_h",
       "category": "normal",
-      "nameEN": "Neutral Jumping Heavy Punch (During a neutral jump) H",
+      "nameEN": "Neutral Jumping Heavy Punch (During a neutral jump)",
       "nameCN": "直跳重脚",
       "input": "8>HP",
       "startup": "7",
@@ -540,7 +540,7 @@
     {
       "id": "rock_crusher_m",
       "category": "normal",
-      "nameEN": "Rock Crusher M",
+      "nameEN": "Rock Crusher",
       "nameCN": "岩石打击",
       "input": "6MP",
       "startup": "20",
@@ -562,7 +562,7 @@
     {
       "id": "double_knee_bombs_m",
       "category": "normal",
-      "nameEN": "Double Knee Bombs M",
+      "nameEN": "Double Knee Bombs",
       "nameCN": "双膝炸弹",
       "input": "6MK",
       "startup": "9",
@@ -584,7 +584,7 @@
     {
       "id": "wild_edge_m",
       "category": "normal",
-      "nameEN": "Wild Edge M",
+      "nameEN": "Wild Edge",
       "nameCN": "野兽利刃",
       "input": "4MK",
       "startup": "9",
@@ -606,7 +606,7 @@
     {
       "id": "wild_nail_h",
       "category": "normal",
-      "nameEN": "Wild Nail H",
+      "nameEN": "Wild Nail",
       "nameCN": "野兽蜂爪",
       "input": "6MP",
       "startup": "18",
@@ -628,7 +628,7 @@
     {
       "id": "amazon_river_run_h",
       "category": "normal",
-      "nameEN": "Amazon River Run H",
+      "nameEN": "Amazon River Run",
       "nameCN": "亚马逊河流冲",
       "input": "3MP",
       "startup": "14",
@@ -848,7 +848,7 @@
     {
       "id": "l_rolling_attack_l",
       "category": "special",
-      "nameEN": "L Rolling Attack L",
+      "nameEN": "Rolling Attack",
       "nameCN": "回旋撞（轻）",
       "input": "[4]6LP",
       "startup": "10",
@@ -870,7 +870,7 @@
     {
       "id": "lightning_beast_l_rolling_attack_l",
       "category": "special",
-      "nameEN": "[Lightning Beast] L Rolling Attack L",
+      "nameEN": "[Lightning Beast] Rolling Attack",
       "nameCN": "SA2时回旋撞（轻）",
       "input": "[4]6LP",
       "startup": "10",
@@ -892,7 +892,7 @@
     {
       "id": "m_rolling_attack_m",
       "category": "special",
-      "nameEN": "M Rolling Attack M",
+      "nameEN": "Rolling Attack",
       "nameCN": "回旋撞（中）",
       "input": "[4]6MP",
       "startup": "12",
@@ -914,7 +914,7 @@
     {
       "id": "lightning_beast_m_rolling_attack_m",
       "category": "special",
-      "nameEN": "[Lightning Beast] M Rolling Attack M",
+      "nameEN": "[Lightning Beast] Rolling Attack",
       "nameCN": "SA2时回旋撞（中）",
       "input": "[4]6MP",
       "startup": "12",
@@ -936,7 +936,7 @@
     {
       "id": "h_rolling_attack_h",
       "category": "special",
-      "nameEN": "H Rolling Attack H",
+      "nameEN": "Rolling Attack",
       "nameCN": "回旋撞（重）",
       "input": "[4]6HP",
       "startup": "22",
@@ -958,7 +958,7 @@
     {
       "id": "lightning_beast_h_rolling_attack_h",
       "category": "special",
-      "nameEN": "[Lightning Beast] H Rolling Attack H",
+      "nameEN": "[Lightning Beast] Rolling Attack",
       "nameCN": "SA2时回旋撞（重）",
       "input": "[4]6HP",
       "startup": "22",
@@ -1024,7 +1024,7 @@
     {
       "id": "l_vertical_rolling_attack_l",
       "category": "special",
-      "nameEN": "L Vertical Rolling Attack L",
+      "nameEN": "Vertical Rolling Attack",
       "nameCN": "上冲回旋撞（轻）",
       "input": "[2]8LK",
       "startup": "8",
@@ -1046,7 +1046,7 @@
     {
       "id": "lightning_beast_l_vertical_rolling_attack_l",
       "category": "special",
-      "nameEN": "[Lightning Beast] L Vertical Rolling Attack L",
+      "nameEN": "[Lightning Beast] Vertical Rolling Attack",
       "nameCN": "SA2时OD上冲回旋撞（轻）",
       "input": "[2]8LK",
       "startup": "8",
@@ -1068,7 +1068,7 @@
     {
       "id": "m_vertical_rolling_attack_m",
       "category": "special",
-      "nameEN": "M Vertical Rolling Attack M",
+      "nameEN": "Vertical Rolling Attack",
       "nameCN": "上冲回旋撞（中）",
       "input": "[2]8MK",
       "startup": "8",
@@ -1090,7 +1090,7 @@
     {
       "id": "lightning_beast_m_vertical_rolling_attack_m",
       "category": "special",
-      "nameEN": "[Lightning Beast] M Vertical Rolling Attack M",
+      "nameEN": "[Lightning Beast] Vertical Rolling Attack",
       "nameCN": "SA2时OD上冲回旋撞（中）",
       "input": "[2]8MK",
       "startup": "8",
@@ -1112,7 +1112,7 @@
     {
       "id": "h_vertical_rolling_attack_h",
       "category": "special",
-      "nameEN": "H Vertical Rolling Attack H",
+      "nameEN": "Vertical Rolling Attack",
       "nameCN": "上冲回旋撞（重）",
       "input": "[2]8HK",
       "startup": "8",
@@ -1134,7 +1134,7 @@
     {
       "id": "lightning_beast_h_vertical_rolling_attack_h",
       "category": "special",
-      "nameEN": "[Lightning Beast] H Vertical Rolling Attack H",
+      "nameEN": "[Lightning Beast] Vertical Rolling Attack",
       "nameCN": "SA2时上冲回旋撞（重）",
       "input": "[2]8HK",
       "startup": "8",
@@ -1200,7 +1200,7 @@
     {
       "id": "l_backstep_rolling_attack_l",
       "category": "special",
-      "nameEN": "L Backstep Rolling Attack L",
+      "nameEN": "Backstep Rolling Attack",
       "nameCN": "后翻回旋撞（轻）",
       "input": "63214LK",
       "startup": "41",
@@ -1222,7 +1222,7 @@
     {
       "id": "lightning_beast_l_backstep_rolling_attack_l",
       "category": "special",
-      "nameEN": "[Lightning Beast] L Backstep Rolling Attack L",
+      "nameEN": "[Lightning Beast] Backstep Rolling Attack",
       "nameCN": "SA2时后翻回旋撞",
       "input": "63214LK",
       "startup": "41",
@@ -1244,7 +1244,7 @@
     {
       "id": "m_backstep_rolling_attack_m",
       "category": "special",
-      "nameEN": "M Backstep Rolling Attack M",
+      "nameEN": "Backstep Rolling Attack",
       "nameCN": "后翻回旋撞（中）",
       "input": "63214MK",
       "startup": "41",
@@ -1266,7 +1266,7 @@
     {
       "id": "lightning_beast_m_backstep_rolling_attack_m",
       "category": "special",
-      "nameEN": "[Lightning Beast] M Backstep Rolling Attack M",
+      "nameEN": "[Lightning Beast] Backstep Rolling Attack",
       "nameCN": "SA2时后翻回旋撞（中）",
       "input": "63214MK",
       "startup": "41",
@@ -1288,7 +1288,7 @@
     {
       "id": "h_backstep_rolling_attack_h",
       "category": "special",
-      "nameEN": "H Backstep Rolling Attack H",
+      "nameEN": "Backstep Rolling Attack",
       "nameCN": "后翻回旋撞（重）",
       "input": "63214HK",
       "startup": "41",
@@ -1310,7 +1310,7 @@
     {
       "id": "lightning_beast_h_backstep_rolling_attack_h",
       "category": "special",
-      "nameEN": "[Lightning Beast] H Backstep Rolling Attack H",
+      "nameEN": "[Lightning Beast] Backstep Rolling Attack",
       "nameCN": "SA2时后翻回旋撞（重）",
       "input": "63214HK",
       "startup": "41",
@@ -1376,7 +1376,7 @@
     {
       "id": "l_aerial_rolling_attack_during_a_jump_l",
       "category": "special",
-      "nameEN": "L Aerial Rolling Attack (During a jump) L",
+      "nameEN": "Aerial Rolling Attack (During a jump)",
       "nameCN": "空中回旋撞（轻）",
       "input": "J>[4]6LP",
       "startup": "13",
@@ -1398,7 +1398,7 @@
     {
       "id": "lightning_beast_l_aerial_rolling_attack_during_a_jump_l",
       "category": "special",
-      "nameEN": "[Lightning Beast] L Aerial Rolling Attack (During a jump) L",
+      "nameEN": "[Lightning Beast] Aerial Rolling Attack (During a jump)",
       "nameCN": "SA2时空中回旋撞（轻）",
       "input": "J>[4]6LP",
       "startup": "13",
@@ -1420,7 +1420,7 @@
     {
       "id": "m_aerial_rolling_attack_during_a_jump_m",
       "category": "special",
-      "nameEN": "M Aerial Rolling Attack (During a jump) M",
+      "nameEN": "Aerial Rolling Attack (During a jump)",
       "nameCN": "空中回旋撞（中）",
       "input": "J>[4]6MP",
       "startup": "13",
@@ -1442,7 +1442,7 @@
     {
       "id": "lightning_beast_m_aerial_rolling_attack_during_a_jump_m",
       "category": "special",
-      "nameEN": "[Lightning Beast] M Aerial Rolling Attack (During a jump) M",
+      "nameEN": "[Lightning Beast] Aerial Rolling Attack (During a jump)",
       "nameCN": "SA2时空中回旋撞（中）",
       "input": "J>[4]6MP",
       "startup": "13",
@@ -1464,7 +1464,7 @@
     {
       "id": "h_aerial_rolling_attack_during_a_jump_h",
       "category": "special",
-      "nameEN": "H Aerial Rolling Attack (During a jump) H",
+      "nameEN": "Aerial Rolling Attack (During a jump)",
       "nameCN": "空中回旋撞（重）",
       "input": "J>[4]6HP",
       "startup": "13",
@@ -1486,7 +1486,7 @@
     {
       "id": "lightning_beast_h_aerial_rolling_attack_during_a_jump_h",
       "category": "special",
-      "nameEN": "[Lightning Beast] H Aerial Rolling Attack (During a jump) H",
+      "nameEN": "[Lightning Beast] Aerial Rolling Attack (During a jump)",
       "nameCN": "SA2时空中回旋撞（重）",
       "input": "J>[4]6HP",
       "startup": "13",
@@ -1552,7 +1552,7 @@
     {
       "id": "l_wild_hunt_when_near_opponent_l",
       "category": "special",
-      "nameEN": "L Wild Hunt (When near opponent) L",
+      "nameEN": "Wild Hunt (When near opponent)",
       "nameCN": "野兽捕猎摔（轻）",
       "input": "236LK",
       "startup": "34",
@@ -1574,7 +1574,7 @@
     {
       "id": "m_wild_hunt_when_near_opponent_m",
       "category": "special",
-      "nameEN": "M Wild Hunt (When near opponent) M",
+      "nameEN": "Wild Hunt (When near opponent)",
       "nameCN": "野兽捕猎摔（中）",
       "input": "236MK",
       "startup": "39",
@@ -1596,7 +1596,7 @@
     {
       "id": "h_wild_hunt_when_near_opponent_h",
       "category": "special",
-      "nameEN": "H Wild Hunt (When near opponent) H",
+      "nameEN": "Wild Hunt (When near opponent)",
       "nameCN": "野兽捕猎摔（重）",
       "input": "236HK",
       "startup": "43",
@@ -1838,7 +1838,7 @@
     {
       "id": "wild_fang_when_near_opponent_l_l",
       "category": "throw",
-      "nameEN": "Wild Fang (When near opponent) L L",
+      "nameEN": "Wild Fang (When near opponent)",
       "nameCN": "野兽獠牙",
       "input": "LPLK",
       "startup": "5",
@@ -1860,7 +1860,7 @@
     {
       "id": "jungle_flip_when_near_opponent_l_l",
       "category": "throw",
-      "nameEN": "Jungle Flip (When near opponent) L L",
+      "nameEN": "Jungle Flip (When near opponent)",
       "nameCN": "丛林翻滚",
       "input": "4LPLK",
       "startup": "5",
@@ -1882,7 +1882,7 @@
     {
       "id": "wild_bites_during_a_jump_when_near_opponent_l_l",
       "category": "throw",
-      "nameEN": "Wild Bites (During a jump) (When near opponent) L L",
+      "nameEN": "Wild Bites (During a jump) (When near opponent)",
       "nameCN": "野兽啃咬",
       "input": "J>LPLK",
       "startup": "5",
@@ -1948,7 +1948,7 @@
     {
       "id": "drive_impact_wild_scratch_h_h",
       "category": "common",
-      "nameEN": "Drive Impact: Wild Scratch H H",
+      "nameEN": "Drive Impact: Wild Scratch",
       "nameCN": "迸放：野兽抓袭",
       "input": "HPHK",
       "startup": "26",
@@ -1970,7 +1970,7 @@
     {
       "id": "drive_reversal_while_blocking_quick_rolling_attack_when_blocking_or_during_a_successful_drive_parry_h_h",
       "category": "common",
-      "nameEN": "Drive Reversal (while blocking): Quick Rolling Attack (When blocking or during a successful Drive Parry) H H",
+      "nameEN": "Drive Reversal (while blocking): Quick Rolling Attack (When blocking or during a successful Drive Parry)",
       "nameCN": "斗反（防守时）：快速回旋撞",
       "input": "6HPHK",
       "startup": "20",
@@ -1992,7 +1992,7 @@
     {
       "id": "drive_reversal_while_recovering_quick_rolling_attack_during_knockdown_recovery_h_h",
       "category": "common",
-      "nameEN": "Drive Reversal (while recovering): Quick Rolling Attack (During knockdown recovery) H H",
+      "nameEN": "Drive Reversal (while recovering): Quick Rolling Attack (During knockdown recovery)",
       "nameCN": "斗反（倒地时）：快速回旋撞",
       "input": "6HPHK",
       "startup": "18",
@@ -2014,7 +2014,7 @@
     {
       "id": "drive_parry_m_m",
       "category": "common",
-      "nameEN": "Drive Parry M M",
+      "nameEN": "Drive Parry",
       "nameCN": "蓝防",
       "input": "MPMK",
       "startup": "1",
@@ -2036,7 +2036,7 @@
     {
       "id": "perfect_parry_strike_block_direction_m_m",
       "category": "common",
-      "nameEN": "Perfect Parry (strike) Block Direction M M",
+      "nameEN": "Perfect Parry (strike) Block Direction",
       "nameCN": "完美精防（打击）",
       "input": "4/1MPMK",
       "startup": "1",
@@ -2058,7 +2058,7 @@
     {
       "id": "perfect_parry_projectile_m_m",
       "category": "common",
-      "nameEN": "Perfect Parry (projectile) M M",
+      "nameEN": "Perfect Parry (projectile)",
       "nameCN": "完美精防（波动）",
       "input": "MPMK",
       "startup": "1",
@@ -2102,7 +2102,7 @@
     {
       "id": "cancel_drive_rush_while_connecting_with_a_specialcancelable_move_m_m",
       "category": "common",
-      "nameEN": "Cancel Drive Rush (While connecting with a special-cancelable move) ( ) M M",
+      "nameEN": "Cancel Drive Rush (While connecting with a special-cancelable move) ( )",
       "nameCN": "绿冲取消",
       "input": "MPML/66",
       "startup": "",

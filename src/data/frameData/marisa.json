@@ -2,7 +2,7 @@
   "characterId": "marisa",
   "displayNameCN": "",
   "displayNameEN": "Marisa",
-  "lastUpdated": "2026-01-31",
+  "lastUpdated": "2026-02-06",
   "columns": [
     "id",
     "category",
@@ -122,7 +122,7 @@
     {
       "id": "standing_light_punch_l",
       "category": "normal",
-      "nameEN": "Standing Light Punch L",
+      "nameEN": "Standing Light Punch",
       "nameCN": "站轻拳",
       "input": "5LP",
       "startup": "6",
@@ -144,7 +144,7 @@
     {
       "id": "standing_light_kick_l",
       "category": "normal",
-      "nameEN": "Standing Light Kick L",
+      "nameEN": "Standing Light Kick",
       "nameCN": "站轻脚",
       "input": "5LK",
       "startup": "6",
@@ -166,7 +166,7 @@
     {
       "id": "standing_medium_punch_m",
       "category": "normal",
-      "nameEN": "Standing Medium Punch M",
+      "nameEN": "Standing Medium Punch",
       "nameCN": "站中拳",
       "input": "5MP",
       "startup": "7",
@@ -188,7 +188,7 @@
     {
       "id": "standing_medium_kick_m",
       "category": "normal",
-      "nameEN": "Standing Medium Kick M",
+      "nameEN": "Standing Medium Kick",
       "nameCN": "站中脚",
       "input": "5MK",
       "startup": "11",
@@ -210,7 +210,7 @@
     {
       "id": "standing_heavy_punch_h",
       "category": "normal",
-      "nameEN": "Standing Heavy Punch H",
+      "nameEN": "Standing Heavy Punch",
       "nameCN": "站重拳",
       "input": "5HP",
       "startup": "12",
@@ -232,7 +232,7 @@
     {
       "id": "standing_heavy_punchcharged_hold_h",
       "category": "normal",
-      "nameEN": "Standing Heavy Punch(Charged) Hold H",
+      "nameEN": "Standing Heavy Punch(Charged) Hold",
       "nameCN": "站重拳（蓄力）",
       "input": "5[HP]",
       "startup": "23",
@@ -254,7 +254,7 @@
     {
       "id": "standing_heavy_kick_h",
       "category": "normal",
-      "nameEN": "Standing Heavy Kick H",
+      "nameEN": "Standing Heavy Kick",
       "nameCN": "站重脚",
       "input": "5HK",
       "startup": "15",
@@ -276,7 +276,7 @@
     {
       "id": "standing_heavy_kickcharged_hold_h",
       "category": "normal",
-      "nameEN": "Standing Heavy Kick(Charged) Hold H",
+      "nameEN": "Standing Heavy Kick(Charged) Hold",
       "nameCN": "站重脚（蓄力）",
       "input": "5[HK]",
       "startup": "24",
@@ -298,7 +298,7 @@
     {
       "id": "crouching_light_punch_l",
       "category": "normal",
-      "nameEN": "Crouching Light Punch L",
+      "nameEN": "Crouching Light Punch",
       "nameCN": "下轻拳",
       "input": "2LP",
       "startup": "4",
@@ -320,7 +320,7 @@
     {
       "id": "crouching_light_kick_l",
       "category": "normal",
-      "nameEN": "Crouching Light Kick L",
+      "nameEN": "Crouching Light Kick",
       "nameCN": "下轻脚",
       "input": "2LK",
       "startup": "5",
@@ -342,7 +342,7 @@
     {
       "id": "crouching_medium_punch_m",
       "category": "normal",
-      "nameEN": "Crouching Medium Punch M",
+      "nameEN": "Crouching Medium Punch",
       "nameCN": "下中拳",
       "input": "2MP",
       "startup": "8",
@@ -364,7 +364,7 @@
     {
       "id": "crouching_medium_kick_m",
       "category": "normal",
-      "nameEN": "Crouching Medium Kick M",
+      "nameEN": "Crouching Medium Kick",
       "nameCN": "下中脚",
       "input": "2MK",
       "startup": "9",
@@ -386,7 +386,7 @@
     {
       "id": "crouching_heavy_punch_h",
       "category": "normal",
-      "nameEN": "Crouching Heavy Punch H",
+      "nameEN": "Crouching Heavy Punch",
       "nameCN": "下重拳",
       "input": "2HP",
       "startup": "9",
@@ -408,7 +408,7 @@
     {
       "id": "crouching_heavy_punchcharged_hold_h",
       "category": "normal",
-      "nameEN": "Crouching Heavy Punch(Charged) Hold H",
+      "nameEN": "Crouching Heavy Punch(Charged) Hold",
       "nameCN": "下重拳（蓄力）",
       "input": "2[HP]",
       "startup": "21",
@@ -430,7 +430,7 @@
     {
       "id": "crouching_heavy_kick_h",
       "category": "normal",
-      "nameEN": "Crouching Heavy Kick H",
+      "nameEN": "Crouching Heavy Kick",
       "nameCN": "下重脚",
       "input": "2HK",
       "startup": "11",
@@ -452,7 +452,7 @@
     {
       "id": "crouching_heavy_kickcharged_hold_h",
       "category": "normal",
-      "nameEN": "Crouching Heavy Kick(Charged) Hold H",
+      "nameEN": "Crouching Heavy Kick(Charged) Hold",
       "nameCN": "下重脚(蓄力)",
       "input": "2[HK]",
       "startup": "20",
@@ -474,7 +474,7 @@
     {
       "id": "jumping_light_punch_during_a_jump_l",
       "category": "normal",
-      "nameEN": "Jumping Light Punch (During a jump) L",
+      "nameEN": "Jumping Light Punch (During a jump)",
       "nameCN": "跳轻拳",
       "input": "J>LP",
       "startup": "4",
@@ -496,7 +496,7 @@
     {
       "id": "jumping_light_kick_during_a_jump_l",
       "category": "normal",
-      "nameEN": "Jumping Light Kick (During a jump) L",
+      "nameEN": "Jumping Light Kick (During a jump)",
       "nameCN": "跳轻脚",
       "input": "J>LK",
       "startup": "5",
@@ -518,7 +518,7 @@
     {
       "id": "jumping_medium_punch_during_a_jump_m",
       "category": "normal",
-      "nameEN": "Jumping Medium Punch (During a jump) M",
+      "nameEN": "Jumping Medium Punch (During a jump)",
       "nameCN": "跳中拳",
       "input": "J>MP",
       "startup": "7",
@@ -540,7 +540,7 @@
     {
       "id": "jumping_medium_kick_during_a_jump_m",
       "category": "normal",
-      "nameEN": "Jumping Medium Kick (During a jump) M",
+      "nameEN": "Jumping Medium Kick (During a jump)",
       "nameCN": "跳中脚",
       "input": "J>MK",
       "startup": "8",
@@ -562,7 +562,7 @@
     {
       "id": "jumping_heavy_punch_during_a_jump_h",
       "category": "normal",
-      "nameEN": "Jumping Heavy Punch (During a jump) H",
+      "nameEN": "Jumping Heavy Punch (During a jump)",
       "nameCN": "跳重拳",
       "input": "J>HP",
       "startup": "10",
@@ -584,7 +584,7 @@
     {
       "id": "jumping_heavy_punchcharged_during_a_jump_hold_h",
       "category": "normal",
-      "nameEN": "Jumping Heavy Punch(Charged) (During a jump) Hold H",
+      "nameEN": "Jumping Heavy Punch(Charged) (During a jump) Hold",
       "nameCN": "跳重拳（蓄力）",
       "input": "J>[HP]",
       "startup": "28",
@@ -606,7 +606,7 @@
     {
       "id": "jumping_heavy_kick_during_a_jump_h",
       "category": "normal",
-      "nameEN": "Jumping Heavy Kick (During a jump) H",
+      "nameEN": "Jumping Heavy Kick (During a jump)",
       "nameCN": "跳重脚",
       "input": "J>HK",
       "startup": "10",
@@ -628,7 +628,7 @@
     {
       "id": "jumping_heavy_kickcharged_during_a_jump_hold_h",
       "category": "normal",
-      "nameEN": "Jumping Heavy Kick(Charged) (During a jump) Hold H",
+      "nameEN": "Jumping Heavy Kick(Charged) (During a jump) Hold",
       "nameCN": "跳重脚（蓄力）",
       "input": "J>[HK]",
       "startup": "29",
@@ -650,7 +650,7 @@
     {
       "id": "light_two_hitter_l_l",
       "category": "targetcombo",
-      "nameEN": "Light Two Hitter L L",
+      "nameEN": "Light Two Hitter",
       "nameCN": "轻双连",
       "input": "5LP>5LP",
       "startup": "14",
@@ -672,7 +672,7 @@
     {
       "id": "medium_two_hitter_m_m",
       "category": "targetcombo",
-      "nameEN": "Medium Two Hitter M M",
+      "nameEN": "Medium Two Hitter",
       "nameCN": "中双连",
       "input": "5MP>5MP",
       "startup": "14",
@@ -694,7 +694,7 @@
     {
       "id": "heavy_two_hitter_h_h",
       "category": "targetcombo",
-      "nameEN": "Heavy Two Hitter H H",
+      "nameEN": "Heavy Two Hitter",
       "nameCN": "重双连",
       "input": "5HP>5HP",
       "startup": "24",
@@ -716,7 +716,7 @@
     {
       "id": "volare_combo_during_a_jump_m_m",
       "category": "targetcombo",
-      "nameEN": "Volare Combo (During a jump) M M",
+      "nameEN": "Volare Combo (During a jump)",
       "nameCN": "飞空组合技",
       "input": "J>5MP>5MP",
       "startup": "10",
@@ -738,7 +738,7 @@
     {
       "id": "caelum_arc_during_a_neutral_jump_h",
       "category": "targetcombo",
-      "nameEN": "Caelum Arc (During a neutral jump) H",
+      "nameEN": "Caelum Arc (During a neutral jump)",
       "nameCN": "天空之弧",
       "input": "8>2HP",
       "startup": "9",
@@ -760,7 +760,7 @@
     {
       "id": "caelum_arccharged_during_a_neutral_jump_hold_h",
       "category": "targetcombo",
-      "nameEN": "Caelum Arc(Charged) (During a neutral jump) Hold H",
+      "nameEN": "Caelum Arc(Charged) (During a neutral jump) Hold",
       "nameCN": "天空之弧（蓄力）",
       "input": "8>2[HP]",
       "startup": "28",
@@ -782,7 +782,7 @@
     {
       "id": "magna_bunker_h",
       "category": "normal",
-      "nameEN": "Magna Bunker H",
+      "nameEN": "Magna Bunker",
       "nameCN": "伟大地堡",
       "input": "4HP",
       "startup": "8",
@@ -804,7 +804,7 @@
     {
       "id": "magna_bunkercharged_hold_h",
       "category": "normal",
-      "nameEN": "Magna Bunker(Charged) Hold H",
+      "nameEN": "Magna Bunker(Charged) Hold",
       "nameCN": "伟大地堡（蓄力）",
       "input": "4[HP]",
       "startup": "20",
@@ -826,7 +826,7 @@
     {
       "id": "novacula_swipenovacula_thrust1_m",
       "category": "normal",
-      "nameEN": "Novacula Swipe/Novacula Thrust(1) M",
+      "nameEN": "Novacula Swipe/Novacula Thrust(1)",
       "nameCN": "前中拳",
       "input": "6MP",
       "startup": "10",
@@ -848,7 +848,7 @@
     {
       "id": "novacula_swipe_m_h",
       "category": "targetcombo",
-      "nameEN": "Novacula Swipe M H",
+      "nameEN": "Novacula Swipe",
       "nameCN": "利刃猛击",
       "input": "6MP>5HP",
       "startup": "11",
@@ -870,7 +870,7 @@
     {
       "id": "novacula_thrust_m_h",
       "category": "targetcombo",
-      "nameEN": "Novacula Thrust M H",
+      "nameEN": "Novacula Thrust",
       "nameCN": "利刃连肘",
       "input": "6MP>5HK",
       "startup": "11",
@@ -892,7 +892,7 @@
     {
       "id": "malleus_breaker1_h",
       "category": "normal",
-      "nameEN": "Malleus Breaker(1) H",
+      "nameEN": "Malleus Breaker(1)",
       "nameCN": "前下重拳",
       "input": "3HP",
       "startup": "21",
@@ -914,7 +914,7 @@
     {
       "id": "malleus_breaker1charged_hold_h",
       "category": "normal",
-      "nameEN": "Malleus Breaker(1)(Charged) Hold H",
+      "nameEN": "Malleus Breaker(1)(Charged) Hold",
       "nameCN": "前下重拳（蓄力）",
       "input": "3[HP]",
       "startup": "28",
@@ -936,7 +936,7 @@
     {
       "id": "malleus_breaker2_h_h",
       "category": "targetcombo",
-      "nameEN": "Malleus Breaker(2) H H",
+      "nameEN": "Malleus Breaker(2)",
       "nameCN": "重锤连打",
       "input": "3HP>3HP",
       "startup": "18",
@@ -958,7 +958,7 @@
     {
       "id": "falx_crusher1_h",
       "category": "normal",
-      "nameEN": "Falx Crusher(1) H",
+      "nameEN": "Falx Crusher(1)",
       "nameCN": "前重脚",
       "input": "6HK",
       "startup": "14",
@@ -980,7 +980,7 @@
     {
       "id": "falx_crusher1charged_hold_h",
       "category": "normal",
-      "nameEN": "Falx Crusher(1)(Charged) Hold H",
+      "nameEN": "Falx Crusher(1)(Charged) Hold",
       "nameCN": "前重脚（蓄力）",
       "input": "6[HK]",
       "startup": "27",
@@ -1002,7 +1002,7 @@
     {
       "id": "falx_crusher2_h_h",
       "category": "targetcombo",
-      "nameEN": "Falx Crusher(2) H H",
+      "nameEN": "Falx Crusher(2)",
       "nameCN": "方阵摧毁",
       "input": "6HK>6HK",
       "startup": "16",
@@ -1024,7 +1024,7 @@
     {
       "id": "l_gladius_l",
       "category": "special",
-      "nameEN": "L Gladius L",
+      "nameEN": "Gladius",
       "nameCN": "罗马短剑（轻）",
       "input": "236LK",
       "startup": "17",
@@ -1046,7 +1046,7 @@
     {
       "id": "l_gladiuscharged_hold_l",
       "category": "special",
-      "nameEN": "L Gladius(Charged) Hold L",
+      "nameEN": "Gladius(Charged) Hold",
       "nameCN": "罗马短剑（轻）（蓄力）",
       "input": "236[LK]",
       "startup": "30",
@@ -1068,7 +1068,7 @@
     {
       "id": "m_gladius_m",
       "category": "special",
-      "nameEN": "M Gladius M",
+      "nameEN": "Gladius",
       "nameCN": "罗马短剑（中）",
       "input": "236MP",
       "startup": "19",
@@ -1090,7 +1090,7 @@
     {
       "id": "m_gladiuscharged_hold_m",
       "category": "special",
-      "nameEN": "M Gladius(Charged) Hold M",
+      "nameEN": "Gladius(Charged) Hold",
       "nameCN": "罗马短剑（中）（蓄力）",
       "input": "236[MP]",
       "startup": "35",
@@ -1112,7 +1112,7 @@
     {
       "id": "h_gladius_h",
       "category": "special",
-      "nameEN": "H Gladius H",
+      "nameEN": "Gladius",
       "nameCN": "罗马短剑（重）",
       "input": "236HP",
       "startup": "22",
@@ -1134,7 +1134,7 @@
     {
       "id": "h_gladiuscharged_hold_h",
       "category": "special",
-      "nameEN": "H Gladius(Charged) Hold H",
+      "nameEN": "Gladius(Charged) Hold",
       "nameCN": "罗马短剑（重）（蓄力）",
       "input": "236[HP]",
       "startup": "41",
@@ -1200,7 +1200,7 @@
     {
       "id": "l_dimachaerus1_l",
       "category": "special",
-      "nameEN": "L Dimachaerus(1) L",
+      "nameEN": "Dimachaerus(1)",
       "nameCN": "双剑角斗士（轻）（一段）",
       "input": "214LP",
       "startup": "12",
@@ -1222,7 +1222,7 @@
     {
       "id": "l_dimachaerus2_l",
       "category": "special",
-      "nameEN": "L Dimachaerus(2) L",
+      "nameEN": "Dimachaerus(2)",
       "nameCN": "双剑角斗士（轻）（二段）",
       "input": "214LP>6P",
       "startup": "13",
@@ -1244,7 +1244,7 @@
     {
       "id": "m_dimachaerus1_m",
       "category": "special",
-      "nameEN": "M Dimachaerus(1) M",
+      "nameEN": "Dimachaerus(1)",
       "nameCN": "双剑角斗士（中）（一段）",
       "input": "214MP",
       "startup": "16",
@@ -1266,7 +1266,7 @@
     {
       "id": "m_dimachaerus2_m",
       "category": "special",
-      "nameEN": "M Dimachaerus(2) M",
+      "nameEN": "Dimachaerus(2)",
       "nameCN": "双剑角斗士（中）（二段）",
       "input": "214MP>6P",
       "startup": "13",
@@ -1288,7 +1288,7 @@
     {
       "id": "h_dimachaerus1_h",
       "category": "special",
-      "nameEN": "H Dimachaerus(1) H",
+      "nameEN": "Dimachaerus(1)",
       "nameCN": "双剑角斗士（重）（一段）",
       "input": "214HP",
       "startup": "22",
@@ -1310,7 +1310,7 @@
     {
       "id": "h_dimachaerus2_h",
       "category": "special",
-      "nameEN": "H Dimachaerus(2) H",
+      "nameEN": "Dimachaerus(2)",
       "nameCN": "双剑角斗士（中）（二段）",
       "input": "214HP>6P",
       "startup": "18",
@@ -1376,7 +1376,7 @@
     {
       "id": "l_phalanx_l",
       "category": "special",
-      "nameEN": "L Phalanx L",
+      "nameEN": "Phalanx",
       "nameCN": "方阵战型（轻）",
       "input": "623LP",
       "startup": "25",
@@ -1398,7 +1398,7 @@
     {
       "id": "m_phalanx_m",
       "category": "special",
-      "nameEN": "M Phalanx M",
+      "nameEN": "Phalanx",
       "nameCN": "方阵战型（中）",
       "input": "623MP",
       "startup": "28",
@@ -1420,7 +1420,7 @@
     {
       "id": "h_phalanx_h",
       "category": "special",
-      "nameEN": "H Phalanx H",
+      "nameEN": "Phalanx",
       "nameCN": "方阵战型（重）",
       "input": "623HP",
       "startup": "32",
@@ -1464,7 +1464,7 @@
     {
       "id": "l_quadriga_l",
       "category": "special",
-      "nameEN": "L Quadriga L",
+      "nameEN": "Quadriga",
       "nameCN": "四马战车（轻）",
       "input": "236LK",
       "startup": "20",
@@ -1486,7 +1486,7 @@
     {
       "id": "m_quadriga_m",
       "category": "special",
-      "nameEN": "M Quadriga M",
+      "nameEN": "Quadriga",
       "nameCN": "四马战车（中）",
       "input": "236MK",
       "startup": "24",
@@ -1508,7 +1508,7 @@
     {
       "id": "h_quadriga_h",
       "category": "special",
-      "nameEN": "H Quadriga H",
+      "nameEN": "Quadriga",
       "nameCN": "四马战车（重）",
       "input": "236HK",
       "startup": "29",
@@ -1706,7 +1706,7 @@
     {
       "id": "enfold_during_scutum_l_l",
       "category": "special",
-      "nameEN": "Enfold (During Scutum) L L",
+      "nameEN": "Enfold (During Scutum)",
       "nameCN": "环抱",
       "input": "214K>LPLK",
       "startup": "5",
@@ -1860,7 +1860,7 @@
     {
       "id": "mounted_grace_when_near_opponent_l_l",
       "category": "throw",
-      "nameEN": "Mounted Grace (When near opponent) L L",
+      "nameEN": "Mounted Grace (When near opponent)",
       "nameCN": "优雅骑乘",
       "input": "LPLK",
       "startup": "5",
@@ -1882,7 +1882,7 @@
     {
       "id": "ponte_milvio_when_near_opponent_l_l",
       "category": "throw",
-      "nameEN": "Ponte Milvio (When near opponent) L L",
+      "nameEN": "Ponte Milvio (When near opponent)",
       "nameCN": "米尔维吊桥",
       "input": "4LPLK",
       "startup": "5",
@@ -1948,7 +1948,7 @@
     {
       "id": "drive_impact_secutor_h_h",
       "category": "common",
-      "nameEN": "Drive Impact: Secutor H H",
+      "nameEN": "Drive Impact: Secutor",
       "nameCN": "迸发：罗马斗士",
       "input": "HPHK",
       "startup": "26",
@@ -1970,7 +1970,7 @@
     {
       "id": "drive_reversal_while_blocking_love_tap_when_blocking_or_during_a_successful_drive_parry_h_h",
       "category": "common",
-      "nameEN": "Drive Reversal (while blocking): Love Tap (When blocking or during a successful Drive Parry) H H",
+      "nameEN": "Drive Reversal (while blocking): Love Tap (When blocking or during a successful Drive Parry)",
       "nameCN": "斗反（格挡）：爱之轻拍",
       "input": "6HPHK",
       "startup": "20",
@@ -1992,7 +1992,7 @@
     {
       "id": "drive_reversal_while_recovering_love_tap_during_knockdown_recovery_h_h",
       "category": "common",
-      "nameEN": "Drive Reversal (while recovering): Love Tap (During knockdown recovery) H H",
+      "nameEN": "Drive Reversal (while recovering): Love Tap (During knockdown recovery)",
       "nameCN": "斗反（起身）：爱之轻拍",
       "input": "6HPHK",
       "startup": "18",
@@ -2014,7 +2014,7 @@
     {
       "id": "drive_parry_m_m",
       "category": "common",
-      "nameEN": "Drive Parry M M",
+      "nameEN": "Drive Parry",
       "nameCN": "蓝防",
       "input": "MPMK",
       "startup": "1",
@@ -2036,7 +2036,7 @@
     {
       "id": "perfect_parry_strike_block_direction_m_m",
       "category": "common",
-      "nameEN": "Perfect Parry (strike) Block Direction M M",
+      "nameEN": "Perfect Parry (strike) Block Direction",
       "nameCN": "完美精防（打击）",
       "input": "4/1MPMK",
       "startup": "1",
@@ -2058,7 +2058,7 @@
     {
       "id": "perfect_parry_projectile_m_m",
       "category": "common",
-      "nameEN": "Perfect Parry (projectile) M M",
+      "nameEN": "Perfect Parry (projectile)",
       "nameCN": "完美精防（波动）",
       "input": "MPMK",
       "startup": "1",
@@ -2102,7 +2102,7 @@
     {
       "id": "cancel_drive_rush_while_connecting_with_a_specialcancelable_move_m_m",
       "category": "common",
-      "nameEN": "Cancel Drive Rush (While connecting with a special-cancelable move) ( ) M M",
+      "nameEN": "Cancel Drive Rush (While connecting with a special-cancelable move) ( )",
       "nameCN": "绿冲取消",
       "input": "MPMK/66",
       "startup": "",

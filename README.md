@@ -8,6 +8,8 @@ A lightweight, open‑source notebook and utility site for **Street Fighter 6** 
 
 SF6 Notebook is designed as a *personal + competitive* tool: you can record matchup notes, combo ideas, character insights, and quickly reference frame data — all in one place, with an input system tailored specifically for fighting games.
 
+Available as both a **web app** and a **Windows desktop app**, with local data storage and offline support.
+
 ---
 
 ## ✨ Features
@@ -119,6 +121,29 @@ GitHub Pages should be configured as:
 - **Folder**: `/ (root)`
 
 ---
+
+## ⬇️ Download (Windows Desktop)
+
+👉 **Recommended download (always the latest version):**  
+https://github.com/Twguri/sf6_notebook/releases/latest
+
+- `.msi` installer (recommended)
+- `.exe` installer may also be available
+- Desktop app data is **separate** from the web version
+
+## ⬇️ Download (Windows Desktop)
+
+👉 **Recommended download (always the latest version):**  
+https://github.com/<OWNER>/<REPO>/releases/latest
+
+- `.msi` installer (recommended)
+- `.exe` installer may also be available
+- Desktop app data is **separate** from the web version
+
+## 💡 Notes
+
+- The desktop app and web app do **not** share data
+- You can migrate data between versions or devices using the export / import feature
 
 ## 📱 Mobile & PWA Notes
 

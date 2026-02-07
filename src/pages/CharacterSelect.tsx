@@ -13,6 +13,7 @@ type Props = {
   toggleLang: () => void;
 };
 
+
 function HelpModal({
   open,
   lang,
@@ -52,7 +53,7 @@ function HelpModal({
           },
           {
             h: "帧数表数据来源",
-            p: "目前帧数表部分数据来自与卡普空官网的帧数数据，部分汉化翻译可能与原意有出入，关于备注部分的内容请以游戏内实际数据为准",
+            p: "目前帧数表部分数据来自与卡普空官网的帧数数据，部分汉化翻译可能与原意有出入，关于备注部分的内容请以游戏内实际数据为准, 如果发现翻译问题或者数据错误请联系Twguri（bilibil， github）",
           },
           {
             h: "角色对策中怎么换对手？",
@@ -64,7 +65,7 @@ function HelpModal({
           },
           {
             h: "关于更新",
-            p: "当前版本 1.2.0：更新了帧数表（全角色）以及连段输入（招式选择器）和训练计划功能。帧数表仍在持续完善中。",
+            p: "当前版本 1.2.1：更新了帧数表（全角色）以及连段输入（招式选择器）和训练计划功能。帧数表仍在持续完善中。",
           },
         ]
       : [
@@ -94,7 +95,7 @@ function HelpModal({
           },
           {
             h: "Updates",
-            p: "Current version: 1.2.0. updated all characters' frame data and improved combo input with a move picker, and training plan section. The frame data section is still being expanded and verified.",
+            p: "Current version: 1.2.1. updated all characters' frame data and improved combo input with a move picker, and training plan section. The frame data section is still being expanded and verified.",
           },
         ];
 
@@ -323,6 +324,9 @@ export default function CharacterSelect({ lang, t, toggleLang }: Props) {
   });
 
   const appTitle = lang === "zh" ? "街霸6玩家备忘录" : "SF6 Player Notebook";
+  const isDesktop = typeof (window as any).__TAURI__ !== "undefined";
+  const DESKTOP_URL = "https://github.com/twguri/sf6_notebook/releases/latest";
+
 
   // ✅ Help 弹窗
   const [helpOpen, setHelpOpen] = React.useState(false);
@@ -456,6 +460,28 @@ export default function CharacterSelect({ lang, t, toggleLang }: Props) {
             flexWrap: "wrap",
           }}
         >
+          {!isDesktop &&(
+            <a
+              href={DESKTOP_URL}
+              target="_blank"
+              rel="noreferrer"
+              style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 8,
+              padding: "10px 12px",
+              borderRadius: 12,
+              border: "1px solid rgba(255,255,255,0.18)",
+              background: "rgba(255,255,255,0.06)",
+              color: "inherit",
+              textDecoration: "none",
+              fontWeight: 700,
+            }}
+          >
+            {lang === "zh" ? "下载桌面版（Windows）" : "Download Desktop (Windows)"}
+            </a>
+          )}
+
           <button
             type="button"
             onClick={onExportLogbook}

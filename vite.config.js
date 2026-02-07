@@ -3,7 +3,5 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig(({ mode }) => ({
   plugins: [react()],
-  base: mode === "production" ? "/sf6_notebook/" : "/",
+  base: mode === "gh" ? "/sf6_notebook/" : "/",
 }));
-
-

@@ -65,7 +65,7 @@ function HelpModal({
           },
           {
             h: "关于更新",
-            p: "当前版本 1.2.1：更新了帧数表（全角色）以及连段输入（招式选择器）和训练计划功能。帧数表仍在持续完善中。",
+            p: "当前版本 1.2.2：更新了帧数表（全角色）以及连段输入（招式选择器）和训练计划功能, 更新了Tips分区功能。帧数表仍在持续完善中。",
           },
         ]
       : [
@@ -95,7 +95,7 @@ function HelpModal({
           },
           {
             h: "Updates",
-            p: "Current version: 1.2.1. updated all characters' frame data and improved combo input with a move picker, and training plan section. The frame data section is still being expanded and verified.",
+            p: "Current version: 1.2.2. updated all characters' frame data and improved combo input with a move picker, and training plan section. Added the subsection function in Tips section. The frame data section is still being expanded and verified.",
           },
         ];
 

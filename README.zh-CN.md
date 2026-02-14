@@ -70,7 +70,7 @@ https://twguri.github.io/sf6_notebook/
 ### 1️⃣ 克隆仓库
 
 ```bash
-git clone https://github.com/<你的用户名>/sf6_notebook.git
+git clone https://github.com/twguri/sf6_notebook.git
 cd sf6_notebook
 ```
 

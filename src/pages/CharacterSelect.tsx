@@ -25,11 +25,19 @@ function HelpModal({
 }) {
   React.useEffect(() => {
     if (!open) return;
+
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
     };
     window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
+
+    return () => {
+      document.body.style.overflow = prevOverflow;
+      window.removeEventListener("keydown", onKey);
+    };
   }, [open, onClose]);
 
   if (!open) return null;
@@ -129,12 +137,19 @@ function HelpModal({
           border: "1px solid rgba(255,255,255,0.12)",
           background: "rgba(10,10,14,0.98)",
           boxShadow: "0 16px 50px rgba(0,0,0,0.55)",
+          maxHeight: "calc(100dvh - 36px)",
+          display: "flex",
+          flexDirection: "column",
           overflow: "hidden",
         }}
       >
         <div
           style={{
             padding: "14px 16px",
+            position:"sticky",
+            zIndex: 2,
+            top: 0,
+            background:"rgba(10,10,14,0.98)",
             display: "flex",
             alignItems: "center",
             gap: 12,
@@ -162,7 +177,7 @@ function HelpModal({
           </button>
         </div>
 
-        <div style={{ padding: 16, display: "grid", gap: 12 }}>
+        <div style={{ padding: 16, display: "grid", gap: 12, overflowY:"auto"}}>
           {sections.map((s, idx) => (
             <div
               key={idx}
@@ -240,6 +255,9 @@ function FavoritesModal({
           background: "rgba(10,10,14,0.98)",
           boxShadow: "0 16px 50px rgba(0,0,0,0.55)",
           overflow: "hidden",
+          maxHeight: "calc(100dvh - 36px)",
+          display:"flex",
+          flexDirection:"column",
         }}
       >
         <div
@@ -272,7 +290,7 @@ function FavoritesModal({
           </button>
         </div>
 
-        <div style={{ padding: 16 }}>
+        <div style={{ padding: 16, overflowY:"auto" }}>
           {favorites.length === 0 ? (
             <div style={{ opacity: 0.8, lineHeight: 1.7, fontSize: 13 }}>
               {lang === "zh"

@@ -10,6 +10,7 @@
     "build:gh": "vite build --mode gh",
     "deploy:gh": "npm run build:gh && gh-pages -d dist",
     "deploy": "npm run deploy:gh",
+    "tauri": "tauri",
     "build:tauri": "vite build --mode tauri",
     "tauri:dev": "tauri dev",
     "tauri:build": "tauri build",

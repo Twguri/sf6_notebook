@@ -54,6 +54,8 @@ export default function AppShell({
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
   useEffect(() => {
+    // 只在 Tauri 桌面端运行；网页端直接跳过
+    if (!(window as any).__TAURI__) return;
     checkForUpdate();
   }, []);
 

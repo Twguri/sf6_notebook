@@ -1,6 +1,11 @@
 import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { checkForUpdate } from "../utils/checkUpdate";
+
+useEffect(() => {
+  checkForUpdate();
+}, []);
 
 type AppShellProps = {
   title?: string;

@@ -1,14 +1,16 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
   "productName": "SF6 PLAYER NOTEBOOK",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "identifier": "com.twguri.sf6notebook",
+
   "build": {
     "frontendDist": "../dist",
     "devUrl": "http://localhost:5173",
     "beforeDevCommand": "npm run dev",
     "beforeBuildCommand": "npm run build:tauri"
   },
+
   "app": {
     "windows": [
       {
@@ -23,6 +25,7 @@
       "csp": null
     }
   },
+
   "bundle": {
     "active": true,
     "targets": "all",
@@ -33,5 +36,14 @@
       "icons/icon.icns",
       "icons/icon.ico"
     ]
+  },
+
+  "plugins": {
+    "updater": {
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDRGQUM0RDcxQ0JFNTJGN0YKUldSL0wrWExjVTJzVDI4TVAwS00vSm5GTlNoemR6NmZSbWUzWndQQzdPN1dtQWVYZHZCdWs2N1UK",
+      "endpoints": [
+        "https://github.com/YOUR_GITHUB/YOUR_REPO/releases/latest/download/latest.json"
+      ]
+    }
   }
 }

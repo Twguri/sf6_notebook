@@ -3,10 +3,6 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { checkForUpdate } from "../utils/checkUpdate";
 
-useEffect(() => {
-  checkForUpdate();
-}, []);
-
 type AppShellProps = {
   title?: string;
 
@@ -56,6 +52,9 @@ export default function AppShell({
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+  useEffect(() => {
+    checkForUpdate();
   }, []);
 
   return (

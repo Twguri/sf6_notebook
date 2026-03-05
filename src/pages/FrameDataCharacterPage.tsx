@@ -1,6 +1,6 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
-
+import InputLegendModal from "../components/InputLegendModal";
 import AppShell from "../components/AppShell";
 import MoveSearch from "../components/MoveSearch";
 import { getFrameData } from "../features/frameData/frameDataStore";
@@ -55,17 +55,31 @@ const DIR_MAP: Record<string, string> = {
 // - num: 仅处理 {360}，保留数字和其它符号
 // - dir: 在 num 的基础上做 1-9 -> 方向箭头
 function formatInputWithMode(input: string | undefined, mode: "dir" | "num") {
-  if (!input) return "-";
+  if (!input) return "";
   const raw = String(input);
-  if (!raw.trim()) return "-";
+  if (!raw.trim()) return "";
 
-  // {360} 特判：仅去掉花括号，保留其它字符
-  let s = raw.replace(/\{360\}/gi, "360");
+  // 统一把 () 写法转成 {} 写法（可选）
+  let s = raw
+    .replace(/\(360\)/gi, "{360}")
+    .replace(/\(720\)/gi, "{720}");
 
   if (mode === "num") return s;
 
-  // 数字方向 1-9 -> 箭头。逐字符替换，保留其它字符。
+  const TOK_360 = "__CIRCLE__";      // 不含数字
+  const TOK_720 = "__DOUBLECIRCLE__";
+
+  // 保护 {360} / {720}
+  s = s.replace(/\{360\}/g, TOK_360);
+  s = s.replace(/\{720\}/g, TOK_720);
+
+  // 数字方向转换（1–9 → 箭头）
   s = s.replace(/[1-9]/g, (d) => DIR_MAP[d] ?? d);
+
+  // 恢复
+  s = s.replace(new RegExp(TOK_360, "g"), "{360}");
+  s = s.replace(new RegExp(TOK_720, "g"), "{720}");
+
   return s;
 }
 
@@ -626,48 +640,82 @@ export default function FrameDataCharacterPage({
 
     return g;
   }, [data.moves]);
+const [legendOpen, setLegendOpen] = useState(false);
 
-  return (
-    <AppShell
-      title={t("framesTitle")}
-      lang={lang}
-      toggleLang={toggleLang}
-      backTo={id ? `/c/${id}` : "/"}
-      backLabel={t("back")}
-    >
-      <div style={{ padding: 16 }}>
-        {/* 搜索功能保持不动 */}
-        <MoveSearch
-          moves={data.moves}
-          lang={lang}
-          t={t}
-          onSelect={(move) => {
-            console.log("selected", move);
-          }}
-        />
+return (
+  <AppShell
+    title={t("framesTitle")}
+    lang={lang}
+    toggleLang={toggleLang}
+    backTo={id ? `/c/${id}` : "/"}
+    backLabel={t("back")}
+  >
+    <div style={{ padding: 16 }}>
+      {/* 搜索功能保持不动 */}
+      <MoveSearch
+        moves={data.moves}
+        lang={lang}
+        t={t}
+        onSelect={(move) => {
+          console.log("selected", move);
+        }}
+      />
 
-        {SECTION_META.map((sec) => {
-          const rows = grouped[sec.key];
-          if (!rows || rows.length === 0) return null;
+      {SECTION_META.map((sec) => {
+        const rows = grouped[sec.key];
+        if (!rows || rows.length === 0) return null;
 
-          return (
-            <Section
-              key={sec.key}
-              title={lang === "zh" ? sec.titleCN : sec.titleEN}
+        return (
+          <Section
+            key={sec.key}
+            title={lang === "zh" ? sec.titleCN : sec.titleEN}
+          >
+            {/* 一个小工具条：Legend + 你已有的输入模式切换（在表格内部） */}
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "flex-end",
+                gap: 8,
+                marginBottom: 8,
+              }}
             >
-              <MoveTable
-                rows={rows}
-                columns={columns}
-                lang={lang}
-                inputView={inputView}
-                onToggleInputView={() =>
-                  setInputView((v) => (v === "dir" ? "num" : "dir"))
-                }
-              />
-            </Section>
-          );
-        })}
-      </div>
-    </AppShell>
-  );
+              <button
+                type="button"
+                onClick={() => setLegendOpen(true)}
+                style={{
+                  padding: "6px 10px",
+                  borderRadius: 10,
+                  border: "1px solid rgba(255,255,255,0.15)",
+                  background: "rgba(255,255,255,0.06)",
+                  color: "rgba(255,255,255,0.92)",
+                  cursor: "pointer",
+                }}
+              >
+                {lang === "zh" ? "输入说明" : "Input Legend"}
+              </button>
+            </div>
+
+            <MoveTable
+              rows={rows}
+              columns={columns}
+              lang={lang}
+              inputView={inputView}
+              onToggleInputView={() =>
+                setInputView((v) => (v === "dir" ? "num" : "dir"))
+              }
+            />
+          </Section>
+        );
+      })}
+    </div>
+
+    {/* Legend Modal（放在 AppShell 里，遮罩会覆盖整个页面） */}
+    <InputLegendModal
+      open={legendOpen}
+      lang={lang}
+      onClose={() => setLegendOpen(false)}
+    />
+  </AppShell>
+);
 }
+

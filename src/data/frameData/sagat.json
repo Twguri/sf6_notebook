@@ -2,7 +2,7 @@
   "characterId": "sagat",
   "displayNameCN": "",
   "displayNameEN": "",
-  "lastUpdated": "2026-02-06",
+  "lastUpdated": "2026-03-21",
   "columns": [
     "id",
     "category",
@@ -282,7 +282,7 @@
       "input": "2MP",
       "startup": "7",
       "active": "7-9",
-      "recovery": "17",
+      "recovery": "16",
       "onHit": "4",
       "onBlock": "-1",
       "cancel": "C",
@@ -293,8 +293,8 @@
       "driveOnPunishCounter": "-4000",
       "superArt": "500",
       "Properties": "High",
-      "notesEN": "1 frames of recovery subtracted on hit",
-      "notesCN": "命中对手-1f收招"
+      "notesEN": "1 frame of recovery added when blocked; 3 frames of recovery added when the attack misses",
+      "notesCN": "打防+1f收招，攻击挥空+3f收招"
     },
     {
       "id": "crouching_medium_kick_m",

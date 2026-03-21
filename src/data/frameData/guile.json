@@ -2,7 +2,7 @@
   "characterId": "guile",
   "displayNameCN": "",
   "displayNameEN": "Guile",
-  "lastUpdated": "2026-02-06",
+  "lastUpdated": "2026-03-21",
   "columns": [
     "id",
     "category",
@@ -344,8 +344,8 @@
       "driveOnPunishCounter": "-10000",
       "superArt": "1000",
       "Properties": "High",
-      "notesEN": "Forces the opponent into a standing position",
-      "notesCN": "强制对手站立"
+      "notesEN": "Can only be cancled on the 1st active frame if the attack hits. Forces the opponent into a standing position",
+      "notesCN": "只有当攻击命中对手时才能在第一帧打击帧取消。强制对手站立"
     },
     {
       "id": "crouching_heavy_kick_h",
@@ -562,7 +562,7 @@
       "driveOnHit": "5000",
       "driveOnBlock": "-6000",
       "driveOnPunishCounter": "-12000",
-      "superArt": "500",
+      "superArt": "1200",
       "Properties": "High",
       "notesEN": "",
       "notesCN": ""
@@ -737,11 +737,11 @@
       "comboScaling": "",
       "driveOnHit": "1000",
       "driveOnBlock": "-2500",
-      "driveOnPunishCounter": "-4000",
+      "driveOnPunishCounter": "-2000",
       "superArt": "500",
       "Properties": "Mid",
-      "notesEN": "",
-      "notesCN": ""
+      "notesEN": "Produces a ground bound on Counter or Punish Counter",
+      "notesCN": "打康或确反康造成弹地效果。"
     },
     {
       "id": "phantom_cutter_h_h",

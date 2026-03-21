@@ -2,7 +2,7 @@
   "characterId": "juri",
   "displayNameCN": "",
   "displayNameEN": "Juri",
-  "lastUpdated": "2026-02-06",
+  "lastUpdated": "2026-03-21",
   "columns": [
     "id",
     "category",
@@ -970,8 +970,8 @@
       "driveOnPunishCounter": "-4000",
       "superArt": "500",
       "Properties": "High",
-      "notesEN": "",
-      "notesCN": ""
+      "notesEN": "Produce a blowback knowckdown during a mid-air combo",
+      "notesCN": "在空中连段重造成后仰倒地"
     },
     {
       "id": "chain_combokyosesho_m",
@@ -1058,8 +1058,8 @@
       "driveOnPunishCounter": "-10000",
       "superArt": "1000",
       "Properties": "High",
-      "notesEN": "Forces a juggle state when hitting a mid-air opponent",
-      "notesCN": "命中空中对手时造成浮空硬直"
+      "notesEN": "3 frames of recovery added when the attack misses. Forces a juggle state when hitting a mid-air opponent",
+      "notesCN": "攻击挥空时+3f收招。命中空中对手时造成浮空硬直"
     },
     {
       "id": "chain_comborenko_kicks_h",
@@ -1080,8 +1080,8 @@
       "driveOnPunishCounter": "-2500",
       "superArt": "0",
       "Properties": "High",
-      "notesEN": "",
-      "notesCN": ""
+      "notesEN": "3 frames of recovery added when the attack misses.",
+      "notesCN": "攻击挥空时+3f收招"
     },
     {
       "id": "korenzan_h",
@@ -1250,7 +1250,7 @@
       "onBlock": "-12",
       "cancel": "SA2",
       "damage": "600",
-      "comboScaling": "",
+      "comboScaling": "Combo scaling 20%",
       "driveOnHit": "0",
       "driveOnBlock": "-2500",
       "driveOnPunishCounter": "-5000",
@@ -1335,7 +1335,7 @@
       "active": "24-27",
       "recovery": "19",
       "onHit": "5",
-      "onBlock": "-10",
+      "onBlock": "-8",
       "cancel": "SA3",
       "damage": "600",
       "comboScaling": "Starter scaling 20% Combo scaling 20%",
@@ -1344,8 +1344,8 @@
       "driveOnPunishCounter": "-5000",
       "superArt": "800",
       "Properties": "High",
-      "notesEN": "Invincible to mid-air attacks from frames 8 - 27 Produces a slam knockdown on a mid-air hit",
-      "notesCN": "8-27帧对空福地，命中空中对手造成砸地倒地"
+      "notesEN": "Invincible to mid-air attacks from frames 8 - 27 Produces a slam knockdown on a hit during active frames 2-4 of the attack. Produces a slam knockdown on a mid-air hit.",
+      "notesCN": "8-27帧对空福地，在有效帧第2-4帧时命中对手造成砸地倒地。命中空中对手造成砸地倒地"
     },
     {
       "id": "boostedankensatsu_m",
@@ -1357,7 +1357,7 @@
       "active": "24-27",
       "recovery": "19",
       "onHit": "8",
-      "onBlock": "-10",
+      "onBlock": "-8",
       "cancel": "SA3*",
       "damage": "600",
       "comboScaling": "Starter scaling 20% Combo scaling 20%",
@@ -1366,7 +1366,7 @@
       "driveOnPunishCounter": "-5000",
       "superArt": "800",
       "Properties": "High",
-      "notesEN": "Considered airborne from frames 8 - 27 * Can transition to boosted Saihasho or boosted Go Ohsatsu when Fuha is stocked Cannot use the same attack twice Produces a floor bound during a mid-air hit",
+      "notesEN": "Considered airborne from frames 8 - 27 * Can transition to boosted Saihasho or boosted Go Ohsatsu when Fuha is stocked Cannot use the same attack twice Produces a floor bound during a mid-air hit.",
       "notesCN": "8-27帧浮空，有风破buff时可以取消岁破冲（风水）或者OD五黄杀。不能使用两次相同的攻击，命中空中对手时造成砸地效果"
     },
     {
@@ -1379,7 +1379,7 @@
       "active": "24-27",
       "recovery": "19",
       "onHit": "9",
-      "onBlock": "-10",
+      "onBlock": "-8",
       "cancel": "SA2*",
       "damage": "800",
       "comboScaling": "Starter scaling 20% Combo scaling 20%",
@@ -1594,7 +1594,7 @@
       "category": "special",
       "nameEN": "Shiren-sen (After Shiku-sen)",
       "nameCN": "死连闪",
-      "input": "214K>K",
+      "input": "9>214K>K",
       "startup": "6",
       "active": "6-38",
       "recovery": "12 frame(s) after landing",
@@ -1616,7 +1616,7 @@
       "category": "special",
       "nameEN": "OD Shiren-sen (After Shiku-sen)",
       "nameCN": "OD死连闪",
-      "input": "214KK>K",
+      "input": "9>214KK>K",
       "startup": "6",
       "active": "6-38",
       "recovery": "7 frame(s) after landing",

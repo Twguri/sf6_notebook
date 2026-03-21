@@ -28,7 +28,7 @@ export const CHARACTERS = [
   { id: "akuma", nameCN: "豪鬼", nameEN: "AKUMA", img: `${BASE}characters/akuma.png` },
 
   // ===== Year 2 DLC =====
-  { id: "bison", nameCN: "维加", nameEN: "M. BISON", img: `${BASE}characters/bison.png` },
+  { id: "mbison", nameCN: "维加", nameEN: "M. BISON", img: `${BASE}characters/mbison.png` },
   { id: "terry", nameCN: "特瑞", nameEN: "TERRY", img: `${BASE}characters/terry.png` },
   { id: "mai", nameCN: "不知火舞", nameEN: "MAI", img: `${BASE}characters/mai.png` },
   { id: "elena", nameCN: "艾莲娜", nameEN: "ELENA", img: `${BASE}characters/elena.png` },
@@ -36,4 +36,5 @@ export const CHARACTERS = [
   // ===== Year 3 DLC =====
   { id: "viper", nameCN: "深红毒蛇", nameEN: "C.VIPER", img: `${BASE}characters/viper.png` },
   { id: "sagat", nameCN: "沙加特", nameEN: "SAGAT", img: `${BASE}characters/sagat.png` },
+  { id: "alex", nameCN: "阿利克斯", nameEN: "ALEX", img: `${BASE}characters/alex.png` },
 ];

@@ -2,7 +2,7 @@
   "characterId": "ryu",
   "displayNameCN": "隆",
   "displayNameEN": "Ryu",
-  "lastUpdated": "2026-02-06",
+  "lastUpdated": "2026-03-21",
   "columns": [
     "id",
     "category",
@@ -166,8 +166,8 @@
       "driveOnPunishCounter": "-4000",
       "superArt": "500",
       "Properties": "High",
-      "notesEN": "",
-      "notesCN": ""
+      "notesEN": "2 frames of recovery added when the attack misses",
+      "notesCN": "攻击挥空+2f收招"
     },
     {
       "id": "standing_medium_kick_m",
@@ -1130,7 +1130,7 @@
       "damage": "700",
       "comboScaling": "",
       "driveOnHit": "2000",
-      "driveOnBlock": "-4000",
+      "driveOnBlock": "-2000",
       "driveOnPunishCounter": "-5000",
       "superArt": "800",
       "Properties": "High",

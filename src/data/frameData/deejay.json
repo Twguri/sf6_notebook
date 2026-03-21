@@ -2,7 +2,7 @@
   "characterId": "deejay",
   "displayNameCN": "",
   "displayNameEN": "Deejay",
-  "lastUpdated": "2026-02-06",
+  "lastUpdated": "2026-03-21",
   "columns": [
     "id",
     "category",
@@ -318,7 +318,7 @@
       "startup": "6",
       "active": "6-9",
       "recovery": "14",
-      "onHit": "4",
+      "onHit": "5",
       "onBlock": "-1",
       "cancel": "C",
       "damage": "600",
@@ -328,8 +328,8 @@
       "driveOnPunishCounter": "-4000",
       "superArt": "500",
       "Properties": "High",
-      "notesEN": "",
-      "notesCN": ""
+      "notesEN": "1 frames pf recovery are added if the attack misses.",
+      "notesCN": "攻击挥空+1f有利"
     },
     {
       "id": "crouching_medium_kick_m",
@@ -1140,7 +1140,7 @@
       "driveOnHit": "4000",
       "driveOnBlock": "-3000",
       "driveOnPunishCounter": "-5000",
-      "superArt": "2100",
+      "superArt": "2500",
       "Properties": "High",
       "notesEN": "Will only transition to the next attacks if the first attack hits",
       "notesCN": "只有第一段攻击命中后续攻击才会发生"
@@ -1392,7 +1392,7 @@
       "category": "special",
       "nameEN": "Juggling Sway (During Juggling Dash)",
       "nameCN": "花招摇摆",
-      "input": "214K>4P",
+      "input": "214K>6P>4P",
       "startup": "",
       "active": "",
       "recovery": "29 total frames",
@@ -1406,8 +1406,8 @@
       "driveOnPunishCounter": "0",
       "superArt": "0",
       "Properties": "",
-      "notesEN": "",
-      "notesCN": ""
+      "notesEN": "Can be canceled into follow-up attacks except for Juggling Dash from frames 17 - 25",
+      "notesCN": "第17-25f可以取消除杂耍前冲以外的后续"
     },
     {
       "id": "od_juggling_sway_during_od_juggling_dash",
@@ -1428,8 +1428,8 @@
       "driveOnPunishCounter": "0",
       "superArt": "0",
       "Properties": "",
-      "notesEN": "",
-      "notesCN": ""
+      "notesEN": "Can be canceled into follow-up attacks except for Juggling Dash from frames 13-18",
+      "notesCN": "第13-18f可以取消除杂耍前冲以外的后续"
     },
     {
       "id": "sa1_the_greatest_sobat",

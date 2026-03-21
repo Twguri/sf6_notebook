@@ -2,7 +2,7 @@
   "characterId": "elena",
   "displayNameCN": "",
   "displayNameEN": "",
-  "lastUpdated": "2026-02-06",
+  "lastUpdated": "2026-03-21",
   "columns": [
     "id",
     "category",
@@ -1534,8 +1534,8 @@
       "driveOnPunishCounter": "-10000",
       "superArt": "0",
       "Properties": "High",
-      "notesEN": "Completely invincible on frames 1 - 17 Minimum guaranteed damage is set to 40% Values do not change when the attack lands as a counter or Punish Counter Properties change to the following when a down input is held during the attack: - Damage changes to 1950 - 1300 vitality recovered",
-      "notesCN": "1-17帧无敌，保底修正40%，伤害不会随打康类型改变。按住2：1，伤害改变为1950；2，生命值回复1300"
+      "notesEN": "Completely invincible on frames 1 - 17 Minimum guaranteed damage is set to 40% Values do not change when the attack lands as a counter or Punish Counter Properties change to the following when a down input is held during the attack: - Damage changes to 1950 - 1600 vitality recovered, recovers the drive gauge by 10000",
+      "notesCN": "1-17帧无敌，保底修正40%，伤害不会随打康类型改变。按住2：1，伤害改变为1950；2，生命值回复1300；3斗气槽回复10000."
     },
     {
       "id": "sa3_song_of_the_grasslands",

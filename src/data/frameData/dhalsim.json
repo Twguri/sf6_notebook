@@ -2,7 +2,7 @@
   "characterId": "dhalsim",
   "displayNameCN": "",
   "displayNameEN": "Dhalsim",
-  "lastUpdated": "2026-02-06",
+  "lastUpdated": "2026-03-21",
   "columns": [
     "id",
     "category",
@@ -1142,7 +1142,7 @@
       "cancel": "SA3",
       "damage": "900",
       "comboScaling": "",
-      "driveOnHit": "2400",
+      "driveOnHit": "3000",
       "driveOnBlock": "-5000",
       "driveOnPunishCounter": "-5000",
       "superArt": "1000",
@@ -1164,7 +1164,7 @@
       "cancel": "SA3",
       "damage": "1200",
       "comboScaling": "",
-      "driveOnHit": "2700",
+      "driveOnHit": "4000",
       "driveOnBlock": "-6000",
       "driveOnPunishCounter": "-5000",
       "superArt": "1100",
@@ -1191,8 +1191,8 @@
       "driveOnPunishCounter": "-5000",
       "superArt": "1100",
       "Properties": "High - Projectile",
-      "notesEN": "",
-      "notesCN": ""
+      "notesEN": "Recovery is reduced by 5 frame on hit",
+      "notesCN": "攻击命中减少5f收招"
     },
     {
       "id": "l_yoga_blast_l",

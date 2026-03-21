@@ -2,7 +2,7 @@
   "characterId": "ed",
   "displayNameCN": "",
   "displayNameEN": "Ed",
-  "lastUpdated": "2026-02-06",
+  "lastUpdated": "2026-03-21",
   "columns": [
     "id",
     "category",
@@ -315,8 +315,8 @@
       "driveOnPunishCounter": "-4000",
       "superArt": "600",
       "Properties": "High",
-      "notesEN": "Forces the opponent into a standing position",
-      "notesCN": "强制对手站立"
+      "notesEN": "3 frames of recovery added when attack misses. Forces the opponent into a standing position",
+      "notesCN": "攻击挥空+3f收招。强制对手站立"
     },
     {
       "id": "crouching_heavy_punch_h",
@@ -348,9 +348,9 @@
       "input": "2HK",
       "startup": "12",
       "active": "12-13",
-      "recovery": "17",
-      "onHit": "1",
-      "onBlock": "-4",
+      "recovery": "19",
+      "onHit": "-1",
+      "onBlock": "-6",
       "cancel": "C",
       "damage": "800",
       "comboScaling": "",
@@ -359,8 +359,8 @@
       "driveOnPunishCounter": "-8000",
       "superArt": "1000",
       "Properties": "High",
-      "notesEN": "",
-      "notesCN": ""
+      "notesEN": "2 frames of recovery added when attack misses.",
+      "notesCN": "攻击挥空+2f收招"
     },
     {
       "id": "jumping_light_punch_during_a_jump_l",
@@ -689,8 +689,8 @@
       "driveOnPunishCounter": "-4000",
       "superArt": "1200",
       "Properties": "High",
-      "notesEN": "",
-      "notesCN": ""
+      "notesEN": "Can be canceled into Kill Rush(Forward) and Kill Rush（Backward）when the attack hits",
+      "notesCN": "攻击命中可以取消诛杀步（前方）和诛杀步（后方）"
     },
     {
       "id": "psycho_spark",
@@ -1189,7 +1189,7 @@
       "onBlock": "4",
       "cancel": "SA2",
       "damage": "*800",
-      "comboScaling": "Starter scaling 20% Combo scaling 15%",
+      "comboScaling": "Starter scaling 20% Combo scaling 20%",
       "driveOnHit": "0",
       "driveOnBlock": "-3000",
       "driveOnPunishCounter": "-5000",

@@ -2,7 +2,7 @@
   "characterId": "rashid",
   "displayNameCN": "",
   "displayNameEN": "Rashid",
-  "lastUpdated": "2026-02-06",
+  "lastUpdated": "2026-03-21",
   "columns": [
     "id",
     "category",
@@ -836,7 +836,7 @@
       "driveOnPunishCounter": "-5000",
       "superArt": "800",
       "Properties": "High",
-      "notesEN": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 6 - 10 Considered airborne from frames 13 - 60 Attack properties changed by air currents are active from frames 2 - 9 11 frames of landing recovery can be canceled by a special move or Super Art when the attack hits",
+      "notesEN": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 6 - 14 Considered airborne from frames 13 - 60 Attack properties changed by air currents are active from frames 2 - 9 11 frames of landing recovery can be canceled by a special move or Super Art when the attack hits",
       "notesCN": "6-10帧对空无敌，13-60帧浮空，2-9帧可以被气旋影响，攻击命中时11帧落地硬直可以取消SA或者其他必杀"
     },
     {
@@ -1342,16 +1342,16 @@
       "driveOnPunishCounter": "-3000",
       "superArt": "600",
       "Properties": "High - Projectile",
-      "notesEN": "Transition to variation attack by holding the button for 36 frames",
-      "notesCN": "按住按钮超过36帧蓄力"
+      "notesEN": "Transition to variation attack by holding the button for 32 frames",
+      "notesCN": "按住按钮超过32帧蓄力"
     },
     {
       "id": "od_whirlwind_shotcharged_hold",
       "category": "special",
       "nameEN": "OD Whirlwind Shot(Charged) Hold",
       "nameCN": "OD旋风踢射（蓄力）",
-      "input": "236KK",
-      "startup": "41",
+      "input": "236[KK]",
+      "startup": "38",
       "active": "",
       "recovery": "",
       "onHit": "D",
@@ -1364,8 +1364,8 @@
       "driveOnPunishCounter": "-3000",
       "superArt": "600",
       "Properties": "High - Projectile",
-      "notesEN": "After technique is finished, an air current that lasts 70 frames will be generated",
-      "notesCN": "收招后生成一个保留70帧的气旋"
+      "notesEN": "Can transition to branching attacks on frame 11. After technique is finished, an air current that lasts 70 frames will be generated",
+      "notesCN": "第11f开始可以派生后续；收招后生成一个保留70帧的气旋"
     },
     {
       "id": "l_arabian_cyclone_l",

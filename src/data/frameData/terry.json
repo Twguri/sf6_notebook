@@ -2,7 +2,7 @@
   "characterId": "terry",
   "displayNameCN": "",
   "displayNameEN": "Terry",
-  "lastUpdated": "2026-02-06",
+  "lastUpdated": "2026-03-21",
   "columns": [
     "id",
     "category",
@@ -278,7 +278,7 @@
       "input": "2MP",
       "startup": "6",
       "active": "6-9",
-      "recovery": "14",
+      "recovery": "13",
       "onHit": "5",
       "onBlock": "-1",
       "cancel": "C",
@@ -289,8 +289,8 @@
       "driveOnPunishCounter": "-4000",
       "superArt": "600",
       "Properties": "High",
-      "notesEN": "",
-      "notesCN": ""
+      "notesEN": "1 frame of recovery added when blocked; 2 frames of recovery added when the attack misses",
+      "notesCN": "打防+1f收招；攻击挥空+2f收招"
     },
     {
       "id": "crouching_medium_kick_m",

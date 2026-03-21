@@ -2,7 +2,7 @@
   "characterId": "aki",
   "displayNameCN": "",
   "displayNameEN": "Aki",
-  "lastUpdated": "2026-02-06",
+  "lastUpdated": "2026-03-21",
   "columns": [
     "id",
     "category",
@@ -111,8 +111,8 @@
       "driveOnPunishCounter": "-2000",
       "superArt": "300",
       "Properties": "High",
-      "notesEN": "",
-      "notesCN": ""
+      "notesEN": "Can be rapid canceled",
+      "notesCN": "可以联机取消"
     },
     {
       "id": "standing_light_kick_l",
@@ -584,7 +584,7 @@
       "input": "5LP>5LP",
       "startup": "8",
       "active": "8-9",
-      "recovery": "14",
+      "recovery": "15",
       "onHit": "1",
       "onBlock": "-3",
       "cancel": "C",

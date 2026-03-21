@@ -2,7 +2,7 @@
   "characterId": "lily",
   "displayNameCN": "",
   "displayNameEN": "Lily",
-  "lastUpdated": "2026-02-06",
+  "lastUpdated": "2026-03-21",
   "columns": [
     "id",
     "category",
@@ -194,7 +194,7 @@
       "nameEN": "Standing Heavy Punch",
       "nameCN": "站重拳",
       "input": "5HP",
-      "startup": "11",
+      "startup": "10",
       "active": "11-13",
       "recovery": "22",
       "onHit": "0",
@@ -812,7 +812,7 @@
       "input": "236KK",
       "startup": "15",
       "active": "15-27",
-      "recovery": "16",
+      "recovery": "13",
       "onHit": "D",
       "onBlock": "-8",
       "cancel": "*",
@@ -1153,8 +1153,8 @@
       "driveOnPunishCounter": "-5000",
       "superArt": "1100",
       "Properties": "High",
-      "notesEN": "Has cross-up attack properties When the first attack hits, the 2nd hit will happen on the next frame",
-      "notesCN": "有逆向判定，第一段攻击命中时，第二段攻击会在第二帧发动"
+      "notesEN": "Has cross-up attack properties When the first attack hits, the 2nd hit will happen on the next frame. Can be followed up with an additional Condor Dive by using a Windclad Stock on hit or block. If transitioned from Overdrive Tomahawk Buster, combo scaling is 35%",
+      "notesCN": "有逆向判定，第一段攻击命中时，第二段攻击会在第二帧发动。命中或打防时可以接一个附加的秃鹰潜。如果是从OD秃鹰潜派生，连招修正为35%。"
     },
     {
       "id": "windcladod_condor_dive_during_a_neutral_or_forward_jumpduring_od_tomahawk_buster",
@@ -1175,8 +1175,8 @@
       "driveOnPunishCounter": "-5000",
       "superArt": "1100",
       "Properties": "High",
-      "notesEN": "Has cross-up attack properties When the first attack hits, the 2nd hit will happen on the next frame * If transitioned from Overdrive Tomahawk Buster, combo scaling is 35%",
-      "notesCN": "有逆向判定，第一段攻击命中时，第二段攻击会在第二帧发动。如果接623PP，修正为35%"
+      "notesEN": "Has cross-up attack properties When the first attack hits, the 2nd hit will happen on the next frame Can be followed up with an additional Condor Dive by using a Windclad Stock on hit or block.* If transitioned from Overdrive Tomahawk Buster, combo scaling is 35%",
+      "notesCN": "有逆向判定，第一段攻击命中时，第二段攻击会在第二帧发动。命中或打防时可以接一个附加的秃鹰潜。如果接623PP，修正为35%"
     },
     {
       "id": "l_mexican_typhoon_when_near_opponent_l",

@@ -73,7 +73,7 @@ function HelpModal({
           },
           {
             h: "关于更新",
-            p: "当前版本 1.2.6：更新了帧数表（全角色）以及连段输入（招式选择器）和训练计划功能, 更新了Tips分区功能，更新了桌面端自检更新功能。帧数表仍在持续完善中。",
+            p: "当前版本 1.2.7：更新了2026.3.17版本改动内容，包括新角色阿利历克斯和全角色的平衡性调整, 更新了连段组导入和导出功能。帧数表仍在持续完善中。",
           },
           {
             h:"致谢",
@@ -107,7 +107,7 @@ function HelpModal({
           },
           {
             h: "Updates",
-            p: "Current version: 1.2.6. updated all characters' frame data and improved combo input with a move picker, updated the auto update function for desktop, and training plan section. Added the subsection function in Tips section. The frame data section is still being expanded and verified.",
+            p: "Current version: 1.2.7. updated update on 2026.3.17, including the new character Alex and modifications on all characters, updated the export and import function for combo groups. The frame data section is still being expanded and verified.",
           },
           {
               h:"Thanks",

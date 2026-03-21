@@ -1,9 +1,15 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import AppShell from "../../components/AppShell";
 
 import type { ComboGroup } from "./combos/types";
 import { loadGroups, saveGroups } from "./combos/storage";
+import {
+  cloneImportedComboGroup,
+  downloadComboGroupFile,
+  parseComboGroupImportJson,
+  readJsonFileAsText,
+} from "../../utils/comboGroupIO";
 
 type Props = {
   lang: "zh" | "en";
@@ -19,7 +25,7 @@ function uid(prefix: string) {
 
 // menu 自动上/下展开
 const MENU_W = 160;
-const MENU_H = 96;
+const MENU_H = 144;
 const MENU_MARGIN = 8;
 
 function getMenuPos(anchor: MenuAnchor) {
@@ -42,6 +48,7 @@ export default function ComboGroupsPage({ lang, toggleLang }: Props) {
   const { id } = useParams<{ id: string }>();
   const characterKey = id ?? "unknown";
   const nav = useNavigate();
+  const importFileRef = useRef<HTMLInputElement | null>(null);
 
   // storage
   const [groups, setGroups] = useState<ComboGroup[]>([]);
@@ -64,9 +71,17 @@ export default function ComboGroupsPage({ lang, toggleLang }: Props) {
       cancel: lang === "zh" ? "取消" : "Cancel",
       rename: lang === "zh" ? "重命名" : "Rename",
       del: lang === "zh" ? "删除" : "Delete",
+      exportGroup: lang === "zh" ? "导出连段组" : "Export Group",
+      importGroup: lang === "zh" ? "导入连段组" : "Import Group",
       emptyGroups: lang === "zh" ? "还没有连段组" : "No groups yet",
       combosCount: lang === "zh" ? "连段数: " : "Combos: ",
       groupNamePH: lang === "zh" ? "输入连段组名字" : "Group name",
+      importFailed: lang === "zh" ? "导入失败：文件格式不正确。" : "Import failed: invalid file format.",
+      importCharacterMismatch:
+        lang === "zh"
+          ? "导入失败：该连段组属于其他角色，无法导入到当前角色。"
+          : "Import failed: this combo group belongs to another character.",
+      importSuccess: lang === "zh" ? "已导入连段组。" : "Combo group imported.",
     };
   }, [lang]);
 
@@ -187,6 +202,17 @@ export default function ComboGroupsPage({ lang, toggleLang }: Props) {
       fontWeight: 700,
     } as React.CSSProperties,
     row: { display: "flex", gap: 10, marginTop: 12 },
+    modalActionBtn: {
+      width: "100%",
+      height: 44,
+      borderRadius: 12,
+      border: "1px solid rgba(255,255,255,0.10)",
+      background: "rgba(255,255,255,0.06)",
+      color: "#fff",
+      fontWeight: 900,
+      cursor: "pointer",
+      marginTop: 12,
+    } as React.CSSProperties,
     confirmBtn: (disabled: boolean): React.CSSProperties => ({
       flex: 1,
       height: 44,
@@ -250,6 +276,39 @@ export default function ComboGroupsPage({ lang, toggleLang }: Props) {
     nav(`/c/${characterKey}/combos/${g.id}`);
   }
 
+  async function onImportFileChange(e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0];
+    e.target.value = "";
+    if (!file) return;
+
+    try {
+      const text = await readJsonFileAsText(file);
+      const parsed = parseComboGroupImportJson({
+        text,
+        currentCharacterKey: characterKey,
+      });
+
+      if (!parsed.ok) {
+        window.alert(
+          parsed.reason === "character_mismatch" ? t.importCharacterMismatch : t.importFailed
+        );
+        return;
+      }
+
+      const imported = cloneImportedComboGroup({
+        importedGroup: parsed.file.group,
+        existingGroups: groups,
+      });
+
+      persist([imported, ...groups]);
+      setCreateOpen(false);
+      setNewGroupName("");
+      window.alert(t.importSuccess);
+    } catch {
+      window.alert(t.importFailed);
+    }
+  }
+
   // rename group modal
   const [renameGroupOpen, setRenameGroupOpen] = useState(false);
   const [renameGroupId, setRenameGroupId] = useState<string | null>(null);
@@ -287,6 +346,11 @@ export default function ComboGroupsPage({ lang, toggleLang }: Props) {
     persist(groups.filter((g) => g.id !== groupId));
   }
 
+  function exportGroup(group: ComboGroup) {
+    setMenu(null);
+    downloadComboGroupFile({ characterKey, group });
+  }
+
   return (
     <AppShell
       lang={lang}
@@ -297,6 +361,14 @@ export default function ComboGroupsPage({ lang, toggleLang }: Props) {
       showAppTitle={false}
     >
       {menu ? <div style={S.overlay} onClick={() => setMenu(null)} /> : null}
+
+      <input
+        ref={importFileRef}
+        type="file"
+        accept=".json,application/json"
+        style={{ display: "none" }}
+        onChange={onImportFileChange}
+      />
 
       <div style={S.section}>
         <button style={S.primaryBtn} onClick={() => setCreateOpen(true)}>
@@ -349,6 +421,10 @@ export default function ComboGroupsPage({ lang, toggleLang }: Props) {
                       {t.rename}
                     </button>
                     <div style={S.menuDivider} />
+                    <button style={S.menuItem} onClick={() => exportGroup(g)}>
+                      {t.exportGroup}
+                    </button>
+                    <div style={S.menuDivider} />
                     <button style={S.menuItem} onClick={() => deleteGroup(g.id)}>
                       {t.del}
                     </button>
@@ -368,12 +444,14 @@ export default function ComboGroupsPage({ lang, toggleLang }: Props) {
             canConfirm={canCreateGroup}
             confirmText={t.confirm}
             cancelText={t.cancel}
+            extraActionText={t.importGroup}
             onChange={setNewGroupName}
             onConfirm={onCreateGroupConfirm}
             onCancel={() => {
               setCreateOpen(false);
               setNewGroupName("");
             }}
+            onExtraAction={() => importFileRef.current?.click()}
             styles={S}
           />
         ) : null}
@@ -409,9 +487,11 @@ function Modal({
   canConfirm,
   confirmText,
   cancelText,
+  extraActionText,
   onChange,
   onConfirm,
   onCancel,
+  onExtraAction,
   styles,
 }: {
   title: string;
@@ -420,9 +500,11 @@ function Modal({
   canConfirm: boolean;
   confirmText: string;
   cancelText: string;
+  extraActionText?: string;
   onChange: (v: string) => void;
   onConfirm: () => void;
   onCancel: () => void;
+  onExtraAction?: () => void;
   styles: any;
 }) {
   return (
@@ -455,6 +537,12 @@ function Modal({
             }
           }}
         />
+
+        {extraActionText && onExtraAction ? (
+          <button style={styles.modalActionBtn} onClick={onExtraAction}>
+            {extraActionText}
+          </button>
+        ) : null}
 
         <div style={styles.row}>
           <button style={styles.cancelBtn} onClick={onCancel}>

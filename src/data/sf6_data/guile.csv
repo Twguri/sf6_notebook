@@ -9,7 +9,7 @@ crouching_light_punch_l,normal,Crouching Light Punch,下轻拳,2LP,4,4-6,8,5,-2,
 crouching_light_kick_l,normal,Crouching Light Kick,下轻脚,2LK,5,5-6,12,1,-3,,200,Starter scaling 20%,250,-500,-2000,300,Low,Can be rapid canceled,可以连击取消
 crouching_medium_punch_m,normal,Crouching Medium Punch,下中拳,2MP,6,6-8,13,4,-2,C,600,,1500,-3000,-4000,500,High,* 3 frames of recovery added when the attack misses,攻击挥空+3f收招
 crouching_medium_kick_m,normal,Crouching Medium Kick,下中脚,2MK,8,8-10,18,4,-5,,500,Starter scaling 20%,2000,-4000,-6000,600,Low,,
-crouching_heavy_punch_h,normal,Crouching Heavy Punch,下重拳,2HP,9,9-13,20,0,-9,,900,,3000,-6000,-10000,1000,High,Forces the opponent into a standing position,强制对手站立
+crouching_heavy_punch_h,normal,Crouching Heavy Punch,下重拳,2HP,9,9-13,20,0,-9,,900,,3000,-6000,-10000,1000,High,Can only be cancled on the 1st active frame if the attack hits. Forces the opponent into a standing position,只有当攻击命中对手时才能在第一帧打击帧取消。强制对手站立
 crouching_heavy_kick_h,normal,Crouching Heavy Kick,下重脚,2HK,9,9-29,21,D,-12,,900,Starter scaling 20%,3000,-2000,-10000,1000,LowLow,"Knockdown time extended when the attack lands as a Punish Counter, and changes to Hard Knockdown Forces a juggle state when the first attack lands as a Punish Counter",确反康强制倒地，延长倒地时间。第一段攻击为确反康时造成浮空硬直
 jumping_light_punch_during_a_jump_l,normal,Jumping Light Punch (During a jump),跳轻拳,J>LP,4,4-13,3 frame(s) after landing,,,,300,,500,-1500,-2000,300,Mid,,
 jumping_light_kick_during_a_jump_l,normal,Jumping Light Kick (During a jump),跳轻脚,J>LK,6,6-15,3 frame(s) after landing,,,,300,,500,-1500,-2000,300,Mid,Has cross-up attack properties,有逆向判定
@@ -19,7 +19,7 @@ jumping_heavy_punch_during_a_jump_h,normal,Jumping Heavy Punch (During a jump),�
 jumping_heavy_kick_during_a_jump_h,normal,Jumping Heavy Kick (During a jump),跳重脚,J>HK,10,10-14,3 frame(s) after landing,,,,800,,2000,-4000,-5000,1000,Mid,,
 full_bullet_magnum_m,normal,Full Bullet Magnum,马格南满弹,6MP,20,20-22,19,2,-3,,800,,1000,-2500,-4000,500,Mid,Forces a slam knockdown when hitting a mid-air opponent,击中空中对手时造成砸地倒地
 burning_straight_h,normal,Burning Straight,燃烧直拳,4HP,9,9-11,21,1,-4,C,800,,2000,-5000,-8000,1000,High,,
-spinning_back_knuckle_h,normal,Spinning Back Knuckle,回旋反手拳,6HP,16,16-18,20,5,3,,800,,5000,-6000,-12000,500,High,,
+spinning_back_knuckle_h,normal,Spinning Back Knuckle,回旋反手拳,6HP,16,16-18,20,5,3,,800,,5000,-6000,-12000,1200,High,,
 knee_bazooka_l,normal,Knee Bazooka,飞膝火箭炮,4LK,8,8-11,15,0,-4,,500,,2000,-2500,-3000,1000,High,,
 rolling_sobat_m,normal,Rolling Sobat,翻身后旋踢,4MK,11,11-13,18,3,-6,,700,,1500,-3000,-6000,700,High,Invincible to low attacks from frames 7 - 17,1-17帧下段无敌
 rolling_sobat_m,normal,Rolling Sobat,翻身后旋踢,6MK,11,11-13,18,3,-6,,700,,1500,-3000,-6000,700,High,Invincible to low attacks from frames 7 - 17 23 frames of recovery (34 frames overall) added if the attack misses,1-17帧下段无敌，攻击挥空+23f收招
@@ -27,7 +27,7 @@ reverse_spin_kick_h,normal,Reverse Spin Kick,倒旋踢,6HP,17,17-19,26,-1,-8,,10
 guile_high_kick_h,normal,Guile High Kick,古烈上段踢,3HK,10,10-12,23,0,-9,C,1000,,3000,-6000,-10000,1000,High,Forces a juggle state when the attack lands for a Punish Counter Forces a juggle state when hitting a mid-air opponent for a counter Can be canceled into a special move from frames 18 - 19,确反康造成浮空硬直。打康命中空中对手造成浮空硬直，18-19帧能取消其他动作
 recoil_cannon_m_h,targetcombo,Recoil Cannon,反冲加农,5MP>4HP,16,16-18,26,D,-9,C,600,,1000,-3000,-7000,800,High,Can cancel into a special move or Super Art from frames 8 - 9,8-9帧可以取消SA
 double_shot_m_m,targetcombo,Double Shot,双射,2MP>2MP,12,12-14,16,D,-6,C,400,Immediate scaling 10%,500,-1500,-4000,250,High,,
-drake_fang_m_m,targetcombo,Drake Fang,龙牙连打,2MK>6MP,20,20-22,21,1,-5,,800,,1000,-2500,-4000,500,Mid,,
+drake_fang_m_m,targetcombo,Drake Fang,龙牙连打,2MK>6MP,20,20-22,21,1,-5,,800,,1000,-2500,-2000,500,Mid,Produces a ground bound on Counter or Punish Counter,打康或确反康造成弹地效果。
 phantom_cutter_h_h,targetcombo,Phantom Cutter,魅影切割,2HK>3HK,10,10-12,25,D,-12,C,600,,1000,-7000,-7000,500,High,,
 l_sonic_boom_l,special,Sonic Boom,音速手刀（轻）,[4]6LP,10,,40 total frames,3,-3,SA3,550,,500,-2500,-3000,300,High - Projectile,Can transition to the normal Sonic Break (Attack available during Super Art 2) from frames 12 - 20,实拳手时，第12-20帧可以取消音速连破
 perfect_timing_l_sonic_boom_l,special,(Perfect timing) Sonic Boom,音速手刀（完美蓄力）（轻）,[4]6LP,10,,40 total frames,4,-3,SA3,600,,500,-2500,-3000,300,High - Projectile,Can transition to the normal Sonic Break (Attack available during Super Art 2) from frames 12 - 20,实拳手时，第12-20帧可以取消音速连破

@@ -217,12 +217,6 @@ export default function InputLegendModal({ open, lang, onClose }: Props) {
                 {T("两圈（720°）指令，显示时保持为", "720° rotation input; stays as")}{" "}
                 <span style={codeStyle}>{"{720}"}</span>
               </div>
-              <div style={{ opacity: 0.78 }}>
-                {T(
-                  "（可选）如果允许写 (360)/(720)，系统会自动规范化为 {360}/{720}。",
-                  "(Optional) If you allow (360)/(720), the app can normalize to {360}/{720}."
-                )}
-              </div>
             </div>
           </div>
 
@@ -233,7 +227,7 @@ export default function InputLegendModal({ open, lang, onClose }: Props) {
               <div style={{ marginBottom: 8 }}>
                 <span style={codeStyle}>[ ]</span>{" "}
                 {T(
-                  "表示蓄力：先按住括号内指令",
+                  "表示蓄力：按住括号内指令",
                   "Means charge: hold the direction inside brackets."
                 )}
               </div>

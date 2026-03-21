@@ -45,9 +45,9 @@ od_l_yoga_arch_l_m,special,OD Yoga Arch,OD瑜伽弧（轻）,236LKMK,18,,45 tota
 od_m_yoga_arch_l_h,special,OD Yoga Arch,OD瑜伽弧（中）,236LKHK,18,,45 total frames,1,-3,SA2,1000,Starter scaling 20％ Combo scaling 20％,0,-2500,-5000,800,High - Projectile,,
 od_h_yoga_arch_m_h,special,OD Yoga Arch,OD瑜伽弧（重）,236MKHK,18,,45 total frames,1,-3,SA2,1000,Starter scaling 20％ Combo scaling 20％,0,-2500,-5000,800,High - Projectile,,
 l_yoga_flame_l,special,Yoga Flame,瑜伽烈焰（轻）,63214LP,16,16-30,45 total frames,D,-4,SA3,800,,2000,-4000,-5000,900,High - Projectile,,
-m_yoga_flame_m,special,Yoga Flame,瑜伽烈焰（中）,63214MP,20,19-34,51 total frames,D,-4,SA3,900,,2400,-5000,-5000,1000,High - Projectile,,
-h_yoga_flame_h,special,Yoga Flame,瑜伽烈焰（重）,63214HP,26,26-42,58 total frames,D,-4,SA3,1200,,2700,-6000,-5000,1100,High - Projectile,,
-od_yoga_flame,special,OD Yoga Flame,OD瑜伽烈焰,63214PP,18,18-42,66 total frames,D,-11,SA2,800,,0,-4000,-5000,1100,High - Projectile,,
+m_yoga_flame_m,special,Yoga Flame,瑜伽烈焰（中）,63214MP,20,19-34,51 total frames,D,-4,SA3,900,,3000,-5000,-5000,1000,High - Projectile,,
+h_yoga_flame_h,special,Yoga Flame,瑜伽烈焰（重）,63214HP,26,26-42,58 total frames,D,-4,SA3,1200,,4000,-6000,-5000,1100,High - Projectile,,
+od_yoga_flame,special,OD Yoga Flame,OD瑜伽烈焰,63214PP,18,18-42,66 total frames,D,-11,SA2,800,,0,-4000,-5000,1100,High - Projectile,Recovery is reduced by 5 frame on hit,攻击命中减少5f收招
 l_yoga_blast_l,special,Yoga Blast,瑜伽爆炎（轻）,63214LK,12,12-21,44 total frames,D,-6,SA3,1000,,3000,-6000,-6000,1200,High,,
 m_yoga_blast_m,special,Yoga Blast,瑜伽爆炎（中）,63214MK,15,15-24,44 total frames,D,-3,SA3,1200,,3000,-6000,-6000,1200,High,,
 h_yoga_blast_h,special,Yoga Blast,瑜伽爆炎（重）,63214HK,17,17-26,44 total frames,D,-3,SA3,1200,Combo scaling 20％,3000,-6000,-6000,1200,High,,
